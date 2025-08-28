@@ -5,6 +5,7 @@
 # - Convert each bound to µM
 # - Split targetSpecies into species and strain using a simple heuristic
 # - Write activity_normalized.csv (or a custom outfile)
+# + Join por NEW_SEQ con list_min.txt para curv_min y npol_min
 
 import csv
 import re
@@ -90,15 +91,53 @@ def split_species(val: str | None) -> tuple[str, str]:
             return (" ".join(parts[:i]), " ".join(parts[i:]))
     return (val, "")
 
+# --- NUEVO: cargar mapa {NEW_SEQ -> (curv_min, npol_min)} desde list_min.txt ---
+def load_min_map(path: str = "list_min.txt"):
+    """
+    Lee list_min.txt (separado por espacios/tabs) y devuelve un dict:
+        key = sequence (por ej., 'ZZZZKLK01')
+        value = (curv_min, npol_min) como strings ('' si NA)
+    Si hay problemas, devuelve {}.
+    """
+    mapping = {}
+    try:
+        with open(path, encoding="utf-8-sig") as f:
+            header = f.readline().strip().split()
+            idx_seq = header.index("sequence")
+            idx_npol = header.index("npol_min")
+            idx_curv = header.index("curv_min")
+            for line in f:
+                if not line.strip():
+                    continue
+                cols = line.strip().split()
+                # robustez ante 'NA'
+                seq = cols[idx_seq] if len(cols) > idx_seq else ""
+                npol = cols[idx_npol] if len(cols) > idx_npol else ""
+                curv = cols[idx_curv] if len(cols) > idx_curv else ""
+                if npol == "NA":
+                    npol = ""
+                if curv == "NA":
+                    curv = ""
+                if seq:
+                    mapping[seq] = (curv, npol)
+    except Exception:
+        pass
+    return mapping
+
 def run(infile: str = "activity.csv", outfile: str = "activity_normalized.csv") -> None:
     """Read activity.csv, compute MW, split/normalize concentrations, split species/strain, write output CSV."""
+    # NUEVO: cargar join por NEW_SEQ
+    min_map = load_min_map("list_min.txt")
+
     with open(infile, encoding="utf-8-sig") as f:
         r = csv.DictReader(f)
         fieldnames = list(r.fieldnames) + [
             "MW_Da", "NEW_SEQ",
             "lower_concentration", "upper_concentration",
             "lower_uM", "upper_uM",
-            "species", "strain"
+            "species", "strain",
+            # --- NUEVAS columnas ---
+            "curv_min", "npol_min",
         ]
         rows = []
         for row in r:
@@ -110,7 +149,8 @@ def run(infile: str = "activity.csv", outfile: str = "activity_normalized.csv") 
             lo, up = parse_conc(row.get("concentration", ""))
 
             row["MW_Da"] = f"{mw:.2f}"
-            row["NEW_SEQ"] = f"ZZZZ{seq}{'01' if (c or '').upper() == 'AMD' else '00'}"
+            new_seq = f"ZZZZ{seq}{'01' if (c or '').upper() == 'AMD' else '00'}"
+            row["NEW_SEQ"] = new_seq
             row["lower_concentration"] = lo
             row["upper_concentration"] = up
             row["lower_uM"] = to_uM(lo, row.get("unit", ""), mw)
@@ -119,6 +159,13 @@ def run(infile: str = "activity.csv", outfile: str = "activity_normalized.csv") 
             sp, st = split_species(row.get("targetSpecies", ""))
             row["species"] = sp
             row["strain"] = st
+
+            # --- Join con curv_min / npol_min por NEW_SEQ ---
+            curv_min, npol_min = ("", "")
+            if new_seq in min_map:
+                curv_min, npol_min = min_map[new_seq]
+            row["curv_min"] = curv_min
+            row["npol_min"] = npol_min
 
             rows.append(row)
 
@@ -129,5 +176,5 @@ def run(infile: str = "activity.csv", outfile: str = "activity_normalized.csv") 
 
     return  # explicit return to avoid accidental fall-through
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
     run()
