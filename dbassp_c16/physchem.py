@@ -1,11 +1,12 @@
 # physchem.py
 import csv
 import common
+from config import Config
 
 def run():
     ids = common.load_ids()
     if not ids:
-        print("No IDs found in peptides.csv")
+        print(f"No IDs found in {Config.INPUT_PEPTIDES_CSV}")
         return
 
     # Fetch all peptide JSONs with progress prints
@@ -38,7 +39,7 @@ def run():
     header = ["Peptide ID", "N TERMINUS", "SEQUENCE", "C TERMINUS"] + props
 
     # Write CSV, always one row per peptide (fill missing properties with empty string)
-    with open("physchem.csv", "w", newline="", encoding="utf-8-sig") as f:
+    with open(Config.OUTPUT_PHYSCHEM_CSV, "w", newline="", encoding=Config.CSV_ENCODING) as f:
         w = csv.DictWriter(f, fieldnames=header)
         w.writeheader()
         for d in data:

@@ -14,7 +14,7 @@ def main():
     activity.run()
 
     print("Normalizing activity ...")
-    normalize_activity.run(infile="activity.csv", outfile="activity_normalized.csv")
+    normalize_activity.run()
 
     t1 = time.perf_counter()
     print(f"Done. Total elapsed: {t1 - t0:.2f} s")

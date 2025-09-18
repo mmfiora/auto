@@ -3,17 +3,18 @@
 
 import csv
 import requests
+from config import Config
 
-API_URL = "https://dbaasp.org/peptides/{id}"
-HEADERS = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
-
-def load_ids(csv_file: str = "peptides.csv"):
+def load_ids(csv_file: str = None):
     """
     Read peptide IDs from CSV file.
     Accept a column named 'Peptide ID' or 'ID' (case-insensitive).
     Accept values like '51' or 'DBAASPS_51'.
     """
-    with open(csv_file, encoding="utf-8-sig") as f:
+    if csv_file is None:
+        csv_file = Config.INPUT_PEPTIDES_CSV
+    
+    with open(csv_file, encoding=Config.CSV_ENCODING) as f:
         r = csv.DictReader(f)
         col = None
         for h in r.fieldnames or []:
@@ -32,6 +33,6 @@ def load_ids(csv_file: str = "peptides.csv"):
 
 def fetch(pid: int):
     """Fetch a single peptide JSON from DBAASP API."""
-    resp = requests.get(API_URL.format(id=pid), headers=HEADERS, timeout=20)
+    resp = requests.get(Config.API_URL.format(id=pid), headers=Config.API_HEADERS, timeout=Config.API_TIMEOUT)
     resp.raise_for_status()
     return resp.json()

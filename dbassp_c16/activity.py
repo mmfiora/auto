@@ -1,6 +1,7 @@
 # activity.py
 import csv
 import common
+from config import Config
 
 def get_activities(peptide_json):
     a = peptide_json.get("targetActivities")
@@ -31,7 +32,7 @@ def flatten_value(v):
 def run():
     ids = common.load_ids()
     if not ids:
-        print("No IDs found in peptides.csv")
+        print(f"No IDs found in {Config.INPUT_PEPTIDES_CSV}")
         return
 
     peptides = []
@@ -50,7 +51,7 @@ def run():
     activity_cols = collect_activity_keys(peptides)
     header = ["Peptide ID", "N TERMINUS", "SEQUENCE", "C TERMINUS"] + activity_cols
 
-    with open("activity.csv", "w", newline="", encoding="utf-8-sig") as f:
+    with open(Config.OUTPUT_ACTIVITY_CSV, "w", newline="", encoding=Config.CSV_ENCODING) as f:
         w = csv.DictWriter(f, fieldnames=header)
         w.writeheader()
 

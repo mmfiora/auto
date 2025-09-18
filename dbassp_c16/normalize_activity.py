@@ -9,29 +9,15 @@
 
 import csv
 import re
-
-# Average masses (Da)
-AA_MASS = {
-    "A": 71.08, "R": 156.19, "N": 114.10, "D": 115.09, "C": 103.15,
-    "E": 129.12, "Q": 128.13, "G": 57.05,  "H": 137.14, "I": 113.16,
-    "L": 113.16, "K": 128.17, "M": 131.20, "F": 147.18, "P": 97.12,
-    "S": 87.08,  "T": 101.11, "W": 186.21, "Y": 163.18, "V": 99.13,
-    "Z": 56.10,  # special C4 block
-    "X": 110.0   # generic unknown residue
-}
-
-# Constants (Da)
-H2O = 18.02
-NTERM = {"C16": 239.2}     # simple N-terminus additions
-CTERM = {"AMD": -0.98}     # small delta vs. free COOH
+from config import Config
 
 def calc_mw(seq: str, nterm: str | None, cterm: str | None) -> float:
     """Calculate peptide molecular weight (Da)."""
-    mw = sum(AA_MASS.get(a.upper(), 110.0) for a in (seq or "")) + H2O
-    if nterm and nterm.upper() in NTERM:
-        mw += NTERM[nterm.upper()]
-    if cterm and cterm.upper() in CTERM:
-        mw += CTERM[cterm.upper()]
+    mw = sum(Config.AA_MASS.get(a.upper(), 110.0) for a in (seq or "")) + Config.H2O_MASS
+    if nterm and nterm.upper() in Config.NTERM_MASS:
+        mw += Config.NTERM_MASS[nterm.upper()]
+    if cterm and cterm.upper() in Config.CTERM_MASS:
+        mw += Config.CTERM_MASS[cterm.upper()]
     return mw
 
 def parse_conc(val: str | None) -> tuple[str, str]:
@@ -92,16 +78,19 @@ def split_species(val: str | None) -> tuple[str, str]:
     return (val, "")
 
 # --- NUEVO: cargar mapa {NEW_SEQ -> (curv_min, npol_min)} desde list_min.txt ---
-def load_min_map(path: str = "list_min.txt"):
+def load_min_map(path: str = None):
     """
     Lee list_min.txt (separado por espacios/tabs) y devuelve un dict:
         key = sequence (por ej., 'ZZZZKLK01')
         value = (curv_min, npol_min) como strings ('' si NA)
     Si hay problemas, devuelve {}.
     """
+    if path is None:
+        path = Config.MIN_LIST_FILE
+        
     mapping = {}
     try:
-        with open(path, encoding="utf-8-sig") as f:
+        with open(path, encoding=Config.CSV_ENCODING) as f:
             header = f.readline().strip().split()
             idx_seq = header.index("sequence")
             idx_npol = header.index("npol_min")
@@ -124,12 +113,17 @@ def load_min_map(path: str = "list_min.txt"):
         pass
     return mapping
 
-def run(infile: str = "activity.csv", outfile: str = "activity_normalized.csv") -> None:
+def run(infile: str = None, outfile: str = None) -> None:
     """Read activity.csv, compute MW, split/normalize concentrations, split species/strain, write output CSV."""
+    if infile is None:
+        infile = Config.OUTPUT_ACTIVITY_CSV
+    if outfile is None:
+        outfile = Config.OUTPUT_NORMALIZED_CSV
+        
     # NUEVO: cargar join por NEW_SEQ
-    min_map = load_min_map("list_min.txt")
+    min_map = load_min_map()
 
-    with open(infile, encoding="utf-8-sig") as f:
+    with open(infile, encoding=Config.CSV_ENCODING) as f:
         r = csv.DictReader(f)
         fieldnames = list(r.fieldnames) + [
             "MW_Da", "NEW_SEQ",
@@ -169,7 +163,7 @@ def run(infile: str = "activity.csv", outfile: str = "activity_normalized.csv") 
 
             rows.append(row)
 
-    with open(outfile, "w", encoding="utf-8-sig", newline="") as f:
+    with open(outfile, "w", encoding=Config.CSV_ENCODING, newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
         w.writerows(rows)
