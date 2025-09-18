@@ -2,6 +2,7 @@
 # Centralized configuration for DBAASP peptide analysis pipeline
 
 import os
+import logging
 
 class Config:
     """Configuration settings with defaults and environment variable overrides."""
@@ -19,6 +20,7 @@ class Config:
     OUTPUT_PHYSCHEM_CSV = os.getenv("OUTPUT_PHYSCHEM_CSV", "physchem.csv")
     OUTPUT_ACTIVITY_CSV = os.getenv("OUTPUT_ACTIVITY_CSV", "activity.csv")
     OUTPUT_NORMALIZED_CSV = os.getenv("OUTPUT_NORMALIZED_CSV", "activity_normalized.csv")
+    OUTPUT_UNIFIED_CSV = os.getenv("OUTPUT_UNIFIED_CSV", "unified_results.csv")
     MIN_LIST_FILE = os.getenv("MIN_LIST_FILE", "list_min.txt")
     
     # File Encoding
@@ -38,12 +40,31 @@ class Config:
     NTERM_MASS = {"C16": 239.2}     # N-terminus additions
     CTERM_MASS = {"AMD": -0.98}     # C-terminus modifications
     
+    # Logging Configuration
+    LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
+    LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    
+    @classmethod
+    def setup_logging(cls):
+        """Setup centralized logging configuration."""
+        logging.basicConfig(
+            level=getattr(logging, cls.LOG_LEVEL.upper()),
+            format=cls.LOG_FORMAT,
+            handlers=[
+                logging.StreamHandler(),
+                logging.FileHandler("pipeline.log", mode="a")
+            ]
+        )
+        return logging.getLogger("dbaasp_pipeline")
+    
     @classmethod
     def validate_files(cls) -> bool:
         """Check if required input files exist."""
+        logger = logging.getLogger("dbaasp_pipeline")
         required_files = [cls.INPUT_PEPTIDES_CSV]
         missing = [f for f in required_files if not os.path.exists(f)]
         if missing:
-            print(f"Missing required files: {missing}")
+            logger.error(f"Missing required files: {missing}")
             return False
+        logger.info(f"All required files found: {required_files}")
         return True

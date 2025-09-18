@@ -8,8 +8,12 @@
 # + Join por NEW_SEQ con list_min.txt para curv_min y npol_min
 
 import csv
+import logging
 import re
 from config import Config
+from exceptions import FileProcessingError, DataValidationError
+
+logger = logging.getLogger("dbaasp_pipeline")
 
 def calc_mw(seq: str, nterm: str | None, cterm: str | None) -> float:
     """Calculate peptide molecular weight (Da)."""
@@ -20,27 +24,79 @@ def calc_mw(seq: str, nterm: str | None, cterm: str | None) -> float:
         mw += Config.CTERM_MASS[cterm.upper()]
     return mw
 
-def parse_conc(val: str | None) -> tuple[str, str]:
-    """Split concentration string into (lower, upper) strings."""
+def parse_conc(val: str | None, row_num: int | None = None) -> tuple[str, str]:
+    """
+    Split concentration string into (lower, upper) strings.
+    Handles formats:
+    - "value1-value2" -> (value1, value2) [range]
+    - "value1->value2" -> (value1, value2) [arrow range]
+    - "value±error" -> (value-error, value+error) [mean ± error converted to range]
+    - ">value" -> (value, "") [greater than]
+    - "<value" -> ("", value) [less than]
+    - "<=value" -> ("", value) [less than or equal]
+    - "value" -> (value, value) [single value]
+    """
     if not val:
         return ("", "")
-    s = val.strip()
-    if "-" in s:
-        a, b = s.split("-", 1)
-        return (a.strip(), b.strip())
+    # Clean whitespace including tabs
+    s = re.sub(r'\s+', ' ', str(val).strip())
+    
+    # Skip malformed values (like "4.5.5") but allow ranges with decimals
+    if s.count('.') > 2 or (s.count('.') > 1 and '±' not in s and '->' not in s and '-' not in s):
+        row_info = f" (CSV row {row_num})" if row_num else ""
+        logger.warning(f"Malformed concentration value skipped: '{s}'{row_info}")
+        return ("", "")
+    
+    # Handle mean ± error format (e.g., "3.9±1.1" -> lower=2.8, upper=5.0)
+    if "±" in s:
+        parts = s.split("±", 1)
+        try:
+            media = float(parts[0].strip())
+            error = float(parts[1].strip())
+            lower = max(0.0, media - error)  # Don't allow negative concentrations
+            upper = media + error
+            return (f"{lower:.6g}", f"{upper:.6g}")
+        except ValueError:
+            row_info = f" (CSV row {row_num})" if row_num else ""
+            logger.warning(f"Invalid mean±error format: '{s}'{row_info}")
+            return ("", "")
+    
+    # Handle arrow range format (e.g., "25->50")
+    if "->" in s:
+        parts = s.split("->", 1)
+        return (parts[0].strip(), parts[1].strip())
+    
+    # Handle less than or equal (e.g., "<=0.25")
+    if s.startswith("<="):
+        return ("", s[2:].strip())
+    
+    # Handle greater than (e.g., ">25")
     if s.startswith(">"):
         return (s[1:].strip(), "")
+    
+    # Handle less than (e.g., "<10")
     if s.startswith("<"):
         return ("", s[1:].strip())
+    
+    # Handle range format (e.g., "6.25-12.5")
+    if "-" in s and not s.startswith("-"):
+        # Avoid splitting negative numbers
+        parts = s.split("-", 1)
+        if len(parts) == 2 and parts[0].strip() and parts[1].strip():
+            return (parts[0].strip(), parts[1].strip())
+    
+    # Single value
     return (s, s)
 
-def to_uM(val: str, unit: str | None, mw: float | None) -> str:
+def to_uM(val: str, unit: str | None, mw: float | None, row_num: int | None = None) -> str:
     """Convert one numeric concentration value to µM. Returns '' if not possible."""
     if not val or not unit or not mw:
         return ""
     try:
         num = float(val)
-    except Exception:
+    except ValueError:
+        row_info = f" (CSV row {row_num})" if row_num else ""
+        logger.warning(f"Invalid concentration value: '{val}'{row_info}")
         return ""
     u = unit.lower()
     if u in ("µm", "um"):
@@ -92,10 +148,15 @@ def load_min_map(path: str = None):
     try:
         with open(path, encoding=Config.CSV_ENCODING) as f:
             header = f.readline().strip().split()
-            idx_seq = header.index("sequence")
-            idx_npol = header.index("npol_min")
-            idx_curv = header.index("curv_min")
-            for line in f:
+            try:
+                idx_seq = header.index("sequence")
+                idx_npol = header.index("npol_min")
+                idx_curv = header.index("curv_min")
+            except ValueError as e:
+                logger.warning(f"Missing required columns in {path}: {e}")
+                return mapping
+                
+            for line_num, line in enumerate(f, start=2):
                 if not line.strip():
                     continue
                 cols = line.strip().split()
@@ -109,66 +170,90 @@ def load_min_map(path: str = None):
                     curv = ""
                 if seq:
                     mapping[seq] = (curv, npol)
-    except Exception:
-        pass
+    except FileNotFoundError:
+        logger.warning(f"Min list file not found: {path}")
+    except IOError as e:
+        logger.error(f"Error reading min list file {path}: {e}")
     return mapping
 
-def run(infile: str = None, outfile: str = None) -> None:
+def run(infile: str | None = None, outfile: str | None = None) -> None:
     """Read activity.csv, compute MW, split/normalize concentrations, split species/strain, write output CSV."""
     if infile is None:
         infile = Config.OUTPUT_ACTIVITY_CSV
     if outfile is None:
         outfile = Config.OUTPUT_NORMALIZED_CSV
         
-    # NUEVO: cargar join por NEW_SEQ
-    min_map = load_min_map()
+    logger.info(f"Starting activity normalization: {infile} -> {outfile}")
+    
+    try:
+        # NUEVO: cargar join por NEW_SEQ
+        min_map = load_min_map()
+        logger.info(f"Loaded {len(min_map)} entries from min list")
 
-    with open(infile, encoding=Config.CSV_ENCODING) as f:
-        r = csv.DictReader(f)
-        fieldnames = list(r.fieldnames) + [
-            "MW_Da", "NEW_SEQ",
-            "lower_concentration", "upper_concentration",
-            "lower_uM", "upper_uM",
-            "species", "strain",
-            # --- NUEVAS columnas ---
-            "curv_min", "npol_min",
-        ]
-        rows = []
-        for row in r:
-            seq = (row.get("SEQUENCE") or "").upper()
-            n = row.get("N TERMINUS", "")
-            c = row.get("C TERMINUS", "")
-            mw = calc_mw(seq, n, c)
+        with open(infile, encoding=Config.CSV_ENCODING) as f:
+            r = csv.DictReader(f)
+            fieldnames = list(r.fieldnames) + [
+                "MW_Da", "NEW_SEQ",
+                "lower_concentration", "upper_concentration",
+                "lower_uM", "upper_uM",
+                "species", "strain",
+                # --- NUEVAS columnas ---
+                "curv_min", "npol_min",
+            ]
+            rows = []
+            row_num = 1  # Start at 1, will increment to 2 for first data row
+            for row in r:
+                row_num += 1  # CSV row number (2 = first data row after header)
+                seq = (row.get("SEQUENCE") or "").upper()
+                n = row.get("N TERMINUS", "")
+                c = row.get("C TERMINUS", "")
+                mw = calc_mw(seq, n, c)
 
-            lo, up = parse_conc(row.get("concentration", ""))
+                lo, up = parse_conc(row.get("concentration", ""), row_num)
+                original_conc = row.get("concentration", "")
 
-            row["MW_Da"] = f"{mw:.2f}"
-            new_seq = f"ZZZZ{seq}{'01' if (c or '').upper() == 'AMD' else '00'}"
-            row["NEW_SEQ"] = new_seq
-            row["lower_concentration"] = lo
-            row["upper_concentration"] = up
-            row["lower_uM"] = to_uM(lo, row.get("unit", ""), mw)
-            row["upper_uM"] = to_uM(up, row.get("unit", ""), mw)
+                row["MW_Da"] = f"{mw:.2f}"
+                new_seq = f"ZZZZ{seq}{'01' if (c or '').upper() == 'AMD' else '00'}"
+                row["NEW_SEQ"] = new_seq
+                row["lower_concentration"] = lo
+                row["upper_concentration"] = up
+                
+                # Convert both lower and upper concentrations to µM
+                # For ± format: lo=media-error, up=media+error (both are concentrations)
+                row["lower_uM"] = to_uM(lo, row.get("unit", ""), mw, row_num)
+                row["upper_uM"] = to_uM(up, row.get("unit", ""), mw, row_num)
 
-            sp, st = split_species(row.get("targetSpecies", ""))
-            row["species"] = sp
-            row["strain"] = st
+                sp, st = split_species(row.get("targetSpecies", ""))
+                row["species"] = sp
+                row["strain"] = st
 
-            # --- Join con curv_min / npol_min por NEW_SEQ ---
-            curv_min, npol_min = ("", "")
-            if new_seq in min_map:
-                curv_min, npol_min = min_map[new_seq]
-            row["curv_min"] = curv_min
-            row["npol_min"] = npol_min
+                # --- Join con curv_min / npol_min por NEW_SEQ ---
+                curv_min, npol_min = ("", "")
+                if new_seq in min_map:
+                    curv_min, npol_min = min_map[new_seq]
+                row["curv_min"] = curv_min
+                row["npol_min"] = npol_min
 
-            rows.append(row)
+                rows.append(row)
 
-    with open(outfile, "w", encoding=Config.CSV_ENCODING, newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fieldnames)
-        w.writeheader()
-        w.writerows(rows)
+            logger.info(f"Processed {len(rows)} rows for normalization")
 
-    return  # explicit return to avoid accidental fall-through
+        with open(outfile, "w", encoding=Config.CSV_ENCODING, newline="") as f:
+            w = csv.DictWriter(f, fieldnames=fieldnames)
+            w.writeheader()
+            w.writerows(rows)
+            
+        logger.info(f"Successfully wrote normalized data to {outfile}")
+        
+    except FileNotFoundError:
+        raise FileProcessingError(f"Input file not found: {infile}", filename=infile)
+    except csv.Error as e:
+        raise FileProcessingError(f"CSV processing error: {e}", filename=infile)
+    except IOError as e:
+        raise FileProcessingError(f"File I/O error: {e}", filename=outfile)
+    except Exception as e:
+        logger.error(f"Unexpected error in normalization: {e}")
+        raise
 
-#if __name__ == "__main__":
+if __name__ == "__main__":
     run()
