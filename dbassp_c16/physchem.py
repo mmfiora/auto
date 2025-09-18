@@ -1,41 +1,9 @@
 # physchem.py
 import csv
-import requests
-
-API_URL = "https://dbaasp.org/peptides/{id}"
-HEADERS = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
-
-def load_ids():
-    """
-    Read peptide IDs from peptides.csv.
-    Accept a column named 'Peptide ID' or 'ID' (case-insensitive).
-    Accept values like '51' or 'DBAASPS_51'.
-    """
-    with open("peptides.csv", encoding="utf-8-sig") as f:
-        r = csv.DictReader(f)
-        col = None
-        for h in r.fieldnames or []:
-            if h.lower() in ("peptide id", "id"):
-                col = h
-                break
-        if not col:
-            return []
-        ids = []
-        for row in r:
-            raw = (row.get(col) or "").strip()
-            if not raw:
-                continue
-            ids.append(int(raw.split("_")[-1]))
-        return ids
-
-def fetch(pid: int):
-    """Fetch a single peptide JSON."""
-    resp = requests.get(API_URL.format(id=pid), headers=HEADERS, timeout=20)
-    resp.raise_for_status()
-    return resp.json()
+import common
 
 def run():
-    ids = load_ids()
+    ids = common.load_ids()
     if not ids:
         print("No IDs found in peptides.csv")
         return
@@ -45,7 +13,7 @@ def run():
     for i, pid in enumerate(ids, start=1):
         print(f"[{i}/{len(ids)}] Fetching physchem for peptide {pid} ...", end="", flush=True)
         try:
-            d = fetch(pid)
+            d = common.fetch(pid)
             data.append(d)
             print(" ok")
         except Exception as e:
