@@ -230,7 +230,7 @@ def run(infile: str | None = None, outfile: str | None = None) -> None:
                 original_conc = row.get("concentration", "")
 
                 row["MW_Da"] = f"{mw:.2f}"
-                new_seq = f"ZZZZ{seq}{'01' if (c or '').upper() == 'AMD' else '00'}"
+                new_seq = f"ZZZZ{seq}{'00' if (c or '').upper() == 'AMD' else '01'}"
                 row["NEW_SEQ"] = new_seq
                 row["lower_concentration"] = lo
                 row["upper_concentration"] = up
