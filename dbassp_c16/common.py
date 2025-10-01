@@ -2,12 +2,89 @@
 # Shared functions and constants for DBAASP API interaction
 
 import csv
+import glob
 import logging
 import requests
 from config import Config
 from exceptions import APIError, FileProcessingError, DataValidationError
 
 logger = logging.getLogger("dbaasp_pipeline")
+
+def auto_detect_nterminus() -> str:
+    """
+    Auto-detect Nterminus from available peptides_{Nterminus}.csv files.
+    Returns the first Nterminus found, or raises an error if none found.
+    """
+    logger.info("Auto-detecting Nterminus from available peptides files")
+    
+    # Find all peptides_{Nterminus}.csv files
+    peptide_files = glob.glob("peptides_*.csv")
+    if not peptide_files:
+        raise FileProcessingError(
+            "No peptides_{Nterminus}.csv files found. Please ensure you have files like peptides_C16.csv",
+            filename="peptides_*.csv"
+        )
+    
+    # Sort files for consistent behavior
+    peptide_files.sort()
+    
+    # Extract Nterminus from first filename (peptides_C16.csv -> C16)
+    try:
+        filename = peptide_files[0]
+        nterminus = filename.split("_")[1].split(".")[0]
+        
+        if not nterminus:
+            raise ValueError("Empty Nterminus")
+            
+        logger.info(f"Auto-detected Nterminus: {nterminus} from file: {filename}")
+        
+        # If multiple files exist, log them
+        if len(peptide_files) > 1:
+            logger.info(f"Found {len(peptide_files)} peptides files: {peptide_files}")
+            logger.info(f"Using first file: {filename}")
+            
+        return nterminus
+        
+    except (IndexError, ValueError) as e:
+        raise FileProcessingError(
+            f"Invalid peptides filename format: {filename}. Expected format: peptides_{{Nterminus}}.csv",
+            filename=filename
+        )
+
+def detect_nterminus_from_csv(csv_file: str) -> str:
+    """
+    Read the first row of peptides to detect the Nterminus value.
+    Returns the Nterminus value found, or raises an error if none found.
+    """
+    logger.info(f"Detecting Nterminus from {csv_file}")
+    
+    try:
+        with open(csv_file, encoding=Config.CSV_ENCODING) as f:
+            r = csv.DictReader(f)
+            
+            # Check if N TERMINUS column exists
+            if "N TERMINUS" not in (r.fieldnames or []):
+                raise DataValidationError(
+                    "No 'N TERMINUS' column found in CSV file",
+                    field="N TERMINUS"
+                )
+            
+            # Read first data row to get Nterminus
+            for row in r:
+                nterminus = (row.get("N TERMINUS") or "").strip()
+                if nterminus:
+                    logger.info(f"Detected Nterminus: {nterminus}")
+                    return nterminus
+                    
+            raise DataValidationError(
+                "No Nterminus value found in first row",
+                field="N TERMINUS"
+            )
+            
+    except FileNotFoundError:
+        raise FileProcessingError(f"Input file not found: {csv_file}", filename=csv_file)
+    except csv.Error as e:
+        raise FileProcessingError(f"CSV parsing error: {e}", filename=csv_file)
 
 def load_ids(csv_file: str | None = None):
     """

@@ -15,13 +15,16 @@ class Config:
         "Accept": "application/json"
     }
     
-    # File Paths
+    # File Paths (will be updated dynamically with Nterminus)
     INPUT_PEPTIDES_CSV = os.getenv("INPUT_PEPTIDES_CSV", "peptides.csv")
     OUTPUT_PHYSCHEM_CSV = os.getenv("OUTPUT_PHYSCHEM_CSV", "physchem.csv")
     OUTPUT_ACTIVITY_CSV = os.getenv("OUTPUT_ACTIVITY_CSV", "activity.csv")
     OUTPUT_NORMALIZED_CSV = os.getenv("OUTPUT_NORMALIZED_CSV", "activity_normalized.csv")
     OUTPUT_UNIFIED_CSV = os.getenv("OUTPUT_UNIFIED_CSV", "unified_results.csv")
     MIN_LIST_FILE = os.getenv("MIN_LIST_FILE", "list_min.txt")
+    
+    # Current Nterminus (set dynamically during pipeline execution)
+    _current_nterminus = None
     
     # File Encoding
     CSV_ENCODING = "utf-8-sig"
@@ -56,6 +59,22 @@ class Config:
             ]
         )
         return logging.getLogger("dbaasp_pipeline")
+    
+    @classmethod
+    def set_nterminus(cls, nterminus: str):
+        """Set the Nterminus and update file paths accordingly."""
+        cls._current_nterminus = nterminus
+        cls.INPUT_PEPTIDES_CSV = f"peptides_{nterminus}.csv"
+        cls.OUTPUT_PHYSCHEM_CSV = f"physchem_{nterminus}.csv"
+        cls.OUTPUT_ACTIVITY_CSV = f"activity_{nterminus}.csv"
+        cls.OUTPUT_NORMALIZED_CSV = f"activity_normalized_{nterminus}.csv"
+        cls.OUTPUT_UNIFIED_CSV = f"unified_results_{nterminus}.csv"
+        cls.MIN_LIST_FILE = f"list_min_{nterminus}.txt"
+    
+    @classmethod
+    def get_nterminus(cls) -> str:
+        """Get the current Nterminus."""
+        return cls._current_nterminus
     
     @classmethod
     def validate_files(cls) -> bool:
