@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the CSV file
-df = pd.read_csv("activity_normalized.csv")
+df = pd.read_csv(input("input CSV:"))
 
 # Select only numeric columns (ignore text columns)
 numeric_df = df.select_dtypes(include="number")

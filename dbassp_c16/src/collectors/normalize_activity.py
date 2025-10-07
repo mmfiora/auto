@@ -24,6 +24,35 @@ def calc_mw(seq: str, nterm: str | None, cterm: str | None) -> float:
         mw += Config.CTERM_MASS[cterm.upper()]
     return mw
 
+def get_z_prefix(nterm: str | None) -> str:
+    """
+    Calculate the number of Z's based on N-terminus.
+    Each Z represents a C4 block.
+    Examples: C4->Z, C8->ZZ, C12->ZZZ, C16->ZZZZ, C20->ZZZZZ
+    
+    Args:
+        nterm: N-terminus string (e.g., "C12", "C16")
+    
+    Returns:
+        String with appropriate number of Z's
+    """
+    if not nterm:
+        logger.warning("No N-terminus provided, defaulting to C16 (ZZZZ)")
+        return "ZZZZ"
+    
+    match = re.search(r'C(\d+)', nterm.upper())
+    if match:
+        num = int(match.group(1))
+        z_count = num // 4
+        if z_count > 0:
+            return "Z" * z_count
+        else:
+            logger.warning(f"Invalid C value {num}, must be multiple of 4. Defaulting to C16 (ZZZZ)")
+            return "ZZZZ"
+    
+    logger.warning(f"Could not parse N-terminus '{nterm}', defaulting to C16 (ZZZZ)")
+    return "ZZZZ"
+
 def parse_conc(val: str | None, row_num: int | None = None) -> tuple[str, str]:
     """
     Split concentration string into (lower, upper) strings.
@@ -230,7 +259,8 @@ def run(infile: str | None = None, outfile: str | None = None) -> None:
                 original_conc = row.get("concentration", "")
 
                 row["MW_Da"] = f"{mw:.2f}"
-                new_seq = f"ZZZZ{seq}{'00' if (c or '').upper() == 'AMD' else '01'}"
+                z_prefix = get_z_prefix(n)
+                new_seq = f"{z_prefix}{seq}{'00' if (c or '').upper() == 'AMD' else '01'}"
                 row["NEW_SEQ"] = new_seq
                 row["lower_concentration"] = lo
                 row["upper_concentration"] = up
