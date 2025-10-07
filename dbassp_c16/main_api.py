@@ -3,13 +3,13 @@ import argparse
 import os
 import time
 import logging
-from config import Config
-from exceptions import DBAASSPError
-import physchem
-import activity
-import normalize_activity
-import unified_results
-import common
+from src.core.config import Config
+from src.core.exceptions import DBAASSPError
+from src.collectors import physchem
+from src.collectors import activity
+from src.collectors import normalize_activity
+from src.processors import unified_results
+from src.core import common
 
 def main():
     # Parse command line arguments

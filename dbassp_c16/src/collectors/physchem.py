@@ -1,9 +1,9 @@
 # physchem.py
 import csv
 import logging
-import common
-from config import Config
-from exceptions import APIError, FileProcessingError
+from src.core import common
+from src.core.config import Config
+from src.core.exceptions import APIError, FileProcessingError
 
 logger = logging.getLogger("dbaasp_pipeline")
 

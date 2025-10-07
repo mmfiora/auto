@@ -3,8 +3,8 @@
 
 import csv
 import logging
-from config import Config
-from exceptions import FileProcessingError
+from src.core.config import Config
+from src.core.exceptions import FileProcessingError
 
 logger = logging.getLogger("dbaasp_pipeline")
 

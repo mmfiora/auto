@@ -5,8 +5,8 @@ import csv
 import glob
 import logging
 import requests
-from config import Config
-from exceptions import APIError, FileProcessingError, DataValidationError
+from src.core.config import Config
+from src.core.exceptions import APIError, FileProcessingError, DataValidationError
 
 logger = logging.getLogger("dbaasp_pipeline")
 
@@ -18,7 +18,7 @@ def auto_detect_nterminus() -> str:
     logger.info("Auto-detecting Nterminus from available peptides files")
     
     # Find all peptides_{Nterminus}.csv files
-    peptide_files = glob.glob("peptides_*.csv")
+    peptide_files = glob.glob("data/input/peptides_*.csv")
     if not peptide_files:
         raise FileProcessingError(
             "No peptides_{Nterminus}.csv files found. Please ensure you have files like peptides_C16.csv",
@@ -28,10 +28,11 @@ def auto_detect_nterminus() -> str:
     # Sort files for consistent behavior
     peptide_files.sort()
     
-    # Extract Nterminus from first filename (peptides_C16.csv -> C16)
+    # Extract Nterminus from first filename (data/input/peptides_C16.csv -> C16)
+    filename = peptide_files[0]
     try:
-        filename = peptide_files[0]
-        nterminus = filename.split("_")[1].split(".")[0]
+        basename = filename.split("/")[-1]
+        nterminus = basename.split("_")[1].split(".")[0]
         
         if not nterminus:
             raise ValueError("Empty Nterminus")
@@ -47,7 +48,7 @@ def auto_detect_nterminus() -> str:
         
     except (IndexError, ValueError) as e:
         raise FileProcessingError(
-            f"Invalid peptides filename format: {filename}. Expected format: peptides_{{Nterminus}}.csv",
+            f"Invalid peptides filename format: {filename}. Expected format: data/input/peptides_{{Nterminus}}.csv",
             filename=filename
         )
 
