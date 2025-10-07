@@ -1,25 +1,60 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Sep  5 17:01:24 2025
-
-@author: Maria
-"""
-
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
+import matplotlib.pyplot as plt
 
-# Load the CSV file
-df = pd.read_csv(input("input CSV:"))
+# Ask for the CSV file name
+file = input("Enter the CSV file name: ")
 
-# Select only numeric columns (ignore text columns)
-numeric_df = df.select_dtypes(include="number")
+# Define the path where the CSV is located
+path = r"C:\Users\mfiora\Documents\Repositories\auto\dbassp_c16\data\output\\" + file
 
-# Compute the correlation matrix
-corr_matrix = numeric_df.corr()
+# Read the CSV file
+df = pd.read_csv(path)
 
-# Plot the correlation matrix as a heatmap
+# Columns to exclude from the correlation
+cols_to_drop = [
+    'Peptide ID', 'reference', 'lower_concentration', 'upper_concentration',
+    'lower_uM', 'upper_uM', 'ph_run', 'ph',
+    'npol_c0', 'npol_c1', 'npol_c2',
+    'Formation Propensity', 'in vitro Aggregation',
+    'Hydrophobic Moment', 'Penetration Depth', 'Tilt Angle',
+    'Propensity', 'Normalizer',
+    'Disordered Conformation Propensity', 'Linear Moment',
+    'Propensity to in vitro Aggregation',
+    'Angle Subtended by the Hydrophobic Residues',
+    'Amphiphilicity Index', 'Propensity to PPII coil',
+    'Normalized Hydrophobic Moment'
+]
+
+# Drop only existing columns
+df = df.drop(columns=[c for c in cols_to_drop if c in df.columns], errors='ignore')
+
+# Compute correlation matrix
+corr = df.corr(numeric_only=True)
+
+# Number of valid data points
+n_data = df.select_dtypes(include='number').dropna().shape[0]
+
+# Create the heatmap
 plt.figure(figsize=(10, 8))
-sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
-plt.title("Correlation Matrix")
+sns.heatmap(
+    corr,
+    annot=True,
+    cmap='coolwarm',
+    fmt=".2f",
+    square=True,
+    cbar_kws={'shrink': 0.8}
+)
+
+# Title and formatting
+plt.title(f'Correlation matrix (n = {n_data})', fontsize=14, pad=20)
+plt.xticks(rotation=45, ha='right', fontsize=8)
+plt.yticks(rotation=0, fontsize=8)
+plt.tight_layout()
 plt.show()
+
+
+
+
+
+
