@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Ask for the CSV file name
-file = input("Enter the CSV file name: ")
+file = input("Enter the CSV file name(without .csv): ")+ ".csv"
 
 # Define the path where the CSV is located
 path = r"C:\Users\mfiora\Documents\Repositories\auto\dbassp_c16\data\output\\" + file
@@ -51,6 +51,7 @@ plt.xticks(rotation=45, ha='right', fontsize=8)
 plt.yticks(rotation=0, fontsize=8)
 plt.tight_layout()
 plt.show()
+plt.savefig(f"{file}.jpg",dpi=300)
 
 
 
