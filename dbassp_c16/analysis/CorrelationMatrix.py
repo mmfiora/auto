@@ -15,7 +15,6 @@ df = pd.read_csv(path)
 cols_to_drop = [
     'Peptide ID', 'reference', 'lower_concentration', 'upper_concentration',
     'lower_uM', 'upper_uM', 'ph_run', 'ph',
-    'npol_c0', 'npol_c1', 'npol_c2',
     'Formation Propensity', 'in vitro Aggregation',
     'Hydrophobic Moment', 'Penetration Depth', 'Tilt Angle',
     'Propensity', 'Normalizer',
