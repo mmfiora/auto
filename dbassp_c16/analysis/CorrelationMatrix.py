@@ -3,9 +3,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
-base_dir = os.path.dirname(__file__)  # carpeta donde está este script
+
 file = input("Enter the CSV file name (without .csv): ") + ".csv"
-path = os.path.join(base_dir, "data", "output", file)
+path = os.path.join("data", "output", file)
+
+
 
 df = pd.read_csv(path)
 
