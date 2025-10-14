@@ -7,13 +7,31 @@ import os
 file = input("Enter the CSV file name (without .csv): ") + ".csv"
 path = os.path.join("data", "output", file)
 
-
-
 df = pd.read_csv(path)
 
+cols_to_drop = [
+    'Peptide ID', 'reference', 'lower_concentration', 'upper_concentration',
+    #unif'lower_uM', 
+    #'upper_uM', 
+    'ph_run', 'ph',
+    'Formation Propensity', 'in vitro Aggregation',
+    'Hydrophobic Moment', 'Penetration Depth', 'Tilt Angle',
+    'Propensity', 'Normalizer',
+    'Disordered Conformation Propensity', 'Linear Moment',
+    'Propensity to in vitro Aggregation',
+    'Angle Subtended by the Hydrophobic Residues',
+    'Amphiphilicity Index', 'Propensity to PPII coil',
+    'Normalized Hydrophobic Moment'
+]
+
+df_temp = df.drop(columns=[c for c in cols_to_drop if c in df.columns], errors='ignore')
+numeric_cols = df_temp.select_dtypes(include='number').columns
+rows_with_data = df_temp[numeric_cols].notna().any(axis=1)
+
 species_name = ""
+n_selected = None
 if 'species' in df.columns:
-    species_counts = df['species'].value_counts()
+    species_counts = df[rows_with_data].groupby(df['species']).size()
     species_list = sorted(species_counts.index)
     
     print("\nAvailable species:")
@@ -29,26 +47,13 @@ if 'species' in df.columns:
         
         if selected_species:
             df = df[df['species'].isin(selected_species)]
+            n_selected = species_counts[selected_species].sum()
             if len(selected_species) == 1:
                 species_name = f"_{selected_species[0].replace(' ', '_')}"
             else:
                 species_name = f"_{'_'.join([sp.replace(' ', '_') for sp in selected_species[:5]])}"
                 if len(selected_species) > 5:
                     species_name += "_and_more"
-
-cols_to_drop = [
-    'Peptide ID', 'reference', 'lower_concentration', 'upper_concentration',
-    #unif'lower_uM', 
-    'upper_uM', 'ph_run', 'ph',
-    'Formation Propensity', 'in vitro Aggregation',
-    'Hydrophobic Moment', 'Penetration Depth', 'Tilt Angle',
-    'Propensity', 'Normalizer',
-    'Disordered Conformation Propensity', 'Linear Moment',
-    'Propensity to in vitro Aggregation',
-    'Angle Subtended by the Hydrophobic Residues',
-    'Amphiphilicity Index', 'Propensity to PPII coil',
-    'Normalized Hydrophobic Moment'
-]
 
 df = df.drop(columns=[c for c in cols_to_drop if c in df.columns], errors='ignore')
 
@@ -66,7 +71,10 @@ sns.heatmap(
     cbar_kws={'shrink': 0.8}
 )
 
-title_text = f'Correlation matrix {file}{species_name} (n = {n_data})'
+if n_selected is not None:
+    title_text = f'Correlation matrix {file}{species_name} (n = {n_selected})'
+else:
+    title_text = f'Correlation matrix {file}{species_name} (n = {rows_with_data.sum()})'
 plt.title(title_text, fontsize=14, pad=20)
 plt.xticks(rotation=45, ha='right', fontsize=8)
 plt.yticks(rotation=0, fontsize=8)
@@ -74,3 +82,4 @@ plt.tight_layout()
 output_filename = f"analysis/plots/{file.replace('.csv', '')}{species_name}.jpg"
 plt.savefig(output_filename, dpi=300)
 plt.show()
+
