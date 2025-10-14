@@ -35,7 +35,8 @@ if 'species' in df.columns:
 
 cols_to_drop = [
     'Peptide ID', 'reference', 'lower_concentration', 'upper_concentration',
-    'lower_uM', 'upper_uM', 'ph_run', 'ph',
+    #unif'lower_uM', 
+    'upper_uM', 'ph_run', 'ph',
     'Formation Propensity', 'in vitro Aggregation',
     'Hydrophobic Moment', 'Penetration Depth', 'Tilt Angle',
     'Propensity', 'Normalizer',
@@ -50,7 +51,7 @@ df = df.drop(columns=[c for c in cols_to_drop if c in df.columns], errors='ignor
 
 corr = df.corr(numeric_only=True)
 
-n_data = len(df)
+n_data = df.select_dtypes(include='number').dropna().shape[0]
 
 plt.figure(figsize=(10, 8))
 sns.heatmap(
@@ -63,10 +64,6 @@ sns.heatmap(
 )
 
 title_text = f'Correlation matrix {file}{species_name} (n = {n_data})'
-if len(title_text) > 80:
-    title_parts = title_text.split('_')
-    title_text = '_'.join(title_parts[:3]) + '\n' + '_'.join(title_parts[3:])
-
 plt.title(title_text, fontsize=14, pad=20)
 plt.xticks(rotation=45, ha='right', fontsize=8)
 plt.yticks(rotation=0, fontsize=8)
