@@ -76,7 +76,17 @@ def run():
                         name = (p.get("name") or "").strip()
                         if not name or name.upper() == "ID":
                             continue
-                        values[name] = str(p.get("value", "")).strip()
+                        value = str(p.get("value", "")).strip()
+                        
+                        # Adjust Net Charge for C-terminus peptides (C12, C16, etc.)
+                        nterminus = Config.get_nterminus()
+                        if name == "Net Charge" and nterminus and nterminus.startswith("C") and value:
+                            try:
+                                value = str(float(value) - 1.0)
+                            except ValueError:
+                                pass
+                        
+                        values[name] = value
                     # Fill all columns consistently
                     for name in props:
                         row[name] = values.get(name, "")

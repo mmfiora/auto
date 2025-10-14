@@ -3,6 +3,8 @@ import argparse
 import os
 import time
 import logging
+import glob
+import re
 from src.core.config import Config
 from src.core.exceptions import DBAASSPError
 from src.collectors import physchem
@@ -12,64 +14,83 @@ from src.processors import unified_results
 from src.core import common
 
 def main():
-    # Parse command line arguments
     parser = argparse.ArgumentParser(
         description="DBAASP peptide analysis pipeline",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python3 main_api.py                    # Auto-detect Nterminus from available files
-  python3 main_api.py --nterminus C16    # Use specific Nterminus (peptides_C16.csv)
-  python3 main_api.py --nterminus C12    # Use specific Nterminus (peptides_C12.csv)
+  python3 main_api.py                    # Interactive menu
+  python3 main_api.py --nterminus C16    # Use specific Nterminus
         """
     )
     parser.add_argument(
         '--nterminus', 
         type=str, 
-        help='Specify Nterminus to use (e.g., C16, C12). If not specified, auto-detects from available peptides_*.csv files'
+        help='Specify Nterminus to use (e.g., C16, C12). If not specified, shows interactive menu'
     )
     args = parser.parse_args()
     
-    # Setup logging
     logger = Config.setup_logging()
     logger.info("Starting DBAASP pipeline")
     
-    # Determine Nterminus: specified or auto-detected
     try:
         if args.nterminus:
-            # User specified Nterminus
             nterminus = args.nterminus
-            expected_file = f"peptides_{nterminus}.csv"
+            expected_file = f"data/input/peptides_{nterminus}.csv"
             
             if not os.path.exists(expected_file):
                 logger.error(f"Specified peptides file not found: {expected_file}")
                 print(f"Error: File {expected_file} not found")
-                print(f"Please ensure {expected_file} exists or use auto-detection (run without --nterminus)")
                 return 1
                 
             Config.set_nterminus(nterminus)
             logger.info(f"Using specified Nterminus: {nterminus}")
-            print(f"Using specified Nterminus: {nterminus}")
+            print(f"Using Nterminus: {nterminus}")
             
         else:
-            # Auto-detect Nterminus
-            nterminus = common.auto_detect_nterminus()
+            peptide_files = glob.glob("data/input/peptides_*.csv")
+            if not peptide_files:
+                logger.error("No peptides_*.csv files found in data/input/")
+                print("Error: No peptides files found in data/input/")
+                return 1
+            
+            nterminus_list = []
+            pattern = re.compile(r'peptides_([A-Z]+\d+)\.csv$')
+            
+            for f in sorted(peptide_files):
+                basename = os.path.basename(f)
+                match = pattern.match(basename)
+                if match:
+                    nt = match.group(1)
+                    if nt not in nterminus_list:
+                        nterminus_list.append(nt)
+            
+            if not nterminus_list:
+                print("Error: No valid peptides files found")
+                return 1
+            
+            print("\nAvailable Nterminus:")
+            for i, nt in enumerate(nterminus_list, 1):
+                print(f"{i}. {nt}")
+            
+            choice = input("\nSelect Nterminus number: ").strip()
+            if not choice.isdigit() or int(choice) < 1 or int(choice) > len(nterminus_list):
+                print("Invalid selection")
+                return 1
+            
+            nterminus = nterminus_list[int(choice) - 1]
             Config.set_nterminus(nterminus)
-            logger.info(f"Auto-detected Nterminus: {nterminus}")
-            print(f"Auto-detected Nterminus: {nterminus}")
+            logger.info(f"Selected Nterminus: {nterminus}")
+            print(f"\nUsing Nterminus: {nterminus}")
         
-        # Show configured files
-        print(f"Using input files: {Config.INPUT_PEPTIDES_CSV}, {Config.MIN_LIST_FILE}")
-        print(f"Output files will be: {Config.OUTPUT_PHYSCHEM_CSV}, {Config.OUTPUT_ACTIVITY_CSV}, {Config.OUTPUT_NORMALIZED_CSV}")
+        print(f"Input: {Config.INPUT_PEPTIDES_CSV}")
+        print(f"Output: {Config.OUTPUT_PHYSCHEM_CSV}, {Config.OUTPUT_ACTIVITY_CSV}, {Config.OUTPUT_UNIFIED_CSV}\n")
         
     except Exception as e:
         logger.error(f"Failed to configure Nterminus: {e}")
-        print(f"Error configuring Nterminus: {e}")
-        if not args.nterminus:
-            print("Please ensure you have peptides_{Nterminus}.csv files available (e.g., peptides_C16.csv)")
+        print(f"Error: {e}")
         return 1
     
-    # Validate configuration
     if not Config.validate_files():
         logger.error("Configuration validation failed")
         return 1
@@ -96,7 +117,7 @@ Examples:
         t1 = time.perf_counter()
         elapsed = t1 - t0
         logger.info(f"Pipeline completed successfully in {elapsed:.2f} seconds")
-        print(f"Done. Total elapsed: {elapsed:.2f} s")
+        print(f"\nDone! Total time: {elapsed:.2f} s")
         return 0
         
     except DBAASSPError as e:
@@ -110,4 +131,3 @@ Examples:
 
 if __name__ == "__main__":
     exit(main())
-

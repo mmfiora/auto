@@ -13,6 +13,13 @@ def get_activities(peptide_json):
         a = peptide_json.get("activityAgainstTargetSpecies")
     return a if isinstance(a, list) else []
 
+def get_unusual_amino_acids(peptide_json):
+    unusual = peptide_json.get("unusualAminoAcids", [])
+    if not unusual:
+        return ""
+    names = [aa.get("modificationType", {}).get("name", "") for aa in unusual if aa.get("modificationType")]
+    return ", ".join(filter(None, names))
+
 def collect_activity_keys(all_peptides):
     exclude = {"id", "activity", "activityMeasureValue"}
     order, seen = [], set()
@@ -69,7 +76,7 @@ def run():
 
         logger.info(f"Successfully fetched data for {len(peptides)} peptides")
         activity_cols = collect_activity_keys(peptides)
-        header = ["Peptide ID", "N TERMINUS", "SEQUENCE", "C TERMINUS"] + activity_cols
+        header = ["Peptide ID", "N TERMINUS", "SEQUENCE", "C TERMINUS", "Unusual Amino Acids"] + activity_cols
 
         try:
             with open(Config.OUTPUT_ACTIVITY_CSV, "w", newline="", encoding=Config.CSV_ENCODING) as f:
@@ -82,6 +89,7 @@ def run():
                         "N TERMINUS": (d.get("nTerminus") or {}).get("name", ""),
                         "SEQUENCE": d.get("sequence", ""),
                         "C TERMINUS": (d.get("cTerminus") or {}).get("name", ""),
+                        "Unusual Amino Acids": get_unusual_amino_acids(d),
                     }
                     acts = get_activities(d)
                     if not acts:
@@ -104,5 +112,3 @@ def run():
     except Exception as e:
         logger.error(f"Unexpected error in activity collection: {e}")
         raise
-
-

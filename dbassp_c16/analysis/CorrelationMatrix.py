@@ -2,16 +2,37 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Ask for the CSV file name
 file = input("Enter the CSV file name(without .csv): ")+ ".csv"
 
-# Define the path where the CSV is located
 path = r"C:\Users\mfiora\Documents\Repositories\auto\dbassp_c16\data\output\\" + file
 
-# Read the CSV file
 df = pd.read_csv(path)
 
-# Columns to exclude from the correlation
+species_name = ""
+if 'species' in df.columns:
+    species_counts = df['species'].value_counts()
+    species_list = sorted(species_counts.index)
+    
+    print("\nAvailable species:")
+    for i, sp in enumerate(species_list, 1):
+        count = species_counts[sp]
+        print(f"{i}. {sp} (n={count})")
+    print(f"{len(species_list) + 1}. All species")
+    
+    choice = input("\nSelect species number(s) separated by comma: ").strip()
+    if choice and choice.replace(',', '').replace(' ', '').isdigit():
+        selected_indices = [int(x.strip()) for x in choice.split(',')]
+        selected_species = [species_list[i-1] for i in selected_indices if 1 <= i <= len(species_list)]
+        
+        if selected_species:
+            df = df[df['species'].isin(selected_species)]
+            if len(selected_species) == 1:
+                species_name = f"_{selected_species[0].replace(' ', '_')}"
+            else:
+                species_name = f"_{'_'.join([sp.replace(' ', '_') for sp in selected_species[:5]])}"
+                if len(selected_species) > 5:
+                    species_name += "_and_more"
+
 cols_to_drop = [
     'Peptide ID', 'reference', 'lower_concentration', 'upper_concentration',
     'lower_uM', 'upper_uM', 'ph_run', 'ph',
@@ -25,16 +46,12 @@ cols_to_drop = [
     'Normalized Hydrophobic Moment'
 ]
 
-# Drop only existing columns
 df = df.drop(columns=[c for c in cols_to_drop if c in df.columns], errors='ignore')
 
-# Compute correlation matrix
 corr = df.corr(numeric_only=True)
 
-# Number of valid data points
-n_data = df.select_dtypes(include='number').dropna().shape[0]
+n_data = len(df)
 
-# Create the heatmap
 plt.figure(figsize=(10, 8))
 sns.heatmap(
     corr,
@@ -45,16 +62,15 @@ sns.heatmap(
     cbar_kws={'shrink': 0.8}
 )
 
-# Title and formatting
-plt.title(f'Correlation matrix (n = {n_data})', fontsize=14, pad=20)
+title_text = f'Correlation matrix {file}{species_name} (n = {n_data})'
+if len(title_text) > 80:
+    title_parts = title_text.split('_')
+    title_text = '_'.join(title_parts[:3]) + '\n' + '_'.join(title_parts[3:])
+
+plt.title(title_text, fontsize=14, pad=20)
 plt.xticks(rotation=45, ha='right', fontsize=8)
 plt.yticks(rotation=0, fontsize=8)
 plt.tight_layout()
+output_filename = f"analysis/plots/{file.replace('.csv', '')}{species_name}.jpg"
+plt.savefig(output_filename, dpi=300)
 plt.show()
-plt.savefig(f"{file}.jpg",dpi=300)
-
-
-
-
-
-
