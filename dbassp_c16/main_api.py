@@ -12,7 +12,8 @@ from src.collectors import activity
 from src.collectors import normalize_activity
 from src.processors import unified_results
 from src.core import common
-
+import os
+os.makedirs("logs", exist_ok=True)
 def main():
     parser = argparse.ArgumentParser(
         description="DBAASP peptide analysis pipeline",

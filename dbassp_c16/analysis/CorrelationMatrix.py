@@ -1,10 +1,11 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
 
-file = input("Enter the CSV file name(without .csv): ")+ ".csv"
-
-path = r"C:\Users\mfiora\Documents\Repositories\auto\dbassp_c16\data\output\\" + file
+base_dir = os.path.dirname(__file__)  # carpeta donde está este script
+file = input("Enter the CSV file name (without .csv): ") + ".csv"
+path = os.path.join(base_dir, "data", "output", file)
 
 df = pd.read_csv(path)
 
