@@ -1,0 +1,1257 @@
+﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,Unusual Amino Acids,targetSpecies,activityMeasureGroup,activityMeasureValue,concentration,unit,ph,ionicStrength,saltType,medium,cfu,cfuGroup,note,reference
+51,C16,KLlK,AMD,,Escherichia coli D21,MIC,MIC,100,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 3.12 µM,1
+51,C16,KLlK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,100,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 µM,1
+51,C16,KLlK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,100,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 1.56 µM,1
+51,C16,KLlK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,3.12,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 µM,1
+51,C16,KLlK,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,50,µM,,,,LBB,1E6,1E5 - 1E6,Gentamicin-resistant,1
+51,C16,KLlK,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,6.25,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.6 µM,1
+51,C16,KLlK,AMD,,Aspergillus flavus ATCC 9643,MIC,MIC,12.5,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 3.2 µM,1
+51,C16,KLlK,AMD,,Candida albicans ATCC 10231,MIC,MIC,6.25,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 µM,1
+51,C16,KLlK,AMD,,Cryptococcus neoformans ATCC MYA-422,MIC,MIC,1.5	,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 µM,1
+51,C16,KLlK,AMD,,Enterococcus faecalis V583,MIC,MIC,6.25-12.5,µg/ml,,,,BHIB,,,,2
+51,C16,KLlK,AMD,,Streptococcus mutans ATCC 27351,MIC,MIC,6.25-12.5,µg/ml,,,,BHIB,,,,2
+51,C16,KLlK,AMD,,Fusobacterium nucleatum ATCC 1594,MIC,MIC,12.5-25,µg/ml,,,,WCB,,,,2
+51,C16,KLlK,AMD,,Porphyromonas gingivalis ATCC 33277,MIC,MIC,6.25-12.5,µg/ml,,,,WCB,,,,2
+51,C16,KLlK,AMD,,Actinomyces naeslundii ATCC 17233,MIC,MIC,>25,µg/ml,,,,WCB,,,,2
+838,C16,KAaK,AMD,,Escherichia coli D21,MIC,MIC,6.25,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 3.12 micro M,1
+838,C16,KAaK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,6.25,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+838,C16,KAaK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 1.56 micro M,1
+838,C16,KAaK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,6.25,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+838,C16,KAaK,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,Gentamicin-resistant A. baumannii ,1
+838,C16,KAaK,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,6.25,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.6 micro M,1
+838,C16,KAaK,AMD,,Aspergillus flavus ATCC 9643,MIC,MIC,100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 3.2 micro M,1
+838,C16,KAaK,AMD,,Candida albicans ATCC 10231,MIC,MIC,12.5,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+838,C16,KAaK,AMD,,Cryptococcus neoformans ATCC MYA-422,MIC,MIC,3,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+838,C16,KAaK,AMD,,Enterococcus faecalis V583,MIC,MIC,12.5-25,µg/ml,,,,BHIB,,,,2
+838,C16,KAaK,AMD,,Streptococcus mutans ATCC 27351,MIC,MIC,>25,µg/ml,,,,BHIB,,,,2
+838,C16,KAaK,AMD,,Fusobacterium nucleatum ATCC 1594,MIC,MIC,12.5-25,µg/ml,,,,WCB,,,,2
+838,C16,KAaK,AMD,,Porphyromonas gingivalis ATCC 33277,MIC,MIC,>25,µg/ml,,,,WCB,,,,2
+838,C16,KAaK,AMD,,Actinomyces naeslundii ATCC 17233,MIC,MIC,>25,µg/ml,,,,WCB,,,,2
+860,C16,KGGk,AMD,,Escherichia coli D21,MIC,MIC,3,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 3.12 micro M,1
+860,C16,KGGk,AMD,,Escherichia coli ATCC 25922,MIC,MIC,3,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+860,C16,KGGk,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,6.25,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 1.56 micro M,1
+860,C16,KGGk,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,6.25,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+860,C16,KGGk,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,Gentamicin-resistant A. baumannii,1
+860,C16,KGGk,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,12.5,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.6 micro M,1
+860,C16,KGGk,AMD,,Aspergillus flavus ATCC 9643,MIC,MIC,12.5,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 3.2 micro M,1
+860,C16,KGGk,AMD,,Candida albicans ATCC 10231,MIC,MIC,12.5,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+860,C16,KGGk,AMD,,Cryptococcus neoformans ATCC MYA-422,MIC,MIC,1.5,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+860,C16,KGGk,AMD,,Murine macrophage cells RAW 264.7,LC50,LC50,>100,µM,,,,,,,,2
+862,C16,KKkK,AMD,,Escherichia coli D21,MIC,MIC,6.25,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 3.12 micro M,1
+862,C16,KKkK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,6.25,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+862,C16,KKkK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,3,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 1.56 micro M,1
+862,C16,KKkK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,6.25,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+862,C16,KKkK,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,Gentamicin-resistant A. baumannii,1
+862,C16,KKkK,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,25,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.6 micro M,1
+862,C16,KKkK,AMD,,Aspergillus flavus ATCC 9643,MIC,MIC,100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 3.2 micro M,1
+862,C16,KKkK,AMD,,Candida albicans ATCC 10231,MIC,MIC,25,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+862,C16,KKkK,AMD,,Cryptococcus neoformans ATCC MYA-422,MIC,MIC,1.5,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+863,C16,KkEK,AMD,,Escherichia coli D21,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 3.12 micro M,1
+863,C16,KkEK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+863,C16,KkEK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,50,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 1.56 micro M,1
+863,C16,KkEK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+863,C16,KkEK,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,37,µM,,,,LBB,1E6,1E5 - 1E6,Gentamicin-resistant A. baumannii,1
+863,C16,KkEK,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,25,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.6 micro M,1
+863,C16,KkEK,AMD,,Aspergillus flavus ATCC 9643,MIC,MIC,100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 3.2 micro M,1
+863,C16,KkEK,AMD,,Candida albicans ATCC 10231,MIC,MIC,100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+863,C16,KkEK,AMD,,Cryptococcus neoformans ATCC MYA-422,MIC,MIC,6.25,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+864,C16,GIGk,AMD,,Escherichia coli D21,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 3.12 micro M,1
+864,C16,GIGk,AMD,,Escherichia coli ATCC 25922,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+864,C16,GIGk,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 1.56 micro M,1
+864,C16,GIGk,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,MIC for Gentamicin 6.25 micro M,1
+864,C16,GIGk,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,Gentamicin-resistant A. baumannii,1
+864,C16,GIGk,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,>100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.6 micro M,1
+864,C16,GIGk,AMD,,Aspergillus flavus ATCC 9643,MIC,MIC,>100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 3.2 micro M,1
+864,C16,GIGk,AMD,,Candida albicans ATCC 10231,MIC,MIC,>100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+864,C16,GIGk,AMD,,Cryptococcus neoformans ATCC MYA-422,MIC,MIC,100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,MIC for Ampotericin B 1.5 micro M,1
+1124,C16,KK,AMD,,Staphylococcus aureus,MIC,MIC,2-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,30 MSSA clinical isolates,1
+1124,C16,KK,AMD,,Staphylococcus aureus,MBC,MBC,2-32,µg/ml,,,,MHA,5E5,1E5 - 1E6,30 MSSA clinical isolates,1
+1124,C16,KK,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSA,1
+1124,C16,KK,AMD,,Staphylococcus aureus ATCC 29213,MBC,MBC,16,µg/ml,,,,MHA,5E5,1E5 - 1E6,MRSA,1
+1124,C16,KK,AMD,,Staphylococcus aureus ATCC 43300,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSA,1
+1124,C16,KK,AMD,,Staphylococcus aureus ATCC 43300,MBC,MBC,16,µg/ml,,,,MHA,5E5,1E5 - 1E6,MRSA,1
+1124,C16,KK,AMD,,Staphylococcus aureus MR,MIC,MIC,2-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,30 MRSA clinical isolates,1
+1124,C16,KK,AMD,,Staphylococcus aureus MR,MBC,MBC,2-32,µg/ml,,,,MHA,5E5,1E5 - 1E6,30 MRSA clinical isolates,1
+1124,C16,KK,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+1124,C16,KK,AMD,,Enterococcus faecalis ATCC 29212,MBC,MBC,8,µg/ml,,,,MHA,5E5,1E5 - 1E6,,1
+1124,C16,KK,AMD,,Enterococcus faecalis,MIC,MIC,2-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,30 VSE clinical isolates,1
+1124,C16,KK,AMD,,Enterococcus faecalis,MBC,MBC,2-32,µg/ml,,,,MHA,5E5,1E5 - 1E6,30 VSE clinical isolates,1
+1124,C16,KK,AMD,,Enterococcus faecalis VR,MIC,MIC,2-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,14 VRE clinical isolates,1
+1124,C16,KK,AMD,,Enterococcus faecalis VR,MBC,MBC,2-32,µg/ml,,,,MHA,5E5,1E5 - 1E6,14 VRE clinical isolates,1
+1124,C16,KK,AMD,,Streptococcus pyogenes,MIC,MIC,1-8,µg/ml,,,,MHB,5E5,1E5 - 1E6,30 clinical isolates,1
+1124,C16,KK,AMD,,Streptococcus pyogenes,MBC,MBC,2-16,µg/ml,,,,MHA,5E5,1E5 - 1E6,30 clinical isolates,1
+1124,C16,KK,AMD,,Streptococcus pyogenes ATCC 19615,MIC,MIC,2,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+1124,C16,KK,AMD,,Streptococcus pyogenes ATCC 19615,MBC,MBC,4,µg/ml,,,,MHA,5E5,1E5 - 1E6,,1
+1124,C16,KK,AMD,,Rhodococcus equi,MIC,MIC,2-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,12 clinical isolates,1
+1124,C16,KK,AMD,,Rhodococcus equi,MBC,MBC,4-32,µg/ml,,,,MHA,5E5,1E5 - 1E6,12 clinical isolates,1
+1124,C16,KK,AMD,,Rhodococcus equi ATCC 6939,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+1124,C16,KK,AMD,,Rhodococcus equi ATCC 6939,MBC,MBC,32,µg/ml,,,,MHA,5E5,1E5 - 1E6,,1
+1124,C16,KK,AMD,,Enterococcus faecalis ATCC 51299,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,VRE,1
+1124,C16,KK,AMD,,Enterococcus faecalis ATCC 51299,MBC,MBC,16,µg/ml,,,,MHA,5E5,1E5 - 1E6,VRE,1
+1124,C16,KK,AMD,,Candida parapsilosis ATCC 22019,MIC,MIC,4.0-16,µg/ml,,,,RPMI-1640,,,,2
+1124,C16,KK,AMD,,Microsporum canis,MIC,MIC,0.06-16,µg/ml,,,,RPMI-1640,,,MIC range for 9 clinical isolates,2
+1124,C16,KK,AMD,,Microsporum canis,MFC,MFC,16-128,µg/ml,,,,SDA,,,MFC range for 9 clinical isolates,2
+1124,C16,KK,AMD,,Trichophyton rubrum,MIC,MIC,0.015-64,µg/ml,,,,RPMI-1640,,,MIC range for 6 clinical isolates,2
+1124,C16,KK,AMD,,Trichophyton rubrum,MFC,MFC,16-64,µg/ml,,,,SDA,,,MFC range for 6 clinical isolates,2
+1124,C16,KK,AMD,,Trichophyton mentagrophytes,MIC,MIC,0.5-8.0,µg/ml,,,,RPMI-1640,,,MIC range for 5 clinical isolates,2
+1124,C16,KK,AMD,,Trichophyton mentagrophytes,MFC,MFC,16-32,µg/ml,,,,SDA,,,MFC range for 5 clinical isolates,2
+1124,C16,KK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Escherichia coli ATCC 25922,MBC,MBC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Proteus mirabilis PCM 543,MIC,MIC,256,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Proteus mirabilis PCM 543,MBC,MBC,512,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Pseudomonas aeruginosa ATCC 9027,MBC,MBC,64,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Staphylococcus aureus ATCC 25923,MBC,MBC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Staphylococcus epidermidis PCM 2118,MIC,MIC,1,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Staphylococcus epidermidis PCM 2118,MBC,MBC,1,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Streptococcus pneumoniae ATCC 49619,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Streptococcus pneumoniae ATCC 49619,MBC,MBC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Streptococcus pyogenes PCM 465,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Streptococcus pyogenes PCM 465,MBC,MBC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,3
+1124,C16,KK,AMD,,Escherichia coli UB1005,MIC,MIC,2,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,4
+1124,C16,KK,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,4,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,4
+1124,C16,KK,AMD,,Candida albicans 105,MIC,MIC,16,µg/ml,,,,MHB,1E4,1E3 - 1E4,,4
+1124,C16,KK,AMD,,Cutibacterium acnes,,-,NA,,,,,BHIB,1E5-1E6,1E5 - 1E6,,4
+1124,C16,KK,AMD,,Bacillus subtilis ATCC 6633,MIC,MIC,2,µg/ml,,,,MHB,,,,5
+1124,C16,KK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,MHB,,,,5
+1124,C16,KK,AMD,,Staphylococcus epidermidis ATCC 14490,MIC,MIC,4,µg/ml,,,,MHB,,,,5
+1124,C16,KK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,,,,5
+1124,C16,KK,AMD,,Klebsiella pneumoniae ATCC 200603,MIC,MIC,16,µg/ml,,,,MHB,,,,5
+1124,C16,KK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,128,µg/ml,,,,MHB,,,,5
+1124,C16,KK,AMD,,Candida albicans ATCC 10231,MIC,MIC,128,µg/ml,,,,SDB,,,,5
+1124,C16,KK,AMD,,Candida tropicalis PCM 2681,MIC,MIC,128,µg/ml,,,,SDB,,,,5
+1125,C16,KK,,,Staphylococcus aureus,MIC,MIC,2-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,30 MSSA clinical isolates,1
+1125,C16,KK,,,Staphylococcus aureus,MBC,MBC,2-32,µg/ml,,,,MHA,5E5,1E5 - 1E6,30 MSSA clinical isolates,1
+1125,C16,KK,,,Staphylococcus aureus MR,MIC,MIC,2-32,µg/ml,,,,MHB,5E5,1E5 - 1E6,30 MRSA clinical isolates,1
+1125,C16,KK,,,Staphylococcus aureus MR,MBC,MBC,2-32,µg/ml,,,,MHA,5E5,1E5 - 1E6,30 MRSA clinical isolates,1
+1125,C16,KK,,,Staphylococcus aureus ATCC 29213,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+1125,C16,KK,,,Staphylococcus aureus ATCC 29213,MBC,MBC,16,µg/ml,,,,MHA,5E5,1E5 - 1E6,MRSA,1
+1125,C16,KK,,,Staphylococcus aureus ATCC 43300,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSA,1
+1125,C16,KK,,,Staphylococcus aureus ATCC 43300,MBC,MBC,16,µg/ml,,,,MHA,5E5,1E5 - 1E6,MRSA,1
+1125,C16,KK,,,Enterococcus faecalis,MIC,MIC,2-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,30 VSE clinical isolates,1
+1125,C16,KK,,,Enterococcus faecalis,MBC,MBC,2-32,µg/ml,,,,MHA,5E5,1E5 - 1E6,30 VSE clinical isolates,1
+1125,C16,KK,,,Enterococcus faecalis VR,MIC,MIC,2-32,µg/ml,,,,MHB,5E5,1E5 - 1E6,14 VRE clinical isolates,1
+1125,C16,KK,,,Enterococcus faecalis VR,MBC,MBC,2-64,µg/ml,,,,MHA,5E5,1E5 - 1E6,14 VRE clinical isolates,1
+1125,C16,KK,,,Enterococcus faecalis ATCC 29212,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+1125,C16,KK,,,Enterococcus faecalis ATCC 29212,MBC,MBC,8,µg/ml,,,,MHA,5E5,1E5 - 1E6,,1
+1125,C16,KK,,,Enterococcus faecalis ATCC 51299,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,VRE,1
+1125,C16,KK,,,Enterococcus faecalis ATCC 51299,MBC,MBC,16,µg/ml,,,,MHA,5E5,1E5 - 1E6,VRE,1
+1125,C16,KK,,,Streptococcus pyogenes,MIC,MIC,1-8,µg/ml,,,,MHB,5E5,1E5 - 1E6,30 clinical isolates,1
+1125,C16,KK,,,Streptococcus pyogenes,MBC,MBC,2-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,30 clinical isolates,1
+1125,C16,KK,,,Streptococcus pyogenes ATCC 19615,MIC,MIC,2,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+1125,C16,KK,,,Streptococcus pyogenes ATCC 19615,MBC,MBC,4,µg/ml,,,,MHA,5E5,1E5 - 1E6,,1
+1125,C16,KK,,,Rhodococcus equi,MIC,MIC,2-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,12 Clinical isolates,1
+1125,C16,KK,,,Rhodococcus equi,MBC,MBC,2-16,µg/ml,,,,MHA,5E5,1E5 - 1E6,12 Clinical isolates,1
+1125,C16,KK,,,Rhodococcus equi ATCC 6939,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+1125,C16,KK,,,Rhodococcus equi ATCC 6939,MBC,MBC,16,µg/ml,,,,MHA,5E5,1E5 - 1E6,,1
+1125,C16,KK,,,Escherichia coli UB1005,MIC,MIC,32,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,2
+1125,C16,KK,,,Staphylococcus aureus SAP 0017,MIC,MIC,16,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,2
+1125,C16,KK,,,Candida albicans 105,MIC,MIC,64,µg/ml,,,,MHB,1E4,1E3 - 1E4,,2
+1125,C16,KK,,,Cutibacterium acnes,MIC,MIC,1-4,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,2
+6197,C16,KGGK,,,Staphylococcus aureus ATCC 29213,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6197,C16,KGGK,,,Staphylococcus aureus ATCC 33592,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSA,1
+6197,C16,KGGK,,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6197,C16,KGGK,,,Staphylococcus epidermidis,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,Methicillin-resistant clinical isolate CAN-ICU61589,1
+6197,C16,KGGK,,,Enterococcus faecalis ATCC 29212,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6197,C16,KGGK,,,Enterococcus faecium ATCC 27270,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6197,C16,KGGK,,,Streptococcus pneumoniae ATCC 49619,MIC,MIC,128,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6197,C16,KGGK,,,Escherichia coli ATCC 25922,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6197,C16,KGGK,,,Escherichia coli CAN-ICU 61714,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,Gentamicin-resistant clinical isolate,1
+6197,C16,KGGK,,,Escherichia coli CAN-ICU 63074,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,Clinical isolate,1
+6197,C16,KGGK,,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,64,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6197,C16,KGGK,,,Pseudomonas aeruginosa,MIC,MIC,64,µg/ml,,,,MHB,1E5,1E4 - 1E5,Gentamicin-resistant clinical isolate CAN-ICU62308,1
+6197,C16,KGGK,,,Stenotrophomonas maltophilia,MIC,MIC,128,µg/ml,,,,MHB,1E5,1E4 - 1E5,Gentamicin-resistant clinical isolate CAN-ICU 62584,1
+6197,C16,KGGK,,,Acinetobacter baumannii,MIC,MIC,128,µg/ml,,,,MHB,1E5,1E4 - 1E5,Clinical isolate CAN-ICU63169,1
+6197,C16,KGGK,,,Klebsiella pneumoniae ATCC 13883,MIC,MIC,64,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6198,C16,KKKK,,,Staphylococcus aureus ATCC 29213,MIC,MIC,32,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6198,C16,KKKK,,,Staphylococcus aureus ATCC 33592,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSA,1
+6198,C16,KKKK,,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6198,C16,KKKK,,,Staphylococcus epidermidis,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,Methicillin-resistant clinical isolate CAN-ICU61589,1
+6198,C16,KKKK,,,Enterococcus faecalis ATCC 29212,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6198,C16,KKKK,,,Enterococcus faecium ATCC 27270,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6198,C16,KKKK,,,Streptococcus pneumoniae ATCC 49619,MIC,MIC,>64,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6198,C16,KKKK,,,Escherichia coli ATCC 25922,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6198,C16,KKKK,,,Escherichia coli CAN-ICU 61714,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,Gentamicin-resistant clinical isolate,1
+6198,C16,KKKK,,,Escherichia coli CAN-ICU 63074,MIC,MIC,32,µg/ml,,,,MHB,1E5,1E4 - 1E5,Clinical isolate,1
+6198,C16,KKKK,,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,64,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6198,C16,KKKK,,,Pseudomonas aeruginosa,MIC,MIC,256,µg/ml,,,,MHB,1E5,1E4 - 1E5,Gentamicin-resistant clinical isolate CAN-ICU62308,1
+6198,C16,KKKK,,,Stenotrophomonas maltophilia,MIC,MIC,256,µg/ml,,,,MHB,1E5,1E4 - 1E5,Gentamicin-resistant clinical isolate CAN-ICU 62584,1
+6198,C16,KKKK,,,Acinetobacter baumannii,MIC,MIC,256,µg/ml,,,,MHB,1E5,1E4 - 1E5,Clinical isolate CAN-ICU63169,1
+6198,C16,KKKK,,,Klebsiella pneumoniae ATCC 13883,MIC,MIC,256,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6199,C16,KAAK,,,Staphylococcus aureus ATCC 29213,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6199,C16,KAAK,,,Staphylococcus aureus ATCC 33592,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSA,1
+6199,C16,KAAK,,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6199,C16,KAAK,,,Staphylococcus epidermidis,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,Methicillin-resistant clinical isolate CAN-ICU61589,1
+6199,C16,KAAK,,,Enterococcus faecalis ATCC 29212,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6199,C16,KAAK,,,Enterococcus faecium ATCC 27270,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6199,C16,KAAK,,,Streptococcus pneumoniae ATCC 49619,MIC,MIC,128,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6199,C16,KAAK,,,Escherichia coli ATCC 25922,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6199,C16,KAAK,,,Escherichia coli CAN-ICU 61714,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,Gentamicin-resistant clinical isolate,1
+6199,C16,KAAK,,,Escherichia coli CAN-ICU 63074,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,Clinical isolate,1
+6199,C16,KAAK,,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,32,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+6199,C16,KAAK,,,Pseudomonas aeruginosa,MIC,MIC,64,µg/ml,,,,MHB,1E5,1E4 - 1E5,Gentamicin-resistant clinical isolate CAN-ICU62308,1
+6199,C16,KAAK,,,Stenotrophomonas maltophilia,MIC,MIC,128,µg/ml,,,,MHB,1E5,1E4 - 1E5,Gentamicin-resistant clinical isolate CAN-ICU 62584,1
+6199,C16,KAAK,,,Acinetobacter baumannii,MIC,MIC,128,µg/ml,,,,MHB,1E5,1E4 - 1E5,Clinical isolate CAN-ICU63169,1
+6199,C16,KAAK,,,Klebsiella pneumoniae ATCC 13883,MIC,MIC,128,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7322,C16,XX,AMD,"ORN, ORN",Escherichia coli MTCC 723,MIC,MIC,12.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7322,C16,XX,AMD,"ORN, ORN",Pseudomonas aeruginosa MTCC 2295,MIC,MIC,6.25,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7322,C16,XX,AMD,"ORN, ORN",Staphylococcus aureus MTCC 3160,MIC,MIC,3.1,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7322,C16,XX,AMD,"ORN, ORN",Bacillus subtilis MTCC 2763,MIC,MIC,12.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7322,C16,XX,AMD,"ORN, ORN",Staphylococcus aureus ATCC BAA-1720,MIC,MIC,12.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSA,1
+7322,C16,XX,AMD,"ORN, ORN",Staphylococcus epidermidis ATCC 51625,MIC,MIC,25,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSE,1
+7322,C16,XX,AMD,"ORN, ORN",Candida albicans ATCC 24433,MIC,MIC,6.25,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7322,C16,XX,AMD,"ORN, ORN",Aspergillus fumigatus ATCC 42203,MIC,MIC,6.25,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7322,C16,XX,AMD,"ORN, ORN",Aspergillus niger ATCC 64028,MIC,MIC,12.5,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7322,C16,XX,AMD,"ORN, ORN",Cryptococcus neoformans ATCC 2344,MIC,MIC,6.25,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Escherichia coli MTCC 723,MIC,MIC,6.25,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Pseudomonas aeruginosa MTCC 2295,MIC,MIC,3.1,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Staphylococcus aureus MTCC 3160,MIC,MIC,6.25,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Bacillus subtilis MTCC 2763,MIC,MIC,12.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Staphylococcus aureus ATCC BAA-1720,MIC,MIC,25,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSA,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Staphylococcus epidermidis ATCC 51625,MIC,MIC,12.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSE,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Candida albicans ATCC 24433,MIC,MIC,3.1,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Aspergillus fumigatus ATCC 42203,MIC,MIC,3.1,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Aspergillus niger ATCC 64028,MIC,MIC,1.5,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Cryptococcus neoformans ATCC 2344,MIC,MIC,6.25,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Staphylococcus aureus,MIC,MIC,4.5-5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML03054, PGI/DML03149",2
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Staphylococcus epidermidis,MIC,MIC,4.5.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0057, GMCH/R- Amp008",2
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Streptococcus pneumoniae,MIC,MIC,3.1-3.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML02468, PGI/DML02213",2
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Enterococcus faecium,MIC,MIC,3-5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0102, GMCH/R-Pen003",2
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Enterococcus faecalis,MIC,MIC,3.1-5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0091, GMCH/R-Gen011",2
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Escherichia coli,MIC,MIC,5.5-6.25,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML02250, PGI/DML02292",2
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Pseudomonas aeruginosa,MIC,MIC,2.5-3.1,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML02084, PGI/DML01991",2
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Klebsiella pneumoniae,MIC,MIC,3.1-3.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0127, GMCH/R-Kan006",2
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Acinetobacter baumannii,MIC,MIC,4-5.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0083, GMCH/R-Imi003",2
+7342,C16,XXX,AMD,"ORN, ORN, ORN",Haemophilus Influenzae,MIC,MIC,5-5.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML01751, PGI/DML01744",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Escherichia coli MTCC 723,MIC,MIC,1.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Pseudomonas aeruginosa MTCC 2295,MIC,MIC,1.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Staphylococcus aureus MTCC 3160,MIC,MIC,3.1,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Bacillus subtilis MTCC 2763,MIC,MIC,6.25,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Staphylococcus aureus ATCC BAA-1720,MIC,MIC,25,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSA,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Staphylococcus epidermidis ATCC 51625,MIC,MIC,12.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSE,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Candida albicans ATCC 24433,MIC,MIC,3.1,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Aspergillus fumigatus ATCC 42203,MIC,MIC,1.5,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Aspergillus niger ATCC 64028,MIC,MIC,6.25,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Cryptococcus neoformans ATCC 2344,MIC,MIC,3.1,µg/ml,,,,PDB,2E3,1E3 - 1E4,,1
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Staphylococcus aureus,MIC,MIC,3.1-4.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML03054, PGI/DML03149",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Staphylococcus epidermidis,MIC,MIC,2-2.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0057, GMCH/R- Amp008",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Streptococcus pneumoniae,MIC,MIC,2.5-10.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML02468, PGI/DML02213",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Enterococcus faecium,MIC,MIC,3.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0102, GMCH/R-Pen003",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Enterococcus faecalis,MIC,,3.5-7.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0091, GMCH/R-Gen011",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Escherichia coli,MIC,MIC,2-12.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML02250, PGI/DML02292",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Pseudomonas aeruginosa,MIC,MIC,3-6.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML02084, PGI/DML01991",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Klebsiella pneumoniae,MIC,MIC,2-5.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0127, GMCH/R-Kan006",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Acinetobacter baumannii,MIC,MIC,6.5-10,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates GMCH/B0083, GMCH/R-Imi003",2
+7348,C16,XXXX,AMD,"ORN, ORN, ORN, ORN",Haemophilus Influenzae,MIC,MIC,7.5-12.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,"DR clinical isolates PGI/DML01751, PGI/DML01744",2
+7542,C16,XXWW,AMD,"ORN, ORN",Staphylococcus epidermidis ATCC 35984,MIC,MIC,7.81,µg/ml,,,,MHB,1E6,1E5 - 1E6,MRSE,1
+7542,C16,XXWW,AMD,"ORN, ORN",Staphylococcus epidermidis ATCC 35984,MBC,MBC,15.63,µg/ml,,,,MHB,1E6,1E5 - 1E6,MRSE,1
+7542,C16,XXWW,AMD,"ORN, ORN",Staphylococcus aureus ATCC 29213,MIC,MIC,7.81,µg/ml,,,,MHB,1E6,1E5 - 1E6,,1
+7542,C16,XXWW,AMD,"ORN, ORN",Staphylococcus aureus ATCC 29213,MBC,MBC,15.63,µg/ml,,,,MHB,1E6,1E5 - 1E6,,1
+7542,C16,XXWW,AMD,"ORN, ORN",Staphylococcus aureus ATCC 43300,MIC,MIC,3.91,µg/ml,,,,MHB,1E6,1E5 - 1E6,MRSA,1
+7542,C16,XXWW,AMD,"ORN, ORN",Staphylococcus aureus ATCC 43300,MBC,MBC,31.25,µg/ml,,,,MHB,1E6,1E5 - 1E6,MRSA,1
+7542,C16,XXWW,AMD,"ORN, ORN",Pseudomonas aeruginosa PAO1,MIC,MIC,31.25,µg/ml,,,,MHB,1E6,1E5 - 1E6,,1
+7542,C16,XXWW,AMD,"ORN, ORN",Pseudomonas aeruginosa PAO1,MBC,MBC,62.5,µg/ml,,,,MHB,1E6,1E5 - 1E6,,1
+7542,C16,XXWW,AMD,"ORN, ORN",Escherichia coli NCTC 8196,MIC,MIC,62.5,µg/ml,,,,MHB,1E6,1E5 - 1E6,,1
+7542,C16,XXWW,AMD,"ORN, ORN",Escherichia coli NCTC 8196,MBC,MBC,125,µg/ml,,,,MHB,1E6,1E5 - 1E6,,1
+7542,C16,XXWW,AMD,"ORN, ORN",Candida tropicalis NCTC 7393,MIC,MIC,15.63,µg/ml,,,,MHB,1E6,1E5 - 1E6,,1
+7542,C16,XXWW,AMD,"ORN, ORN",Candida tropicalis NCTC 7393,MFC,MFC,15.63,µg/ml,,,,MHB,1E6,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Escherichia coli ATCC 25922,MIC,MIC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Escherichia coli ATCC 25922,MBC,MBC,32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Proteus mirabilis PCM 543,MIC,MIC,256,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Proteus mirabilis PCM 543,MBC,MBC,512,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Pseudomonas aeruginosa ATCC 9027,MBC,MBC,256,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Staphylococcus aureus ATCC 25923,MBC,MBC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Staphylococcus epidermidis PCM 2118,MIC,MIC,1,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Staphylococcus epidermidis PCM 2118,MBC,MBC,1,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Streptococcus pneumoniae ATCC 49619,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Streptococcus pneumoniae ATCC 49619,MBC,MBC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Streptococcus pyogenes PCM 465,MIC,MIC,4,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Streptococcus pyogenes PCM 465,MBC,MBC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+7580,C16,RR,AMD,,Candida albicans ATCC 10231,MIC,MIC,128,µg/ml,,,,SDB,5E4,1E4 - 1E5,,2
+7580,C16,RR,AMD,,Candida albicans ATCC 10231,MFC,MFC,256,µg/ml,,,,SDA,,,,2
+7580,C16,RR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,3
+7580,C16,RR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,3
+7580,C16,RR,AMD,,Candida albicans ATCC 10231,MIC,MIC,4,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,3
+7580,C16,RR,AMD,,Enterococcus faecium ATCC 700221,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,3
+7580,C16,RR,AMD,,Staphylococcus aureus ATCC 33591,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,3
+7580,C16,RR,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,3
+7580,C16,RR,AMD,,Acinetobacter baumannii ATCC BAA-1605,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,3
+7580,C16,RR,AMD,,Klebsiella aerogenes ATCC 13048,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,3
+7927,C16,KGK,AMD,,Staphylococcus aureus ATCC 29213,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Staphylococcus aureus ATCC 29213,MIC90,MIC90,256,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Staphylococcus aureus ATCC 33592,MIC90,MIC90,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Staphylococcus aureus ATCC 33592,MIC90,MIC90,256,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Staphylococcus epidermidis 81388,MIC90,MIC90,<=0.25,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Staphylococcus epidermidis 81388,MIC90,MIC90,256,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Staphylococcus epidermidis 61589,MIC90,MIC90,<=0.25,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Staphylococcus epidermidis 61589,MIC90,MIC90,256,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Enterococcus faecalis ATCC 29212,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Enterococcus faecalis ATCC 29212,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Enterococcus faecium ATCC 27270,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Enterococcus faecium ATCC 27270,MIC90,MIC90,256,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Streptococcus pneumoniae ATCC 49619,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Streptococcus pneumoniae ATCC 49619,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Escherichia coli ATCC 25922,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Escherichia coli ATCC 25922,MIC90,MIC90,256,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Escherichia coli CAN-ICU 61714,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Escherichia coli CAN-ICU 61714,MIC90,MIC90,256,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Escherichia coli CAN-ICU 63074,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Escherichia coli CAN-ICU 63074,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC90,MIC90,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Pseudomonas aeruginosa CAN-ICU 62308,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Pseudomonas aeruginosa CAN-ICU 62308,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Stenotrophomonas maltophilia CAN-ICU 62584,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Stenotrophomonas maltophilia CAN-ICU 62584,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Acinetobacter baumannii CAN-ICU 63169,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Acinetobacter baumannii CAN-ICU 63169,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Klebsiella pneumoniae ATCC 13883,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7927,C16,KGK,AMD,,Klebsiella pneumoniae ATCC 13883,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7927,C16,KGK,AMD,,Bacillus subtilis ATCC 6633,MIC,MIC,2,µg/ml,,,,MHB,,,,2
+7927,C16,KGK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,16,µg/ml,,,,MHB,,,,2
+7927,C16,KGK,AMD,,Staphylococcus epidermidis ATCC 14490,MIC,MIC,4,µg/ml,,,,MHB,,,,2
+7927,C16,KGK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,,,,2
+7927,C16,KGK,AMD,,Klebsiella pneumoniae ATCC 200603,MIC,MIC,16,µg/ml,,,,MHB,,,,2
+7927,C16,KGK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,MHB,,,,2
+7927,C16,KGK,AMD,,Candida albicans ATCC 10231,MIC,MIC,64,µg/ml,,,,SDB,,,,2
+7927,C16,KGK,AMD,,Candida tropicalis PCM 2681,MIC,MIC,>512,µg/ml,,,,SDB,,,,2
+7927,C16,KGK,AMD,,Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,3
+7927,C16,KGK,AMD,,Human prostate cancer DU145,50% Cell death,CC50,>30,µM,,,, ,,,,3
+7927,C16,KGK,AMD,,Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,>30,µM,,,, ,,,,3
+7927,C16,KGK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,64,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,4
+7927,C16,KGK,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,32,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,4
+7927,C16,KGK,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,32,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,4
+7927,C16,KGK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,16,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,4
+7927,C16,KGK,AMD,,Pseudomonas aeruginosa ATCC 9029,MIC,MIC,256,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,4
+7927,C16,KGK,AMD,,Proteus mirabilis PCM 543,MIC,MIC,512,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,4
+7927,C16,KGK,AMD,,Staphylococcus aureus 357426,MIC,MIC,4,µg/ml,,,,CAMHB,,,MRSA clinical isolate,"5, 6"
+7927,C16,KGK,AMD,,Staphylococcus aureus 355872,MIC,MIC,1,µg/ml,,,,CAMHB,,,MRSA clinical isolate,"5, 6"
+7927,C16,KGK,AMD,,Staphylococcus aureus 348839,MIC,MIC,8,µg/ml,,,,CAMHB,,,MRSA clinical isolate,"5, 6"
+7927,C16,KGK,AMD,,Staphylococcus aureus MR,MIC,MIC,16-32,µg/ml,,,,CAMHB,,,"Clinical isolates: 350355, 360212","5, 6"
+7927,C16,KGK,AMD,,Staphylococcus aureus ATCC 43300,MIC,MIC,32,µg/ml,,,,CAMHB,,,,"5, 6"
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 29213,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 29213,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 33592,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 33592,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Staphylococcus epidermidis 81388,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Staphylococcus epidermidis 81388,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Staphylococcus epidermidis 61589,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Staphylococcus epidermidis 61589,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Enterococcus faecalis ATCC 29212,MIC90,MIC90,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Enterococcus faecalis ATCC 29212,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Enterococcus faecium ATCC 27270,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Enterococcus faecium ATCC 27270,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Streptococcus pneumoniae ATCC 49619,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Streptococcus pneumoniae ATCC 49619,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Escherichia coli ATCC 25922,MIC90,MIC90,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Escherichia coli ATCC 25922,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Escherichia coli CAN-ICU 61714,MIC90,MIC90,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Escherichia coli CAN-ICU 61714,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Escherichia coli CAN-ICU 63074,MIC90,MIC90,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Escherichia coli CAN-ICU 63074,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Pseudomonas aeruginosa CAN-ICU 62308,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Pseudomonas aeruginosa CAN-ICU 62308,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Stenotrophomonas maltophilia CAN-ICU 62584,MIC90,MIC90,512,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Stenotrophomonas maltophilia CAN-ICU 62584,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Acinetobacter baumannii CAN-ICU 63169,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Acinetobacter baumannii CAN-ICU 63169,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Klebsiella pneumoniae ATCC 13883,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7973,C16,KKK,AMD,,Klebsiella pneumoniae ATCC 13883,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% BSA,1
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+7973,C16,KKK,AMD,,Staphylococcus epidermidis PCM 2118,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+7973,C16,KKK,AMD,,Bacillus subtilis ATCC 6633,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+7973,C16,KKK,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+7973,C16,KKK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+7973,C16,KKK,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+7973,C16,KKK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+7973,C16,KKK,AMD,,Proteus vulgaris PCM 2668,MIC,MIC,>512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+7973,C16,KKK,AMD,,Candida albicans ATCC 10231,MIC,MIC,128,µg/ml,,,,SDB,1E3,1E2 - 1E3,,2
+7973,C16,KKK,AMD,,Candida tropicalis PCM 2681,MIC,MIC,128,µg/ml,,,,SDB,1E3,1E2 - 1E3,,2
+7973,C16,KKK,AMD,,Aspergillus niger ATCC 16404,MIC,MIC,128,µg/ml,,,,SDB,1E3,1E2 - 1E3,,2
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS (ref. 3),"3, 6"
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,4,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: AcOH/BSA,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,32,µg/ml,,,,MHB,4E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,4,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: AcOH/BSA,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,4,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,4,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: AcOH/BSA,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS,3
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA,3
+7973,C16,KKK,AMD,,Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,4
+7973,C16,KKK,AMD,,Human prostate cancer DU145,50% Cell death,CC50,9.0,µM,,,, ,,,,4
+7973,C16,KKK,AMD,,Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,16.0,µM,,,, ,,,,4
+7973,C16,KKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,64,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,5
+7973,C16,KKK,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,16,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,5
+7973,C16,KKK,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,16,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,5
+7973,C16,KKK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,32,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,5
+7973,C16,KKK,AMD,,Pseudomonas aeruginosa ATCC 9029,MIC,MIC,64,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,5
+7973,C16,KKK,AMD,,Proteus mirabilis PCM 543,MIC,MIC,256,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,5
+7973,C16,KKK,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,6
+7973,C16,KKK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,6
+7973,C16,KKK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,6
+7973,C16,KKK,AMD,,Candida albicans ATCC 10231,MIC,MIC,32,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,6
+7973,C16,KKK,AMD,,Candida glabrata ATCC 15126,MIC,MIC,32,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,6
+7973,C16,KKK,AMD,,Yarrowia lipolytica PCM 2680-FY,MIC,MIC,16,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,6
+7973,C16,KKK,AMD,,Candida tropicalis PCM 2709-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,6
+7973,C16,KKK,AMD,,Human cervical carcinoma HeLa,IC50,IC50,3.9±1.1,µg/ml,,,,,,,,6
+8348,C16,KYR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,56.2,µg/ml,,,,LBB,,,,1
+8348,C16,KYR,AMD,,Staphylococcus aureus ATCC 25923,MBC,MBC,112.5,µg/ml,,,,LBB,,,,1
+8348,C16,KYR,AMD,,Staphylococcus epidermidis ATCC 12228,MIC,MIC,56.2,µg/ml,,,,LBB,,,,1
+8348,C16,KYR,AMD,,Staphylococcus epidermidis ATCC 12228,MBC,MBC,112.5,µg/ml,,,,LBB,,,,1
+8348,C16,KYR,AMD,,Escherichia coli ATCC 700926,MIC,MIC,28.1,µg/ml,,,,LBB,,,E. coli MG 1655,1
+8348,C16,KYR,AMD,,Escherichia coli ATCC 700926,MBC,MBC,56.2,µg/ml,,,,LBB,,,,1
+8348,C16,KYR,AMD,,Escherichia coli O157:H7 ATCC 43895,MIC,MIC,56.2,µg/ml,,,,LBB,,,,1
+8348,C16,KYR,AMD,,Escherichia coli O157:H7 ATCC 43895,MBC,MBC,56.2,µg/ml,,,,LBB,,,,1
+8348,C16,KYR,AMD,,Klebsiella pneumoniae ATCC 17736,MIC,MIC,84.4,µg/ml,,,,LBB,,,,1
+8348,C16,KYR,AMD,,Klebsiella pneumoniae ATCC 17736,MBC,MBC,112.5,µg/ml,,,,LBB,,,,1
+8473,C16,XRXR,AMD,"BIP, BIP",Staphylococcus aureus USA 100,MIC,MIC,>100,µM,,,,CAMHB,1E6,1E5 - 1E6,MRSA,1
+8506,C16,GXK,AMD,4-HYP,Staphylococcus aureus ATCC 25923,MIC50,MIC50,31.3,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Staphylococcus aureus ATCC 25923,MIC90,MIC90,62.5,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Staphylococcus aureus ATCC 25923,MBC50,MBC50,93.7,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Staphylococcus aureus ATCC 25923,MBC90,MBC90,125.0,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Staphylococcus aureus ATCC 6538,MIC50,MIC50,31.3,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Staphylococcus aureus ATCC 6538,MIC90,MIC90,31.3,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Staphylococcus aureus ATCC 6538,MBC50,MBC50,93.7,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Staphylococcus aureus ATCC 6538,MBC90,MBC90,125.0,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Escherichia coli DSM 11250,MIC50,MIC50,31.3,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Escherichia coli DSM 11250,MIC90,MIC90,62.5,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Escherichia coli ATCC 8739,MIC50,MIC50,62.5,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Escherichia coli ATCC 8739,MIC90,MIC90,125.0,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Pseudomonas aeruginosa ATCC 9027,MIC50,MIC50,375.0,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Pseudomonas aeruginosa ATCC 9027,MIC90,MIC90,500.0,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Pseudomonas aeruginosa ATCC 9027,MBC50,MBC50,1500.0,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+8506,C16,GXK,AMD,4-HYP,Pseudomonas aeruginosa ATCC 9027,MBC90,MBC90,2000.0,µg/ml,,,,LBB,1E5-1E6,1E5 - 1E6,,1
+9257,C16,KpT,AMD,,Escherichia coli UB1005,MIC,MIC,64,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9257,C16,KpT,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,4,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9257,C16,KpT,AMD,,Candida albicans 105,MIC,MIC,16,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9257,C16,KpT,AMD,,Cutibacterium acnes,MIC,MIC,2,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9259,C16,KPV,AMD,,Escherichia coli UB1005,MIC,MIC,128,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9259,C16,KPV,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,8,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9259,C16,KPV,AMD,,Candida albicans 105,MIC,MIC,16,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9259,C16,KPV,AMD,,Cutibacterium acnes,MIC,MIC,1-2,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9259,C16,KPV,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,11.36,µM,,,,CAMHB,2E5-5E5,1E5 - 1E6,MSSA,2
+9259,C16,KPV,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,11.36,µM,,,,TSB,2E5-5E5,1E5 - 1E6,MSSA,2
+9259,C16,KPV,AMD,,Staphylococcus aureus ATCC 33591,MIC,MIC,11.36,µM,,,,CAMHB,2E5-5E5,1E5 - 1E6,MRSA,2
+9259,C16,KPV,AMD,,Staphylococcus aureus ATCC 33591,MIC,MIC,11.36,µM,,,,TSB,2E5-5E5,1E5 - 1E6,MRSA,2
+9261,C16,KpT,,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9261,C16,KpT,,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9261,C16,KpT,,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9261,C16,KpT,,,Cutibacterium acnes,MIC,MIC,32,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9263,C16,KPV,,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9263,C16,KPV,,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9263,C16,KPV,,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9263,C16,KPV,,,Cutibacterium acnes,MIC,MIC,8,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9277,C16,KP,AMD,,Escherichia coli UB1005,MIC,MIC,64,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9277,C16,KP,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,16,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9277,C16,KP,AMD,,Candida albicans 105,MIC,MIC,16,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9277,C16,KP,AMD,,Cutibacterium acnes,MIC,MIC,1,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9278,C16,Kp,AMD,,Escherichia coli UB1005,MIC,MIC,128,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9278,C16,Kp,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,8,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9278,C16,Kp,AMD,,Candida albicans 105,MIC,MIC,16,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9278,C16,Kp,AMD,,Cutibacterium acnes,MIC,MIC,1-2,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9279,C16,PV,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9279,C16,PV,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9279,C16,PV,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9279,C16,PV,AMD,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9280,C16,pS,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9280,C16,pS,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9280,C16,pS,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9280,C16,pS,AMD,,Cutibacterium acnes,MIC,MIC,32,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9281,C16,KPA,AMD,,Escherichia coli UB1005,MIC,MIC,128,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9281,C16,KPA,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,16,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9281,C16,KPA,AMD,,Candida albicans 105,MIC,MIC,16,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9281,C16,KPA,AMD,,Cutibacterium acnes,MIC,MIC,1,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9282,C16,KPL,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9282,C16,KPL,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,16,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9282,C16,KPL,AMD,,Candida albicans 105,MIC,MIC,32,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9282,C16,KPL,AMD,,Cutibacterium acnes,MIC,MIC,4-8,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9286,C16,KT,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9286,C16,KT,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9286,C16,KT,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9286,C16,KT,AMD,,Cutibacterium acnes,MIC,MIC,256-1000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9288,C16,Kt,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9288,C16,Kt,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9288,C16,Kt,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9288,C16,Kt,AMD,,Cutibacterium acnes,MIC,MIC,128-256,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9291,C16,KV,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9291,C16,KV,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9291,C16,KV,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9291,C16,KV,AMD,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9292,C16,KA,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9292,C16,KA,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9292,C16,KA,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9292,C16,KA,AMD,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9294,C16,KF,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9294,C16,KF,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9294,C16,KF,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9294,C16,KF,AMD,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9295,C16,KH,AMD,,Escherichia coli UB1005,MIC,MIC,16,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9295,C16,KH,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,4,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9295,C16,KH,AMD,,Candida albicans 105,MIC,MIC,16,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9295,C16,KH,AMD,,Cutibacterium acnes,MIC,MIC,1-2,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9296,C16,KG,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9296,C16,KG,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,250,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9296,C16,KG,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9296,C16,KG,AMD,,Cutibacterium acnes,MIC,MIC,32-64,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9296,C16,KG,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+9296,C16,KG,AMD,,Staphylococcus epidermidis PCM 2118,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+9296,C16,KG,AMD,,Bacillus subtilis ATCC 6633,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+9296,C16,KG,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+9296,C16,KG,AMD,,Escherichia coli ATCC 25922,MIC,MIC,256,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+9296,C16,KG,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,128,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+9296,C16,KG,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,256,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+9296,C16,KG,AMD,,Proteus vulgaris PCM 2668,MIC,MIC,>512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,2
+9296,C16,KG,AMD,,Candida albicans ATCC 10231,MIC,MIC,128,µg/ml,,,,SDB,1E3,1E2 - 1E3,,2
+9296,C16,KG,AMD,,Candida tropicalis PCM 2681,MIC,MIC,256,µg/ml,,,,SDB,1E3,1E2 - 1E3,,2
+9296,C16,KG,AMD,,Aspergillus niger ATCC 16404,MIC,MIC,512,µg/ml,,,,SDB,1E3,1E2 - 1E3,,2
+9297,C16,KL,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9297,C16,KL,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,250,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9297,C16,KL,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9297,C16,KL,AMD,,Cutibacterium acnes,MIC,MIC,8,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9298,C16,KS,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9298,C16,KS,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,1000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9298,C16,KS,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9298,C16,KS,AMD,,Cutibacterium acnes,MIC,MIC,128,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9299,C16,KI,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9299,C16,KI,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,128,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9299,C16,KI,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9299,C16,KI,AMD,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9300,C16,KY,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9300,C16,KY,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9300,C16,KY,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9300,C16,KY,AMD,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9301,C16,KW,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9301,C16,KW,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9301,C16,KW,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9301,C16,KW,AMD,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9302,C16,PK,AMD,,Escherichia coli UB1005,MIC,MIC,2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9302,C16,PK,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,128,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9302,C16,PK,AMD,,Candida albicans 105,MIC,MIC,128,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9302,C16,PK,AMD,,Cutibacterium acnes,MIC,MIC,4-16,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9303,C16,KD,AMD,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9303,C16,KD,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9303,C16,KD,AMD,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9303,C16,KD,AMD,,Cutibacterium acnes,,-,NA,,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9304,C16,KR,,,Escherichia coli UB1005,MIC,MIC,500,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9304,C16,KR,,,Staphylococcus aureus SAP 0017,MIC,MIC,16,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9304,C16,KR,,,Candida albicans 105,MIC,MIC,32,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9304,C16,KR,,,Cutibacterium acnes,MIC,MIC,2-4,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9305,C16,PK,,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9305,C16,PK,,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9305,C16,PK,,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9305,C16,PK,,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9306,C16,Kp,,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9306,C16,Kp,,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9306,C16,Kp,,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9306,C16,Kp,,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9307,C16,KP,,,Escherichia coli UB1005,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9307,C16,KP,,,Staphylococcus aureus SAP 0017,MIC,MIC,>2000,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9307,C16,KP,,,Candida albicans 105,MIC,MIC,>2000,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9307,C16,KP,,,Cutibacterium acnes,MIC,MIC,>2000,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9309,C16,KR,AMD,,Escherichia coli UB1005,MIC,MIC,8,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,,1
+9309,C16,KR,AMD,,Staphylococcus aureus SAP 0017,MIC,MIC,2,µg/ml,,,,MHB,1E5-1E6,1E5 - 1E6,MRSA,1
+9309,C16,KR,AMD,,Candida albicans 105,MIC,MIC,16,µg/ml,,,,MHB,1E4,1E3 - 1E4,,1
+9309,C16,KR,AMD,,Cutibacterium acnes,MIC,MIC,<1,µg/ml,,,,BHIB,1E5-1E6,1E5 - 1E6,,1
+9309,C16,KR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,32,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,2
+9309,C16,KR,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,8,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,2
+9309,C16,KR,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,64,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,2
+9309,C16,KR,AMD,,Escherichia coli ATCC 25922,MIC,MIC,64,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,2
+9309,C16,KR,AMD,,Pseudomonas aeruginosa ATCC 9029,MIC,MIC,128,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,2
+9309,C16,KR,AMD,,Proteus mirabilis PCM 543,MIC,MIC,512,µg/ml,,,,CAMHB,5E6,1E6 - 1E7,,2
+9745,C16,KGGK,AMD,,Enterococcus faecalis V583,MIC,MIC,4-5,µg/ml,,,,BHIB,,,,1
+9745,C16,KGGK,AMD,,Streptococcus mutans ATCC 27351,MIC,MIC,6-12.5,µg/ml,,,,BHIB,,,,1
+9745,C16,KGGK,AMD,,Fusobacterium nucleatum ATCC 1594,MIC,MIC,12.5-25,µg/ml,,,,WCB,,,,1
+9745,C16,KGGK,AMD,,Porphyromonas gingivalis ATCC 33277,MIC,MIC,12.5-25,µg/ml,,,,WCB,,,,1
+9745,C16,KGGK,AMD,,Actinomyces naeslundii ATCC 17233,MIC,MIC,12.5-25,µg/ml,,,,WCB,,,,1
+9746,C16,KkK,AMD,,Enterococcus faecalis V583,MIC,MIC,6-12.5,µg/ml,,,,BHIB,,,,1
+9746,C16,KkK,AMD,,Streptococcus mutans ATCC 27351,MIC,MIC,12.5-25,µg/ml,,,,BHIB,,,,1
+9746,C16,KkK,AMD,,Fusobacterium nucleatum ATCC 1594,MIC,MIC,4-5,µg/ml,,,,WCB,,,,1
+9746,C16,KkK,AMD,,Porphyromonas gingivalis ATCC 33277,MIC,MIC,6-12.5,µg/ml,,,,WCB,,,,1
+9746,C16,KkK,AMD,,Actinomyces naeslundii ATCC 17233,MIC,MIC,6.25-12.5,µg/ml,,,,WCB,,,,1
+10361,C16,KKKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10361,C16,KKKK,AMD,,Staphylococcus aureus ATCC 25923,MBC,MBC,8,µg/ml,,,,CAMHA,,,,1
+10361,C16,KKKK,AMD,,Staphylococcus epidermidis PCM 2118,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10361,C16,KKKK,AMD,,Staphylococcus epidermidis PCM 2118,MBC,MBC,4,µg/ml,,,,CAMHA,,,,1
+10361,C16,KKKK,AMD,,Bacillus subtilis ATCC 6633,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10361,C16,KKKK,AMD,,Bacillus subtilis ATCC 6633,MBC,MBC,4,µg/ml,,,,CAMHA,,,,1
+10361,C16,KKKK,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10361,C16,KKKK,AMD,,Enterococcus faecalis ATCC 29212,MBC,MBC,16,µg/ml,,,,CAMHA,,,,1
+10361,C16,KKKK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10361,C16,KKKK,AMD,,Escherichia coli ATCC 25922,MBC,MBC,8,µg/ml,,,,CAMHA,,,,1
+10361,C16,KKKK,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10361,C16,KKKK,AMD,,Klebsiella pneumoniae ATCC 700603,MBC,MBC,8,µg/ml,,,,CAMHA,,,,1
+10361,C16,KKKK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10361,C16,KKKK,AMD,,Pseudomonas aeruginosa ATCC 9027,MBC,MBC,8,µg/ml,,,,CAMHA,,,,1
+10361,C16,KKKK,AMD,,Proteus vulgaris PCM 2668,MIC,MIC,>512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10361,C16,KKKK,AMD,,Proteus vulgaris PCM 2668,MBC,MBC,>512,µg/ml,,,,CAMHA,,,,1
+10361,C16,KKKK,AMD,,Candida albicans ATCC 10231,MIC,MIC,128,µg/ml,,,,SDB,1E3,1E2 - 1E3,,1
+10361,C16,KKKK,AMD,,Candida albicans ATCC 10231,MFC,MFC,128,µg/ml,,,,SGA,,,,1
+10361,C16,KKKK,AMD,,Candida tropicalis PCM 2681,MIC,MIC,128,µg/ml,,,,SDB,1E3,1E2 - 1E3,,1
+10361,C16,KKKK,AMD,,Candida tropicalis PCM 2681,MFC,MFC,128,µg/ml,,,,SGA,,,,1
+10361,C16,KKKK,AMD,,Aspergillus niger ATCC 16404,MIC,MIC,128,µg/ml,,,,SDB,1E3,1E2 - 1E3,Syn. A. brasiliensis,1
+10361,C16,KKKK,AMD,,Aspergillus niger ATCC 16404,MFC,MFC,128,µg/ml,,,,SGA,,,,1
+10361,C16,KKKK,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10361,C16,KKKK,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,2
+10361,C16,KKKK,AMD,,Staphylococcus aureus ATCC 33592,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSA,2
+10361,C16,KKKK,AMD,,Staphylococcus aureus ATCC 33592,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; MRSA,2
+10361,C16,KKKK,AMD,,Staphylococcus epidermidis 61589,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSE clinical isolate,2
+10361,C16,KKKK,AMD,,Staphylococcus epidermidis 61589,MIC,MIC,256,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; MRSE,2
+10361,C16,KKKK,AMD,,Enterococcus faecium ATCC 27270,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10361,C16,KKKK,AMD,,Enterococcus faecium ATCC 27270,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,2
+10361,C16,KKKK,AMD,,Streptococcus pneumoniae ATCC 49619,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10361,C16,KKKK,AMD,,Streptococcus pneumoniae ATCC 49619,MIC,MIC,32,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,2
+10361,C16,KKKK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10361,C16,KKKK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,2
+10361,C16,KKKK,AMD,,Klebsiella pneumoniae ATCC 13883,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10361,C16,KKKK,AMD,,Klebsiella pneumoniae ATCC 13883,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,2
+10361,C16,KKKK,AMD,,Human acute monocytic leukemia THP-1,20-30% Cytotoxicity,28% Cytotoxicity,40,µM,,,, ,,,,2
+10361,C16,KKKK,AMD,,Human acute monocytic leukemia THP-1,60-70% Cytotoxicity,62% Cytotoxicity,80,µM,,,, ,,,,2
+10361,C16,KKKK,AMD,,Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,30.0,µM,,,, ,,,,3
+10361,C16,KKKK,AMD,,Human prostate cancer DU145,50% Cell death,CC50,18.0,µM,,,, ,,,,3
+10361,C16,KKKK,AMD,,Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,>30,µM,,,, ,,,,3
+10361,C16,KKKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,4
+10361,C16,KKKK,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,4
+10361,C16,KKKK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,4
+10361,C16,KKKK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,4
+10361,C16,KKKK,AMD,,Candida albicans ATCC 10231,MIC,MIC,32,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,4
+10361,C16,KKKK,AMD,,Candida glabrata ATCC 15126,MIC,MIC,64,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,4
+10361,C16,KKKK,AMD,,Yarrowia lipolytica PCM 2680-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,4
+10361,C16,KKKK,AMD,,Candida tropicalis PCM 2709-FY,MIC,MIC,4,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,4
+10361,C16,KKKK,AMD,,Human cervical carcinoma HeLa,IC50,IC50,12.8±1.1,µg/ml,,,,,,,,4
+10362,C16,KGKG,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10362,C16,KGKG,AMD,,Staphylococcus aureus ATCC 25923,MBC,MBC,32,µg/ml,,,,CAMHA,,,,1
+10362,C16,KGKG,AMD,,Staphylococcus epidermidis PCM 2118,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10362,C16,KGKG,AMD,,Staphylococcus epidermidis PCM 2118,MBC,MBC,4,µg/ml,,,,CAMHA,,,,1
+10362,C16,KGKG,AMD,,Bacillus subtilis ATCC 6633,MIC,MIC,4,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10362,C16,KGKG,AMD,,Bacillus subtilis ATCC 6633,MBC,MBC,4,µg/ml,,,,CAMHA,,,,1
+10362,C16,KGKG,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10362,C16,KGKG,AMD,,Enterococcus faecalis ATCC 29212,MBC,MBC,16,µg/ml,,,,CAMHA,,,,1
+10362,C16,KGKG,AMD,,Escherichia coli ATCC 25922,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10362,C16,KGKG,AMD,,Escherichia coli ATCC 25922,MBC,MBC,16,µg/ml,,,,CAMHA,,,,1
+10362,C16,KGKG,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,16,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10362,C16,KGKG,AMD,,Klebsiella pneumoniae ATCC 700603,MBC,MBC,16,µg/ml,,,,CAMHA,,,,1
+10362,C16,KGKG,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,8,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10362,C16,KGKG,AMD,,Pseudomonas aeruginosa ATCC 9027,MBC,MBC,8,µg/ml,,,,CAMHA,,,,1
+10362,C16,KGKG,AMD,,Proteus vulgaris PCM 2668,MIC,MIC,>512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+10362,C16,KGKG,AMD,,Proteus vulgaris PCM 2668,MBC,MBC,>512,µg/ml,,,,CAMHA,,,,1
+10362,C16,KGKG,AMD,,Candida albicans ATCC 10231,MIC,MIC,128,µg/ml,,,,SDB,1E3,1E2 - 1E3,,1
+10362,C16,KGKG,AMD,,Candida albicans ATCC 10231,MFC,MFC,128,µg/ml,,,,SGA,,,,1
+10362,C16,KGKG,AMD,,Candida tropicalis PCM 2681,MIC,MIC,256,µg/ml,,,,SDB,1E3,1E2 - 1E3,,1
+10362,C16,KGKG,AMD,,Candida tropicalis PCM 2681,MFC,MFC,256,µg/ml,,,,SGA,,,,1
+10362,C16,KGKG,AMD,,Aspergillus niger ATCC 16404,MIC,MIC,128,µg/ml,,,,SDB,1E3,1E2 - 1E3,Syn. A. brasiliensis,1
+10362,C16,KGKG,AMD,,Aspergillus niger ATCC 16404,MFC,MFC,128,µg/ml,,,,SGA,,,,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS (ref. 1),"1, 2"
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,1,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,4,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,1,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus,MIC,MIC,8-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS; 5 clinical isolates,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus,MIC,MIC,1-2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS; 5 clinical isolates,1
+10675,C16,KKKR,AMD,,Staphylococcus aureus,MIC,MIC,4-8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS; 5 clinical isolates,1
+10675,C16,KKKR,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10675,C16,KKKR,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10675,C16,KKKR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10675,C16,KKKR,AMD,,Candida albicans ATCC 10231,MIC,MIC,32,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10675,C16,KKKR,AMD,,Candida glabrata ATCC 15126,MIC,MIC,64,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10675,C16,KKKR,AMD,,Yarrowia lipolytica PCM 2680-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10675,C16,KKKR,AMD,,Candida tropicalis PCM 2709-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10675,C16,KKKR,AMD,,Human cervical carcinoma HeLa,IC50,IC50,3.6±0.5,µg/ml,,,,,,,,2
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS (ref. 1),"1, 2"
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus,MIC,MIC,8-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS; 5 clinical isolates,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus,MIC,MIC,1-2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS; 5 clinical isolates,1
+10678,C16,KKRK,AMD,,Staphylococcus aureus,MIC,MIC,2-8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS; 5 clinical isolates,1
+10678,C16,KKRK,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10678,C16,KKRK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10678,C16,KKRK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10678,C16,KKRK,AMD,,Candida albicans ATCC 10231,MIC,MIC,32,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10678,C16,KKRK,AMD,,Candida glabrata ATCC 15126,MIC,MIC,64,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10678,C16,KKRK,AMD,,Yarrowia lipolytica PCM 2680-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10678,C16,KKRK,AMD,,Candida tropicalis PCM 2709-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10678,C16,KKRK,AMD,,Human cervical carcinoma HeLa,IC50,IC50,6.2±2.7,µg/ml,,,,,,,,2
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS (ref. 1),"1, 2"
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,2,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 6538,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 6538P,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,4,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 9144,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,4,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,2,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus ATCC 12598,MIC,MIC,4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus,MIC,MIC,8-16,µg/ml,,,,MHB,5E5,1E5 - 1E6,solvent: both AcOH/BSA and PBS; 5 clinical isolates,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus,MIC,MIC,1-2,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: PBS; 5 clinical isolates,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus,MIC,,2-4,µg/ml,,,,BHIB,5E5,1E5 - 1E6,solvent: AcOH/BSA; 5 clinical isolates,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus,MIC,MIC,2-4,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: PBS; 5 clinical isolates,1
+10680,C16,RKKK,AMD,,Staphylococcus aureus,MIC,MIC,4-8,µg/ml,,,,TSB,5E5,1E5 - 1E6,solvent: AcOH/BSA; 5 clinical isolates,1
+10680,C16,RKKK,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10680,C16,RKKK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10680,C16,RKKK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,2
+10680,C16,RKKK,AMD,,Candida albicans ATCC 10231,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10680,C16,RKKK,AMD,,Candida glabrata ATCC 15126,MIC,MIC,64,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10680,C16,RKKK,AMD,,Yarrowia lipolytica PCM 2680-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10680,C16,RKKK,AMD,,Candida tropicalis PCM 2709-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,2
+10680,C16,RKKK,AMD,,Human cervical carcinoma HeLa,IC50,IC50,8.4±1.7,µg/ml,,,,,,,,2
+11017,C16,KRK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,4,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+11017,C16,KRK,AMD,,Staphylococcus aureus ATCC 25923,MBC,MBC,16,µg/ml,,,,CAMHA,,,,1
+11017,C16,KRK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+11017,C16,KRK,AMD,,Escherichia coli ATCC 25922,MBC,MBC,16,µg/ml,,,,CAMHA,,,,1
+11017,C16,KRK,AMD,,Candida albicans ATCC 10231,MIC,MIC,128,µg/ml,,,,SDB,5E4,1E4 - 1E5,,1
+11017,C16,KRK,AMD,,Candida albicans ATCC 10231,MFC,MFC,256,µg/ml,,,,SDA,,,,1
+11018,C16,RRR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,2,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+11018,C16,RRR,AMD,,Staphylococcus aureus ATCC 25923,MBC,MBC,4,µg/ml,,,,CAMHA,,,,1
+11018,C16,RRR,AMD,,Escherichia coli ATCC 25922,MIC,MIC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+11018,C16,RRR,AMD,,Escherichia coli ATCC 25922,MBC,MBC,16,µg/ml,,,,CAMHA,,,,1
+11018,C16,RRR,AMD,,Candida albicans ATCC 10231,MIC,MIC,128,µg/ml,,,,SDB,5E4,1E4 - 1E5,,1
+11018,C16,RRR,AMD,,Candida albicans ATCC 10231,MFC,MFC,256,µg/ml,,,,SDA,,,,1
+11018,C16,RRR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,2
+11018,C16,RRR,AMD,,Staphylococcus epidermidis ATCC 12228,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,2
+11018,C16,RRR,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,32,µM,,,,MHB,5E5,1E5 - 1E6,,2
+11018,C16,RRR,AMD,,Bacillus subtilis ATCC 23857,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,2
+11018,C16,RRR,AMD,,Staphylococcus aureus 75,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,2
+11018,C16,RRR,AMD,,Staphylococcus aureus 113,MIC,MIC,2,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,2
+11018,C16,RRR,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,2
+11018,C16,RRR,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,32,µM,,,,MHB,5E5,1E5 - 1E6,,2
+11018,C16,RRR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,32,µM,,,,MHB,5E5,1E5 - 1E6,,2
+11018,C16,RRR,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,2
+11018,C16,RRR,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,128,µM,,,,MHB,5E5,1E5 - 1E6,,2
+11033,C16,KAK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11033,C16,KAK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11033,C16,KAK,AMD,,Enterobacter cloacae ATCC 49141,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11033,C16,KAK,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11033,C16,KAK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11033,C16,KAK,AMD,,Enterococcus faecalis ATCC 19433,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11033,C16,KAK,AMD,,Candida albicans ATCC 10231,MIC,MIC,>100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+11033,C16,KAK,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,>100,µM,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+11034,C16,KLK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11034,C16,KLK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11034,C16,KLK,AMD,,Enterobacter cloacae ATCC 49141,MIC,MIC,100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11034,C16,KLK,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,>100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11034,C16,KLK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11034,C16,KLK,AMD,,Enterococcus faecalis ATCC 19433,MIC,MIC,25,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11034,C16,KLK,AMD,,Candida albicans ATCC 10231,MIC,MIC,9.4,µM,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+11034,C16,KLK,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,9.4,µM,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+11035,C16,Kk,AMD,,Escherichia coli ATCC 25922,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11035,C16,Kk,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,25,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11035,C16,Kk,AMD,,Enterobacter cloacae ATCC 49141,MIC,MIC,50,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11035,C16,Kk,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,75,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11035,C16,Kk,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11035,C16,Kk,AMD,,Enterococcus faecalis ATCC 19433,MIC,MIC,25,µM,,,,LBB,1E6,1E5 - 1E6,,1
+11035,C16,Kk,AMD,,Candida albicans ATCC 10231,MIC,MIC,9.4,µM,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+11035,C16,Kk,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,6.2,µM,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Staphylococcus aureus ATCC 29213,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Staphylococcus aureus ATCC 29213,MIC,MIC,256,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Staphylococcus aureus ATCC 33592,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSA,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Staphylococcus aureus ATCC 33592,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; MRSA,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Staphylococcus epidermidis 81388,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Staphylococcus epidermidis 81388,MIC,MIC,128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Staphylococcus epidermidis 61589,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSE clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Staphylococcus epidermidis 61589,MIC,MIC,128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; MRSE,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Enterococcus faecalis ATCC 29212,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Enterococcus faecalis ATCC 29212,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Enterococcus faecium ATCC 27270,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Enterococcus faecium ATCC 27270,MIC,MIC,256,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Streptococcus pneumoniae ATCC 49619,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Streptococcus pneumoniae ATCC 49619,MIC,MIC,16,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Escherichia coli ATCC 25922,MIC,MIC,256,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Escherichia coli CAN-ICU 61714,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,gentamicin-resistant CAN-ICU 61714 and MDR CANWARD-2011 97615 clinical isolates,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Escherichia coli CAN-ICU 61714,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; gentamicin-resistant CAN-ICU 61714 and MDR CANWARD-2011 97615 clinical isolates,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Escherichia coli CAN-ICU 63074,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,amikacin resistant clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Escherichia coli CAN-ICU 63074,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; amikacin resistant clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,256,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Pseudomonas aeruginosa CAN-ICU 62308,MIC,MIC,64,µg/ml,,,, ,5E5,1E5 - 1E6,gentamicin-resistant clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Pseudomonas aeruginosa CAN-ICU 62308,MIC,MIC,256,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; gentamicin-resistant clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Pseudomonas aeruginosa CANWARD-2011 96846,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,gentamicin- tobramycin resistant clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Pseudomonas aeruginosa CANWARD-2011 96846,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; gentamicin- tobramycin resistant clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Stenotrophomonas maltophilia CAN-ICU 62584,MIC,MIC,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Stenotrophomonas maltophilia CAN-ICU 62584,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4%BSA; clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Acinetobacter baumannii CAN-ICU 63169,MIC,MIC,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Acinetobacter baumannii CAN-ICU 63169,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; clinical isolate,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Klebsiella pneumoniae ATCC 13883,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Klebsiella pneumoniae ATCC 13883,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Human acute monocytic leukemia THP-1,50-60% Cytotoxicity,50% Cytotoxicity,80,µM,,,, ,,,,1
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,2
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Human prostate cancer DU145,50% Cell death,CC50,>30,µM,,,, ,,,,2
+11150,C16,XXXX,AMD,"DAB, DAB, DAB, DAB",Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,30.0,µM,,,, ,,,,2
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Staphylococcus aureus ATCC 29213,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Staphylococcus aureus ATCC 29213,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Staphylococcus aureus ATCC 33592,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSA,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Staphylococcus aureus ATCC 33592,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; MRSA,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Staphylococcus epidermidis 81388,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Staphylococcus epidermidis 81388,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Staphylococcus epidermidis 61589,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSE clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Staphylococcus epidermidis 61589,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; MRSE clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Enterococcus faecalis ATCC 29212,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Enterococcus faecalis ATCC 29212,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Enterococcus faecium ATCC 27270,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Enterococcus faecium ATCC 27270,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Streptococcus pneumoniae ATCC 49619,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,with and without 4% bovine serum albumin,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Escherichia coli ATCC 25922,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Escherichia coli ATCC 25922,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Escherichia coli CAN-ICU 61714,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,gentamicin-resistant CAN-ICU 61714 and MDR CANWARD-2011 97615 clinical isolates,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Escherichia coli CAN-ICU 61714,MIC,MIC,>512,µg/ml,,,., ,5E5,1E5 - 1E6,with 4% BSA; gentamicin-resistant CAN-ICU 61714 and MDR CANWARD-2011 97615 clinical isolates,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Escherichia coli CAN-ICU 63074,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,amikacin resistant clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Escherichia coli CAN-ICU 63074,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; amikacin resistant clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Pseudomonas aeruginosa CAN-ICU 62308,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,gentamicin-resistant clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Pseudomonas aeruginosa CAN-ICU 62308,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; gentamicin-resistant clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Pseudomonas aeruginosa CANWARD-2011 96846,MIC,MIC,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,gentamicin- tobramycin resistant clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Pseudomonas aeruginosa CANWARD-2011 96846,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; gentamicin- tobramycin resistant clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Stenotrophomonas maltophilia CAN-ICU 62584,MIC,MIC,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Stenotrophomonas maltophilia CAN-ICU 62584,MIC,MIC,>512,µg/ml,,,., ,5E5,1E5 - 1E6,with 4% BSA; clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Acinetobacter baumannii CAN-ICU 63169,MIC,MIC,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Acinetobacter baumannii CAN-ICU 63169,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; clinical isolate,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Klebsiella pneumoniae ATCC 13883,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Klebsiella pneumoniae ATCC 13883,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Human acute monocytic leukemia THP-1,50-60% Cytotoxicity,50% Cytotoxicity,80,µM,,,, ,,,,1
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,2
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Human prostate cancer DU145,50% Cell death,CC50,>30,µM,,,, ,,,,2
+11151,C16,XXXX,AMD,"4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro, 4-NH2-Pro",Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,>30,µM,,,, ,,,,2
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Staphylococcus aureus ATCC 29213,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Staphylococcus aureus ATCC 29213,MIC,MIC,>128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Staphylococcus aureus ATCC 33592,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSA,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Staphylococcus aureus ATCC 33592,MIC,MIC,>128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; MRSA,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Staphylococcus epidermidis 81388,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Staphylococcus epidermidis 81388,MIC,MIC,>128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Staphylococcus epidermidis 61589,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSE clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Staphylococcus epidermidis 61589,MIC,MIC,>128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; MRSE,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Enterococcus faecalis ATCC 29212,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Enterococcus faecalis ATCC 29212,MIC,MIC,>128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Enterococcus faecium ATCC 27270,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Streptococcus pneumoniae ATCC 49619,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Streptococcus pneumoniae ATCC 49619,MIC,MIC,256,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Escherichia coli ATCC 25922,MIC,MIC,>128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Escherichia coli CAN-ICU 61714,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,gentamicin-resistant clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Escherichia coli CAN-ICU 63074,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,amikacin resistant clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Escherichia coli CANWARD-2011 97615,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,MDR clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Escherichia coli CANWARD-2011 97615,MIC,MIC,>128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; MDR clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Pseudomonas aeruginosa CAN-ICU 62308,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,gentamicin-resistant clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Pseudomonas aeruginosa CANWARD-2011 96846,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,gentamicin- tobramycin resistant clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Pseudomonas aeruginosa CANWARD-2011 96846,MIC,MIC,>128,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; gentamicin- tobramycin resistant clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Stenotrophomonas maltophilia CAN-ICU 62584,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Acinetobacter baumannii CAN-ICU 63169,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Klebsiella pneumoniae ATCC 13883,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Human acute monocytic leukemia THP-1,20-30% Cytotoxicity,20% Cytotoxicity,40,µM,,,, ,,,,1
+11155,C16,XXXX,AMD,"DAB, HSer, HSer, DAB",Human acute monocytic leukemia THP-1,50-60% Cytotoxicity,50% Cytotoxicity,,µM,,,, ,,,,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Staphylococcus aureus ATCC 29213,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Staphylococcus aureus ATCC 29213,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Staphylococcus aureus ATCC 33592,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSA,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Staphylococcus aureus ATCC 33592,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Staphylococcus epidermidis 81388,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Staphylococcus epidermidis 81388,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; clinical isolate,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Staphylococcus epidermidis 61589,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSE clinical isolate,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Staphylococcus epidermidis 61589,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; MRSE,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Enterococcus faecalis ATCC 29212,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Enterococcus faecalis ATCC 29212,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Enterococcus faecium ATCC 27270,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Enterococcus faecium ATCC 27270,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Streptococcus pneumoniae ATCC 49619,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Streptococcus pneumoniae ATCC 49619,MIC,MIC,64,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Escherichia coli ATCC 25922,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Escherichia coli ATCC 25922,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Escherichia coli CAN-ICU 61714,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,gentamicin-resistant clinical isolate,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Escherichia coli CAN-ICU 61714,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; gentamicin-resistant clinical isolate ,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Escherichia coli CAN-ICU 63074,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,amikacin-resistant CAN-ICU 63074 and MDR CANWARD-2011 97615 clinical isolates,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Escherichia coli CAN-ICU 63074,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; amikacin-resistant CAN-ICU 63074 and MDR CANWARD-2011 97615 clinical isolates,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Pseudomonas aeruginosa CAN-ICU 62308,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,"gentamicin-resistant CAN-ICU 62308 and gentamicin-, tobramycin-resistant CANWARD-2011 96846 clinical isolates",1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Pseudomonas aeruginosa CAN-ICU 62308,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% BSA; gentamicin-resistant CAN-ICU 62308 and gentamicin- tobramycin resistant CANWARD-2011 96846 clinical isolates,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Stenotrophomonas maltophilia CAN-ICU 62584,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Stenotrophomonas maltophilia CAN-ICU 62584,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; clinical isolate,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Acinetobacter baumannii CAN-ICU 63169,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,Clinical isolate,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Acinetobacter baumannii CAN-ICU 63169,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; clinical isolate,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Klebsiella pneumoniae ATCC 13883,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Klebsiella pneumoniae ATCC 13883,MIC,MIC,>512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Human acute monocytic leukemia THP-1,20-30% Cytotoxicity,25% Cytotoxicity,80,µM,,,, ,,,,1
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,2
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Human prostate cancer DU145,50% Cell death,CC50,>30,µM,,,, ,,,,2
+11156,C16,XXXX,AMD,"4-NH2-Pro, 4-HYP, 4-HYP, 4-NH2-Pro",Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,>30,µM,,,, ,,,,2
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Staphylococcus aureus ATCC 29213,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Staphylococcus aureus ATCC 29213,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin,1
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Staphylococcus aureus ATCC 33592,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,MRSA,1
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Staphylococcus aureus ATCC 33592,MIC,MIC,512,µg/ml,,,.,MHB,5E5,1E5 - 1E6,with 4% bovine serum albumin; MRSA,1
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Escherichia coli ATCC 25922,MIC,MIC,512,µg/ml,,,,MHB,5E5,1E5 - 1E6,with and without 4% bovine serum albumin,1
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,512,µg/ml,,,,MHB,5E5,1E5 - 1E6,with and without 4% bovine serum albumin,1
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Human acute monocytic leukemia THP-1,60-70% Cytotoxicity,65% Cytotoxicity,40,µM,,,, ,,,,1
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,12.5,µM,,,, ,,,,2
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Human prostate cancer DU145,50% Cell death,CC50,16.5,µM,,,, ,,,,2
+11157,C16,XXXX,AMD,"4-NH2-Pro, Hex-Hyp, Hex-Hyp, 4-NH2-Pro",Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,23.0,µM,,,, ,,,,2
+11179,C16,XGX,AMD,"NLys, NLys",Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11179,C16,XGX,AMD,"NLys, NLys",Human breast carcinoma JIMT-1,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11179,C16,XGX,AMD,"NLys, NLys",Human prostate cancer DU145,50% Cell death,CC50,30.0,µM,,,, ,,,,1
+11179,C16,XGX,AMD,"NLys, NLys",Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11182,C16,XXX,AMD,"NLys, NLys, NLys",Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11182,C16,XXX,AMD,"NLys, NLys, NLys",Human breast carcinoma JIMT-1,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11182,C16,XXX,AMD,"NLys, NLys, NLys",Human prostate cancer DU145,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11182,C16,XXX,AMD,"NLys, NLys, NLys",Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,>30,µM,,,, ,,,,1
+12103,C16,RRRR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,16,µg/ml,,,,MHB,,,,1
+12103,C16,RRRR,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,4,µg/ml,,,,MHB,,,,1
+12103,C16,RRRR,AMD,,Escherichia coli ATCC 25922,MIC,MIC,32,µg/ml,,,,MHB,,,,1
+12103,C16,RRRR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,32,µg/ml,,,,MHB,,,,1
+12103,C16,RRRR,AMD,,Candida albicans ATCC 10231,MIC,MIC,8,µg/ml,,,,RPMI-1640,,,,1
+12106,C16,PRRR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,32,µg/ml,,,,MHB,,,,1
+12106,C16,PRRR,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,<=1,µg/ml,,,,MHB,,,,1
+12106,C16,PRRR,AMD,,Escherichia coli ATCC 25922,MIC,MIC,32,µg/ml,,,,MHB,,,,1
+12106,C16,PRRR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,MHB,,,,1
+12106,C16,PRRR,AMD,,Candida albicans ATCC 10231,MIC,MIC,8,µg/ml,,,,RPMI-1640,,,,1
+12348,C16,KWKW,,,Cutibacterium acnes ATCC 6919,MIC,MIC,2.0,µg/ml,,,,BrB,1E6,1E5 - 1E6,,1
+12348,C16,KWKW,,,Cutibacterium acnes ATCC 11827,MIC,MIC,2.0,µg/ml,,,,BrB,1E6,1E5 - 1E6,,1
+12348,C16,KWKW,,,Staphylococcus epidermidis ATCC 12228,MIC,MIC,3.9,µg/ml,,,,LBB,1E5,1E4 - 1E5,,1
+12348,C16,KWKW,,,Staphylococcus aureus ATCC 12600,MIC,MIC,31.2,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+12348,C16,KWKW,,,Staphylococcus aureus,MIC,MIC,>31.2,µg/ml,,,,MHB,1E5,1E4 - 1E5,Clinical isolate,1
+12348,C16,KWKW,,,Streptococcus mutans ATCC 25175,MIC,MIC,15.6,µg/ml,,,,BHIB,1E5,1E4 - 1E5,,1
+12348,C16,KWKW,,,Streptococcus mutans UA 159,MIC,MIC,31.2,µg/ml,,,,BHIB,1E5,1E4 - 1E5,,1
+12348,C16,KWKW,,,Pseudomonas aeruginosa ATCC 25853,MIC,MIC,>31.2,µg/ml,,,,LBB,1E5,1E4 - 1E5,,1
+12348,C16,KWKW,,,Escherichia coli ATCC 25922,MIC,MIC,15.6,µg/ml,,,,LBB,1E5,1E4 - 1E5,,1
+12348,C16,KWKW,,,Murine macrophage cells RAW 264.7,,-,NA,,,,, ,,,Not active up to 31.25 µg/ml,1
+12362,C16,KKXK,AMD,12-NH2-C12,Streptococcus mutans ATCC 35668,MIC,MIC,1.56,µM,,,,BHIB,5E5,1E5 - 1E6,,1
+12362,C16,KKXK,AMD,12-NH2-C12,Streptococcus mutans UA159,MIC,MIC,1.56,µM,,,,BHIB,5E5,1E5 - 1E6,,1
+12362,C16,KKXK,AMD,12-NH2-C12,Escherichia coli ATCC 35218,MIC,MIC,25-50,µM,,,,LBB,2E5-4E5,1E5 - 1E6,,2
+12362,C16,KKXK,AMD,12-NH2-C12,Escherichia coli ATCC 35218,MBC,MBC,>50,µM,,,,LBA,2E5-4E5,1E5 - 1E6,,2
+12362,C16,KKXK,AMD,12-NH2-C12,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,25->50,µM,,,,LBB,2E5-4E5,1E5 - 1E6,,2
+12362,C16,KKXK,AMD,12-NH2-C12,Pseudomonas aeruginosa ATCC 9027,MBC,MBC,>50,µM,,,,LBA,2E5-4E5,1E5 - 1E6,,2
+12362,C16,KKXK,AMD,12-NH2-C12,Enterococcus faecalis ATCC 29212,MIC,MIC,6-25,µM,,,,LBB,2E5-4E5,1E5 - 1E6,,2
+12362,C16,KKXK,AMD,12-NH2-C12,Enterococcus faecalis ATCC 29212,MBC,MBC,25->50,µM,,,,LBA,2E5-4E5,1E5 - 1E6,,2
+12362,C16,KKXK,AMD,12-NH2-C12,Staphylococcus aureus ATCC 25923,MIC,MIC,3-6,µM,,,,LBB,2E5-4E5,1E5 - 1E6,,2
+12362,C16,KKXK,AMD,12-NH2-C12,Staphylococcus aureus ATCC 25923,MBC,MBC,25->50,µM,,,,LBA,2E5-4E5,1E5 - 1E6,,2
+14155,C16,XKKK,AMD,LYS-C16,Staphylococcus aureus ATCC 25923,MIC,MIC,512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Staphylococcus aureus ATCC 25923,MBC,MBC,>512,µg/ml,,,,CAMHA,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Staphylococcus epidermidis PCM 2118,MIC,MIC,>512,µg/ml,,,,MHB,1E5,1E4 - 1E5,Also in ref. 2 (CFU – ND),1
+14155,C16,XKKK,AMD,LYS-C16,Staphylococcus epidermidis PCM 2118,MBC,MBC,>512,µg/ml,,,,CAMHA,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Bacillus subtilis ATCC 6633,MIC,MIC,512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Bacillus subtilis ATCC 6633,MBC,MBC,>512,µg/ml,,,,CAMHA,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Enterococcus faecalis ATCC 29212,MIC,MIC,512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Enterococcus faecalis ATCC 29212,MBC,MBC,>512,µg/ml,,,,CAMHA,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Escherichia coli ATCC 25922,MIC,MIC,512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Escherichia coli ATCC 25922,MBC,MBC,>512,µg/ml,,,,CAMHA,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Klebsiella pneumoniae ATCC 700603,MIC,MIC,512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Klebsiella pneumoniae ATCC 700603,MBC,MBC,>512,µg/ml,,,,CAMHA,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Pseudomonas aeruginosa ATCC 9027,MBC,MBC,>512,µg/ml,,,,CAMHA,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Proteus vulgaris PCM 2668,MIC,MIC,>512,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Proteus vulgaris PCM 2668,MBC,MBC,>512,µg/ml,,,,CAMHA,1E5,1E4 - 1E5,,1
+14155,C16,XKKK,AMD,LYS-C16,Candida albicans ATCC 10231,MIC,MIC,512,µg/ml,,,,SGB,1E3,1E2 - 1E3,,1
+14155,C16,XKKK,AMD,LYS-C16,Candida albicans ATCC 10231,MFC,MFC,>512,µg/ml,,,,SGA,1E3,1E2 - 1E3,,1
+14155,C16,XKKK,AMD,LYS-C16,Candida tropicalis PCM 2681,MIC,MIC,512,µg/ml,,,,SGB,1E3,1E2 - 1E3,,1
+14155,C16,XKKK,AMD,LYS-C16,Candida tropicalis PCM 2681,MFC,MFC,>512,µg/ml,,,,SGA,1E3,1E2 - 1E3,,1
+14155,C16,XKKK,AMD,LYS-C16,Aspergillus niger ATCC 16404,MIC,MIC,256,µg/ml,,,,SGB,1E3,1E2 - 1E3,,1
+14155,C16,XKKK,AMD,LYS-C16,Aspergillus niger ATCC 16404,MFC,MFC,512,µg/ml,,,,SGA,1E3,1E2 - 1E3,,1
+14155,C16,XKKK,AMD,LYS-C16,Staphylococcus aureus ATCC 25923,MIC,MIC,>512,µg/ml,,,,MHB,,,,2
+14155,C16,XKKK,AMD,LYS-C16,Escherichia coli ATCC 25922,MIC,MIC,>512,µg/ml,,,,MHB,,,,2
+14155,C16,XKKK,AMD,LYS-C16,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,>512,µg/ml,,,,MHB,,,,2
+14155,C16,XKKK,AMD,LYS-C16,Candida albicans ATCC 10231,MIC,MIC,>512,µg/ml,,,,RPMI-1640,,,,2
+14172,C16,KKC,AMD,,,,,,,,,,,,,,
+14284,C16,XKKK,AMD,DAP-C16,Staphylococcus aureus ATCC 25923,MIC,MIC,>512,µg/ml,,,,MHB,,,,1
+14284,C16,XKKK,AMD,DAP-C16,Staphylococcus epidermidis PCM 2118,MIC,MIC,512,µg/ml,,,,MHB,,,,1
+14284,C16,XKKK,AMD,DAP-C16,Escherichia coli ATCC 25922,MIC,MIC,>512,µg/ml,,,,MHB,,,,1
+14284,C16,XKKK,AMD,DAP-C16,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,>512,µg/ml,,,,MHB,,,,1
+14284,C16,XKKK,AMD,DAP-C16,Candida albicans ATCC 10231,MIC,MIC,>512,µg/ml,,,,RPMI-1640,,,,1
+14288,C16,XKKK,AMD,DAB-C16,Staphylococcus aureus ATCC 25923,MIC,MIC,>512,µg/ml,,,,MHB,,,,1
+14288,C16,XKKK,AMD,DAB-C16,Staphylococcus epidermidis PCM 2118,MIC,MIC,256,µg/ml,,,,MHB,,,,1
+14288,C16,XKKK,AMD,DAB-C16,Escherichia coli ATCC 25922,MIC,MIC,>512,µg/ml,,,,MHB,,,,1
+14288,C16,XKKK,AMD,DAB-C16,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,>512,µg/ml,,,,MHB,,,,1
+14288,C16,XKKK,AMD,DAB-C16,Candida albicans ATCC 10231,MIC,MIC,>512,µg/ml,,,,RPMI-1640,,,,1
+15268,C16,EVll,AMD,,Porcine epidemic diarrhea virus (PEDcoV),IC50 F,IC50 F,5.4±0.4,µg/ml,,,,,,,Inhibition of cell-cell fusion in VERO cells,1
+16365,C16,KLIK,AMD,,Escherichia coli D21,MIC,MIC,100,µM,,,,LBB,1E6,1E5 - 1E6,,1
+16365,C16,KLIK,AMD,,Staphylococcus aureus,MIC,MIC,12.5,µM,,,,LBB,1E6,1E5 - 1E6,Clinical isolate,1
+16365,C16,KLIK,AMD,,Acinetobacter baumannii,MIC,MIC,50,µM,,,,LBB,1E6,1E5 - 1E6,Clinical isolate,1
+16365,C16,KLIK,AMD,,Aspergillus fumigatus ATCC 26430,MIC,MIC,25,µM,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16365,C16,KLIK,AMD,,Candida albicans ATCC 10231,MIC,MIC,25,µM,,,,RPMI-1640,1E6,1E5 - 1E6,,1
+16365,C16,KLIK,AMD,,Cryptococcus neoformans ATCC MYA-422,MIC,MIC,12.5,µM,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16853,C16,fXXL,,"DAB, DAB",Escherichia coli O157:H7,,,NA,,,,,LBB,,,Not active up to 50 μM,1
+16853,C16,fXXL,,"DAB, DAB",Klebsiella pneumoniae PCM 1,,,NA,,,,,LBB,,,Not active up to 50 μM,1
+16853,C16,fXXL,,"DAB, DAB",Pseudomonas aeruginosa PAO1,,,NA,,,,,LBB,,,Not active up to 50 μM,1
+16853,C16,fXXL,,"DAB, DAB",Yersinia enterocolitica PCM 2081,,MIC,30,µg/ml,,,,LBB,,,,1
+16853,C16,fXXL,,"DAB, DAB",Enterococcus faecalis ATCC 14506,,,NA,,,,,,,,Not active up to 50 μM,1
+16853,C16,fXXL,,"DAB, DAB",Staphylococcus aureus ATCC 29213,,MIC,5,µg/ml,,,,LBB,,,,1
+16853,C16,fXXL,,"DAB, DAB",Staphylococcus epidermidis ATCC 12228,,MIC,5,µg/ml,,,,LBB,,,,1
+16888,C16,KRKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+16888,C16,KRKK,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+16888,C16,KRKK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+16888,C16,KRKK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+16888,C16,KRKK,AMD,,Candida albicans ATCC 10231,MIC,MIC,16,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16888,C16,KRKK,AMD,,Candida glabrata ATCC 15126,MIC,MIC,32,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16888,C16,KRKK,AMD,,Yarrowia lipolytica PCM 2680-FY,MIC,MIC,1,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16888,C16,KRKK,AMD,,Candida tropicalis PCM 2709-FY,MIC,MIC,2,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16888,C16,KRKK,AMD,,Human cervical carcinoma HeLa,IC50,IC50,3±0.6,µg/ml,,,,,,,,1
+16890,C16,RRKK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+16890,C16,RRKK,AMD,,Staphylococcus epidermidis ATCC 14990,MIC,MIC,4,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+16890,C16,RRKK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+16890,C16,RRKK,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+16890,C16,RRKK,AMD,,Candida albicans ATCC 10231,MIC,MIC,32,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16890,C16,RRKK,AMD,,Candida glabrata ATCC 15126,MIC,MIC,16,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16890,C16,RRKK,AMD,,Yarrowia lipolytica PCM 2680-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16890,C16,RRKK,AMD,,Candida tropicalis PCM 2709-FY,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+16890,C16,RRKK,AMD,,Human cervical carcinoma HeLa,IC50,IC50,3±0.4,µg/ml,,,,,,,,1
+17440,C16,GRGR,,,Staphylococcus aureus ATCC 6538,LC90,LC90,2.35,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17440,C16,GRGR,,,Staphylococcus aureus ATCC 6538,LC,LC,9.375,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17440,C16,GRGR,,,Acinetobacter baumannii ATCC 19606,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17440,C16,GRGR,,,Candida albicans ATCC 90028,MIC,MIC,8,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17440,C16,GRGR,,,Cryptococcus neoformans ATCC 208821,MIC,MIC,8,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17440,C16,GRGR,,,Escherichia coli ATCC 25922,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17440,C16,GRGR,,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17440,C16,GRGR,,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17440,C16,GRGR,,,Staphylococcus aureus ATCC 43300,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17441,C16,GrGr,,,Staphylococcus aureus ATCC 6538,LC90,LC90,18.75,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17441,C16,GrGr,,,Staphylococcus aureus ATCC 6538,LC,LC,37.5,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17441,C16,GrGr,,,Escherichia coli ATCC 25922,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17441,C16,GrGr,,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17441,C16,GrGr,,,Acinetobacter baumannii ATCC 19606,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17441,C16,GrGr,,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17441,C16,GrGr,,,Staphylococcus aureus ATCC 43300,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17441,C16,GrGr,,,Candida albicans ATCC 90028,MIC,MIC,>32,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17441,C16,GrGr,,,Cryptococcus neoformans ATCC 208821,MIC,MIC,>32,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17442,C16,GKGK,,,Staphylococcus aureus ATCC 6538,LC90,LC90,4.7,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17442,C16,GKGK,,,Staphylococcus aureus ATCC 6538,LC,LC,9.375,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17442,C16,GKGK,,,Escherichia coli ATCC 25922,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17442,C16,GKGK,,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17442,C16,GKGK,,,Acinetobacter baumannii ATCC 19606,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17442,C16,GKGK,,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17442,C16,GKGK,,,Staphylococcus aureus ATCC 43300,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17442,C16,GKGK,,,Candida albicans ATCC 90028,MIC,MIC,16,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17442,C16,GKGK,,,Cryptococcus neoformans ATCC 208821,MIC,MIC,32,µg/ml,,,,YNB,5E5,1E3 - 1E4,,1
+17443,C16,GkGk,,,Staphylococcus aureus ATCC 6538,LC90,LC90,4.7,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17443,C16,GkGk,,,Staphylococcus aureus ATCC 6538,LC,LC,9.375,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17443,C16,GkGk,,,Escherichia coli ATCC 25922,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17443,C16,GkGk,,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17443,C16,GkGk,,,Acinetobacter baumannii ATCC 19606,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17443,C16,GkGk,,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17443,C16,GkGk,,,Staphylococcus aureus ATCC 43300,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17443,C16,GkGk,,,Candida albicans ATCC 90028,MIC,MIC,>32,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17443,C16,GkGk,,,Cryptococcus neoformans ATCC 208821,MIC,MIC,8-16,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17444,C16,GXGX,,"ORN, ORN",Staphylococcus aureus ATCC 6538,LC90,LC90,9.38,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17444,C16,GXGX,,"ORN, ORN",Staphylococcus aureus ATCC 6538,LC,LC,37.5,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17445,C16,GxGx,,"D-ORN, D-ORN",Staphylococcus aureus ATCC 6538,LC90,LC90,9.38,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17445,C16,GxGx,,"D-ORN, D-ORN",Staphylococcus aureus ATCC 6538,LC,LC,18.75,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17445,C16,GxGx,,"D-ORN, D-ORN",Escherichia coli ATCC 25922,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17445,C16,GxGx,,"D-ORN, D-ORN",Klebsiella pneumoniae ATCC 700603,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17445,C16,GxGx,,"D-ORN, D-ORN",Acinetobacter baumannii ATCC 19606,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17445,C16,GxGx,,"D-ORN, D-ORN",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17445,C16,GxGx,,"D-ORN, D-ORN",Staphylococcus aureus ATCC 43300,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17445,C16,GxGx,,"D-ORN, D-ORN",Candida albicans ATCC 90028,MIC,MIC,>32,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17445,C16,GxGx,,"D-ORN, D-ORN",Cryptococcus neoformans ATCC 208821,MIC,MIC,>32,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17446,C16,GXGX,,"DAB, DAB",Staphylococcus aureus ATCC 6538,LC90,LC90,4.7,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17446,C16,GXGX,,"DAB, DAB",Staphylococcus aureus ATCC 6538,LC,LC,18.75,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17446,C16,GXGX,,"DAB, DAB",Acinetobacter baumannii ATCC 19606,MIC,MIC,32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17446,C16,GXGX,,"DAB, DAB",Candida albicans ATCC 90028,MIC,MIC,>32,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17446,C16,GXGX,,"DAB, DAB",Cryptococcus neoformans ATCC 208821,MIC,MIC,16,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17446,C16,GXGX,,"DAB, DAB",Escherichia coli ATCC 25922,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17446,C16,GXGX,,"DAB, DAB",Klebsiella pneumoniae ATCC 700603,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17446,C16,GXGX,,"DAB, DAB",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17446,C16,GXGX,,"DAB, DAB",Staphylococcus aureus ATCC 43300,MIC,MIC,32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17447,C16,GXGX,,"DAP, DAP",Staphylococcus aureus ATCC 6538,LC90,LC90,2.35,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17447,C16,GXGX,,"DAP, DAP",Staphylococcus aureus ATCC 6538,LC,LC,4.7,µg/ml,5.5,,,BHIA,1E4-1E5,1E4 - 1E5,in 10 mM NaP and 0.25% glucose,1
+17447,C16,GXGX,,"DAP, DAP",Acinetobacter baumannii ATCC 19606,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17447,C16,GXGX,,"DAP, DAP",Candida albicans ATCC 90028,MIC,MIC,8,µg/ml,,,,YNB,2.5E3,1E3 - 1E4,,1
+17447,C16,GXGX,,"DAP, DAP",Cryptococcus neoformans ATCC 208821,MIC,MIC,1,µg/ml,,,,YNB,5E5,1E3 - 1E4,,1
+17447,C16,GXGX,,"DAP, DAP",Escherichia coli ATCC 25922,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17447,C16,GXGX,,"DAP, DAP",Klebsiella pneumoniae ATCC 700603,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17447,C16,GXGX,,"DAP, DAP",Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17447,C16,GXGX,,"DAP, DAP",Staphylococcus aureus ATCC 43300,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+17736,C16,RWW,AMD,,Staphylococcus epidermidis ATCC 12228,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17736,C16,RWW,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17736,C16,RWW,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,32,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17736,C16,RWW,AMD,,Bacillus subtilis ATCC 23857,MIC,MIC,64,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17736,C16,RWW,AMD,,Staphylococcus aureus 75,MIC,MIC,32,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,1
+17736,C16,RWW,AMD,,Staphylococcus aureus 113,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,1
+17736,C16,RWW,AMD,,Escherichia coli ATCC 25922,MIC,MIC,>128,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17736,C16,RWW,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>128,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17736,C16,RWW,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,>128,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17736,C16,RWW,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,>128,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17736,C16,RWW,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,>128,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17742,C16,RRW,AMD,,Staphylococcus epidermidis ATCC 12228,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17742,C16,RRW,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17742,C16,RRW,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17742,C16,RRW,AMD,,Bacillus subtilis ATCC 23857,MIC,MIC,4,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17742,C16,RRW,AMD,,Staphylococcus aureus 75,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,1
+17742,C16,RRW,AMD,,Staphylococcus aureus 113,MIC,MIC,2,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,1
+17742,C16,RRW,AMD,,Escherichia coli ATCC 25922,MIC,MIC,32,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17742,C16,RRW,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,32,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17742,C16,RRW,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17742,C16,RRW,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,32,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17742,C16,RRW,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,64,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17784,C16,RWR,AMD,,Staphylococcus epidermidis ATCC 12228,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17784,C16,RWR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17784,C16,RWR,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17784,C16,RWR,AMD,,Bacillus subtilis ATCC 23857,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17784,C16,RWR,AMD,,Staphylococcus aureus 75,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,1
+17784,C16,RWR,AMD,,Staphylococcus aureus 113,MIC,MIC,4,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,1
+17784,C16,RWR,AMD,,Escherichia coli ATCC 25922,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17784,C16,RWR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17784,C16,RWR,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17784,C16,RWR,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17784,C16,RWR,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,16,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17786,C16,WRR,AMD,,Staphylococcus epidermidis ATCC 12228,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17786,C16,WRR,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17786,C16,WRR,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17786,C16,WRR,AMD,,Bacillus subtilis ATCC 23857,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17786,C16,WRR,AMD,,Staphylococcus aureus 75,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,2
+17786,C16,WRR,AMD,,Staphylococcus aureus 113,MIC,MIC,8,µM,,,,MHB,5E5,1E5 - 1E6,MRSA clinical isolate,1
+17786,C16,WRR,AMD,,Escherichia coli ATCC 25922,MIC,MIC,32,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17786,C16,WRR,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,64,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17786,C16,WRR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17786,C16,WRR,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,128,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17786,C16,WRR,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,64,µM,,,,MHB,5E5,1E5 - 1E6,,1
+17846,C16,KLFK,AMD,,Escherichia coli ATCC 35218,MIC,MIC,28.3,µM,,,,MHB,7E5,1E5 - 1E6,,1
+17846,C16,KLFK,AMD,,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,113.3,µM,,,,MHB,7E5,1E5 - 1E6,,1
+17846,C16,KLFK,AMD,,Staphylococcus aureus ATCC 25923,MIC,MIC,>226.6,µM,,,,MHB,7E5,1E5 - 1E6,,1
+17846,C16,KLFK,AMD,,Staphylococcus aureus BSF FBCB1313,MIC,MIC,56.7,µM,,,,MHB,7E5,1E5 - 1E6,MRSA,1
+17846,C16,KLFK,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,113.2,µM,,,,MHB,7E5,1E5 - 1E6,,1
+17846,C16,KLFK,AMD,,Candida albicans PEEC 2,MIC,MIC,331.5,µM,,,,SDB,2E3,1E3 - 1E4,,1
+17846,C16,KLFK,AMD,,Candida albicans DBFIQ 1,MIC,MIC,>331.5,µM,,,,SDB,2E3,1E3 - 1E4,,1
+17846,C16,KLFK,AMD,,Candida tropicalis DBFIQ 3,MIC,MIC,>331.5,µM,,,,SDB,2E3,1E3 - 1E4,,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Escherichia coli MTCC 0723,MIC,MIC,3.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Escherichia coli PGI/DML02292,MIC,MIC,4.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,Imipenem resistant clinical isolate,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Pseudomonas aeruginosa MTCC 2295,MIC,MIC,5.5,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Staphylococcus aureus MTCC 3160,MIC,MIC,5,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Staphylococcus aureus PGI/DML03149,MIC,MIC,5,µg/ml,,,,MHB,1E5,1E4 - 1E5,MRSA clinical isolate,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Bacillus subtilis MTCC 2763,MIC,MIC,20,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Candida albicans ATCC 24433,MIC,MIC,3,µg/ml,,,,RPMI-1640,2.5E3,1E3 - 1E4,,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Candida albicans PGI/DML0109,MIC,MIC,3.5,µg/ml,,,,RPMI-1640,2.5E3,1E3 - 1E4,Fluconazole resistant clinical isolates,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Cryptococcus neoformans ATCC 2344,MIC,MIC,3.5,µg/ml,,,,RPMI-1640,2.5E3,1E3 - 1E4,,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Aspergillus fumigatus ATCC 42203,MIC,MIC,3.5,µg/ml,,,,RPMI-1640,2.5E3,1E3 - 1E4,,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Aspergillus fumigatus IGMC/LM1/0336,MIC,MIC,5,µg/ml,,,,RPMI-1640,1E5,1E3 - 1E4,Fluconazole resistant clinical isolates,1
+18097,C16,XXXX,AMD,"3-Abz, ORN, ORN, ORN",Aspergillus niger ATCC 64028,MIC,MIC,4.25,µg/ml,,,,RPMI-1640,2.5E3,1E3 - 1E4,,1
+18902,C16,XH,,bALA,Candida albicans CCM 8186,,,NA,,,,,RPMI-1640,2.5E3,1E3 - 1E4,Not active up to 100 μg/ml,1
+18902,C16,XH,,bALA,Candida krusei ATCC 6258,,,NA,,,,,RPMI-1640,2.5E3,1E3 - 1E4,Not active up to 100 μg/ml,1
+18902,C16,XH,,bALA,Candida parapsilosis ATCC 22019,,,NA,,,,,RPMI-1640,2.5E3,1E3 - 1E4,Not active up to 100 μg/ml,1
+18902,C16,XH,,bALA,Candida glabrata ATCC 90030,,,NA,,,,,RPMI-1640,2.5E3,1E3 - 1E4,Not active up to 100 μg/ml,1
+18902,C16,XH,,bALA,Bacillus subtilis ATCC 9799,,,NA,,,,,MHB,1E5,1E4 - 1E5,Not active up to 100 μg/ml,1
+18902,C16,XH,,bALA,Bacillus cereus ATCC 10702,,,NA,,,,,MHB,1E5,1E4 - 1E5,Not active up to 100 μg/ml,1
+18902,C16,XH,,bALA,Staphylococcus epidermidis ATCC 14990,,,NA,,,,,MHB,1E5,1E4 - 1E5,Not active up to 100 μg/ml,1
+18902,C16,XH,,bALA,Staphylococcus aureus ATCC 25923,,,NA,,,,,MHB,1E5,1E4 - 1E5,Not active up to 100 μg/ml,1
+18902,C16,XH,,bALA,Escherichia coli ATCC 25922,,,NA,,,,,MHB,1E5,1E4 - 1E5,Not active up to 100 μg/ml,1
+18902,C16,XH,,bALA,Pseudomonas aeruginosa ATCC 10145,,,NA,,,,,MHB,1E5,1E4 - 1E5,Not active up to 100 μg/ml,1
+22614,C16,SRR,AMD,,Enterococcus faecium ATCC 700221,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22614,C16,SRR,AMD,,Staphylococcus aureus ATCC 33591,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22614,C16,SRR,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,512,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22614,C16,SRR,AMD,,Acinetobacter baumannii ATCC BAA-1605,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22614,C16,SRR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22614,C16,SRR,AMD,,Klebsiella aerogenes ATCC 13048,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22614,C16,SRR,AMD,,Candida glabrata ATCC 15126,MIC,MIC,4,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+22617,C16,RSR,AMD,,Enterococcus faecium ATCC 700221,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22617,C16,RSR,AMD,,Staphylococcus aureus ATCC 33591,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22617,C16,RSR,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22617,C16,RSR,AMD,,Acinetobacter baumannii ATCC BAA-1605,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22617,C16,RSR,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22617,C16,RSR,AMD,,Klebsiella aerogenes ATCC 13048,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22617,C16,RSR,AMD,,Candida glabrata ATCC 15126,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+22620,C16,RRS,AMD,,Enterococcus faecium ATCC 700221,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22620,C16,RRS,AMD,,Staphylococcus aureus ATCC 33591,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22620,C16,RRS,AMD,,Klebsiella pneumoniae ATCC 700603,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22620,C16,RRS,AMD,,Acinetobacter baumannii ATCC BAA-1605,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22620,C16,RRS,AMD,,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22620,C16,RRS,AMD,,Klebsiella aerogenes ATCC 13048,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22620,C16,RRS,AMD,,Candida glabrata ATCC 15126,MIC,MIC,8,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+22623,C16,XRR,AMD,SER-GlcNAc,Enterococcus faecium ATCC 700221,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22623,C16,XRR,AMD,SER-GlcNAc,Staphylococcus aureus ATCC 33591,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22623,C16,XRR,AMD,SER-GlcNAc,Klebsiella pneumoniae ATCC 700603,MIC,MIC,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22623,C16,XRR,AMD,SER-GlcNAc,Acinetobacter baumannii ATCC BAA-1605,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22623,C16,XRR,AMD,SER-GlcNAc,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22623,C16,XRR,AMD,SER-GlcNAc,Klebsiella aerogenes ATCC 13048,MIC,MIC,512,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22623,C16,XRR,AMD,SER-GlcNAc,Candida glabrata ATCC 15126,MIC,MIC,32,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+22626,C16,RXR,AMD,SER-GlcNAc,Enterococcus faecium ATCC 700221,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22626,C16,RXR,AMD,SER-GlcNAc,Staphylococcus aureus ATCC 33591,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22626,C16,RXR,AMD,SER-GlcNAc,Klebsiella pneumoniae ATCC 700603,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22626,C16,RXR,AMD,SER-GlcNAc,Acinetobacter baumannii ATCC BAA-1605,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22626,C16,RXR,AMD,SER-GlcNAc,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22626,C16,RXR,AMD,SER-GlcNAc,Klebsiella aerogenes ATCC 13048,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22626,C16,RXR,AMD,SER-GlcNAc,Candida glabrata ATCC 15126,MIC,MIC,16,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+22629,C16,RRX,AMD,SER-GlcNAc,Enterococcus faecium ATCC 700221,MIC,MIC,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22629,C16,RRX,AMD,SER-GlcNAc,Staphylococcus aureus ATCC 33591,MIC,MIC,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22629,C16,RRX,AMD,SER-GlcNAc,Klebsiella pneumoniae ATCC 700603,MIC,MIC,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22629,C16,RRX,AMD,SER-GlcNAc,Acinetobacter baumannii ATCC BAA-1605,MIC,MIC,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22629,C16,RRX,AMD,SER-GlcNAc,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22629,C16,RRX,AMD,SER-GlcNAc,Klebsiella aerogenes ATCC 13048,MIC,MIC,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+22629,C16,RRX,AMD,SER-GlcNAc,Candida glabrata ATCC 15126,MIC,MIC,16,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+23366,C16,KXK,AMD,bALA,Staphylococcus aureus ATCC 25923,MIC,MIC,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+23366,C16,KXK,AMD,bALA,Staphylococcus epidermidis ATCC 14990,MIC,MIC,2,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+23366,C16,KXK,AMD,bALA,Escherichia coli ATCC 25922,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+23366,C16,KXK,AMD,bALA,Pseudomonas aeruginosa ATCC 9027,MIC,MIC,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+23366,C16,KXK,AMD,bALA,Candida albicans ATCC 10231,MIC,MIC,4,µg/ml,,,,RPMI-1640,2E3,1E3 - 1E4,,1
+23904,C16,KLLK,AMD,,Enterococcus faecium ATCC 6569,MIC,MIC,1.6,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23904,C16,KLLK,AMD,,Enterococcus faecalis ATCC 29212,MIC,MIC,6.3,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23904,C16,KLLK,AMD,,Staphylococcus aureus ATCC 29213,MIC,MIC,12.5,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23904,C16,KLLK,AMD,,Klebsiella pneumoniae ATCC 13883,MIC,MIC,200,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23904,C16,KLLK,AMD,,Acinetobacter baumannii ATCC 19606,MIC,MIC,25,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23904,C16,KLLK,AMD,,Pseudomonas aeruginosa ATCC 25619,MIC,MIC,100,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23904,C16,KLLK,AMD,,Escherichia coli ATCC 25922,MIC,MIC,25,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23904,C16,KLLK,AMD,,Candida albicans ATCC 10231,MIC,MIC,6.3,µg/ml,,,,RPMI-1640,,,,1
+23904,C16,KLLK,AMD,,Cryptococcus neoformans var. grubii H99,MIC,MIC,1.6,µg/ml,,,,RPMI-1640,,,,1
+23904,C16,KLLK,AMD,,Human hepatocellular carcinoma HepG2,50-60% Cytotoxicity,50% Cytotoxicity,97±8.8,,,,,,,,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Enterococcus faecium ATCC 6569,MIC,MIC,6.3,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Enterococcus faecalis ATCC 29212,MIC,MIC,6.3,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Staphylococcus aureus ATCC 29213,MIC,MIC,6.3,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Klebsiella pneumoniae ATCC 13883,MIC,MIC,50,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Acinetobacter baumannii ATCC 19606,MIC,MIC,50,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Pseudomonas aeruginosa ATCC 25619,MIC,MIC,25,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Escherichia coli ATCC 25922,MIC,MIC,50,µg/ml,,,,CAMHB,1E6,1E5 - 1E6,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Candida albicans ATCC 10231,MIC,MIC,12.5,µg/ml,,,,RPMI-1640,,,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Cryptococcus neoformans var. grubii H99,MIC,MIC,3.13,µg/ml,,,,RPMI-1640,,,,1
+23907,C16,XXXX,AMD,"NLys, NLeu, NLeu, NLys",Human hepatocellular carcinoma HepG2,50-60% Cytotoxicity,50% Cytotoxicity,155±8.0,µg/ml,,,,,,,,1

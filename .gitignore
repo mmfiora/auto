@@ -10,8 +10,6 @@ env/
 *.h5
 *.dat
 results/
-outputs/
-data/
 
 # Editores
 .vscode/
