@@ -15,6 +15,43 @@ from src.core.exceptions import FileProcessingError, DataValidationError
 
 logger = logging.getLogger("dbaasp_pipeline")
 
+# MIC Threshold Configuration
+# Sets the boundary for classifying peptides as having significant MIC activity
+# MIC values <= this threshold are classified as 1 (has MIC activity)
+# MIC values > this threshold or missing are classified as 0 (no MIC activity)
+MIC_THRESHOLD_uM = 25.0  # microMolar threshold for MIC classification
+
+def classify_mic_activity(lower_uM: str, upper_uM: str) -> int:
+    """
+    Classify MIC activity based on upper bound concentration value.
+    
+    Returns 1 if peptide has significant MIC activity, 0 otherwise.
+    Uses the upper bound of MIC range (>x values map to upper_uM).
+    Classification: MIC <= threshold = 1 (active), MIC > threshold or missing = 0 (inactive)
+    
+    Args:
+        lower_uM: Lower bound of concentration in microMolar (str) - not used
+        upper_uM: Upper bound of concentration in microMolar (str) - primary classification value
+    
+    Returns:
+        1 if MIC is below threshold (active), 0 otherwise (inactive or missing)
+    """
+    try:
+        # Use upper bound (handles ">x" format which goes to upper_uM)
+        if upper_uM:
+            mic_value = float(upper_uM)
+            return 1 if mic_value <= MIC_THRESHOLD_uM else 0
+        # Fall back to lower bound if upper is unavailable
+        elif lower_uM:
+            mic_value = float(lower_uM)
+            return 1 if mic_value <= MIC_THRESHOLD_uM else 0
+        # No MIC value available
+        else:
+            return 0
+    except (ValueError, TypeError):
+        # If conversion fails, return 0 (no valid activity)
+        return 0
+
 def calc_mw(seq: str, nterm: str | None, cterm: str | None) -> float:
     """Calculate peptide molecular weight (Da)."""
     mw = sum(Config.AA_MASS.get(a.upper(), 110.0) for a in (seq or "")) + Config.H2O_MASS
@@ -101,7 +138,7 @@ def parse_conc(val: str | None, row_num: int | None = None) -> tuple[str, str]:
     
     # Handle greater than (e.g., ">25")
     if s.startswith(">"):
-        return (s[1:].strip(), "")
+        return ("", s[1:].strip())
     
     # Handle less than (e.g., "<10")
     if s.startswith("<"):
@@ -245,6 +282,8 @@ def run(infile: str | None = None, outfile: str | None = None) -> None:
                 "species", "strain",
                 # --- COLUMNAS ORIGINALES Y NUEVAS ---
                 "curv_min", "npol_min", "ph_run", "npol_c0", "npol_c1", "npol_c2",
+                # --- MIC CLASSIFICATION ---
+                "has_mic_activity",
             ]
             rows = []
             row_num = 1  # Start at 1, will increment to 2 for first data row
@@ -285,6 +324,11 @@ def run(infile: str | None = None, outfile: str | None = None) -> None:
                 row["npol_c0"] = npol_c0
                 row["npol_c1"] = npol_c1
                 row["npol_c2"] = npol_c2
+                
+                # --- Classify MIC activity based on threshold ---
+                lower_um = row.get("lower_uM", "")
+                upper_um = row.get("upper_uM", "")
+                row["has_mic_activity"] = classify_mic_activity(lower_um, upper_um)
 
                 rows.append(row)
 
