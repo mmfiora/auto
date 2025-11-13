@@ -9,3 +9,6 @@ pandas>=2.0.0
 # Plotting and visualization
 matplotlib>=3.7.0
 seaborn>=0.12.0
+
+# Molecular descriptors and cheminformatics
+rdkit>=2023.09.0

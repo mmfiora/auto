@@ -11,24 +11,28 @@ logger = logging.getLogger("dbaasp_pipeline")
 def create_unified_csv(
     physchem_file: str | None = None,
     normalized_file: str | None = None,
+    lipophilicity_file: str | None = None,
     output_file: str | None = None
 ) -> None:
     """
-    Create unified CSV combining physicochemical properties with normalized activity data.
+    Create unified CSV combining physicochemical properties, lipophilicity, and normalized activity data.
     
     Args:
         physchem_file: Path to physchem.csv (default: Config.OUTPUT_PHYSCHEM_CSV)
         normalized_file: Path to activity_normalized.csv (default: Config.OUTPUT_NORMALIZED_CSV)
+        lipophilicity_file: Path to lipophilicity.csv (default: Config.OUTPUT_LIPOPHILICITY_CSV)
         output_file: Path for unified output (default: unified_results.csv)
     """
     if physchem_file is None:
         physchem_file = Config.OUTPUT_PHYSCHEM_CSV
     if normalized_file is None:
         normalized_file = Config.OUTPUT_NORMALIZED_CSV
+    if lipophilicity_file is None:
+        lipophilicity_file = Config.OUTPUT_LIPOPHILICITY_CSV
     if output_file is None:
         output_file = Config.OUTPUT_UNIFIED_CSV
     
-    logger.info(f"Creating unified CSV: {physchem_file} + {normalized_file} -> {output_file}")
+    logger.info(f"Creating unified CSV: {physchem_file} + {lipophilicity_file} + {normalized_file} -> {output_file}")
     
     try:
         # Step 1: Load physicochemical properties by Peptide ID
@@ -50,17 +54,38 @@ def create_unified_csv(
         logger.info(f"Loaded physicochemical data for {len(physchem_data)} peptides")
         logger.info(f"Physicochemical properties: {len(physchem_headers)} columns")
         
-        # Step 2: Process normalized activity data and merge with physchem
+        # Step 1b: Load lipophilicity data by Peptide ID
+        lipophilicity_data = {}
+        lipophilicity_headers = []
+        
+        try:
+            with open(lipophilicity_file, encoding=Config.CSV_ENCODING) as f:
+                reader = csv.DictReader(f)
+                if reader.fieldnames is not None:
+                    lipophilicity_headers = [h for h in reader.fieldnames if h not in ["Peptide ID", "N TERMINUS", "SEQUENCE", "SMILES"]]
+                    
+                    for row in reader:
+                        peptide_id = row["Peptide ID"]
+                        lipophilicity_props = {h: row.get(h, "") for h in lipophilicity_headers}
+                        lipophilicity_data[peptide_id] = lipophilicity_props
+            
+            logger.info(f"Loaded lipophilicity data for {len(lipophilicity_data)} peptides")
+            logger.info(f"Lipophilicity properties: {len(lipophilicity_headers)} columns")
+        except FileNotFoundError:
+            logger.warning(f"Lipophilicity file not found: {lipophilicity_file}")
+            lipophilicity_headers = []
+        
+        # Step 2: Process normalized activity data and merge with physchem and lipophilicity
         unified_rows = []
         
         with open(normalized_file, encoding=Config.CSV_ENCODING) as f:
             reader = csv.DictReader(f)
             
-            # Create unified header: normalized activity columns + physchem columns
+            # Create unified header: normalized activity columns + physchem columns + lipophilicity columns
             if reader.fieldnames is None:
                 raise FileProcessingError(f"No headers found in {normalized_file}", filename=normalized_file)
             activity_headers = list(reader.fieldnames)
-            unified_headers = activity_headers + physchem_headers
+            unified_headers = activity_headers + physchem_headers + lipophilicity_headers
             
             row_count = 0
             matched_count = 0
@@ -82,6 +107,14 @@ def create_unified_csv(
                         unified_row[header] = ""
                     logger.warning(f"No physicochemical data found for Peptide ID {peptide_id}")
                 
+                # Add lipophilicity properties if available
+                if peptide_id in lipophilicity_data:
+                    unified_row.update(lipophilicity_data[peptide_id])
+                else:
+                    # Fill missing lipophilicity data with empty strings
+                    for header in lipophilicity_headers:
+                        unified_row[header] = ""
+                
                 unified_rows.append(unified_row)
         
         logger.info(f"Processed {row_count} activity rows, matched {matched_count} with physchem data")
@@ -102,6 +135,7 @@ def create_unified_csv(
         logger.info("  - Normalized concentrations (µM conversion)")
         logger.info("  - Min list data (curv_min, npol_min)")
         logger.info(f"  - Physicochemical properties ({len(physchem_headers)} columns)")
+        logger.info(f"  - Lipophilicity properties ({len(lipophilicity_headers)} columns)")
         
     except FileNotFoundError as e:
         raise FileProcessingError(f"Input file not found: {e}", filename=str(e))
