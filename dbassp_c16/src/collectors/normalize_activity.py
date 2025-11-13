@@ -19,7 +19,7 @@ logger = logging.getLogger("dbaasp_pipeline")
 # Sets the boundary for classifying peptides as having significant MIC activity
 # MIC values <= this threshold are classified as 1 (has MIC activity)
 # MIC values > this threshold or missing are classified as 0 (no MIC activity)
-MIC_THRESHOLD_uM = 25.0  # microMolar threshold for MIC classification
+MIC_THRESHOLD_uM = 50.0  # microMolar threshold for MIC classification
 
 def classify_mic_activity(lower_uM: str, upper_uM: str) -> int:
     """
