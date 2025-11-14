@@ -1,26 +1,14 @@
 # DBAASP Peptide Analysis Pipeline
 
-A comprehensive Python pipeline for analyzing antimicrobial peptides (AMPs) from the DBAASP (Database of Antimicrobial Activity and Structure of Peptides) database. This tool collects, processes, and analyzes physicochemical properties and biological activity data for peptides with different N-terminal modifications (C12, C16, etc.).
+A Python pipeline for analyzing antimicrobial peptides (AMPs) from the DBAASP (Database of Antimicrobial Activity and Structure of Peptides) database. This tool collects and processes physicochemical properties and biological activity data for peptides with different N-terminal modifications (C12, C16, etc.).
 
 ## Overview
 
-This pipeline automates the collection and analysis of peptide data through several key stages:
-
-1. **Data Collection** - Fetches peptide data from the DBAASP API
-2. **Physicochemical Analysis** - Calculates molecular properties (mass, charge, hydrophobicity, etc.)
-3. **Activity Analysis** - Extracts and processes biological activity information
-4. **Normalization** - Normalizes activity values for comparative analysis
-5. **Unified Results** - Combines all data into comprehensive analysis files
-
-## Features
-
-- **Multi-terminal Support**: Handles peptides with different N-terminal modifications (C12, C16, etc.)
-- **API Integration**: Direct integration with DBAASP API for real-time data fetching
-- **Comprehensive Analysis**: Calculates 20+ physicochemical properties per peptide
-- **Activity Tracking**: Captures detailed activity metrics across multiple target species
-- **Data Validation**: Built-in validation and error handling for data integrity
-- **Configurable**: Environment-based configuration with sensible defaults
-- **Logging**: Detailed logging for debugging and monitoring pipeline execution
+Automates collection and analysis of antimicrobial peptides (AMPs) from the DBAASP database:
+- Fetches peptide data via DBAASP API
+- Extracts physicochemical properties, biological activity, and lipophilicity metrics
+- Normalizes activity data for comparative analysis across species
+- Supports multiple N-terminal modifications (C12, C16, etc.)
 
 ## Project Structure
 
@@ -33,7 +21,7 @@ dbassp_c16/
 │   ├── collectors/      # Data collection modules
 │   │   ├── activity.py          # Biological activity data collection
 │   │   ├── normalize_activity.py # Activity normalization
-│   │   └── physchem.py          # Physicochemical properties calculation
+│   │   └── physchem.py          # Physicochemical properties collection
 │   ├── core/           # Core utilities and configuration
 │   │   ├── common.py           # Shared functions and API interaction
 │   │   ├── config.py           # Configuration management
@@ -68,151 +56,68 @@ dbassp_c16/
 
 ## Usage
 
-### Basic Workflow
+1. **Prepare Input**: Place peptide data in `data/input/peptides_{NTERMINUS}.csv` with columns:
+   - `Peptide ID` or `ID`
+   - `N TERMINUS` (e.g., "C16")
+   - `SEQUENCE`
 
-1. **Prepare Input Data**: Create a CSV file with peptide sequences in `data/input/` with format:
-   ```
-   peptides_{NTERMINUS}.csv
-   ```
-   Example: `peptides_C16.csv`
-
-   Required columns:
-   - `Peptide ID` or `ID` - Unique peptide identifier
-   - `N TERMINUS` - N-terminal modification (e.g., "C16")
-   - `SEQUENCE` - Amino acid sequence
-   - Other optional peptide properties
-
-2. **Run the Pipeline**:
+2. **Run Pipeline**:
    ```bash
    python main_api.py
    ```
+   Auto-detects N-terminus from filename, fetches data from DBAASP API, extracts properties, and generates output files
 
-   The pipeline will:
-   - Auto-detect the N-terminal modification from the input filename
-   - Fetch peptide data from DBAASP API
-   - Calculate physicochemical properties
-   - Extract activity information
-   - Generate normalized and unified output files
+### Input Files
+
+- **list_min_{NTERMINUS}.txt** - Text file with peptide sequences and MOLT (Molecular Theory)-calculated minima. Includes free energy, aggregation number (npol), and preferred curvature (curv_min) obtained from cluster runs. Values are merged into unified_results. 
+- **peptides_{NTERMINUS}.csv** - Peptide dataset with ID, sequence, and N-terminal modifications
 
 ### Output Files
 
-The pipeline generates several output CSV files:
-
-- **physchem_{NTERMINUS}.csv** - Physicochemical properties for each peptide
+- **physchem_{NTERMINUS}.csv** - Physicochemical properties
 - **activity_{NTERMINUS}.csv** - Biological activity data
+- **lipophilicity_{NTERMINUS}.csv** - Lipophilicity metrics (logP, logD, free energy, aggregation number, curvature)
 - **activity_normalized_{NTERMINUS}.csv** - Normalized activity metrics
-- **unified_results_{NTERMINUS}.csv** - Combined analysis of all properties and activities
+- **unified_results_{NTERMINUS}.csv** - Combined analysis results
 
 ## Configuration
 
-Configuration is managed via `dbassp_c16/src/core/config.py` with environment variable overrides:
-
-### Key Configuration Options
-
-```python
-# API Settings
-DBAASP_API_URL = "https://dbaasp.org/peptides/{id}"
-DBAASP_TIMEOUT = 20  # seconds
-
-# File Paths (set automatically based on N-terminus)
-INPUT_PEPTIDES_CSV = "data/input/peptides_{NTERMINUS}.csv"
-OUTPUT_PHYSCHEM_CSV = "data/output/physchem_{NTERMINUS}.csv"
-OUTPUT_ACTIVITY_CSV = "data/output/activity_{NTERMINUS}.csv"
-OUTPUT_NORMALIZED_CSV = "data/output/activity_normalized_{NTERMINUS}.csv"
-OUTPUT_UNIFIED_CSV = "data/output/unified_results_{NTERMINUS}.csv"
-
-# Logging
-LOG_LEVEL = "INFO"  # Set to DEBUG for verbose output
-```
-
-### Environment Variables
-
-Override defaults by setting environment variables:
+Configuration is managed via `src/core/config.py`. Key settings can be overridden with environment variables:
 
 ```bash
-export DBAASP_API_URL="https://custom.dbaasp.org/peptides/{id}"
-export DBAASP_TIMEOUT="30"
-export LOG_LEVEL="DEBUG"
-python main_api.py
+export DBAASP_API_URL="https://dbaasp.org/peptides/{id}"
+export DBAASP_TIMEOUT="20"
+export LOG_LEVEL="DEBUG"  # Set to DEBUG for verbose output
 ```
 
-## Physicochemical Properties Calculated
+File paths are automatically set based on the N-terminus modification (C12, C16, etc.)
 
-The pipeline calculates the following properties for each peptide:
+## Extracted Data
 
-- Molecular weight
-- Isoelectric point (pI)
-- Charge at different pH values
-- Hydrophobicity indices
-- Aromaticity
-- Instability index
-- Aliphatic index
-- Amino acid composition
-- And more...
+**Physicochemical** (DBAASP): Molecular weight, pI, charge, hydrophobicity, aromaticity, instability index, aliphatic index, amino acid composition
 
-## Biological Activity Metrics
+**Biological Activity**: Target species, activity measurements, MIC, antibacterial/antifungal potency
 
-The pipeline captures:
-
-- Target organisms/species
-- Activity measurements and units
-- Minimum inhibitory concentration (MIC)
-- Antibacterial/antifungal potency
-- Cross-species activity comparisons
+**Self-Assembly** (MOLT): Free energy, aggregation number (npol), self-assembly curvature
 
 ## Troubleshooting
 
-### Missing Input Files
-Ensure you have peptide CSV files in `data/input/` with the pattern `peptides_{NTERMINUS}.csv`
+**Missing Input Files**: Ensure peptide CSV files exist in `data/input/` with pattern `peptides_{NTERMINUS}.csv`
 
-### API Connection Errors
-- Check internet connection
-- Verify DBAASP API is accessible at the configured URL
-- Increase `DBAASP_TIMEOUT` if requests are timing out
+**API Connection Issues**:
+- Check internet connection and DBAASP API accessibility
+- Increase `DBAASP_TIMEOUT` if requests time out
 
-### Data Validation Errors
-- Verify CSV files have required columns (`Peptide ID` or `ID`, `N TERMINUS`)
-- Check for proper UTF-8 encoding
-- Ensure peptide IDs are numeric or in format `PREFIX_123`
+**Data Validation Errors**:
+- Verify CSV files contain required columns: `Peptide ID` or `ID`, `N TERMINUS`, `SEQUENCE`
+- Check UTF-8 encoding and valid peptide ID format
 
-### Enable Debug Logging
+**Debug Mode**:
 ```bash
 export LOG_LEVEL="DEBUG"
 python main_api.py
 ```
 
-## Example Workflow
-
-```bash
-# 1. Prepare your input file: data/input/peptides_C16.csv
-
-# 2. Run the analysis pipeline
-python main_api.py
-
-# 3. Check the generated output files
-# - data/output/physchem_C16.csv
-# - data/output/activity_C16.csv
-# - data/output/activity_normalized_C16.csv
-# - data/output/unified_results_C16.csv
-
-# 4. Optionally run analysis scripts
-python analysis/CorrelationMatrix.py
-python analysis/HistSpecies.py
-```
-
-## Contributing
-
-When modifying the pipeline:
-
-1. Add proper logging statements using the configured logger
-2. Raise appropriate custom exceptions from `src.core.exceptions`
-3. Update configuration in `config.py` for any new parameters
-4. Test with multiple N-terminal modifications
-
-
 ## Support
 
-For issues or questions:
-- Check the logs in `logs/pipeline.log`
-- Enable DEBUG logging for detailed information
-- Review the source code documentation
+For issues: check `logs/pipeline.log`, enable DEBUG logging (`export LOG_LEVEL="DEBUG"`), or review source code documentation
