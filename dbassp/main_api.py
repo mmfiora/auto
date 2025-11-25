@@ -12,6 +12,7 @@ from src.collectors import activity
 from src.collectors import normalize_activity
 from src.collectors import lipophilicity
 from src.processors import unified_results
+from src.processors import intrinsic_properties
 from src.core import common
 import os
 os.makedirs("logs", exist_ok=True)
@@ -86,7 +87,8 @@ Examples:
             print(f"\nUsing Nterminus: {nterminus}")
         
         print(f"Input: {Config.INPUT_PEPTIDES_CSV}")
-        print(f"Output: {Config.OUTPUT_PHYSCHEM_CSV}, {Config.OUTPUT_ACTIVITY_CSV}, {Config.OUTPUT_UNIFIED_CSV}\n")
+        print(f"Output: {Config.OUTPUT_PHYSCHEM_CSV}, {Config.OUTPUT_ACTIVITY_CSV}")
+        print(f"        {Config.OUTPUT_INTRINSIC_CSV}, {Config.OUTPUT_UNIFIED_CSV}\n")
         
     except Exception as e:
         logger.error(f"Failed to configure Nterminus: {e}")
@@ -115,6 +117,10 @@ Examples:
         logger.info("Normalizing activity data...")
         print("Normalizing activity ...")
         normalize_activity.run()
+
+        logger.info("Creating intrinsic properties CSV...")
+        print("Creating intrinsic properties ...")
+        intrinsic_properties.run()
 
         logger.info("Creating unified results CSV...")
         print("Creating unified results ...")

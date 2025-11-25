@@ -22,6 +22,7 @@ class Config:
     OUTPUT_NORMALIZED_CSV = os.getenv("OUTPUT_NORMALIZED_CSV", "data/output/activity_normalized.csv")
     OUTPUT_UNIFIED_CSV = os.getenv("OUTPUT_UNIFIED_CSV", "data/output/unified_results.csv")
     OUTPUT_LIPOPHILICITY_CSV = os.getenv("OUTPUT_LIPOPHILICITY_CSV", "data/output/lipophilicity.csv")
+    OUTPUT_INTRINSIC_CSV = os.getenv("OUTPUT_INTRINSIC_CSV", "data/output/intrinsic_properties.csv")
     MIN_LIST_FILE = os.getenv("MIN_LIST_FILE", "data/input/list_min.txt")
     
     # Current Nterminus (set dynamically during pipeline execution)
@@ -71,6 +72,7 @@ class Config:
         cls.OUTPUT_NORMALIZED_CSV = f"data/output/activity_normalized_{nterminus}.csv"
         cls.OUTPUT_UNIFIED_CSV = f"data/output/unified_results_{nterminus}.csv"
         cls.OUTPUT_LIPOPHILICITY_CSV = f"data/output/lipophilicity_{nterminus}.csv"
+        cls.OUTPUT_INTRINSIC_CSV = f"data/output/intrinsic_properties_{nterminus}.csv"
         cls.MIN_LIST_FILE = f"data/input/list_min_{nterminus}.txt"
     
     @classmethod

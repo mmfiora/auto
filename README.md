@@ -78,7 +78,8 @@ dbassp_c16/
 - **activity_{NTERMINUS}.csv** - Biological activity data
 - **lipophilicity_{NTERMINUS}.csv** - Lipophilicity metrics (logP, logD, free energy, aggregation number, curvature)
 - **activity_normalized_{NTERMINUS}.csv** - Normalized activity metrics
-- **unified_results_{NTERMINUS}.csv** - Combined analysis results
+- **intrinsic_properties_{NTERMINUS}.csv** - Intrinsic molecular properties (combines physicochemical properties, lipophilicity, and min list data)
+- **unified_results_{NTERMINUS}.csv** - Combined analysis results (includes activity data + intrinsic properties)
 
 ## Configuration
 
