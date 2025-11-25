@@ -1,4 +1,4 @@
-﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,Normalized Hydrophobic Moment,Normalized Hydrophobicity,Net Charge,Isoelectric Point,Penetration Depth,Tilt Angle,Disordered Conformation Propensity,Linear Moment,Propensity to in vitro Aggregation,Angle Subtended by the Hydrophobic Residues,Amphiphilicity Index,Propensity to PPII coil,logP,logD,ZZZKLLK00
+﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,Normalized Hydrophobic Moment,Normalized Hydrophobicity,Net Charge,Isoelectric Point,Penetration Depth,Tilt Angle,Disordered Conformation Propensity,Linear Moment,Propensity to in vitro Aggregation,Angle Subtended by the Hydrophobic Residues,Amphiphilicity Index,Propensity to PPII coil,logP,logD,sequence           pH    npol_c0    Fmin_c0    npol_c1    Fmin_c1    npol_c2    Fmin_c2   npol_min   Fmin_all curv_min
 837,C12,KLlK,AMD,2.91,0.05,2.0,14.00,15,90,-0.27,0.50,0.00,200.00,1.84,0.85,1.380400000000007,-5.699850467677382,
 858,C12,KAaK,AMD,2.27,1.05,2.0,14.00,30,90,-0.58,0.50,0.00,200.00,1.84,0.91,-0.6719999999999988,-7.752250467677388,
 6200,C12,KLLK,,2.91,0.05,1.0,10.69,15,90,-0.27,0.50,0.00,200.00,1.84,0.85,1.9797000000000098,-8.600687781941037,
