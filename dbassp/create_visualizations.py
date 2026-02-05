@@ -47,8 +47,8 @@ sns.heatmap(c16_corr, annot=True, fmt='.2f', ax=ax1,
             cmap='coolwarm', center=0, square=True, linewidths=1.5,
             cbar_kws={"shrink": 0.8}, vmin=-1, vmax=1, mask=mask_c16)
 ax1.set_title('Matriz de Correlación: C16', fontsize=18, fontweight='bold', pad=20)
-ax1.tick_params(axis='x', rotation=45)
-ax1.tick_params(axis='y', rotation=0)
+ax1.tick_params(axis='x', rotation=45, labelsize=14)
+ax1.tick_params(axis='y', rotation=0, labelsize=14)
 
 # Plot C12
 sns.heatmap(c12_corr, annot=True, fmt='.2f', ax=ax2,
@@ -56,12 +56,13 @@ sns.heatmap(c12_corr, annot=True, fmt='.2f', ax=ax2,
             cmap='coolwarm', center=0, square=True, linewidths=1.5,
             cbar_kws={"shrink": 0.8}, vmin=-1, vmax=1, mask=mask_c12)
 ax2.set_title('Matriz de Correlación: C12', fontsize=18, fontweight='bold', pad=20)
-ax2.tick_params(axis='x', rotation=45)
-ax2.tick_params(axis='y', rotation=0)
+ax2.tick_params(axis='x', rotation=45, labelsize=14)
+ax2.tick_params(axis='y', rotation=0, labelsize=14)
 
 plt.tight_layout(pad=4.0)
+plt.savefig('analysis/plots/correlation_matrix_comparison.png', dpi=600, bbox_inches='tight')
 plt.savefig('data/output/combined_matrices_c16_c12.png', dpi=600, bbox_inches='tight')
-print("Guardado: data/output/combined_matrices_c16_c12.png")
+print("Guardado: analysis/plots/correlation_matrix_comparison.png")
 plt.close()
 
 # Keep individual saves for convenience
