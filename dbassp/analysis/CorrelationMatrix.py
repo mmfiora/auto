@@ -13,14 +13,14 @@ cols_to_drop = [
     'Peptide ID', 'reference', 'lower_concentration', 'upper_concentration',
     #unif'lower_uM', 
     #'upper_uM', 
-    'ph_run', 'ph',
-    'Formation Propensity', 'in vitro Aggregation',
-    'Hydrophobic Moment', 'Penetration Depth', 'Tilt Angle',
-    'Propensity', 'Normalizer',
-    'Disordered Conformation Propensity', 'Linear Moment',
-    'Propensity to in vitro Aggregation',
-    'Angle Subtended by the Hydrophobic Residues',
-    'Amphiphilicity Index', 'Propensity to PPII coil',
+    #'ph_run', 'ph',
+    #'Formation Propensity', 'in vitro Aggregation',
+    #'Hydrophobic Moment', 'Penetration Depth', 'Tilt Angle',
+    #'Propensity', 'Normalizer',
+    #'Disordered Conformation Propensity', 'Linear Moment',
+    #'Propensity to in vitro Aggregation',
+    #'Angle Subtended by the Hydrophobic Residues',
+    #'Amphiphilicity Index', 'Propensity to PPII coil',
     'Normalized Hydrophobic Moment'
 ]
 
