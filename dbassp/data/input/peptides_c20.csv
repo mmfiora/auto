@@ -1,0 +1,7 @@
+"ID","COMPLEXITY","NAME","N TERMINUS","SEQUENCE","C TERMINUS","SYNTHESIS TYPE","TARGET GROUP","TARGET OBJECT"
+"7946","Monomer","C20-KGK","C20","KGK","AMD","Synthetic","Gram+    Gram-    Cancer    Mammalian Cell","Lipid Bilayer"
+"7974","Monomer","C20-KKK","C20","KKK","AMD","Synthetic","Gram+    Gram-    Cancer    Mammalian Cell","Lipid Bilayer"
+"11180","Monomer","","C20","XGX","AMD","Synthetic","Cancer","Lipid Bilayer"
+"11183","Monomer","","C20","XXX","AMD","Synthetic","Cancer","Lipid Bilayer"
+"12350","Monomer","","C20","KWKW","","Synthetic","Gram+    Gram-    Cancer    Mammalian Cell","Lipid Bilayer"
+"15827","Monomer","C20K5","C20","KKKKK","","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"

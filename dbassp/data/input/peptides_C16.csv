@@ -1,107 +1,162 @@
-ID,COMPLEXITY,NAME,N TERMINUS,SEQUENCE,C TERMINUS,SYNTHESIS TYPE,TARGET GROUP,TARGET OBJECT
-51,Monomer,,C16,KLlK,AMD,Synthetic,,
-838,Monomer,,C16,KAaK,AMD,Synthetic,,
-860,Monomer,,C16,KGGk,AMD,Synthetic,,
-862,Monomer,,C16,KKkK,AMD,Synthetic,,
-863,Monomer,,C16,KkEK,AMD,Synthetic,,
-864,Monomer,,C16,GIGk,AMD,Synthetic,,
-1124,Monomer,,C16,KK,AMD,Synthetic,,
-1125,Monomer,,C16,KK,,Synthetic,,
-6197,Monomer,,C16,KGGK,,Synthetic,,
-6198,Monomer,,C16,KKKK,,Synthetic,,
-6199,Monomer,,C16,KAAK,,Synthetic,,
-7322,Monomer,LP11,C16,XX,AMD,Synthetic,,
-7342,Monomer,LP17,C16,XXX,AMD,Synthetic,,
-7348,Monomer,LP23,C16,XXXX,AMD,Synthetic,,
-7542,Monomer,,C16,XXWW,AMD,Synthetic,,
-7580,Monomer,,C16,RR,AMD,Synthetic,,
-7927,Monomer,C16-KGK ,C16,KGK,AMD,Synthetic,,
-7973,Monomer,C16-KKK,C16,KKK,AMD,Synthetic,,
-8348,Monomer,,C16,KYR,AMD,Synthetic,,
-8473,Monomer,,C16,XRXR,AMD,Synthetic,,
-8506,Monomer,,C16,GXK,AMD,Synthetic,,
-9257,Monomer,,C16,KpT,AMD,Synthetic,,
-9259,Monomer,Melanotropin alpha (11-13),C16,KPV,AMD,Synthetic,,
-9261,Monomer,,C16,KpT,,Synthetic,,
-9263,Monomer,,C16,KPV,,Synthetic,,
-9277,Monomer,,C16,KP,AMD,Synthetic,,
-9278,Monomer,,C16,Kp,AMD,Synthetic,,
-9279,Monomer,,C16,PV,AMD,Synthetic,,
-9280,Monomer,,C16,pS,AMD,Synthetic,,
-9281,Monomer,,C16,KPA,AMD,Synthetic,,
-9282,Monomer,,C16,KPL,AMD,Synthetic,,
-9286,Monomer,,C16,KT,AMD,Synthetic,,
-9288,Monomer,,C16,Kt,AMD,Synthetic,,
-9291,Monomer,,C16,KV,AMD,Synthetic,,
-9292,Monomer,,C16,KA,AMD,Synthetic,,
-9294,Monomer,,C16,KF,AMD,Synthetic,,
-9295,Monomer,,C16,KH,AMD,Synthetic,,
-9296,Monomer,,C16,KG,AMD,Synthetic,,
-9297,Monomer,,C16,KL,AMD,Synthetic,,
-9298,Monomer,,C16,KS,AMD,Synthetic,,
-9299,Monomer,,C16,KI,AMD,Synthetic,,
-9300,Monomer,,C16,KY,AMD,Synthetic,,
-9301,Monomer,,C16,KW,AMD,Synthetic,,
-9302,Monomer,,C16,PK,AMD,Synthetic,,
-9303,Monomer,,C16,KD,AMD,Synthetic,,
-9304,Monomer,,C16,KR,,Synthetic,,
-9305,Monomer,,C16,PK,,Synthetic,,
-9306,Monomer,,C16,Kp,,Synthetic,,
-9307,Monomer,,C16,KP,,Synthetic,,
-9309,Monomer,,C16,KR,AMD,Synthetic,,
-9745,Monomer,,C16,KGGK,AMD,Synthetic,,
-9746,Monomer,,C16,KkK,AMD,Synthetic,,
-10361,Monomer,,C16,KKKK,AMD,Synthetic,,
-10362,Monomer,,C16,KGKG,AMD,Synthetic,,
-10675,Monomer,,C16,KKKR,AMD,Synthetic,,
-10678,Monomer,,C16,KKRK,AMD,Synthetic,,
-10680,Monomer,,C16,RKKK,AMD,Synthetic,,
-11017,Monomer,,C16,KRK,AMD,Synthetic,,
-11018,Monomer,C16-R3,C16,RRR,AMD,Synthetic,,
-11033,Monomer,,C16,KAK,AMD,Synthetic,,
-11034,Monomer,,C16,KLK,AMD,Synthetic,,
-11035,Monomer,,C16,Kk,AMD,Synthetic,,
-11150,Monomer,,C16,XXXX,AMD,Synthetic,,
-11151,Monomer,,C16,XXXX,AMD,Synthetic,,
-11155,Monomer,,C16,XXXX,AMD,Synthetic,,
-11156,Monomer,,C16,XXXX,AMD,Synthetic,,
-11157,Monomer,,C16,XXXX,AMD,Synthetic,,
-11179,Monomer,,C16,XGX,AMD,Synthetic,,
-11182,Monomer,,C16,XXX,AMD,Synthetic,,
-12103,Monomer,,C16,RRRR,AMD,Synthetic,,
-12106,Monomer,,C16,PRRR,AMD,Synthetic,,
-12348,Monomer,,C16,KWKW,,Synthetic,,
-12362,Monomer,,C16,KKXK,AMD,Synthetic,,
-14155,Monomer,,C16,XKKK,AMD,Synthetic,,
-14172,Monomer,,C16,KKC,AMD,Synthetic,,
-14284,Monomer,,C16,XKKK,AMD,Synthetic,,
-14288,Monomer,,C16,XKKK,AMD,Synthetic,,
-15268,Monomer,Surfactin-like peptide SLP4,C16,EVll,AMD,Synthetic,,
-16365,Monomer,,C16,KLIK,AMD,Synthetic,,
-16853,Monomer,,C16,fXXL,,Synthetic,,
-16888,Monomer,,C16,KRKK,AMD,Synthetic,,
-16890,Monomer,,C16,RRKK,AMD,Synthetic,,
-17440,Monomer,Pal-GR4,C16,GRGR,,Synthetic,,
-17441,Monomer,D-Pal-GR4,C16,GrGr,,Synthetic,,
-17442,Monomer,Pal-GK4,C16,GKGK,,Synthetic,,
-17443,Monomer,D-Pal-GK4,C16,GkGk,,Synthetic,,
-17444,Monomer,Pal-GOrn4,C16,GXGX,,Synthetic,,
-17445,Monomer,D-Pal-GOrn4,C16,GxGx,,Synthetic,,
-17446,Monomer,Pal-GDab4,C16,GXGX,,Synthetic,,
-17447,Monomer,Pal-GDap4,C16,GXGX,,Synthetic,,
-17736,Monomer,C16-R1,C16,RWW,AMD,Synthetic,,
-17742,Monomer,C16-R2,C16,RRW,AMD,Synthetic,,
-17784,Monomer,C16-W1R2,C16,RWR,AMD,Synthetic,,
-17786,Monomer,C16-W1,C16,WRR,AMD,Synthetic,,
-17846,Monomer,,C16,KLFK,AMD,Synthetic,,
-18097,Monomer,,C16,XXXX,AMD,Synthetic,,
-18902,Monomer,Carnosine,C16,XH,,Synthetic,,
-22614,Monomer,,C16,SRR,AMD,Synthetic,,
-22617,Monomer,,C16,RSR,AMD,Synthetic,,
-22620,Monomer,,C16,RRS,AMD,Synthetic,,
-22623,Monomer,,C16,XRR,AMD,Synthetic,,
-22626,Monomer,,C16,RXR,AMD,Synthetic,,
-22629,Monomer,,C16,RRX,AMD,Synthetic,,
-23366,Monomer,,C16,KXK,AMD,Synthetic,,
-23904,Monomer,MG03,C16,KLLK,AMD,Synthetic,,
-23907,Monomer,MG07,C16,XXXX,AMD,Synthetic,,
+"ID","COMPLEXITY","NAME","N TERMINUS","SEQUENCE","C TERMINUS","SYNTHESIS TYPE","TARGET GROUP","TARGET OBJECT"
+"51","Monomer","","C16","KLlK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"838","Monomer","","C16","KAaK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"860","Monomer","","C16","KGGk","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"862","Monomer","","C16","KKkK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"863","Monomer","","C16","KkEK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"864","Monomer","","C16","GIGk","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"1124","Monomer","","C16","KK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"1125","Monomer","","C16","KK","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"1368","Monomer","C16- Lactoferricin-B -AMD (4-12), C16- Lfcin-B -AMD (4-12)","C16","RRWQWRMKK","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"6197","Monomer","","C16","KGGK","","Synthetic","Gram+    Gram-","Lipid Bilayer"
+"6198","Monomer","","C16","KKKK","","Synthetic","Gram+    Gram-","Lipid Bilayer"
+"6199","Monomer","","C16","KAAK","","Synthetic","Gram+    Gram-","Lipid Bilayer"
+"7322","Monomer","LP11","C16","XX","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"7342","Monomer","LP17","C16","XXX","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"7348","Monomer","LP23","C16","XXXX","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"7354","Monomer","LP29","C16","XXXXX","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"7542","Monomer","","C16","XXWW","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"7580","Monomer","","C16","RR","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"7927","Monomer","C16-KGK ","C16","KGK","AMD","Synthetic","Gram+    Gram-    Cancer    Mammalian Cell    Biofilm","Lipid Bilayer"
+"7973","Monomer","C16-KKK","C16","KKK","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"8117","Monomer","C16-[KR5]","C16","KRRRRR","","Synthetic","Gram+    Gram-","Lipid Bilayer"
+"8348","Monomer","","C16","KYR","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"8473","Monomer","","C16","XRXR","AMD","Synthetic","Gram+","Lipid Bilayer"
+"8506","Monomer","","C16","GXK","AMD","Synthetic","Gram+    Gram-","Lipid Bilayer"
+"8655","Monomer","","C16","RGRKVVRRKK","","Synthetic","Gram-    Mammalian Cell","Lipid Bilayer"
+"8672","Monomer","","C16","RGRKVVRR","","Synthetic","",""
+"8682","Monomer","","C16","RGRKGGRRKK","","Synthetic","Gram-    Mammalian Cell","Lipid Bilayer"
+"8699","Monomer","","C16","RGRKGGRR","","Synthetic","",""
+"9257","Monomer","","C16","KpT","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9259","Monomer","Melanotropin alpha (11-13)","C16","KPV","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"9261","Monomer","","C16","KpT","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9263","Monomer","","C16","KPV","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9277","Monomer","","C16","KP","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9278","Monomer","","C16","Kp","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9279","Monomer","","C16","PV","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9280","Monomer","","C16","pS","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9281","Monomer","","C16","KPA","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9282","Monomer","","C16","KPL","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9286","Monomer","","C16","KT","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9288","Monomer","","C16","Kt","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9291","Monomer","","C16","KV","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9292","Monomer","","C16","KA","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9294","Monomer","","C16","KF","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9295","Monomer","","C16","KH","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9296","Monomer","","C16","KG","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"9297","Monomer","","C16","KL","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9298","Monomer","","C16","KS","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9299","Monomer","","C16","KI","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9300","Monomer","","C16","KY","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9301","Monomer","","C16","KW","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9302","Monomer","","C16","PK","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9303","Monomer","","C16","KD","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9304","Monomer","","C16","KR","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9305","Monomer","","C16","PK","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9306","Monomer","","C16","Kp","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9307","Monomer","","C16","KP","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9309","Monomer","","C16","KR","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"9745","Monomer","","C16","KGGK","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"9746","Monomer","","C16","KkK","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"10005","Monomer","C16-Plantaricin 149a (10-19), C16-A2","C16","IKQVKKLFKK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"10361","Monomer","","C16","KKKK","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"10362","Monomer","","C16","KGKG","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"10401","Monomer","Pontifactin","C16","SDVSS","","Nonribosomal","Gram+    Gram-","Lipid Bilayer"
+"10674","Monomer","","C16","CKKKC","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"10675","Monomer","","C16","KKKR","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"10676","Monomer","","C16","CKKKRC","AMD","Synthetic","Gram+    Biofilm","Lipid Bilayer"
+"10677","Monomer","","C16","CKKKRC","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"10678","Monomer","","C16","KKRK","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"10679","Monomer","","C16","CKKRKC","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"10680","Monomer","","C16","RKKK","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"10681","Monomer","","C16","CRKKKC","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell    Biofilm","Lipid Bilayer"
+"11017","Monomer","","C16","KRK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"11018","Monomer","C16-R3","C16","RRR","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"11033","Monomer","","C16","KAK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"11034","Monomer","","C16","KLK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"11035","Monomer","","C16","Kk","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"11102","Monomer","","C16","PRPRPRP","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"11106","Monomer","","C16","PRPGPRP","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"11110","Monomer","","C16","PRPLPRP","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"11114","Monomer","","C16","PRPWPRP","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"11150","Monomer","","C16","XXXX","AMD","Synthetic","Gram+    Gram-    Cancer","Lipid Bilayer"
+"11151","Monomer","","C16","XXXX","AMD","Synthetic","Gram+    Gram-    Cancer","Lipid Bilayer"
+"11155","Monomer","","C16","XXXX","AMD","Synthetic","Gram+    Gram-    Cancer","Lipid Bilayer"
+"11156","Monomer","","C16","XXXX","AMD","Synthetic","Gram+    Gram-    Cancer","Lipid Bilayer"
+"11157","Monomer","","C16","XXXX","AMD","Synthetic","Gram+    Gram-    Cancer","Lipid Bilayer"
+"11179","Monomer","","C16","XGX","AMD","Synthetic","Cancer","Lipid Bilayer"
+"11182","Monomer","","C16","XXX","AMD","Synthetic","Cancer","Lipid Bilayer"
+"11622","Monomer","","C16","WWLWWLRWL","AMD","Synthetic","Gram+","Lipid Bilayer"
+"12103","Monomer","","C16","RRRR","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"12106","Monomer","","C16","PRRR","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"12348","Monomer","","C16","KWKW","","Synthetic","Gram+    Gram-    Cancer    Mammalian Cell","Lipid Bilayer"
+"12362","Monomer","","C16","KKXK","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"13855","Monomer","Anoplin","C16","GLLKRIKTLL","AMD","Ribosomal","Gram+    Gram-    Fungus","Lipid Bilayer"
+"13873","Monomer","Anoplin (1-9)","C16","GLLKRIKTL","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"13874","Monomer","Anoplin (1-8)","C16","GLLKRIKT","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"13875","Monomer","Anoplin (1-7)","C16","GLLKRIK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"13876","Monomer","Anoplin (1-6)","C16","GLLKRI","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"13877","Monomer","Anoplin (1-5)","C16","GLLKR","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"14155","Monomer","","C16","XKKK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"14172","Monomer","","C16","KKC","AMD","Synthetic","",""
+"14284","Monomer","","C16","XKKK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"14288","Monomer","","C16","XKKK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"14388","Monomer","","C16","RKWWK","AMD","Synthetic","Gram+    Gram-","Lipid Bilayer"
+"15265","Monomer","Surfactin-like peptide SLP1","C16","EVlADlV","AMD","Synthetic","Virus    Mammalian Cell","Virus entry"
+"15266","Monomer","Surfactin-like peptide SLP2","C16","EVlDlV","","Synthetic","Virus    Mammalian Cell","Virus entry"
+"15267","Monomer","Surfactin-like peptide SLP3","C16","EVlDl","AMD","Synthetic","Virus    Mammalian Cell","Virus entry"
+"15268","Monomer","Surfactin-like peptide SLP4","C16","EVll","AMD","Synthetic","Virus    Mammalian Cell","Virus entry"
+"15269","Monomer","Surfactin-like peptide SLP5","C16","EVlDl","","Synthetic","Virus    Mammalian Cell","Virus entry"
+"15270","Monomer","Surfactin-like peptide SLP6","C16","KVlKl","AMD","Synthetic","Virus    Mammalian Cell","Virus entry"
+"15271","Monomer","Surfactin-like peptide SLP7","C16","EVLDL","AMD","Synthetic","Virus    Mammalian Cell","Virus entry"
+"15272","Monomer","Surfactin-like peptide SLP8","C16","EVllD","AMD","Synthetic","Virus    Mammalian Cell","Virus entry"
+"15273","Monomer","Surfactin-like peptide SLP9","C16","EDVll","AMD","Synthetic","Virus    Mammalian Cell","Virus entry"
+"15825","Monomer","C16K5","C16","KKKKK","","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"15835","Monomer","C16F3K3","C16","FFFKKK","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"15837","Monomer","C16(VK)4","C16","VKVKVKVK","","Synthetic","Gram+    Gram-    Fungus",""
+"15838","Monomer","C16V3A3K3","C16","VVVAAAKKK","","Synthetic","Gram+    Gram-    Fungus",""
+"16365","Monomer","","C16","KLIK","AMD","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"16553","Monomer","Palmit-(ARG)8","C16","wrrrrrrrrG","AMD","Synthetic","Virus","Virus replication"
+"16853","Monomer","","C16","fXXL","","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"16885","Monomer","","C16","CKKKKC","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"16888","Monomer","","C16","KRKK","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"16889","Monomer","","C16","CKRKKC","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"16890","Monomer","","C16","RRKK","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"16891","Monomer","","C16","CRRKKC","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"16976","Monomer","Melanotropin alpha (6-13)","C16","HFRWGKPV","AMD","Synthetic","Gram+    Mammalian Cell","Lipid Bilayer"
+"17437","Monomer","Pal-GR9","C16","GRRGGRGGR","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"17438","Monomer","D-Pal-GR9","C16","GrrGGrGGr","","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"17439","Monomer","Pal-GR6","C16","GRRGGR","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"17440","Monomer","Pal-GR4","C16","GRGR","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"17441","Monomer","D-Pal-GR4","C16","GrGr","","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"17442","Monomer","Pal-GK4","C16","GKGK","","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"17443","Monomer","D-Pal-GK4","C16","GkGk","","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"17444","Monomer","Pal-GOrn4","C16","GXGX","","Synthetic","Gram+","Lipid Bilayer"
+"17445","Monomer","D-Pal-GOrn4","C16","GxGx","","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"17446","Monomer","Pal-GDab4","C16","GXGX","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"17447","Monomer","Pal-GDap4","C16","GXGX","","Synthetic","Gram+    Gram-    Fungus","Lipid Bilayer"
+"17736","Monomer","C16-R1","C16","RWW","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"17742","Monomer","C16-R2","C16","RRW","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"17784","Monomer","C16-W1R2","C16","RWR","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"17786","Monomer","C16-W1","C16","WRR","AMD","Synthetic","Gram+    Gram-    Mammalian Cell","Lipid Bilayer"
+"17809","Monomer","Pseudofactin II, PFII","C16","GSTLLSLL","","Nonribosomal","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"17846","Monomer","","C16","KLFK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"17852","Monomer","","C16","KLFKKLFK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"18097","Monomer","","C16","XXXX","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"18102","Monomer","","C16","XXXXX","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"18902","Monomer","Carnosine","C16","XH","","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell",""
+"20991","Monomer","Arylomycin C16","C16","xaGXAY","","Nonribosomal","Gram-","Membrane Protein"
+"22614","Monomer","","C16","SRR","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"22617","Monomer","","C16","RSR","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"22620","Monomer","","C16","RRS","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"22623","Monomer","","C16","XRR","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"22626","Monomer","","C16","RXR","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"22629","Monomer","","C16","RRX","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"23366","Monomer","","C16","KXK","AMD","Synthetic","Gram+    Gram-    Fungus    Mammalian Cell","Lipid Bilayer"
+"23904","Monomer","MG03","C16","KLLK","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"23907","Monomer","MG07","C16","XXXX","AMD","Synthetic","Gram+    Gram-    Cancer    Fungus    Mammalian Cell","Lipid Bilayer"
+"24442","Monomer","Fengycin M1","C16","EXYTEAPQYI","","Synthetic","Gram+    Gram-    Cancer","Lipid Bilayer"
+"24443","Monomer","Fengycin M2","C16","RRYTEAPQYI","","Synthetic","Gram+    Gram-    Cancer",""
+"24444","Monomer","Fengycin M3","C16","RRYTRAPRYI","","Synthetic","Gram+    Gram-    Cancer","Membrane Protein    Lipid Bilayer"
+"24445","Monomer","Fengycin M4","C16","RRVTRAPRVI","","Synthetic","Gram+    Gram-    Cancer","Lipid Bilayer"
+"24446","Monomer","Fengycin M5","C16","RRLTRAPRLI","","Synthetic","Gram+    Gram-    Cancer","Lipid Bilayer"
