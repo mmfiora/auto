@@ -1,11 +1,20 @@
 import sqlite3
 import glob
 import os
+import sys
 import csv
 import json
 import logging
 import time
 import requests
+
+# Add the parent directory to sys.path to import from src
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+try:
+    from src.collectors import lipophilicity
+except ImportError:
+    lipophilicity = None
+    logging.warning("Failed to import lipophilicity module. SMILES/logP/logD will not be calculated.")
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(message)s')
 
@@ -37,10 +46,19 @@ def setup_db(conn):
     ''')
     cur.execute('''
         CREATE TABLE IF NOT EXISTS physchem_properties (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            peptide_id INTEGER,
-            property_name TEXT,
-            property_value TEXT,
+            peptide_id INTEGER PRIMARY KEY,
+            normalized_hydrophobic_moment REAL,
+            normalized_hydrophobicity REAL,
+            net_charge REAL,
+            isoelectric_point REAL,
+            penetration_depth REAL,
+            tilt_angle REAL,
+            disordered_conformation_propensity REAL,
+            linear_moment REAL,
+            propensity_to_in_vitro_aggregation REAL,
+            angle_subtended_by_the_hydrophobic_residues REAL,
+            amphiphilicity_index REAL,
+            propensity_to_ppii_coil REAL,
             FOREIGN KEY(peptide_id) REFERENCES peptides(id)
         )
     ''')
@@ -54,6 +72,22 @@ def setup_db(conn):
             concentration TEXT,
             activity_measure TEXT,
             unit TEXT,
+            ph TEXT,
+            ionic_strength TEXT,
+            salt_type TEXT,
+            medium TEXT,
+            cfu TEXT,
+            note TEXT,
+            reference TEXT,
+            FOREIGN KEY(peptide_id) REFERENCES peptides(id)
+        )
+    ''')
+    cur.execute('''
+        CREATE TABLE IF NOT EXISTS lipophilicity (
+            peptide_id INTEGER PRIMARY KEY,
+            smiles TEXT,
+            logp REAL,
+            logd REAL,
             FOREIGN KEY(peptide_id) REFERENCES peptides(id)
         )
     ''')
@@ -67,14 +101,32 @@ def process_api_data(conn, pid, data):
     cur = conn.cursor()
     # Insert Physchem
     physchem_props = data.get("physicoChemicalProperties") or []
+    PHYSCHEM_MAP = {
+        'Normalized Hydrophobic Moment': 'normalized_hydrophobic_moment',
+        'Normalized Hydrophobicity': 'normalized_hydrophobicity',
+        'Net Charge': 'net_charge',
+        'Isoelectric Point': 'isoelectric_point',
+        'Penetration Depth': 'penetration_depth',
+        'Tilt Angle': 'tilt_angle',
+        'Disordered Conformation Propensity': 'disordered_conformation_propensity',
+        'Linear Moment': 'linear_moment',
+        'Propensity to in vitro Aggregation': 'propensity_to_in_vitro_aggregation',
+        'Angle Subtended by the Hydrophobic Residues': 'angle_subtended_by_the_hydrophobic_residues',
+        'Amphiphilicity Index': 'amphiphilicity_index',
+        'Propensity to PPII coil': 'propensity_to_ppii_coil'
+    }
+    
+    phys_data = {"peptide_id": pid}
     for prop in physchem_props:
         name = (prop.get("name") or "").strip()
         val = str(prop.get("value", "")).strip()
-        if name and name.upper() != "ID":
-            cur.execute("""
-                INSERT INTO physchem_properties (peptide_id, property_name, property_value)
-                VALUES (?, ?, ?)
-            """, (pid, name, val))
+        if name in PHYSCHEM_MAP:
+            phys_data[PHYSCHEM_MAP[name]] = val
+    
+    if len(phys_data) > 1:
+        cols = ", ".join(phys_data.keys())
+        placeholders = ", ".join(["?"] * len(phys_data))
+        cur.execute(f"INSERT INTO physchem_properties ({cols}) VALUES ({placeholders})", list(phys_data.values()))
             
     # Insert Activity
     target_activities = data.get("targetActivities") or []
@@ -85,15 +137,23 @@ def process_api_data(conn, pid, data):
         conc = str(ta.get("concentration", ""))
         measure = (ta.get("activityMeasure") or {}).get("name", "")
         unit = (ta.get("unit") or {}).get("name", "")
+        ph = str((ta.get("ph") or "") if ta.get("ph") is not None else "")
+        ionic = str((ta.get("ionicStrength") or "") if ta.get("ionicStrength") is not None else "")
+        salt = str((ta.get("saltType") or "") if ta.get("saltType") is not None else "")
+        medium = str((ta.get("medium") or "") if ta.get("medium") is not None else "")
+        cfu = str((ta.get("cfu") or "") if ta.get("cfu") is not None else "")
+        note = str((ta.get("note") or "") if ta.get("note") is not None else "")
+        ref = str((ta.get("reference") or "") if ta.get("reference") is not None else "")
         
         cur.execute("""
-            INSERT INTO activities (peptide_id, target_species, target_group, target_object, concentration, activity_measure, unit)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
-        """, (pid, ts, tg, to, conc, measure, unit))
+            INSERT INTO activities (peptide_id, target_species, target_group, target_object, concentration, activity_measure, unit, ph, ionic_strength, salt_type, medium, cfu, note, reference)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (pid, ts, tg, to, conc, measure, unit, ph, ionic, salt, medium, cfu, note, ref))
     conn.commit()
 
 def main():
-    db_path = "dbaasp_data.sqlite"
+    db_path = "data/output/dbaasp_data.sqlite"
+    os.makedirs(os.path.dirname(db_path), exist_ok=True)
     conn = sqlite3.connect(db_path)
     setup_db(conn)
 
@@ -120,13 +180,28 @@ def main():
                     # Insert peptide base info
                     cur.execute("SELECT 1 FROM peptides WHERE id = ?", (pid,))
                     if not cur.fetchone():
+                        n_term = row.get("N TERMINUS")
+                        seq = row.get("SEQUENCE")
+                        c_term = row.get("C TERMINUS")
+                        
                         cur.execute('''
                             INSERT INTO peptides (id, complexity, name, n_terminus, sequence, c_terminus, synthesis_type, target_group, target_object)
                             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                         ''', (
-                            pid, row.get("COMPLEXITY"), row.get("NAME"), row.get("N TERMINUS"), row.get("SEQUENCE"),
-                            row.get("C TERMINUS"), row.get("SYNTHESIS TYPE"), row.get("TARGET GROUP"), row.get("TARGET OBJECT")
+                            pid, row.get("COMPLEXITY"), row.get("NAME"), n_term, seq,
+                            c_term, row.get("SYNTHESIS TYPE"), row.get("TARGET GROUP"), row.get("TARGET OBJECT")
                         ))
+                        
+                        # Calculate and insert lipophilicity
+                        if lipophilicity is not None and seq:
+                            smiles = lipophilicity.sequence_to_smiles(seq, nterminus=n_term, cterminus=c_term)
+                            if smiles:
+                                logp = lipophilicity.calculate_logp(smiles)
+                                logd = lipophilicity.calculate_logd(smiles, sequence=seq, ph=7.0, nterminus=n_term, cterminus=c_term)
+                                cur.execute('''
+                                    INSERT INTO lipophilicity (peptide_id, smiles, logp, logd)
+                                    VALUES (?, ?, ?, ?)
+                                ''', (pid, smiles, logp, logd))
                     
                     # Check if physchem data already exists (so we don't refetch on resume)
                     cur.execute("SELECT 1 FROM physchem_properties WHERE peptide_id = ? LIMIT 1", (pid,))
