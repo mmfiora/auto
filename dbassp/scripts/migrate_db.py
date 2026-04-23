@@ -3,7 +3,7 @@ migrate_db.py
 -------------
 One-shot migration script for dbassp/data/output/dbaasp_data.sqlite.
 
-Changes applied:
+Changes applied (v1):
   1. Rename `activities`       → `normalized_activity`
        - Add c_min_uM, c_max_uM (normalized concentration bounds in µM)
        - Add species, strain    (split from target_species)
@@ -13,16 +13,26 @@ Changes applied:
      then drop `lipophilicity`
   4. Add molecular_weight (Da) and total_charge columns to `peptides`
 
-Concentration normalization rules (reused from normalize_activity.py logic):
-  - ">X"  → c_min_uM = None,  c_max_uM = X in µM   (upper bound, true MIC is somewhere above X)
-  - ">=X" → c_min_uM = None,  c_max_uM = X in µM
-  - "<X"  → c_min_uM = None,  c_max_uM = X in µM
-  - "A-B" → c_min_uM = A,     c_max_uM = B (both in µM)
-  - "X"   → c_min_uM = X,     c_max_uM = X (both equal)
+Changes applied (v2):
+  5. Add to normalized_activity:
+       - c_min_ugml  REAL   — min concentration in µg/ml
+       - c_max_ugml  REAL   — max concentration in µg/ml (NULL for single values)
+       - conc_gt     INTEGER — 1 if original string started with '>' / '>='
+       - activity    TEXT   — 'active' / 'not active' / 'unknown'
+
+Concentration column semantics (both µM and µg/ml columns):
+  - Single number  X      → c_min = X,       c_max = NULL,      conc_gt = 0
+  - Interval A-B / A->B  → c_min = A,        c_max = B,         conc_gt = 0
+  - >X or >=X            → c_min = X,        c_max = NULL,      conc_gt = 1
+  - <X or <=X            → c_min = NULL,     c_max = X,         conc_gt = 0
+  - ± mean/error         → c_min = mean-err, c_max = mean+err,  conc_gt = 0
+
+Activity threshold: 32 µg/ml (applied to c_min_ugml)
+  - conc_gt=0: active if <= 32, not active if > 32
+  - conc_gt=1: unknown if <= 32, not active if > 32
+  - c_min_ugml NULL: unknown
 
 Units supported: µM/uM, mM, nM, M, µg/ml/ug/ml/mg/L, g/L, ng/mL
-MW is taken from the peptide's own molecular_weight once computed,
-or calculated on-the-fly from the peptides table (sequence + termini).
 """
 
 import re
@@ -218,5 +228,153 @@ def run_migration():
 
 
 
+# ─── µg/ml conversion helper ───────────────────────────────────────────────────
+
+def _to_ugml(val: str, unit: str, mw: float | None) -> float | None:
+    """Convert a numeric concentration string to µg/ml. Returns None on failure."""
+    if not val:
+        return None
+    try:
+        num = float(val)
+    except ValueError:
+        return None
+
+    u = (unit or "").strip().lower()
+    u = u.replace("\xc2\xb5", "µ").replace("\xb5", "µ").replace("?", "µ")
+    u = u.replace("\ufffd", "µ")
+
+    if u in ("µg/ml", "ug/ml", "μg/ml", "mg/l"):
+        return round(num, 6)
+    if u == "mg/ml":
+        return round(num * 1_000.0, 6)
+    if u in ("g/l", "g/ml"):
+        return round(num * 1_000.0, 6)
+    if u in ("ng/ml", "ng/l"):
+        return round(num / 1_000.0, 6)
+    # molar units — need MW to convert
+    if not mw:
+        return None
+    if u in ("µm", "um", "μm"):
+        return round(num * (mw / 1_000.0), 6)
+    if u == "mm":
+        return round(num * 1_000.0 * (mw / 1_000.0), 6)
+    if u == "nm":
+        return round(num / 1_000.0 * (mw / 1_000.0), 6)
+    if u == "m":
+        return round(num * 1_000_000.0 * (mw / 1_000.0), 6)
+    return None
+
+
+def _classify_activity(c_min_ugml: float | None, conc_gt: int) -> str:
+    """Return 'active', 'not active', or 'unknown' based on µg/ml threshold of 32."""
+    if c_min_ugml is None:
+        return "unknown"
+    if conc_gt:
+        # form was ">X": if X > 32 → definitely not active; if X <= 32 → unknown
+        return "not active" if c_min_ugml > 32 else "unknown"
+    else:
+        return "active" if c_min_ugml <= 32 else "not active"
+
+
+def _parse_conc_v2(val: str) -> tuple[str, str, int]:
+    """
+    Extended parse_conc that also returns conc_gt flag.
+    Returns (lower_raw, upper_raw, conc_gt)
+      lower_raw / upper_raw: numeric strings (empty = not set)
+      conc_gt: 1 if form was '>X' or '>=X', else 0
+    """
+    if not val:
+        return ("", "", 0)
+    s = re.sub(r"\s+", " ", str(val).strip())
+
+    # mean ± error
+    if "±" in s:
+        parts = s.split("±", 1)
+        try:
+            mu  = float(parts[0].strip())
+            err = float(parts[1].strip())
+            return (f"{max(0.0, mu-err):.6g}", f"{mu+err:.6g}", 0)
+        except ValueError:
+            return ("", "", 0)
+
+    # arrow range
+    if "->" in s:
+        a, b = s.split("->", 1)
+        return (a.strip(), b.strip(), 0)
+
+    # >=X or >X  → c_min = X, c_max = NULL, conc_gt = 1
+    if s.startswith(">="):
+        return (s[2:].strip(), "", 1)
+    if s.startswith(">"):
+        return (s[1:].strip(), "", 1)
+
+    # <=X or <X  → c_min = NULL, c_max = X
+    if s.startswith("<="):
+        return ("", s[2:].strip(), 0)
+    if s.startswith("<"):
+        return ("", s[1:].strip(), 0)
+
+    # A-B interval
+    if "-" in s and not s.startswith("-"):
+        parts = s.split("-", 1)
+        if len(parts) == 2 and parts[0].strip() and parts[1].strip():
+            return (parts[0].strip(), parts[1].strip(), 0)
+
+    # Single value → c_min = X, c_max = NULL
+    return (s, "", 0)
+
+
+# ─── Migration v2 ──────────────────────────────────────────────────────────────
+
+def migrate_v2():
+    """
+    Adds c_min_ugml, c_max_ugml, conc_gt, activity to normalized_activity
+    and back-fills them for every existing row.
+    """
+    conn = sqlite3.connect(DB_PATH)
+    conn.execute("PRAGMA foreign_keys = OFF")
+    cur  = conn.cursor()
+
+    # ── Add new columns (idempotent) ───────────────────────────────────────────
+    existing_cols = {r[1] for r in cur.execute("PRAGMA table_info(normalized_activity)").fetchall()}
+    new_cols = [
+        ("c_min_ugml", "REAL"),
+        ("c_max_ugml", "REAL"),
+        ("conc_gt",    "INTEGER"),
+        ("activity",   "TEXT"),
+    ]
+    for col, typ in new_cols:
+        if col not in existing_cols:
+            cur.execute(f"ALTER TABLE normalized_activity ADD COLUMN {col} {typ}")
+            log.info(f"  Added column: {col}")
+
+    # ── Back-fill ──────────────────────────────────────────────────────────────
+    cur.execute("""
+        SELECT na.id, na.concentration, na.unit, p.molecular_weight
+        FROM normalized_activity na
+        JOIN peptides p ON p.id = na.peptide_id
+    """)
+    rows = cur.fetchall()
+    updated = 0
+    for row_id, conc, unit, mw in rows:
+        lo, hi, gt = _parse_conc_v2(conc or "")
+        c_min_ugml = _to_ugml(lo, unit, mw)
+        c_max_ugml = _to_ugml(hi, unit, mw)
+        activity   = _classify_activity(c_min_ugml, gt)
+        cur.execute("""
+            UPDATE normalized_activity
+            SET c_min_ugml=?, c_max_ugml=?, conc_gt=?, activity=?
+            WHERE id=?
+        """, (c_min_ugml, c_max_ugml, gt, activity, row_id))
+        updated += 1
+
+    conn.commit()
+    conn.execute("PRAGMA foreign_keys = ON")
+    conn.close()
+    log.info(f"  Updated {updated} normalized_activity rows with µg/ml + activity")
+    log.info("Migration v2 complete ✓")
+
+
 if __name__ == "__main__":
     run_migration()
+    migrate_v2()

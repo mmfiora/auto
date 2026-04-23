@@ -76,6 +76,10 @@ def setup_db(conn):
             concentration    TEXT,
             c_min_uM         REAL,
             c_max_uM         REAL,
+            c_min_ugml       REAL,
+            c_max_ugml       REAL,
+            conc_gt          INTEGER,
+            activity         TEXT,
             activity_measure TEXT,
             unit             TEXT,
             ph               TEXT,
@@ -110,37 +114,74 @@ _PHYSCHEM_MAP = {
 }
 
 def _parse_conc(val):
+    """Return (lower_raw, upper_raw, conc_gt). conc_gt=1 if form was '>X' or '>=X'."""
     if not val:
-        return ("", "")
+        return ("", "", 0)
     s = re.sub(r'\s+', ' ', str(val).strip())
+    # mean ± error
+    if '\u00b1' in s:
+        parts = s.split('\u00b1', 1)
+        try:
+            mu  = float(parts[0].strip())
+            err = float(parts[1].strip())
+            return (f"{max(0.0, mu-err):.6g}", f"{mu+err:.6g}", 0)
+        except ValueError:
+            return ("", "", 0)
     if '->' in s:
-        a, b = s.split('->', 1); return (a.strip(), b.strip())
-    if s.startswith('>='): return ("", s[2:].strip())
-    if s.startswith('>'): return ("", s[1:].strip())
-    if s.startswith('<='): return ("", s[2:].strip())
-    if s.startswith('<'): return ("", s[1:].strip())
+        a, b = s.split('->', 1); return (a.strip(), b.strip(), 0)
+    # >X / >=X  →  c_min = X, c_max = NULL, conc_gt = 1
+    if s.startswith('>='):  return (s[2:].strip(), "", 1)
+    if s.startswith('>'):   return (s[1:].strip(), "", 1)
+    # <X / <=X  →  c_min = NULL, c_max = X
+    if s.startswith('<='): return ("", s[2:].strip(), 0)
+    if s.startswith('<'):  return ("", s[1:].strip(), 0)
     if '-' in s and not s.startswith('-'):
         parts = s.split('-', 1)
         if parts[0].strip() and parts[1].strip():
-            return (parts[0].strip(), parts[1].strip())
-    return (s, s)
+            return (parts[0].strip(), parts[1].strip(), 0)
+    # Single value  →  c_min = X, c_max = NULL
+    return (s, "", 0)
 
 def _to_uM(val, unit, mw):
     if not val: return None
     try: num = float(val)
     except ValueError: return None
     u = (unit or '').strip().lower().replace('\ufffd', 'µ').replace('\xb5', 'µ').replace('?', 'µ')
-    if u in ('µm', 'um', 'μm'): return round(num, 6)
+    if u in ('µm', 'um', '\u03bcm'): return round(num, 6)
     if u == 'mm': return round(num * 1e3, 6)
     if u == 'nm': return round(num / 1e3, 6)
     if u == 'm':  return round(num * 1e6, 6)
-    if u in ('µg/ml', 'ug/ml', 'μg/ml', 'mg/l', 'mg/ml'):
+    if u in ('µg/ml', 'ug/ml', '\u03bcg/ml', 'mg/l', 'mg/ml'):
         return round(num / (mw / 1e3), 6) if mw else None
     if u in ('g/l', 'g/ml'):
         return round((num * 1e3) / (mw / 1e3), 6) if mw else None
     if u in ('ng/ml', 'ng/l'):
         return round((num / 1e3) / (mw / 1e3), 6) if mw else None
     return None
+
+def _to_ugml(val, unit, mw):
+    if not val: return None
+    try: num = float(val)
+    except ValueError: return None
+    u = (unit or '').strip().lower().replace('\ufffd', 'µ').replace('\xb5', 'µ').replace('?', 'µ')
+    if u in ('µg/ml', 'ug/ml', '\u03bcg/ml', 'mg/l'): return round(num, 6)
+    if u == 'mg/ml': return round(num * 1e3, 6)
+    if u in ('g/l', 'g/ml'): return round(num * 1e3, 6)
+    if u in ('ng/ml', 'ng/l'): return round(num / 1e3, 6)
+    if not mw: return None
+    if u in ('µm', 'um', '\u03bcm'): return round(num * (mw / 1e3), 6)
+    if u == 'mm': return round(num * 1e3 * (mw / 1e3), 6)
+    if u == 'nm': return round(num / 1e3 * (mw / 1e3), 6)
+    if u == 'm':  return round(num * 1e6 * (mw / 1e3), 6)
+    return None
+
+def _classify_activity(c_min_ugml, conc_gt):
+    """Return 'active', 'not active', or 'unknown' (threshold: 32 µg/ml)."""
+    if c_min_ugml is None:
+        return 'unknown'
+    if conc_gt:
+        return 'not active' if c_min_ugml > 32 else 'unknown'
+    return 'active' if c_min_ugml <= 32 else 'not active'
 
 def _split_species(val):
     if not val: return ("", "")
@@ -191,21 +232,25 @@ def process_api_data(conn, pid, data, mw=None):
         note    = str(ta.get("note") or "")
         ref     = str(ta.get("reference") or "")
 
-        lo, hi = _parse_conc(conc)
-        c_min  = _to_uM(lo, unit, mw)
-        c_max  = _to_uM(hi, unit, mw)
+        lo, hi, gt = _parse_conc(conc)
+        c_min     = _to_uM(lo, unit, mw)
+        c_max     = _to_uM(hi, unit, mw)
+        c_min_ugl = _to_ugml(lo, unit, mw)
+        c_max_ugl = _to_ugml(hi, unit, mw)
+        activity  = _classify_activity(c_min_ugl, gt)
         species, strain = _split_species(ts)
 
         cur.execute("""
             INSERT INTO normalized_activity
                (peptide_id, target_species, species, strain,
                 target_group, target_object, concentration,
-                c_min_uM, c_max_uM, activity_measure, unit,
+                c_min_uM, c_max_uM, c_min_ugml, c_max_ugml, conc_gt, activity,
+                activity_measure, unit,
                 ph, ionic_strength, salt_type, medium, cfu, note, reference)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         """, (pid, ts, species, strain, tg, tobj, conc,
-               c_min, c_max, measure, unit,
-               ph, ionic, salt, medium, cfu, note, ref))
+               c_min, c_max, c_min_ugl, c_max_ugl, gt, activity,
+               measure, unit, ph, ionic, salt, medium, cfu, note, ref))
 
     conn.commit()
 
