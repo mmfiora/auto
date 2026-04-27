@@ -1,0 +1,853 @@
+﻿N TERMINUS,SEQUENCE,C TERMINUS,lower_ugml,upper_ugml,species,strain,medium,curv_min,npol_min,ph_run,activity
+C16,KLlK,AMD,73.89,73.89,Escherichia coli,D21,LBB,0,0.9400,7.0000,not active
+C16,KLlK,AMD,73.89,73.89,Escherichia coli,ATCC 25922,LBB,0,0.9400,7.0000,not active
+C16,KLlK,AMD,73.89,73.89,Pseudomonas aeruginosa,ATCC 27853,LBB,0,0.9400,7.0000,not active
+C16,KLlK,AMD,2.30537,2.30537,Staphylococcus aureus,ATCC 6538P,LBB,0,0.9400,7.0000,active
+C16,KLlK,AMD,36.945,36.945,Acinetobacter baumannii,ATCC 19606,LBB,0,0.9400,7.0000,not active
+C16,KLlK,AMD,4.61812,4.61812,Aspergillus fumigatus,ATCC 26430,RPMI-1640,0,0.9400,7.0000,active
+C16,KLlK,AMD,9.23625,9.23625,Aspergillus flavus,ATCC 9643,RPMI-1640,0,0.9400,7.0000,active
+C16,KLlK,AMD,4.61812,4.61812,Candida albicans,ATCC 10231,RPMI-1640,0,0.9400,7.0000,active
+C16,KLlK,AMD,1.10835,1.10835,Cryptococcus neoformans,ATCC MYA-422,RPMI-1640,0,0.9400,7.0000,active
+C16,KLlK,AMD,6.25,12.5,Enterococcus faecalis,V583,BHIB,0,0.9400,7.0000,active
+C16,KLlK,AMD,6.25,12.5,Streptococcus mutans,ATCC 27351,BHIB,0,0.9400,7.0000,active
+C16,KLlK,AMD,12.5,25,Fusobacterium nucleatum,ATCC 1594,WCB,0,0.9400,7.0000,active
+C16,KLlK,AMD,6.25,12.5,Porphyromonas gingivalis,ATCC 33277,WCB,0,0.9400,7.0000,active
+C16,KAaK,AMD,4.09213,4.09213,Escherichia coli,D21,LBB,1,6.8000,7.0000,active
+C16,KAaK,AMD,4.09213,4.09213,Escherichia coli,ATCC 25922,LBB,1,6.8000,7.0000,active
+C16,KAaK,AMD,8.18425,8.18425,Pseudomonas aeruginosa,ATCC 27853,LBB,1,6.8000,7.0000,active
+C16,KAaK,AMD,4.09213,4.09213,Staphylococcus aureus,ATCC 6538P,LBB,1,6.8000,7.0000,active
+C16,KAaK,AMD,8.18425,8.18425,Acinetobacter baumannii,ATCC 19606,LBB,1,6.8000,7.0000,active
+C16,KAaK,AMD,4.09213,4.09213,Aspergillus fumigatus,ATCC 26430,RPMI-1640,1,6.8000,7.0000,active
+C16,KAaK,AMD,65.474,65.474,Aspergillus flavus,ATCC 9643,RPMI-1640,1,6.8000,7.0000,not active
+C16,KAaK,AMD,8.18425,8.18425,Candida albicans,ATCC 10231,RPMI-1640,1,6.8000,7.0000,active
+C16,KAaK,AMD,1.96422,1.96422,Cryptococcus neoformans,ATCC MYA-422,RPMI-1640,1,6.8000,7.0000,active
+C16,KAaK,AMD,12.5,25,Enterococcus faecalis,V583,BHIB,1,6.8000,7.0000,active
+C16,KAaK,AMD,12.5,25,Fusobacterium nucleatum,ATCC 1594,WCB,1,6.8000,7.0000,active
+C16,KGGk,AMD,1.88004,1.88004,Escherichia coli,D21,LBB,2,48.5000,7.0000,active
+C16,KGGk,AMD,1.88004,1.88004,Escherichia coli,ATCC 25922,LBB,2,48.5000,7.0000,active
+C16,KGGk,AMD,3.91675,3.91675,Pseudomonas aeruginosa,ATCC 27853,LBB,2,48.5000,7.0000,active
+C16,KGGk,AMD,3.91675,3.91675,Staphylococcus aureus,ATCC 6538P,LBB,2,48.5000,7.0000,active
+C16,KGGk,AMD,7.8335,7.8335,Acinetobacter baumannii,ATCC 19606,LBB,2,48.5000,7.0000,active
+C16,KGGk,AMD,7.8335,7.8335,Aspergillus fumigatus,ATCC 26430,RPMI-1640,2,48.5000,7.0000,active
+C16,KGGk,AMD,7.8335,7.8335,Aspergillus flavus,ATCC 9643,RPMI-1640,2,48.5000,7.0000,active
+C16,KGGk,AMD,7.8335,7.8335,Candida albicans,ATCC 10231,RPMI-1640,2,48.5000,7.0000,active
+C16,KGGk,AMD,0.94002,0.94002,Cryptococcus neoformans,ATCC MYA-422,RPMI-1640,2,48.5000,7.0000,active
+C16,KGGk,AMD,62.668,,Murine macrophage cells,RAW 264.7,,2,48.5000,7.0000,not active
+C16,KKkK,AMD,4.80575,4.80575,Escherichia coli,D21,LBB,2,30.5000,7.0000,active
+C16,KKkK,AMD,4.80575,4.80575,Escherichia coli,ATCC 25922,LBB,2,30.5000,7.0000,active
+C16,KKkK,AMD,2.30676,2.30676,Pseudomonas aeruginosa,ATCC 27853,LBB,2,30.5000,7.0000,active
+C16,KKkK,AMD,4.80575,4.80575,Staphylococcus aureus,ATCC 6538P,LBB,2,30.5000,7.0000,active
+C16,KKkK,AMD,9.6115,9.6115,Acinetobacter baumannii,ATCC 19606,LBB,2,30.5000,7.0000,active
+C16,KKkK,AMD,19.223,19.223,Aspergillus fumigatus,ATCC 26430,RPMI-1640,2,30.5000,7.0000,active
+C16,KKkK,AMD,76.892,76.892,Aspergillus flavus,ATCC 9643,RPMI-1640,2,30.5000,7.0000,not active
+C16,KKkK,AMD,19.223,19.223,Candida albicans,ATCC 10231,RPMI-1640,2,30.5000,7.0000,active
+C16,KKkK,AMD,1.15338,1.15338,Cryptococcus neoformans,ATCC MYA-422,RPMI-1640,2,30.5000,7.0000,active
+C16,KkEK,AMD,9.62337,9.62337,Escherichia coli,D21,LBB,2,45.0000,7.0000,active
+C16,KkEK,AMD,9.62337,9.62337,Escherichia coli,ATCC 25922,LBB,2,45.0000,7.0000,active
+C16,KkEK,AMD,38.4935,38.4935,Pseudomonas aeruginosa,ATCC 27853,LBB,2,45.0000,7.0000,not active
+C16,KkEK,AMD,9.62337,9.62337,Staphylococcus aureus,ATCC 6538P,LBB,2,45.0000,7.0000,active
+C16,KkEK,AMD,28.4852,28.4852,Acinetobacter baumannii,ATCC 19606,LBB,2,45.0000,7.0000,active
+C16,KkEK,AMD,19.2467,19.2467,Aspergillus fumigatus,ATCC 26430,RPMI-1640,2,45.0000,7.0000,active
+C16,KkEK,AMD,76.987,76.987,Aspergillus flavus,ATCC 9643,RPMI-1640,2,45.0000,7.0000,not active
+C16,KkEK,AMD,76.987,76.987,Candida albicans,ATCC 10231,RPMI-1640,2,45.0000,7.0000,not active
+C16,KkEK,AMD,4.81169,4.81169,Cryptococcus neoformans,ATCC MYA-422,RPMI-1640,2,45.0000,7.0000,active
+C16,GIGk,AMD,61.167,,Escherichia coli,D21,LBB,1,12.6000,7.0000,not active
+C16,GIGk,AMD,61.167,,Escherichia coli,ATCC 25922,LBB,1,12.6000,7.0000,not active
+C16,GIGk,AMD,61.167,,Pseudomonas aeruginosa,ATCC 27853,LBB,1,12.6000,7.0000,not active
+C16,GIGk,AMD,61.167,,Staphylococcus aureus,ATCC 6538P,LBB,1,12.6000,7.0000,not active
+C16,GIGk,AMD,61.167,,Acinetobacter baumannii,ATCC 19606,LBB,1,12.6000,7.0000,not active
+C16,GIGk,AMD,61.167,,Aspergillus fumigatus,ATCC 26430,RPMI-1640,1,12.6000,7.0000,not active
+C16,GIGk,AMD,61.167,,Aspergillus flavus,ATCC 9643,RPMI-1640,1,12.6000,7.0000,not active
+C16,GIGk,AMD,61.167,,Candida albicans,ATCC 10231,RPMI-1640,1,12.6000,7.0000,not active
+C16,GIGk,AMD,61.167,61.167,Cryptococcus neoformans,ATCC MYA-422,RPMI-1640,1,12.6000,7.0000,not active
+C16,KK,AMD,2,16,Staphylococcus aureus,,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,2,32,Staphylococcus aureus,,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,8,8,Staphylococcus aureus,ATCC 29213,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Staphylococcus aureus,ATCC 29213,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,8,8,Staphylococcus aureus,ATCC 43300,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Staphylococcus aureus,ATCC 43300,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,2,16,Staphylococcus aureus,MR,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,2,32,Staphylococcus aureus,MR,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,4,4,Enterococcus faecalis,ATCC 29212,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,8,8,Enterococcus faecalis,ATCC 29212,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,2,16,Enterococcus faecalis,,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,2,32,Enterococcus faecalis,,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,2,16,Enterococcus faecalis,VR,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,2,32,Enterococcus faecalis,VR,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,1,8,Streptococcus pyogenes,,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,2,16,Streptococcus pyogenes,,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,2,2,Streptococcus pyogenes,ATCC 19615,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,4,4,Streptococcus pyogenes,ATCC 19615,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,2,16,Rhodococcus equi,,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,4,32,Rhodococcus equi,,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Rhodococcus equi,ATCC 6939,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,32,32,Rhodococcus equi,ATCC 6939,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,4,4,Enterococcus faecalis,ATCC 51299,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Enterococcus faecalis,ATCC 51299,MHA,1,13.6000,7.0000,active
+C16,KK,AMD,4,16,Candida parapsilosis,ATCC 22019,RPMI-1640,1,13.6000,7.0000,active
+C16,KK,AMD,0.06,16,Microsporum canis,,RPMI-1640,1,13.6000,7.0000,active
+C16,KK,AMD,16,128,Microsporum canis,,SDA,1,13.6000,7.0000,active
+C16,KK,AMD,0.015,64,Trichophyton rubrum,,RPMI-1640,1,13.6000,7.0000,active
+C16,KK,AMD,16,64,Trichophyton rubrum,,SDA,1,13.6000,7.0000,active
+C16,KK,AMD,0.5,8,Trichophyton mentagrophytes,,RPMI-1640,1,13.6000,7.0000,active
+C16,KK,AMD,16,32,Trichophyton mentagrophytes,,SDA,1,13.6000,7.0000,active
+C16,KK,AMD,8,8,Escherichia coli,ATCC 25922,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Escherichia coli,ATCC 25922,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,256,256,Proteus mirabilis,PCM 543,CAMHB,1,13.6000,7.0000,not active
+C16,KK,AMD,512,512,Proteus mirabilis,PCM 543,CAMHB,1,13.6000,7.0000,not active
+C16,KK,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,CAMHB,1,13.6000,7.0000,not active
+C16,KK,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,CAMHB,1,13.6000,7.0000,not active
+C16,KK,AMD,8,8,Staphylococcus aureus,ATCC 25923,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Staphylococcus aureus,ATCC 25923,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,1,1,Staphylococcus epidermidis,PCM 2118,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,1,1,Staphylococcus epidermidis,PCM 2118,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,8,8,Streptococcus pneumoniae,ATCC 49619,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Streptococcus pneumoniae,ATCC 49619,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,8,8,Streptococcus pyogenes,PCM 465,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Streptococcus pyogenes,PCM 465,CAMHB,1,13.6000,7.0000,active
+C16,KK,AMD,2,2,Escherichia coli,UB1005,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,4,4,Staphylococcus aureus,SAP 0017,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Candida albicans,105,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,,,Cutibacterium acnes,,BHIB,1,13.6000,7.0000,unknown
+C16,KK,AMD,2,2,Bacillus subtilis,ATCC 6633,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,8,8,Staphylococcus aureus,ATCC 25923,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,4,4,Staphylococcus epidermidis,ATCC 14490,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,8,8,Escherichia coli,ATCC 25922,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,16,16,Klebsiella pneumoniae,ATCC 200603,MHB,1,13.6000,7.0000,active
+C16,KK,AMD,128,128,Pseudomonas aeruginosa,ATCC 9027,MHB,1,13.6000,7.0000,not active
+C16,KK,AMD,128,128,Candida albicans,ATCC 10231,SDB,1,13.6000,7.0000,not active
+C16,KK,AMD,128,128,Candida tropicalis,PCM 2681,SDB,1,13.6000,7.0000,not active
+C16,KK,,2,16,Staphylococcus aureus,,MHB,2,56.5000,7.0000,active
+C16,KK,,2,32,Staphylococcus aureus,,MHA,2,56.5000,7.0000,active
+C16,KK,,2,32,Staphylococcus aureus,MR,MHB,2,56.5000,7.0000,active
+C16,KK,,2,32,Staphylococcus aureus,MR,MHA,2,56.5000,7.0000,active
+C16,KK,,8,8,Staphylococcus aureus,ATCC 29213,MHB,2,56.5000,7.0000,active
+C16,KK,,16,16,Staphylococcus aureus,ATCC 29213,MHA,2,56.5000,7.0000,active
+C16,KK,,8,8,Staphylococcus aureus,ATCC 43300,MHB,2,56.5000,7.0000,active
+C16,KK,,16,16,Staphylococcus aureus,ATCC 43300,MHA,2,56.5000,7.0000,active
+C16,KK,,2,16,Enterococcus faecalis,,MHB,2,56.5000,7.0000,active
+C16,KK,,2,32,Enterococcus faecalis,,MHA,2,56.5000,7.0000,active
+C16,KK,,2,32,Enterococcus faecalis,VR,MHB,2,56.5000,7.0000,active
+C16,KK,,2,64,Enterococcus faecalis,VR,MHA,2,56.5000,7.0000,active
+C16,KK,,4,4,Enterococcus faecalis,ATCC 29212,MHB,2,56.5000,7.0000,active
+C16,KK,,8,8,Enterococcus faecalis,ATCC 29212,MHA,2,56.5000,7.0000,active
+C16,KK,,4,4,Enterococcus faecalis,ATCC 51299,MHB,2,56.5000,7.0000,active
+C16,KK,,16,16,Enterococcus faecalis,ATCC 51299,MHA,2,56.5000,7.0000,active
+C16,KK,,1,8,Streptococcus pyogenes,,MHB,2,56.5000,7.0000,active
+C16,KK,,2,16,Streptococcus pyogenes,,MHB,2,56.5000,7.0000,active
+C16,KK,,2,2,Streptococcus pyogenes,ATCC 19615,MHB,2,56.5000,7.0000,active
+C16,KK,,4,4,Streptococcus pyogenes,ATCC 19615,MHA,2,56.5000,7.0000,active
+C16,KK,,2,16,Rhodococcus equi,,MHB,2,56.5000,7.0000,active
+C16,KK,,2,16,Rhodococcus equi,,MHA,2,56.5000,7.0000,active
+C16,KK,,8,8,Rhodococcus equi,ATCC 6939,MHB,2,56.5000,7.0000,active
+C16,KK,,16,16,Rhodococcus equi,ATCC 6939,MHA,2,56.5000,7.0000,active
+C16,KK,,32,32,Escherichia coli,UB1005,MHB,2,56.5000,7.0000,active
+C16,KK,,16,16,Staphylococcus aureus,SAP 0017,MHB,2,56.5000,7.0000,active
+C16,KK,,64,64,Candida albicans,105,MHB,2,56.5000,7.0000,not active
+C16,KK,,1,4,Cutibacterium acnes,,BHIB,2,56.5000,7.0000,active
+C16,KGGK,,8,8,Staphylococcus aureus,ATCC 29213,MHB,2,43.0000,7.0000,active
+C16,KGGK,,16,16,Staphylococcus aureus,ATCC 33592,MHB,2,43.0000,7.0000,active
+C16,KGGK,,4,4,Staphylococcus epidermidis,ATCC 14990,MHB,2,43.0000,7.0000,active
+C16,KGGK,,8,8,Staphylococcus epidermidis,,MHB,2,43.0000,7.0000,active
+C16,KGGK,,8,8,Enterococcus faecalis,ATCC 29212,MHB,2,43.0000,7.0000,active
+C16,KGGK,,16,16,Enterococcus faecium,ATCC 27270,MHB,2,43.0000,7.0000,active
+C16,KGGK,,128,128,Streptococcus pneumoniae,ATCC 49619,MHB,2,43.0000,7.0000,not active
+C16,KGGK,,16,16,Escherichia coli,ATCC 25922,MHB,2,43.0000,7.0000,active
+C16,KGGK,,16,16,Escherichia coli,CAN-ICU 61714,MHB,2,43.0000,7.0000,active
+C16,KGGK,,16,16,Escherichia coli,CAN-ICU 63074,MHB,2,43.0000,7.0000,active
+C16,KGGK,,64,64,Pseudomonas aeruginosa,ATCC 27853,MHB,2,43.0000,7.0000,not active
+C16,KGGK,,64,64,Pseudomonas aeruginosa,,MHB,2,43.0000,7.0000,not active
+C16,KGGK,,128,128,Stenotrophomonas maltophilia,,MHB,2,43.0000,7.0000,not active
+C16,KGGK,,128,128,Acinetobacter baumannii,,MHB,2,43.0000,7.0000,not active
+C16,KGGK,,64,64,Klebsiella pneumoniae,ATCC 13883,MHB,2,43.0000,7.0000,not active
+C16,KKKK,,32,32,Staphylococcus aureus,ATCC 29213,MHB,2,25.0000,7.0000,active
+C16,KKKK,,16,16,Staphylococcus aureus,ATCC 33592,MHB,2,25.0000,7.0000,active
+C16,KKKK,,4,4,Staphylococcus epidermidis,ATCC 14990,MHB,2,25.0000,7.0000,active
+C16,KKKK,,8,8,Staphylococcus epidermidis,,MHB,2,25.0000,7.0000,active
+C16,KKKK,,16,16,Enterococcus faecalis,ATCC 29212,MHB,2,25.0000,7.0000,active
+C16,KKKK,,16,16,Enterococcus faecium,ATCC 27270,MHB,2,25.0000,7.0000,active
+C16,KKKK,,64,,Streptococcus pneumoniae,ATCC 49619,MHB,2,25.0000,7.0000,not active
+C16,KKKK,,16,16,Escherichia coli,ATCC 25922,MHB,2,25.0000,7.0000,active
+C16,KKKK,,16,16,Escherichia coli,CAN-ICU 61714,MHB,2,25.0000,7.0000,active
+C16,KKKK,,32,32,Escherichia coli,CAN-ICU 63074,MHB,2,25.0000,7.0000,active
+C16,KKKK,,64,64,Pseudomonas aeruginosa,ATCC 27853,MHB,2,25.0000,7.0000,not active
+C16,KKKK,,256,256,Pseudomonas aeruginosa,,MHB,2,25.0000,7.0000,not active
+C16,KKKK,,256,256,Stenotrophomonas maltophilia,,MHB,2,25.0000,7.0000,not active
+C16,KKKK,,256,256,Acinetobacter baumannii,,MHB,2,25.0000,7.0000,not active
+C16,KKKK,,256,256,Klebsiella pneumoniae,ATCC 13883,MHB,2,25.0000,7.0000,not active
+C16,KAAK,,16,16,Staphylococcus aureus,ATCC 29213,MHB,2,27.5000,7.0000,active
+C16,KAAK,,16,16,Staphylococcus aureus,ATCC 33592,MHB,2,27.5000,7.0000,active
+C16,KAAK,,8,8,Staphylococcus epidermidis,ATCC 14990,MHB,2,27.5000,7.0000,active
+C16,KAAK,,8,8,Staphylococcus epidermidis,,MHB,2,27.5000,7.0000,active
+C16,KAAK,,16,16,Enterococcus faecalis,ATCC 29212,MHB,2,27.5000,7.0000,active
+C16,KAAK,,8,8,Enterococcus faecium,ATCC 27270,MHB,2,27.5000,7.0000,active
+C16,KAAK,,128,128,Streptococcus pneumoniae,ATCC 49619,MHB,2,27.5000,7.0000,not active
+C16,KAAK,,16,16,Escherichia coli,ATCC 25922,MHB,2,27.5000,7.0000,active
+C16,KAAK,,16,16,Escherichia coli,CAN-ICU 61714,MHB,2,27.5000,7.0000,active
+C16,KAAK,,16,16,Escherichia coli,CAN-ICU 63074,MHB,2,27.5000,7.0000,active
+C16,KAAK,,32,32,Pseudomonas aeruginosa,ATCC 27853,MHB,2,27.5000,7.0000,active
+C16,KAAK,,64,64,Pseudomonas aeruginosa,,MHB,2,27.5000,7.0000,not active
+C16,KAAK,,128,128,Stenotrophomonas maltophilia,,MHB,2,27.5000,7.0000,not active
+C16,KAAK,,128,128,Acinetobacter baumannii,,MHB,2,27.5000,7.0000,not active
+C16,KAAK,,128,128,Klebsiella pneumoniae,ATCC 13883,MHB,2,27.5000,7.0000,not active
+C16,RR,AMD,16,16,Escherichia coli,ATCC 25922,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,32,32,Escherichia coli,ATCC 25922,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,256,256,Proteus mirabilis,PCM 543,CAMHB,1,12.5000,7.0000,not active
+C16,RR,AMD,512,512,Proteus mirabilis,PCM 543,CAMHB,1,12.5000,7.0000,not active
+C16,RR,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,CAMHB,1,12.5000,7.0000,not active
+C16,RR,AMD,256,256,Pseudomonas aeruginosa,ATCC 9027,CAMHB,1,12.5000,7.0000,not active
+C16,RR,AMD,8,8,Staphylococcus aureus,ATCC 25923,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,16,16,Staphylococcus aureus,ATCC 25923,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,1,1,Staphylococcus epidermidis,PCM 2118,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,1,1,Staphylococcus epidermidis,PCM 2118,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,8,8,Streptococcus pneumoniae,ATCC 49619,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,8,8,Streptococcus pneumoniae,ATCC 49619,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,4,4,Streptococcus pyogenes,PCM 465,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,8,8,Streptococcus pyogenes,PCM 465,CAMHB,1,12.5000,7.0000,active
+C16,RR,AMD,128,128,Candida albicans,ATCC 10231,SDB,1,12.5000,7.0000,not active
+C16,RR,AMD,256,256,Candida albicans,ATCC 10231,SDA,1,12.5000,7.0000,not active
+C16,RR,AMD,8,8,Staphylococcus aureus,ATCC 25923,MHB,1,12.5000,7.0000,active
+C16,RR,AMD,16,16,Pseudomonas aeruginosa,ATCC 9027,MHB,1,12.5000,7.0000,active
+C16,RR,AMD,4,4,Candida albicans,ATCC 10231,RPMI-1640,1,12.5000,7.0000,active
+C16,RR,AMD,8,8,Enterococcus faecium,ATCC 700221,MHB,1,12.5000,7.0000,active
+C16,RR,AMD,8,8,Staphylococcus aureus,ATCC 33591,MHB,1,12.5000,7.0000,active
+C16,RR,AMD,32,32,Klebsiella pneumoniae,ATCC 700603,MHB,1,12.5000,7.0000,active
+C16,RR,AMD,32,32,Acinetobacter baumannii,ATCC BAA-1605,MHB,1,12.5000,7.0000,active
+C16,RR,AMD,32,32,Klebsiella aerogenes,ATCC 13048,MHB,1,12.5000,7.0000,active
+C16,KGK,AMD,8,8,Staphylococcus aureus,ATCC 29213,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,256,256,Staphylococcus aureus,ATCC 29213,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,4,4,Staphylococcus aureus,ATCC 33592,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,256,256,Staphylococcus aureus,ATCC 33592,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,,0.25,Staphylococcus epidermidis,81388,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,256,256,Staphylococcus epidermidis,81388,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,,0.25,Staphylococcus epidermidis,61589,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,256,256,Staphylococcus epidermidis,61589,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,16,16,Enterococcus faecalis,ATCC 29212,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,512,512,Enterococcus faecalis,ATCC 29212,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,16,16,Enterococcus faecium,ATCC 27270,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,256,256,Enterococcus faecium,ATCC 27270,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,128,128,Streptococcus pneumoniae,ATCC 49619,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,512,512,Streptococcus pneumoniae,ATCC 49619,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,16,16,Escherichia coli,ATCC 25922,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,256,256,Escherichia coli,ATCC 25922,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,16,16,Escherichia coli,CAN-ICU 61714,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,256,256,Escherichia coli,CAN-ICU 61714,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,16,16,Escherichia coli,CAN-ICU 63074,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,512,512,Escherichia coli,CAN-ICU 63074,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,64,64,Pseudomonas aeruginosa,ATCC 27853,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,512,512,Pseudomonas aeruginosa,ATCC 27853,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,128,128,Pseudomonas aeruginosa,CAN-ICU 62308,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,512,512,Pseudomonas aeruginosa,CAN-ICU 62308,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,128,128,Stenotrophomonas maltophilia,CAN-ICU 62584,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,512,512,Stenotrophomonas maltophilia,CAN-ICU 62584,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,128,128,Acinetobacter baumannii,CAN-ICU 63169,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,512,512,Acinetobacter baumannii,CAN-ICU 63169,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,128,128,Klebsiella pneumoniae,ATCC 13883,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,512,512,Klebsiella pneumoniae,ATCC 13883,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,2,2,Bacillus subtilis,ATCC 6633,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,16,16,Staphylococcus aureus,ATCC 25923,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,4,4,Staphylococcus epidermidis,ATCC 14490,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,8,8,Escherichia coli,ATCC 25922,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,16,16,Klebsiella pneumoniae,ATCC 200603,MHB,2,58.0000,7.0000,active
+C16,KGK,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,MHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,64,64,Candida albicans,ATCC 10231,SDB,2,58.0000,7.0000,not active
+C16,KGK,AMD,512,,Candida tropicalis,PCM 2681,SDB,2,58.0000,7.0000,not active
+C16,KGK,AMD,64,64,Staphylococcus aureus,ATCC 25923,CAMHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,32,32,Staphylococcus epidermidis,ATCC 14990,CAMHB,2,58.0000,7.0000,active
+C16,KGK,AMD,32,32,Enterococcus faecalis,ATCC 29212,CAMHB,2,58.0000,7.0000,active
+C16,KGK,AMD,16,16,Escherichia coli,ATCC 25922,CAMHB,2,58.0000,7.0000,active
+C16,KGK,AMD,256,256,Pseudomonas aeruginosa,ATCC 9029,CAMHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,512,512,Proteus mirabilis,PCM 543,CAMHB,2,58.0000,7.0000,not active
+C16,KGK,AMD,4,4,Staphylococcus aureus,357426,CAMHB,2,58.0000,7.0000,active
+C16,KGK,AMD,1,1,Staphylococcus aureus,355872,CAMHB,2,58.0000,7.0000,active
+C16,KGK,AMD,8,8,Staphylococcus aureus,348839,CAMHB,2,58.0000,7.0000,active
+C16,KGK,AMD,16,32,Staphylococcus aureus,MR,CAMHB,2,58.0000,7.0000,active
+C16,KGK,AMD,32,32,Staphylococcus aureus,ATCC 43300,CAMHB,2,58.0000,7.0000,active
+C16,KKK,AMD,16,16,Staphylococcus aureus,ATCC 29213,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,512,Staphylococcus aureus,ATCC 29213,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,16,16,Staphylococcus aureus,ATCC 33592,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,512,Staphylococcus aureus,ATCC 33592,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,16,16,Staphylococcus epidermidis,81388,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,512,Staphylococcus epidermidis,81388,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,8,8,Staphylococcus epidermidis,61589,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,512,Staphylococcus epidermidis,61589,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,32,32,Enterococcus faecalis,ATCC 29212,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,512,Enterococcus faecalis,ATCC 29212,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,16,16,Enterococcus faecium,ATCC 27270,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,512,Enterococcus faecium,ATCC 27270,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,128,128,Streptococcus pneumoniae,ATCC 49619,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,512,512,Streptococcus pneumoniae,ATCC 49619,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,32,32,Escherichia coli,ATCC 25922,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,512,Escherichia coli,ATCC 25922,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,32,32,Escherichia coli,CAN-ICU 61714,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,512,Escherichia coli,CAN-ICU 61714,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,32,32,Escherichia coli,CAN-ICU 63074,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,512,Escherichia coli,CAN-ICU 63074,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,128,128,Pseudomonas aeruginosa,ATCC 27853,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,512,,Pseudomonas aeruginosa,ATCC 27853,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,256,256,Pseudomonas aeruginosa,CAN-ICU 62308,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,512,,Pseudomonas aeruginosa,CAN-ICU 62308,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,512,512,Stenotrophomonas maltophilia,CAN-ICU 62584,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,512,,Stenotrophomonas maltophilia,CAN-ICU 62584,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,256,256,Acinetobacter baumannii,CAN-ICU 63169,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,512,,Acinetobacter baumannii,CAN-ICU 63169,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,128,128,Klebsiella pneumoniae,ATCC 13883,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,512,,Klebsiella pneumoniae,ATCC 13883,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,8,8,Staphylococcus aureus,ATCC 25923,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Staphylococcus epidermidis,PCM 2118,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,8,8,Bacillus subtilis,ATCC 6633,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,16,16,Enterococcus faecalis,ATCC 29212,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,8,8,Escherichia coli,ATCC 25922,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Klebsiella pneumoniae,ATCC 700603,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,8,8,Pseudomonas aeruginosa,ATCC 9027,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,512,,Proteus vulgaris,PCM 2668,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,128,128,Candida albicans,ATCC 10231,SDB,2,44.0000,7.0000,not active
+C16,KKK,AMD,128,128,Candida tropicalis,PCM 2681,SDB,2,44.0000,7.0000,not active
+C16,KKK,AMD,128,128,Aspergillus niger,ATCC 16404,SDB,2,44.0000,7.0000,not active
+C16,KKK,AMD,32,32,Staphylococcus aureus,ATCC 25923,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Staphylococcus aureus,ATCC 25923,BHIB,2,44.0000,7.0000,active
+C16,KKK,AMD,2,2,Staphylococcus aureus,ATCC 25923,BHIB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Staphylococcus aureus,ATCC 25923,TSB,2,44.0000,7.0000,active
+C16,KKK,AMD,8,8,Staphylococcus aureus,ATCC 25923,TSB,2,44.0000,7.0000,active
+C16,KKK,AMD,16,16,Staphylococcus aureus,ATCC 6538,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,2,2,Staphylococcus aureus,ATCC 6538,BHIB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Staphylococcus aureus,ATCC 6538,TSB,2,44.0000,7.0000,active
+C16,KKK,AMD,32,32,Staphylococcus aureus,ATCC 6538P,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Staphylococcus aureus,ATCC 6538P,BHIB,2,44.0000,7.0000,active
+C16,KKK,AMD,2,2,Staphylococcus aureus,ATCC 6538P,BHIB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Staphylococcus aureus,ATCC 6538P,TSB,2,44.0000,7.0000,active
+C16,KKK,AMD,8,8,Staphylococcus aureus,ATCC 6538P,TSB,2,44.0000,7.0000,active
+C16,KKK,AMD,16,16,Staphylococcus aureus,ATCC 9144,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Staphylococcus aureus,ATCC 9144,BHIB,2,44.0000,7.0000,active
+C16,KKK,AMD,8,8,Staphylococcus aureus,ATCC 9144,TSB,2,44.0000,7.0000,active
+C16,KKK,AMD,16,16,Staphylococcus aureus,ATCC 12598,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,2,2,Staphylococcus aureus,ATCC 12598,BHIB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Staphylococcus aureus,ATCC 12598,BHIB,2,44.0000,7.0000,active
+C16,KKK,AMD,4,4,Staphylococcus aureus,ATCC 12598,TSB,2,44.0000,7.0000,active
+C16,KKK,AMD,8,8,Staphylococcus aureus,ATCC 12598,TSB,2,44.0000,7.0000,active
+C16,KKK,AMD,5.76675,5.76675,Human prostate cancer,DU145, ,2,44.0000,7.0000,active
+C16,KKK,AMD,10.252,10.252,Human pancreatic carcinoma,Mia PaCa-2, ,2,44.0000,7.0000,active
+C16,KKK,AMD,64,64,Staphylococcus aureus,ATCC 25923,CAMHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,16,16,Staphylococcus epidermidis,ATCC 14990,CAMHB,2,44.0000,7.0000,active
+C16,KKK,AMD,16,16,Enterococcus faecalis,ATCC 29212,CAMHB,2,44.0000,7.0000,active
+C16,KKK,AMD,32,32,Escherichia coli,ATCC 25922,CAMHB,2,44.0000,7.0000,active
+C16,KKK,AMD,64,64,Pseudomonas aeruginosa,ATCC 9029,CAMHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,256,256,Proteus mirabilis,PCM 543,CAMHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,8,8,Staphylococcus epidermidis,ATCC 14990,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,16,16,Escherichia coli,ATCC 25922,MHB,2,44.0000,7.0000,active
+C16,KKK,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,MHB,2,44.0000,7.0000,not active
+C16,KKK,AMD,32,32,Candida albicans,ATCC 10231,RPMI-1640,2,44.0000,7.0000,active
+C16,KKK,AMD,32,32,Candida glabrata,ATCC 15126,RPMI-1640,2,44.0000,7.0000,active
+C16,KKK,AMD,16,16,Yarrowia lipolytica,PCM 2680-FY,RPMI-1640,2,44.0000,7.0000,active
+C16,KKK,AMD,8,8,Candida tropicalis,PCM 2709-FY,RPMI-1640,2,44.0000,7.0000,active
+C16,KKK,AMD,2.8,5,Human cervical carcinoma,HeLa,,2,44.0000,7.0000,active
+C16,KYR,AMD,56.2,56.2,Staphylococcus aureus,ATCC 25923,LBB,0,1.2900,7.0000,not active
+C16,KYR,AMD,112.5,112.5,Staphylococcus aureus,ATCC 25923,LBB,0,1.2900,7.0000,not active
+C16,KYR,AMD,56.2,56.2,Staphylococcus epidermidis,ATCC 12228,LBB,0,1.2900,7.0000,not active
+C16,KYR,AMD,112.5,112.5,Staphylococcus epidermidis,ATCC 12228,LBB,0,1.2900,7.0000,not active
+C16,KYR,AMD,28.1,28.1,Escherichia coli,ATCC 700926,LBB,0,1.2900,7.0000,active
+C16,KYR,AMD,56.2,56.2,Escherichia coli,ATCC 700926,LBB,0,1.2900,7.0000,not active
+C16,KYR,AMD,56.2,56.2,Escherichia coli,O157:H7 ATCC 43895,LBB,0,1.2900,7.0000,not active
+C16,KYR,AMD,56.2,56.2,Escherichia coli,O157:H7 ATCC 43895,LBB,0,1.2900,7.0000,not active
+C16,KYR,AMD,84.4,84.4,Klebsiella pneumoniae,ATCC 17736,LBB,0,1.2900,7.0000,not active
+C16,KYR,AMD,112.5,112.5,Klebsiella pneumoniae,ATCC 17736,LBB,0,1.2900,7.0000,not active
+C16,KpT,AMD,64,64,Escherichia coli,UB1005,MHB,1,12.6000,7.0000,not active
+C16,KpT,AMD,4,4,Staphylococcus aureus,SAP 0017,MHB,1,12.6000,7.0000,active
+C16,KpT,AMD,16,16,Candida albicans,105,MHB,1,12.6000,7.0000,active
+C16,KpT,AMD,2,2,Cutibacterium acnes,,BHIB,1,12.6000,7.0000,active
+C16,KPV,AMD,128,128,Escherichia coli,UB1005,MHB,0,1.3400,7.0000,not active
+C16,KPV,AMD,8,8,Staphylococcus aureus,SAP 0017,MHB,0,1.3400,7.0000,active
+C16,KPV,AMD,16,16,Candida albicans,105,MHB,0,1.3400,7.0000,active
+C16,KPV,AMD,1,2,Cutibacterium acnes,,BHIB,0,1.3400,7.0000,active
+C16,KPV,AMD,6.5963,6.5963,Staphylococcus aureus,ATCC 29213,CAMHB,0,1.3400,7.0000,active
+C16,KPV,AMD,6.5963,6.5963,Staphylococcus aureus,ATCC 29213,TSB,0,1.3400,7.0000,active
+C16,KPV,AMD,6.5963,6.5963,Staphylococcus aureus,ATCC 33591,CAMHB,0,1.3400,7.0000,active
+C16,KPV,AMD,6.5963,6.5963,Staphylococcus aureus,ATCC 33591,TSB,0,1.3400,7.0000,active
+C16,KpT,,2000,,Escherichia coli,UB1005,MHB,1,11.1000,7.0000,not active
+C16,KpT,,2000,,Staphylococcus aureus,SAP 0017,MHB,1,11.1000,7.0000,not active
+C16,KpT,,2000,,Candida albicans,105,MHB,1,11.1000,7.0000,not active
+C16,KpT,,32,32,Cutibacterium acnes,,BHIB,1,11.1000,7.0000,active
+C16,KPV,,2000,,Escherichia coli,UB1005,MHB,1,10.4000,7.0000,not active
+C16,KPV,,2000,,Staphylococcus aureus,SAP 0017,MHB,1,10.4000,7.0000,not active
+C16,KPV,,2000,,Candida albicans,105,MHB,1,10.4000,7.0000,not active
+C16,KPV,,8,8,Cutibacterium acnes,,BHIB,1,10.4000,7.0000,active
+C16,KP,AMD,64,64,Escherichia coli,UB1005,MHB,0,1.6400,7.0000,not active
+C16,KP,AMD,16,16,Staphylococcus aureus,SAP 0017,MHB,0,1.6400,7.0000,active
+C16,KP,AMD,16,16,Candida albicans,105,MHB,0,1.6400,7.0000,active
+C16,KP,AMD,1,1,Cutibacterium acnes,,BHIB,0,1.6400,7.0000,active
+C16,Kp,AMD,128,128,Escherichia coli,UB1005,MHB,0,1.6400,7.0000,not active
+C16,Kp,AMD,8,8,Staphylococcus aureus,SAP 0017,MHB,0,1.6400,7.0000,active
+C16,Kp,AMD,16,16,Candida albicans,105,MHB,0,1.6400,7.0000,active
+C16,Kp,AMD,1,2,Cutibacterium acnes,,BHIB,0,1.6400,7.0000,active
+C16,PV,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.7900,7.0000,not active
+C16,PV,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,0,1.7900,7.0000,not active
+C16,PV,AMD,2000,,Candida albicans,105,MHB,0,1.7900,7.0000,not active
+C16,PV,AMD,2000,,Cutibacterium acnes,,BHIB,0,1.7900,7.0000,not active
+C16,pS,AMD,2000,,Escherichia coli,UB1005,MHB,1,15.0000,7.0000,not active
+C16,pS,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,1,15.0000,7.0000,not active
+C16,pS,AMD,2000,,Candida albicans,105,MHB,1,15.0000,7.0000,not active
+C16,pS,AMD,32,32,Cutibacterium acnes,,BHIB,1,15.0000,7.0000,active
+C16,KPA,AMD,128,128,Escherichia coli,UB1005,MHB,1,10.3000,7.0000,not active
+C16,KPA,AMD,16,16,Staphylococcus aureus,SAP 0017,MHB,1,10.3000,7.0000,active
+C16,KPA,AMD,16,16,Candida albicans,105,MHB,1,10.3000,7.0000,active
+C16,KPA,AMD,1,1,Cutibacterium acnes,,BHIB,1,10.3000,7.0000,active
+C16,KPL,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.3400,7.0000,not active
+C16,KPL,AMD,16,16,Staphylococcus aureus,SAP 0017,MHB,0,1.3400,7.0000,active
+C16,KPL,AMD,32,32,Candida albicans,105,MHB,0,1.3400,7.0000,active
+C16,KPL,AMD,4,8,Cutibacterium acnes,,BHIB,0,1.3400,7.0000,active
+C16,KT,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.7900,7.0000,not active
+C16,KT,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,0,1.7900,7.0000,not active
+C16,KT,AMD,2000,,Candida albicans,105,MHB,0,1.7900,7.0000,not active
+C16,KT,AMD,256,1000,Cutibacterium acnes,,BHIB,0,1.7900,7.0000,not active
+C16,Kt,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.7900,7.0000,not active
+C16,Kt,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,0,1.7900,7.0000,not active
+C16,Kt,AMD,2000,,Candida albicans,105,MHB,0,1.7900,7.0000,not active
+C16,Kt,AMD,128,256,Cutibacterium acnes,,BHIB,0,1.7900,7.0000,not active
+C16,KV,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.8400,7.0000,not active
+C16,KV,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,0,1.8400,7.0000,not active
+C16,KV,AMD,2000,,Candida albicans,105,MHB,0,1.8400,7.0000,not active
+C16,KV,AMD,2000,,Cutibacterium acnes,,BHIB,0,1.8400,7.0000,not active
+C16,KA,AMD,2000,,Escherichia coli,UB1005,MHB,1,13.9000,7.0000,not active
+C16,KA,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,1,13.9000,7.0000,not active
+C16,KA,AMD,2000,,Candida albicans,105,MHB,1,13.9000,7.0000,not active
+C16,KA,AMD,2000,,Cutibacterium acnes,,BHIB,1,13.9000,7.0000,not active
+C16,KF,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.7900,7.0000,not active
+C16,KF,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,0,1.7900,7.0000,not active
+C16,KF,AMD,2000,,Candida albicans,105,MHB,0,1.7900,7.0000,not active
+C16,KF,AMD,2000,,Cutibacterium acnes,,BHIB,0,1.7900,7.0000,not active
+C16,KH,AMD,16,16,Escherichia coli,UB1005,MHB,1,12.8000,7.0000,active
+C16,KH,AMD,4,4,Staphylococcus aureus,SAP 0017,MHB,1,12.8000,7.0000,active
+C16,KH,AMD,16,16,Candida albicans,105,MHB,1,12.8000,7.0000,active
+C16,KH,AMD,1,2,Cutibacterium acnes,,BHIB,1,12.8000,7.0000,active
+C16,KG,AMD,2000,,Escherichia coli,UB1005,MHB,1,15.5000,7.0000,not active
+C16,KG,AMD,250,250,Staphylococcus aureus,SAP 0017,MHB,1,15.5000,7.0000,not active
+C16,KG,AMD,2000,,Candida albicans,105,MHB,1,15.5000,7.0000,not active
+C16,KG,AMD,32,64,Cutibacterium acnes,,BHIB,1,15.5000,7.0000,active
+C16,KG,AMD,8,8,Staphylococcus aureus,ATCC 25923,MHB,1,15.5000,7.0000,active
+C16,KG,AMD,4,4,Staphylococcus epidermidis,PCM 2118,MHB,1,15.5000,7.0000,active
+C16,KG,AMD,4,4,Bacillus subtilis,ATCC 6633,MHB,1,15.5000,7.0000,active
+C16,KG,AMD,16,16,Enterococcus faecalis,ATCC 29212,MHB,1,15.5000,7.0000,active
+C16,KG,AMD,256,256,Escherichia coli,ATCC 25922,MHB,1,15.5000,7.0000,not active
+C16,KG,AMD,128,128,Klebsiella pneumoniae,ATCC 700603,MHB,1,15.5000,7.0000,not active
+C16,KG,AMD,256,256,Pseudomonas aeruginosa,ATCC 9027,MHB,1,15.5000,7.0000,not active
+C16,KG,AMD,512,,Proteus vulgaris,PCM 2668,MHB,1,15.5000,7.0000,not active
+C16,KG,AMD,128,128,Candida albicans,ATCC 10231,SDB,1,15.5000,7.0000,not active
+C16,KG,AMD,256,256,Candida tropicalis,PCM 2681,SDB,1,15.5000,7.0000,not active
+C16,KG,AMD,512,512,Aspergillus niger,ATCC 16404,SDB,1,15.5000,7.0000,not active
+C16,KL,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.7900,7.0000,not active
+C16,KL,AMD,250,250,Staphylococcus aureus,SAP 0017,MHB,0,1.7900,7.0000,not active
+C16,KL,AMD,2000,,Candida albicans,105,MHB,0,1.7900,7.0000,not active
+C16,KL,AMD,8,8,Cutibacterium acnes,,BHIB,0,1.7900,7.0000,active
+C16,KS,AMD,2000,,Escherichia coli,UB1005,MHB,1,15.3000,7.0000,not active
+C16,KS,AMD,1000,1000,Staphylococcus aureus,SAP 0017,MHB,1,15.3000,7.0000,not active
+C16,KS,AMD,2000,,Candida albicans,105,MHB,1,15.3000,7.0000,not active
+C16,KS,AMD,128,128,Cutibacterium acnes,,BHIB,1,15.3000,7.0000,not active
+C16,KI,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.7900,7.0000,not active
+C16,KI,AMD,128,128,Staphylococcus aureus,SAP 0017,MHB,0,1.7900,7.0000,not active
+C16,KI,AMD,2000,,Candida albicans,105,MHB,0,1.7900,7.0000,not active
+C16,KI,AMD,2000,,Cutibacterium acnes,,BHIB,0,1.7900,7.0000,not active
+C16,KY,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.7400,7.0000,not active
+C16,KY,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,0,1.7400,7.0000,not active
+C16,KY,AMD,2000,,Candida albicans,105,MHB,0,1.7400,7.0000,not active
+C16,KY,AMD,2000,,Cutibacterium acnes,,BHIB,0,1.7400,7.0000,not active
+C16,KW,AMD,2000,,Escherichia coli,UB1005,MHB,0,1.7400,7.0000,not active
+C16,KW,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,0,1.7400,7.0000,not active
+C16,KW,AMD,2000,,Candida albicans,105,MHB,0,1.7400,7.0000,not active
+C16,KW,AMD,2000,,Cutibacterium acnes,,BHIB,0,1.7400,7.0000,not active
+C16,PK,AMD,2000,2000,Escherichia coli,UB1005,MHB,0,1.6900,7.0000,not active
+C16,PK,AMD,128,128,Staphylococcus aureus,SAP 0017,MHB,0,1.6900,7.0000,not active
+C16,PK,AMD,128,128,Candida albicans,105,MHB,0,1.6900,7.0000,not active
+C16,PK,AMD,4,16,Cutibacterium acnes,,BHIB,0,1.6900,7.0000,active
+C16,KD,AMD,2000,,Escherichia coli,UB1005,MHB,2,72.5000,7.0000,not active
+C16,KD,AMD,2000,,Staphylococcus aureus,SAP 0017,MHB,2,72.5000,7.0000,not active
+C16,KD,AMD,2000,,Candida albicans,105,MHB,2,72.5000,7.0000,not active
+C16,KD,AMD,,,Cutibacterium acnes,,BHIB,2,72.5000,7.0000,unknown
+C16,KR,,500,500,Escherichia coli,UB1005,MHB,1,12.1000,7.0000,not active
+C16,KR,,16,16,Staphylococcus aureus,SAP 0017,MHB,1,12.1000,7.0000,active
+C16,KR,,32,32,Candida albicans,105,MHB,1,12.1000,7.0000,active
+C16,KR,,2,4,Cutibacterium acnes,,BHIB,1,12.1000,7.0000,active
+C16,PK,,2000,,Escherichia coli,UB1005,MHB,1,14.6000,7.0000,not active
+C16,PK,,2000,,Staphylococcus aureus,SAP 0017,MHB,1,14.6000,7.0000,not active
+C16,PK,,2000,,Candida albicans,105,MHB,1,14.6000,7.0000,not active
+C16,PK,,2000,,Cutibacterium acnes,,BHIB,1,14.6000,7.0000,not active
+C16,Kp,,2000,,Escherichia coli,UB1005,MHB,1,13.1000,7.0000,not active
+C16,Kp,,2000,,Staphylococcus aureus,SAP 0017,MHB,1,13.1000,7.0000,not active
+C16,Kp,,2000,,Candida albicans,105,MHB,1,13.1000,7.0000,not active
+C16,Kp,,2000,,Cutibacterium acnes,,BHIB,1,13.1000,7.0000,not active
+C16,KP,,2000,,Escherichia coli,UB1005,MHB,1,13.1000,7.0000,not active
+C16,KP,,2000,,Staphylococcus aureus,SAP 0017,MHB,1,13.1000,7.0000,not active
+C16,KP,,2000,,Candida albicans,105,MHB,1,13.1000,7.0000,not active
+C16,KP,,2000,,Cutibacterium acnes,,BHIB,1,13.1000,7.0000,not active
+C16,KR,AMD,8,8,Escherichia coli,UB1005,MHB,0,1.5400,7.0000,active
+C16,KR,AMD,2,2,Staphylococcus aureus,SAP 0017,MHB,0,1.5400,7.0000,active
+C16,KR,AMD,16,16,Candida albicans,105,MHB,0,1.5400,7.0000,active
+C16,KR,AMD,,1,Cutibacterium acnes,,BHIB,0,1.5400,7.0000,active
+C16,KR,AMD,32,32,Staphylococcus aureus,ATCC 25923,CAMHB,0,1.5400,7.0000,active
+C16,KR,AMD,8,8,Staphylococcus epidermidis,ATCC 14990,CAMHB,0,1.5400,7.0000,active
+C16,KR,AMD,64,64,Enterococcus faecalis,ATCC 29212,CAMHB,0,1.5400,7.0000,not active
+C16,KR,AMD,64,64,Escherichia coli,ATCC 25922,CAMHB,0,1.5400,7.0000,not active
+C16,KR,AMD,128,128,Pseudomonas aeruginosa,ATCC 9029,CAMHB,0,1.5400,7.0000,not active
+C16,KR,AMD,512,512,Proteus mirabilis,PCM 543,CAMHB,0,1.5400,7.0000,not active
+C16,KGGK,AMD,4,5,Enterococcus faecalis,V583,BHIB,2,48.5000,7.0000,active
+C16,KGGK,AMD,6,12.5,Streptococcus mutans,ATCC 27351,BHIB,2,48.5000,7.0000,active
+C16,KGGK,AMD,12.5,25,Fusobacterium nucleatum,ATCC 1594,WCB,2,48.5000,7.0000,active
+C16,KGGK,AMD,12.5,25,Porphyromonas gingivalis,ATCC 33277,WCB,2,48.5000,7.0000,active
+C16,KGGK,AMD,12.5,25,Actinomyces naeslundii,ATCC 17233,WCB,2,48.5000,7.0000,active
+C16,KkK,AMD,6,12.5,Enterococcus faecalis,V583,BHIB,2,44.0000,7.0000,active
+C16,KkK,AMD,12.5,25,Streptococcus mutans,ATCC 27351,BHIB,2,44.0000,7.0000,active
+C16,KkK,AMD,4,5,Fusobacterium nucleatum,ATCC 1594,WCB,2,44.0000,7.0000,active
+C16,KkK,AMD,6,12.5,Porphyromonas gingivalis,ATCC 33277,WCB,2,44.0000,7.0000,active
+C16,KkK,AMD,6.25,12.5,Actinomyces naeslundii,ATCC 17233,WCB,2,44.0000,7.0000,active
+C16,KKKK,AMD,4,4,Staphylococcus aureus,ATCC 25923,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,8,8,Staphylococcus aureus,ATCC 25923,CAMHA,2,30.5000,7.0000,active
+C16,KKKK,AMD,4,4,Staphylococcus epidermidis,PCM 2118,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,4,4,Staphylococcus epidermidis,PCM 2118,CAMHA,2,30.5000,7.0000,active
+C16,KKKK,AMD,4,4,Bacillus subtilis,ATCC 6633,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,4,4,Bacillus subtilis,ATCC 6633,CAMHA,2,30.5000,7.0000,active
+C16,KKKK,AMD,16,16,Enterococcus faecalis,ATCC 29212,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,16,16,Enterococcus faecalis,ATCC 29212,CAMHA,2,30.5000,7.0000,active
+C16,KKKK,AMD,8,8,Escherichia coli,ATCC 25922,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,8,8,Escherichia coli,ATCC 25922,CAMHA,2,30.5000,7.0000,active
+C16,KKKK,AMD,4,4,Klebsiella pneumoniae,ATCC 700603,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,8,8,Klebsiella pneumoniae,ATCC 700603,CAMHA,2,30.5000,7.0000,active
+C16,KKKK,AMD,8,8,Pseudomonas aeruginosa,ATCC 9027,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,8,8,Pseudomonas aeruginosa,ATCC 9027,CAMHA,2,30.5000,7.0000,active
+C16,KKKK,AMD,512,,Proteus vulgaris,PCM 2668,MHB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,512,,Proteus vulgaris,PCM 2668,CAMHA,2,30.5000,7.0000,not active
+C16,KKKK,AMD,128,128,Candida albicans,ATCC 10231,SDB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,128,128,Candida albicans,ATCC 10231,SGA,2,30.5000,7.0000,not active
+C16,KKKK,AMD,128,128,Candida tropicalis,PCM 2681,SDB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,128,128,Candida tropicalis,PCM 2681,SGA,2,30.5000,7.0000,not active
+C16,KKKK,AMD,128,128,Aspergillus niger,ATCC 16404,SDB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,128,128,Aspergillus niger,ATCC 16404,SGA,2,30.5000,7.0000,not active
+C16,KKKK,AMD,8,8,Staphylococcus aureus,ATCC 29213,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,512,512,Staphylococcus aureus,ATCC 29213,MHB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,16,16,Staphylococcus aureus,ATCC 33592,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,512,512,Staphylococcus aureus,ATCC 33592,MHB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,4,4,Staphylococcus epidermidis,61589,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,256,256,Staphylococcus epidermidis,61589,MHB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,8,8,Enterococcus faecium,ATCC 27270,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,512,512,Enterococcus faecium,ATCC 27270,MHB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,64,64,Streptococcus pneumoniae,ATCC 49619,MHB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,32,32,Streptococcus pneumoniae,ATCC 49619,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,16,16,Pseudomonas aeruginosa,ATCC 27853,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,512,,Pseudomonas aeruginosa,ATCC 27853,MHB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,32,32,Klebsiella pneumoniae,ATCC 13883,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,512,,Klebsiella pneumoniae,ATCC 13883,MHB,2,30.5000,7.0000,not active
+C16,KKKK,AMD,30.7568,30.7568,Human acute monocytic leukemia,THP-1, ,2,30.5000,7.0000,active
+C16,KKKK,AMD,61.5136,61.5136,Human acute monocytic leukemia,THP-1, ,2,30.5000,7.0000,not active
+C16,KKKK,AMD,23.0676,23.0676,Human breast adenocarcinoma,MDA-MB-231, ,2,30.5000,7.0000,active
+C16,KKKK,AMD,13.8406,13.8406,Human prostate cancer,DU145, ,2,30.5000,7.0000,active
+C16,KKKK,AMD,16,16,Staphylococcus aureus,ATCC 25923,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,8,8,Staphylococcus epidermidis,ATCC 14990,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,32,32,Escherichia coli,ATCC 25922,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,16,16,Pseudomonas aeruginosa,ATCC 9027,MHB,2,30.5000,7.0000,active
+C16,KKKK,AMD,32,32,Candida albicans,ATCC 10231,RPMI-1640,2,30.5000,7.0000,active
+C16,KKKK,AMD,64,64,Candida glabrata,ATCC 15126,RPMI-1640,2,30.5000,7.0000,not active
+C16,KKKK,AMD,8,8,Yarrowia lipolytica,PCM 2680-FY,RPMI-1640,2,30.5000,7.0000,active
+C16,KKKK,AMD,4,4,Candida tropicalis,PCM 2709-FY,RPMI-1640,2,30.5000,7.0000,active
+C16,KKKK,AMD,11.7,13.9,Human cervical carcinoma,HeLa,,2,30.5000,7.0000,active
+C16,KGKG,AMD,16,16,Staphylococcus aureus,ATCC 25923,MHB,2,46.5000,7.0000,active
+C16,KGKG,AMD,32,32,Staphylococcus aureus,ATCC 25923,CAMHA,2,46.5000,7.0000,active
+C16,KGKG,AMD,4,4,Staphylococcus epidermidis,PCM 2118,MHB,2,46.5000,7.0000,active
+C16,KGKG,AMD,4,4,Staphylococcus epidermidis,PCM 2118,CAMHA,2,46.5000,7.0000,active
+C16,KGKG,AMD,4,4,Bacillus subtilis,ATCC 6633,MHB,2,46.5000,7.0000,active
+C16,KGKG,AMD,4,4,Bacillus subtilis,ATCC 6633,CAMHA,2,46.5000,7.0000,active
+C16,KGKG,AMD,16,16,Enterococcus faecalis,ATCC 29212,MHB,2,46.5000,7.0000,active
+C16,KGKG,AMD,16,16,Enterococcus faecalis,ATCC 29212,CAMHA,2,46.5000,7.0000,active
+C16,KGKG,AMD,16,16,Escherichia coli,ATCC 25922,MHB,2,46.5000,7.0000,active
+C16,KGKG,AMD,16,16,Escherichia coli,ATCC 25922,CAMHA,2,46.5000,7.0000,active
+C16,KGKG,AMD,16,16,Klebsiella pneumoniae,ATCC 700603,MHB,2,46.5000,7.0000,active
+C16,KGKG,AMD,16,16,Klebsiella pneumoniae,ATCC 700603,CAMHA,2,46.5000,7.0000,active
+C16,KGKG,AMD,8,8,Pseudomonas aeruginosa,ATCC 9027,MHB,2,46.5000,7.0000,active
+C16,KGKG,AMD,8,8,Pseudomonas aeruginosa,ATCC 9027,CAMHA,2,46.5000,7.0000,active
+C16,KGKG,AMD,512,,Proteus vulgaris,PCM 2668,MHB,2,46.5000,7.0000,not active
+C16,KGKG,AMD,512,,Proteus vulgaris,PCM 2668,CAMHA,2,46.5000,7.0000,not active
+C16,KGKG,AMD,128,128,Candida albicans,ATCC 10231,SDB,2,46.5000,7.0000,not active
+C16,KGKG,AMD,128,128,Candida albicans,ATCC 10231,SGA,2,46.5000,7.0000,not active
+C16,KGKG,AMD,256,256,Candida tropicalis,PCM 2681,SDB,2,46.5000,7.0000,not active
+C16,KGKG,AMD,256,256,Candida tropicalis,PCM 2681,SGA,2,46.5000,7.0000,not active
+C16,KGKG,AMD,128,128,Aspergillus niger,ATCC 16404,SDB,2,46.5000,7.0000,not active
+C16,KGKG,AMD,128,128,Aspergillus niger,ATCC 16404,SGA,2,46.5000,7.0000,not active
+C16,KKKR,AMD,16,16,Staphylococcus aureus,ATCC 25923,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,2,2,Staphylococcus aureus,ATCC 25923,BHIB,2,35.5000,7.0000,active
+C16,KKKR,AMD,1,1,Staphylococcus aureus,ATCC 25923,BHIB,2,35.5000,7.0000,active
+C16,KKKR,AMD,4,4,Staphylococcus aureus,ATCC 25923,TSB,2,35.5000,7.0000,active
+C16,KKKR,AMD,8,8,Staphylococcus aureus,ATCC 25923,TSB,2,35.5000,7.0000,active
+C16,KKKR,AMD,8,8,Staphylococcus aureus,ATCC 6538,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,2,2,Staphylococcus aureus,ATCC 6538,BHIB,2,35.5000,7.0000,active
+C16,KKKR,AMD,8,8,Staphylococcus aureus,ATCC 6538,TSB,2,35.5000,7.0000,active
+C16,KKKR,AMD,4,4,Staphylococcus aureus,ATCC 6538,TSB,2,35.5000,7.0000,active
+C16,KKKR,AMD,16,16,Staphylococcus aureus,ATCC 6538P,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,8,8,Staphylococcus aureus,ATCC 6538P,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,4,4,Staphylococcus aureus,ATCC 6538P,BHIB,2,35.5000,7.0000,active
+C16,KKKR,AMD,1,1,Staphylococcus aureus,ATCC 6538P,BHIB,2,35.5000,7.0000,active
+C16,KKKR,AMD,4,4,Staphylococcus aureus,ATCC 6538P,TSB,2,35.5000,7.0000,active
+C16,KKKR,AMD,16,16,Staphylococcus aureus,ATCC 9144,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,2,2,Staphylococcus aureus,ATCC 9144,BHIB,2,35.5000,7.0000,active
+C16,KKKR,AMD,4,4,Staphylococcus aureus,ATCC 9144,TSB,2,35.5000,7.0000,active
+C16,KKKR,AMD,8,8,Staphylococcus aureus,ATCC 12598,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,4,4,Staphylococcus aureus,ATCC 12598,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,2,2,Staphylococcus aureus,ATCC 12598,BHIB,2,35.5000,7.0000,active
+C16,KKKR,AMD,8,8,Staphylococcus aureus,ATCC 12598,TSB,2,35.5000,7.0000,active
+C16,KKKR,AMD,4,4,Staphylococcus aureus,ATCC 12598,TSB,2,35.5000,7.0000,active
+C16,KKKR,AMD,8,16,Staphylococcus aureus,,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,1,2,Staphylococcus aureus,,BHIB,2,35.5000,7.0000,active
+C16,KKKR,AMD,4,8,Staphylococcus aureus,,TSB,2,35.5000,7.0000,active
+C16,KKKR,AMD,4,4,Staphylococcus epidermidis,ATCC 14990,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,8,8,Escherichia coli,ATCC 25922,MHB,2,35.5000,7.0000,active
+C16,KKKR,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,MHB,2,35.5000,7.0000,not active
+C16,KKKR,AMD,32,32,Candida albicans,ATCC 10231,RPMI-1640,2,35.5000,7.0000,active
+C16,KKKR,AMD,64,64,Candida glabrata,ATCC 15126,RPMI-1640,2,35.5000,7.0000,not active
+C16,KKKR,AMD,8,8,Yarrowia lipolytica,PCM 2680-FY,RPMI-1640,2,35.5000,7.0000,active
+C16,KKKR,AMD,8,8,Candida tropicalis,PCM 2709-FY,RPMI-1640,2,35.5000,7.0000,active
+C16,KKKR,AMD,3.1,4.1,Human cervical carcinoma,HeLa,,2,35.5000,7.0000,active
+C16,KKRK,AMD,16,16,Staphylococcus aureus,ATCC 25923,MHB,2,32.5000,7.0000,active
+C16,KKRK,AMD,2,2,Staphylococcus aureus,ATCC 25923,BHIB,2,32.5000,7.0000,active
+C16,KKRK,AMD,4,4,Staphylococcus aureus,ATCC 25923,TSB,2,32.5000,7.0000,active
+C16,KKRK,AMD,8,8,Staphylococcus aureus,ATCC 25923,TSB,2,32.5000,7.0000,active
+C16,KKRK,AMD,4,4,Staphylococcus aureus,ATCC 6538,MHB,2,32.5000,7.0000,active
+C16,KKRK,AMD,2,2,Staphylococcus aureus,ATCC 6538,BHIB,2,32.5000,7.0000,active
+C16,KKRK,AMD,4,4,Staphylococcus aureus,ATCC 6538,TSB,2,32.5000,7.0000,active
+C16,KKRK,AMD,8,8,Staphylococcus aureus,ATCC 6538P,MHB,2,32.5000,7.0000,active
+C16,KKRK,AMD,4,4,Staphylococcus aureus,ATCC 6538P,MHB,2,32.5000,7.0000,active
+C16,KKRK,AMD,2,2,Staphylococcus aureus,ATCC 6538P,BHIB,2,32.5000,7.0000,active
+C16,KKRK,AMD,4,4,Staphylococcus aureus,ATCC 6538P,TSB,2,32.5000,7.0000,active
+C16,KKRK,AMD,16,16,Staphylococcus aureus,ATCC 9144,MHB,2,32.5000,7.0000,active
+C16,KKRK,AMD,2,2,Staphylococcus aureus,ATCC 9144,BHIB,2,32.5000,7.0000,active
+C16,KKRK,AMD,4,4,Staphylococcus aureus,ATCC 9144,TSB,2,32.5000,7.0000,active
+C16,KKRK,AMD,8,8,Staphylococcus aureus,ATCC 9144,TSB,2,32.5000,7.0000,active
+C16,KKRK,AMD,4,4,Staphylococcus aureus,ATCC 12598,MHB,2,32.5000,7.0000,active
+C16,KKRK,AMD,2,2,Staphylococcus aureus,ATCC 12598,BHIB,2,32.5000,7.0000,active
+C16,KKRK,AMD,4,4,Staphylococcus aureus,ATCC 12598,TSB,2,32.5000,7.0000,active
+C16,KKRK,AMD,8,16,Staphylococcus aureus,,MHB,2,32.5000,7.0000,active
+C16,KKRK,AMD,1,2,Staphylococcus aureus,,BHIB,2,32.5000,7.0000,active
+C16,KKRK,AMD,2,8,Staphylococcus aureus,,TSB,2,32.5000,7.0000,active
+C16,KKRK,AMD,8,8,Staphylococcus epidermidis,ATCC 14990,MHB,2,32.5000,7.0000,active
+C16,KKRK,AMD,8,8,Escherichia coli,ATCC 25922,MHB,2,32.5000,7.0000,active
+C16,KKRK,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,MHB,2,32.5000,7.0000,not active
+C16,KKRK,AMD,32,32,Candida albicans,ATCC 10231,RPMI-1640,2,32.5000,7.0000,active
+C16,KKRK,AMD,64,64,Candida glabrata,ATCC 15126,RPMI-1640,2,32.5000,7.0000,not active
+C16,KKRK,AMD,8,8,Yarrowia lipolytica,PCM 2680-FY,RPMI-1640,2,32.5000,7.0000,active
+C16,KKRK,AMD,8,8,Candida tropicalis,PCM 2709-FY,RPMI-1640,2,32.5000,7.0000,active
+C16,KKRK,AMD,3.5,8.9,Human cervical carcinoma,HeLa,,2,32.5000,7.0000,active
+C16,RKKK,AMD,16,16,Staphylococcus aureus,ATCC 25923,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,2,2,Staphylococcus aureus,ATCC 25923,BHIB,2,39.5000,7.0000,active
+C16,RKKK,AMD,2,2,Staphylococcus aureus,ATCC 25923,TSB,2,39.5000,7.0000,active
+C16,RKKK,AMD,8,8,Staphylococcus aureus,ATCC 6538,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,2,2,Staphylococcus aureus,ATCC 6538,BHIB,2,39.5000,7.0000,active
+C16,RKKK,AMD,4,4,Staphylococcus aureus,ATCC 6538,TSB,2,39.5000,7.0000,active
+C16,RKKK,AMD,4,4,Staphylococcus aureus,ATCC 6538P,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,16,16,Staphylococcus aureus,ATCC 6538P,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,2,2,Staphylococcus aureus,ATCC 6538P,BHIB,2,39.5000,7.0000,active
+C16,RKKK,AMD,4,4,Staphylococcus aureus,ATCC 6538P,TSB,2,39.5000,7.0000,active
+C16,RKKK,AMD,16,16,Staphylococcus aureus,ATCC 9144,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,2,2,Staphylococcus aureus,ATCC 9144,BHIB,2,39.5000,7.0000,active
+C16,RKKK,AMD,4,4,Staphylococcus aureus,ATCC 9144,BHIB,2,39.5000,7.0000,active
+C16,RKKK,AMD,4,4,Staphylococcus aureus,ATCC 9144,TSB,2,39.5000,7.0000,active
+C16,RKKK,AMD,8,8,Staphylococcus aureus,ATCC 12598,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,2,2,Staphylococcus aureus,ATCC 12598,BHIB,2,39.5000,7.0000,active
+C16,RKKK,AMD,4,4,Staphylococcus aureus,ATCC 12598,BHIB,2,39.5000,7.0000,active
+C16,RKKK,AMD,2,2,Staphylococcus aureus,ATCC 12598,TSB,2,39.5000,7.0000,active
+C16,RKKK,AMD,4,4,Staphylococcus aureus,ATCC 12598,TSB,2,39.5000,7.0000,active
+C16,RKKK,AMD,8,16,Staphylococcus aureus,,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,1,2,Staphylococcus aureus,,BHIB,2,39.5000,7.0000,active
+C16,RKKK,AMD,2,4,Staphylococcus aureus,,BHIB,2,39.5000,7.0000,active
+C16,RKKK,AMD,2,4,Staphylococcus aureus,,TSB,2,39.5000,7.0000,active
+C16,RKKK,AMD,4,8,Staphylococcus aureus,,TSB,2,39.5000,7.0000,active
+C16,RKKK,AMD,8,8,Staphylococcus epidermidis,ATCC 14990,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,8,8,Escherichia coli,ATCC 25922,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,32,32,Pseudomonas aeruginosa,ATCC 9027,MHB,2,39.5000,7.0000,active
+C16,RKKK,AMD,8,8,Candida albicans,ATCC 10231,RPMI-1640,2,39.5000,7.0000,active
+C16,RKKK,AMD,64,64,Candida glabrata,ATCC 15126,RPMI-1640,2,39.5000,7.0000,not active
+C16,RKKK,AMD,8,8,Yarrowia lipolytica,PCM 2680-FY,RPMI-1640,2,39.5000,7.0000,active
+C16,RKKK,AMD,8,8,Candida tropicalis,PCM 2709-FY,RPMI-1640,2,39.5000,7.0000,active
+C16,RKKK,AMD,6.7,10.1,Human cervical carcinoma,HeLa,,2,39.5000,7.0000,active
+C16,KRK,AMD,4,4,Staphylococcus aureus,ATCC 25923,CAMHB,2,49.0000,7.0000,active
+C16,KRK,AMD,16,16,Staphylococcus aureus,ATCC 25923,CAMHA,2,49.0000,7.0000,active
+C16,KRK,AMD,8,8,Escherichia coli,ATCC 25922,CAMHB,2,49.0000,7.0000,active
+C16,KRK,AMD,16,16,Escherichia coli,ATCC 25922,CAMHA,2,49.0000,7.0000,active
+C16,KRK,AMD,128,128,Candida albicans,ATCC 10231,SDB,2,49.0000,7.0000,not active
+C16,KRK,AMD,256,256,Candida albicans,ATCC 10231,SDA,2,49.0000,7.0000,not active
+C16,RRR,AMD,2,2,Staphylococcus aureus,ATCC 25923,CAMHB,1,9.6000,7.0000,active
+C16,RRR,AMD,4,4,Staphylococcus aureus,ATCC 25923,CAMHA,1,9.6000,7.0000,active
+C16,RRR,AMD,16,16,Escherichia coli,ATCC 25922,CAMHB,1,9.6000,7.0000,active
+C16,RRR,AMD,16,16,Escherichia coli,ATCC 25922,CAMHA,1,9.6000,7.0000,active
+C16,RRR,AMD,128,128,Candida albicans,ATCC 10231,SDB,1,9.6000,7.0000,not active
+C16,RRR,AMD,256,256,Candida albicans,ATCC 10231,SDA,1,9.6000,7.0000,not active
+C16,RRR,AMD,5.79848,5.79848,Staphylococcus aureus,ATCC 25923,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,5.79848,5.79848,Staphylococcus epidermidis,ATCC 12228,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,23.1939,23.1939,Staphylococcus aureus,ATCC 29213,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,5.79848,5.79848,Bacillus subtilis,ATCC 23857,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,5.79848,5.79848,Staphylococcus aureus,75,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,1.44962,1.44962,Staphylococcus aureus,113,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,5.79848,5.79848,Escherichia coli,ATCC 25922,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,23.1939,23.1939,Pseudomonas aeruginosa,ATCC 27853,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,23.1939,23.1939,Pseudomonas aeruginosa,ATCC 9027,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,11.597,11.597,Klebsiella pneumoniae,ATCC 700603,MHB,1,9.6000,7.0000,active
+C16,RRR,AMD,92.7757,92.7757,Acinetobacter baumannii,ATCC 19606,MHB,1,9.6000,7.0000,not active
+C16,KAK,AMD,58.366,,Escherichia coli,ATCC 25922,LBB,2,45.0000,7.0000,not active
+C16,KAK,AMD,58.366,,Pseudomonas aeruginosa,ATCC 27853,LBB,2,45.0000,7.0000,not active
+C16,KAK,AMD,58.366,,Enterobacter cloacae,ATCC 49141,LBB,2,45.0000,7.0000,not active
+C16,KAK,AMD,58.366,,Acinetobacter baumannii,ATCC 19606,LBB,2,45.0000,7.0000,not active
+C16,KAK,AMD,58.366,,Staphylococcus aureus,ATCC 25923,LBB,2,45.0000,7.0000,not active
+C16,KAK,AMD,58.366,,Enterococcus faecalis,ATCC 19433,LBB,2,45.0000,7.0000,not active
+C16,KAK,AMD,58.366,,Candida albicans,ATCC 10231,RPMI-1640,2,45.0000,7.0000,not active
+C16,KAK,AMD,58.366,,Aspergillus fumigatus,ATCC 26430,RPMI-1640,2,45.0000,7.0000,not active
+C16,KLK,AMD,62.574,,Escherichia coli,ATCC 25922,LBB,1,10.7000,7.0000,not active
+C16,KLK,AMD,62.574,,Pseudomonas aeruginosa,ATCC 27853,LBB,1,10.7000,7.0000,not active
+C16,KLK,AMD,62.574,62.574,Enterobacter cloacae,ATCC 49141,LBB,1,10.7000,7.0000,not active
+C16,KLK,AMD,62.574,,Acinetobacter baumannii,ATCC 19606,LBB,1,10.7000,7.0000,not active
+C16,KLK,AMD,7.82175,7.82175,Staphylococcus aureus,ATCC 25923,LBB,1,10.7000,7.0000,active
+C16,KLK,AMD,15.6435,15.6435,Enterococcus faecalis,ATCC 19433,LBB,1,10.7000,7.0000,active
+C16,KLK,AMD,5.88196,5.88196,Candida albicans,ATCC 10231,RPMI-1640,1,10.7000,7.0000,active
+C16,KLK,AMD,5.88196,5.88196,Aspergillus fumigatus,ATCC 26430,RPMI-1640,1,10.7000,7.0000,active
+C16,Kk,AMD,6.40725,6.40725,Escherichia coli,ATCC 25922,LBB,1,13.6000,7.0000,active
+C16,Kk,AMD,12.8145,12.8145,Pseudomonas aeruginosa,ATCC 27853,LBB,1,13.6000,7.0000,active
+C16,Kk,AMD,25.629,25.629,Enterobacter cloacae,ATCC 49141,LBB,1,13.6000,7.0000,active
+C16,Kk,AMD,38.4435,38.4435,Acinetobacter baumannii,ATCC 19606,LBB,1,13.6000,7.0000,not active
+C16,Kk,AMD,6.40725,6.40725,Staphylococcus aureus,ATCC 25923,LBB,1,13.6000,7.0000,active
+C16,Kk,AMD,12.8145,12.8145,Enterococcus faecalis,ATCC 19433,LBB,1,13.6000,7.0000,active
+C16,Kk,AMD,4.81825,4.81825,Candida albicans,ATCC 10231,RPMI-1640,1,13.6000,7.0000,active
+C16,Kk,AMD,3.178,3.178,Aspergillus fumigatus,ATCC 26430,RPMI-1640,1,13.6000,7.0000,active
+C16,RRRR,AMD,16,16,Staphylococcus aureus,ATCC 25923,MHB,1,7.8000,7.0000,active
+C16,RRRR,AMD,4,4,Staphylococcus epidermidis,ATCC 14990,MHB,1,7.8000,7.0000,active
+C16,RRRR,AMD,32,32,Escherichia coli,ATCC 25922,MHB,1,7.8000,7.0000,active
+C16,RRRR,AMD,32,32,Pseudomonas aeruginosa,ATCC 9027,MHB,1,7.8000,7.0000,active
+C16,RRRR,AMD,8,8,Candida albicans,ATCC 10231,RPMI-1640,1,7.8000,7.0000,active
+C16,PRRR,AMD,32,32,Staphylococcus aureus,ATCC 25923,MHB,2,48.0000,7.0000,active
+C16,PRRR,AMD,,1,Staphylococcus epidermidis,ATCC 14990,MHB,2,48.0000,7.0000,active
+C16,PRRR,AMD,32,32,Escherichia coli,ATCC 25922,MHB,2,48.0000,7.0000,active
+C16,PRRR,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,MHB,2,48.0000,7.0000,not active
+C16,PRRR,AMD,8,8,Candida albicans,ATCC 10231,RPMI-1640,2,48.0000,7.0000,active
+C16,KWKW,,2,2,Cutibacterium acnes,ATCC 6919,BrB,2,52.0000,7.0000,active
+C16,KWKW,,2,2,Cutibacterium acnes,ATCC 11827,BrB,2,52.0000,7.0000,active
+C16,KWKW,,3.9,3.9,Staphylococcus epidermidis,ATCC 12228,LBB,2,52.0000,7.0000,active
+C16,KWKW,,31.2,31.2,Staphylococcus aureus,ATCC 12600,MHB,2,52.0000,7.0000,active
+C16,KWKW,,15.6,15.6,Streptococcus mutans,ATCC 25175,BHIB,2,52.0000,7.0000,active
+C16,KWKW,,31.2,31.2,Streptococcus mutans,UA 159,BHIB,2,52.0000,7.0000,active
+C16,KWKW,,15.6,15.6,Escherichia coli,ATCC 25922,LBB,2,52.0000,7.0000,active
+C16,KWKW,,,,Murine macrophage cells,RAW 264.7, ,2,52.0000,7.0000,unknown
+C16,KKC,AMD,,,,,,1,12.0000,7.0000,unknown
+C16,EVll,AMD,5,5.8,Porcine epidemic diarrhea virus (PEDcoV),,,0,0.9400,7.0000,active
+C16,KLIK,AMD,73.89,73.89,Escherichia coli,D21,LBB,0,0.9400,7.0000,not active
+C16,KLIK,AMD,9.23625,9.23625,Staphylococcus aureus,,LBB,0,0.9400,7.0000,active
+C16,KLIK,AMD,36.945,36.945,Acinetobacter baumannii,,LBB,0,0.9400,7.0000,not active
+C16,KLIK,AMD,18.4725,18.4725,Aspergillus fumigatus,ATCC 26430,RPMI-1640,0,0.9400,7.0000,active
+C16,KLIK,AMD,18.4725,18.4725,Candida albicans,ATCC 10231,RPMI-1640,0,0.9400,7.0000,active
+C16,KLIK,AMD,9.23625,9.23625,Cryptococcus neoformans,ATCC MYA-422,RPMI-1640,0,0.9400,7.0000,active
+C16,KRKK,AMD,8,8,Staphylococcus aureus,ATCC 25923,MHB,2,38.0000,7.0000,active
+C16,KRKK,AMD,8,8,Staphylococcus epidermidis,ATCC 14990,MHB,2,38.0000,7.0000,active
+C16,KRKK,AMD,8,8,Escherichia coli,ATCC 25922,MHB,2,38.0000,7.0000,active
+C16,KRKK,AMD,32,32,Pseudomonas aeruginosa,ATCC 9027,MHB,2,38.0000,7.0000,active
+C16,KRKK,AMD,16,16,Candida albicans,ATCC 10231,RPMI-1640,2,38.0000,7.0000,active
+C16,KRKK,AMD,32,32,Candida glabrata,ATCC 15126,RPMI-1640,2,38.0000,7.0000,active
+C16,KRKK,AMD,1,1,Yarrowia lipolytica,PCM 2680-FY,RPMI-1640,2,38.0000,7.0000,active
+C16,KRKK,AMD,2,2,Candida tropicalis,PCM 2709-FY,RPMI-1640,2,38.0000,7.0000,active
+C16,KRKK,AMD,2.4,3.6,Human cervical carcinoma,HeLa,,2,38.0000,7.0000,active
+C16,RRKK,AMD,4,4,Staphylococcus aureus,ATCC 25923,MHB,2,46.5000,7.0000,active
+C16,RRKK,AMD,4,4,Staphylococcus epidermidis,ATCC 14990,MHB,2,46.5000,7.0000,active
+C16,RRKK,AMD,8,8,Escherichia coli,ATCC 25922,MHB,2,46.5000,7.0000,active
+C16,RRKK,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,MHB,2,46.5000,7.0000,not active
+C16,RRKK,AMD,32,32,Candida albicans,ATCC 10231,RPMI-1640,2,46.5000,7.0000,active
+C16,RRKK,AMD,16,16,Candida glabrata,ATCC 15126,RPMI-1640,2,46.5000,7.0000,active
+C16,RRKK,AMD,8,8,Yarrowia lipolytica,PCM 2680-FY,RPMI-1640,2,46.5000,7.0000,active
+C16,RRKK,AMD,8,8,Candida tropicalis,PCM 2709-FY,RPMI-1640,2,46.5000,7.0000,active
+C16,RRKK,AMD,2.6,3.4,Human cervical carcinoma,HeLa,,2,46.5000,7.0000,active
+C16,GRGR,,2.35,2.35,Staphylococcus aureus,ATCC 6538,BHIA,1,11.0000,7.0000,active
+C16,GRGR,,9.375,9.375,Staphylococcus aureus,ATCC 6538,BHIA,1,11.0000,7.0000,active
+C16,GRGR,,8,8,Candida albicans,ATCC 90028,YNB,1,11.0000,7.0000,active
+C16,GRGR,,8,8,Cryptococcus neoformans,ATCC 208821,YNB,1,11.0000,7.0000,active
+C16,GRGR,,8,8,Staphylococcus aureus,ATCC 43300,CAMHB,1,11.0000,7.0000,active
+C16,GrGr,,18.75,18.75,Staphylococcus aureus,ATCC 6538,BHIA,1,11.0000,7.0000,active
+C16,GrGr,,37.5,37.5,Staphylococcus aureus,ATCC 6538,BHIA,1,11.0000,7.0000,not active
+C16,GKGK,,4.7,4.7,Staphylococcus aureus,ATCC 6538,BHIA,2,43.5000,7.0000,active
+C16,GKGK,,9.375,9.375,Staphylococcus aureus,ATCC 6538,BHIA,2,43.5000,7.0000,active
+C16,GKGK,,16,16,Candida albicans,ATCC 90028,YNB,2,43.5000,7.0000,active
+C16,GKGK,,32,32,Cryptococcus neoformans,ATCC 208821,YNB,2,43.5000,7.0000,active
+C16,GkGk,,4.7,4.7,Staphylococcus aureus,ATCC 6538,BHIA,2,43.5000,7.0000,active
+C16,GkGk,,9.375,9.375,Staphylococcus aureus,ATCC 6538,BHIA,2,43.5000,7.0000,active
+C16,GkGk,,8,16,Cryptococcus neoformans,ATCC 208821,YNB,2,43.5000,7.0000,active
+C16,RWW,AMD,12.5576,12.5576,Staphylococcus epidermidis,ATCC 12228,MHB,0,1.3400,7.0000,active
+C16,RWW,AMD,12.5576,12.5576,Staphylococcus aureus,ATCC 25923,MHB,0,1.3400,7.0000,active
+C16,RWW,AMD,25.1152,25.1152,Staphylococcus aureus,ATCC 29213,MHB,0,1.3400,7.0000,active
+C16,RWW,AMD,50.2304,50.2304,Bacillus subtilis,ATCC 23857,MHB,0,1.3400,7.0000,not active
+C16,RWW,AMD,25.1152,25.1152,Staphylococcus aureus,75,MHB,0,1.3400,7.0000,active
+C16,RWW,AMD,6.2788,6.2788,Staphylococcus aureus,113,MHB,0,1.3400,7.0000,active
+C16,RWW,AMD,100.461,,Escherichia coli,ATCC 25922,MHB,0,1.3400,7.0000,not active
+C16,RWW,AMD,100.461,,Pseudomonas aeruginosa,ATCC 27853,MHB,0,1.3400,7.0000,not active
+C16,RWW,AMD,100.461,,Pseudomonas aeruginosa,ATCC 9027,MHB,0,1.3400,7.0000,not active
+C16,RWW,AMD,100.461,,Klebsiella pneumoniae,ATCC 700603,MHB,0,1.3400,7.0000,not active
+C16,RWW,AMD,100.461,,Acinetobacter baumannii,ATCC 19606,MHB,0,1.3400,7.0000,not active
+C16,RRW,AMD,6.03864,6.03864,Staphylococcus epidermidis,ATCC 12228,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,6.03864,6.03864,Staphylococcus aureus,ATCC 25923,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,6.03864,6.03864,Staphylococcus aureus,ATCC 29213,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,3.01932,3.01932,Bacillus subtilis,ATCC 23857,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,6.03864,6.03864,Staphylococcus aureus,75,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,1.50966,1.50966,Staphylococcus aureus,113,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,24.1546,24.1546,Escherichia coli,ATCC 25922,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,24.1546,24.1546,Pseudomonas aeruginosa,ATCC 27853,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,12.0773,12.0773,Pseudomonas aeruginosa,ATCC 9027,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,24.1546,24.1546,Klebsiella pneumoniae,ATCC 700603,MHB,1,10.9000,7.0000,active
+C16,RRW,AMD,48.3091,48.3091,Acinetobacter baumannii,ATCC 19606,MHB,1,10.9000,7.0000,not active
+C16,RWR,AMD,6.03864,6.03864,Staphylococcus epidermidis,ATCC 12228,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,6.03864,6.03864,Staphylococcus aureus,ATCC 25923,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,12.0773,12.0773,Staphylococcus aureus,ATCC 29213,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,6.03864,6.03864,Bacillus subtilis,ATCC 23857,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,6.03864,6.03864,Staphylococcus aureus,75,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,3.01932,3.01932,Staphylococcus aureus,113,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,12.0773,12.0773,Escherichia coli,ATCC 25922,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,12.0773,12.0773,Pseudomonas aeruginosa,ATCC 9027,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,12.0773,12.0773,Pseudomonas aeruginosa,ATCC 27853,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,12.0773,12.0773,Klebsiella pneumoniae,ATCC 700603,MHB,1,11.5000,7.0000,active
+C16,RWR,AMD,12.0773,12.0773,Acinetobacter baumannii,ATCC 19606,MHB,1,11.5000,7.0000,active
+C16,WRR,AMD,6.03864,6.03864,Staphylococcus epidermidis,ATCC 12228,MHB,1,10.8000,7.0000,active
+C16,WRR,AMD,6.03864,6.03864,Staphylococcus aureus,ATCC 25923,MHB,1,10.8000,7.0000,active
+C16,WRR,AMD,6.03864,6.03864,Staphylococcus aureus,ATCC 29213,MHB,1,10.8000,7.0000,active
+C16,WRR,AMD,6.03864,6.03864,Bacillus subtilis,ATCC 23857,MHB,1,10.8000,7.0000,active
+C16,WRR,AMD,6.03864,6.03864,Staphylococcus aureus,75,MHB,1,10.8000,7.0000,active
+C16,WRR,AMD,6.03864,6.03864,Staphylococcus aureus,113,MHB,1,10.8000,7.0000,active
+C16,WRR,AMD,24.1546,24.1546,Escherichia coli,ATCC 25922,MHB,1,10.8000,7.0000,active
+C16,WRR,AMD,48.3091,48.3091,Pseudomonas aeruginosa,ATCC 27853,MHB,1,10.8000,7.0000,not active
+C16,WRR,AMD,48.3091,48.3091,Pseudomonas aeruginosa,ATCC 9027,MHB,1,10.8000,7.0000,not active
+C16,WRR,AMD,96.6182,96.6182,Klebsiella pneumoniae,ATCC 700603,MHB,1,10.8000,7.0000,not active
+C16,WRR,AMD,48.3091,48.3091,Acinetobacter baumannii,ATCC 19606,MHB,1,10.8000,7.0000,not active
+C16,KLFK,AMD,21.8736,21.8736,Escherichia coli,ATCC 35218,MHB,1,9.5000,7.0000,active
+C16,KLFK,AMD,87.5718,87.5718,Pseudomonas aeruginosa,ATCC 27853,MHB,1,9.5000,7.0000,not active
+C16,KLFK,AMD,175.144,,Staphylococcus aureus,ATCC 25923,MHB,1,9.5000,7.0000,not active
+C16,KLFK,AMD,43.8246,43.8246,Staphylococcus aureus,BSF FBCB1313,MHB,1,9.5000,7.0000,not active
+C16,KLFK,AMD,87.4945,87.4945,Enterococcus faecalis,ATCC 29212,MHB,1,9.5000,7.0000,not active
+C16,KLFK,AMD,256.223,256.223,Candida albicans,PEEC 2,SDB,1,9.5000,7.0000,not active
+C16,KLFK,AMD,256.223,,Candida albicans,DBFIQ 1,SDB,1,9.5000,7.0000,not active
+C16,KLFK,AMD,256.223,,Candida tropicalis,DBFIQ 3,SDB,1,9.5000,7.0000,not active
+C16,SRR,AMD,8,8,Enterococcus faecium,ATCC 700221,MHB,1,9.8000,7.0000,active
+C16,SRR,AMD,8,8,Staphylococcus aureus,ATCC 33591,MHB,1,9.8000,7.0000,active
+C16,SRR,AMD,512,512,Klebsiella pneumoniae,ATCC 700603,MHB,1,9.8000,7.0000,not active
+C16,SRR,AMD,32,32,Acinetobacter baumannii,ATCC BAA-1605,MHB,1,9.8000,7.0000,active
+C16,SRR,AMD,16,16,Pseudomonas aeruginosa,ATCC 9027,MHB,1,9.8000,7.0000,active
+C16,SRR,AMD,16,16,Klebsiella aerogenes,ATCC 13048,MHB,1,9.8000,7.0000,active
+C16,SRR,AMD,4,4,Candida glabrata,ATCC 15126,RPMI-1640,1,9.8000,7.0000,active
+C16,RSR,AMD,8,8,Enterococcus faecium,ATCC 700221,MHB,1,11.0000,7.0000,active
+C16,RSR,AMD,8,8,Staphylococcus aureus,ATCC 33591,MHB,1,11.0000,7.0000,active
+C16,RSR,AMD,64,64,Klebsiella pneumoniae,ATCC 700603,MHB,1,11.0000,7.0000,not active
+C16,RSR,AMD,32,32,Acinetobacter baumannii,ATCC BAA-1605,MHB,1,11.0000,7.0000,active
+C16,RSR,AMD,64,64,Pseudomonas aeruginosa,ATCC 9027,MHB,1,11.0000,7.0000,not active
+C16,RSR,AMD,32,32,Klebsiella aerogenes,ATCC 13048,MHB,1,11.0000,7.0000,active
+C16,RSR,AMD,8,8,Candida glabrata,ATCC 15126,RPMI-1640,1,11.0000,7.0000,active
+C16,RRS,AMD,8,8,Enterococcus faecium,ATCC 700221,MHB,1,9.3000,7.0000,active
+C16,RRS,AMD,8,8,Staphylococcus aureus,ATCC 33591,MHB,1,9.3000,7.0000,active
+C16,RRS,AMD,32,32,Klebsiella pneumoniae,ATCC 700603,MHB,1,9.3000,7.0000,active
+C16,RRS,AMD,32,32,Acinetobacter baumannii,ATCC BAA-1605,MHB,1,9.3000,7.0000,active
+C16,RRS,AMD,16,16,Pseudomonas aeruginosa,ATCC 9027,MHB,1,9.3000,7.0000,active
+C16,RRS,AMD,64,64,Klebsiella aerogenes,ATCC 13048,MHB,1,9.3000,7.0000,not active
+C16,RRS,AMD,8,8,Candida glabrata,ATCC 15126,RPMI-1640,1,9.3000,7.0000,active
+C16,KLLK,AMD,1.6,1.6,Enterococcus faecium,ATCC 6569,CAMHB,0,0.9400,7.0000,active
+C16,KLLK,AMD,6.3,6.3,Enterococcus faecalis,ATCC 29212,CAMHB,0,0.9400,7.0000,active
+C16,KLLK,AMD,12.5,12.5,Staphylococcus aureus,ATCC 29213,CAMHB,0,0.9400,7.0000,active
+C16,KLLK,AMD,200,200,Klebsiella pneumoniae,ATCC 13883,CAMHB,0,0.9400,7.0000,not active
+C16,KLLK,AMD,25,25,Acinetobacter baumannii,ATCC 19606,CAMHB,0,0.9400,7.0000,active
+C16,KLLK,AMD,100,100,Pseudomonas aeruginosa,ATCC 25619,CAMHB,0,0.9400,7.0000,not active
+C16,KLLK,AMD,25,25,Escherichia coli,ATCC 25922,CAMHB,0,0.9400,7.0000,active
+C16,KLLK,AMD,6.3,6.3,Candida albicans,ATCC 10231,RPMI-1640,0,0.9400,7.0000,active
+C16,KLLK,AMD,1.6,1.6,Cryptococcus neoformans var. grubii,H99,RPMI-1640,0,0.9400,7.0000,active
+C16,KLLK,AMD,,,Human hepatocellular carcinoma,HepG2,,0,0.9400,7.0000,unknown

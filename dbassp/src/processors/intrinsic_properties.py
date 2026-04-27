@@ -3,9 +3,11 @@
 # representing the intrinsic molecular properties of peptides
 
 import csv
+import re
 import logging
 from src.core.config import Config
 from src.core.exceptions import FileProcessingError
+from src.collectors.normalize_activity import load_min_map, get_z_prefix
 
 logger = logging.getLogger("dbaasp_pipeline")
 
@@ -63,36 +65,21 @@ def create_intrinsic_csv(
             logger.warning("Continuing without lipophilicity data")
             lipophilicity_headers = []
         
-        # Step 2: Load min list data if available
-        min_list_data = {}
-        min_list_headers = []
-        
-        try:
-            with open(min_list_file, encoding=Config.CSV_ENCODING) as f:
-                # Skip first line if it's a header or read it
-                lines = f.readlines()
-                if lines:
-                    # Check if first line contains headers
-                    first_line = lines[0].strip()
-                    if 'sequence' in first_line.lower() or 'pH' in first_line:
-                        # Parse as CSV with headers
-                        reader = csv.DictReader(lines)
-                        if reader.fieldnames is not None:
-                            # Exclude sequence column, keep min list properties
-                            min_list_headers = [h for h in reader.fieldnames 
-                                              if h.lower() not in ["sequence"]]
-                            
-                            for row in reader:
-                                sequence = row.get("sequence", "").replace("ZZZ", "").replace("00", "").replace("01", "")
-                                min_list_props = {h: row.get(h, "") for h in min_list_headers}
-                                min_list_data[sequence] = min_list_props
-                        
-                        logger.info(f"Loaded min list data for {len(min_list_data)} sequences")
-                        logger.info(f"Min list properties: {min_list_headers}")
-        except FileNotFoundError:
-            logger.warning(f"Min list file not found: {min_list_file}")
-            logger.warning("Continuing without min list data")
+        # Step 2: Load min list data using the shared space-delimited parser.
+        # The min list file is space/tab separated — NOT CSV — so csv.DictReader
+        # must not be used here directly.
+        # load_min_map() returns {NEW_SEQ -> (curv_min, npol_min, ph_run, npol_c0, npol_c1, npol_c2)}
+        # curv_min=0 is stored as the string "0" and is handled correctly.
+        min_list_map = load_min_map(min_list_file)
+        MIN_LIST_COLS = ["curv_min", "npol_min", "ph_run", "npol_c0", "npol_c1", "npol_c2"]
+        if min_list_map:
+            min_list_headers = MIN_LIST_COLS
+            logger.info(f"Loaded min list data for {len(min_list_map)} sequences")
+            logger.info(f"Min list properties: {min_list_headers}")
+        else:
             min_list_headers = []
+            logger.warning(f"Min list file not found or empty: {min_list_file}")
+            logger.warning("Continuing without min list data")
         
         # Step 3: Process physchem data and merge with lipophilicity and min list
         intrinsic_rows = []
@@ -114,29 +101,40 @@ def create_intrinsic_csv(
             for row in reader:
                 row_count += 1
                 peptide_id = row["Peptide ID"]
-                sequence = row.get("SEQUENCE", "")
-                
+                sequence   = (row.get("SEQUENCE") or "").upper()
+                n_term     = row.get("N TERMINUS", "")
+                c_term     = row.get("C TERMINUS", "")
+
+                # Build the same NEW_SEQ key used by normalize_activity
+                z_prefix = get_z_prefix(n_term)
+                new_seq  = f"{z_prefix}{sequence}{'01' if (c_term or '').upper() == 'AMD' else '00'}"
+
                 # Create intrinsic row starting with physchem data
                 intrinsic_row = dict(row)
-                
+
                 # Add lipophilicity properties if available
                 if peptide_id in lipophilicity_data:
                     intrinsic_row.update(lipophilicity_data[peptide_id])
                     lipo_matched += 1
                 else:
-                    # Fill missing lipophilicity data with empty strings
                     for header in lipophilicity_headers:
                         intrinsic_row[header] = ""
-                
-                # Add min list properties if available (match by sequence)
-                if sequence in min_list_data:
-                    intrinsic_row.update(min_list_data[sequence])
+
+                # Add min list properties — exact NEW_SEQ match only.
+                # 00 (AMD) and 01 (non-AMD) are different simulations; never cross-assign.
+                if new_seq in min_list_map:
+                    curv, npol, ph, nc0, nc1, nc2 = min_list_map[new_seq]
+                    intrinsic_row["curv_min"] = curv
+                    intrinsic_row["npol_min"] = npol
+                    intrinsic_row["ph_run"]   = ph
+                    intrinsic_row["npol_c0"]  = nc0
+                    intrinsic_row["npol_c1"]  = nc1
+                    intrinsic_row["npol_c2"]  = nc2
                     min_matched += 1
                 else:
-                    # Fill missing min list data with empty strings
                     for header in min_list_headers:
                         intrinsic_row[header] = ""
-                
+
                 intrinsic_rows.append(intrinsic_row)
         
         logger.info(f"Processed {row_count} peptides")

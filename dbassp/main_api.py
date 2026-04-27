@@ -13,6 +13,7 @@ from src.collectors import normalize_activity
 from src.collectors import lipophilicity
 from src.processors import unified_results
 from src.processors import intrinsic_properties
+from src.processors import activity_summary
 from src.core import common
 import os
 os.makedirs("logs", exist_ok=True)
@@ -58,7 +59,7 @@ Examples:
                 return 1
             
             nterminus_list = []
-            pattern = re.compile(r'peptides_([A-Z]+\d+)\.csv$')
+            pattern = re.compile(r'peptides_([A-Za-z]*\d+)\.csv$', re.IGNORECASE)
             
             for f in sorted(peptide_files):
                 basename = os.path.basename(f)
@@ -125,6 +126,10 @@ Examples:
         logger.info("Creating unified results CSV...")
         print("Creating unified results ...")
         unified_results.run()
+
+        logger.info("Creating activity summary CSV...")
+        print("Creating activity summary ...")
+        activity_summary.run()
 
         t1 = time.perf_counter()
         elapsed = t1 - t0

@@ -20,6 +20,17 @@ Changes applied (v2):
        - conc_gt     INTEGER — 1 if original string started with '>' / '>='
        - activity    TEXT   — 'active' / 'not active' / 'unknown'
 
+Changes applied (v3):
+  6. Add to normalized_activity:
+       - curv_min  TEXT  — curvature class (0, 1, 2) from list_min file
+       - npol_min  TEXT  — npol at free-energy minimum
+       - ph_run    TEXT  — pH of simulation run
+       - npol_c0   TEXT  — npol at curvature-0 basin
+       - npol_c1   TEXT  — npol at curvature-1 basin
+       - npol_c2   TEXT  — npol at curvature-2 basin
+     Back-filled from list_min_<nterminus>.txt via the same NEW_SEQ key
+     used in the CSV pipeline.  curv_min=0 is stored as TEXT '0' (not NULL).
+
 Concentration column semantics (both µM and µg/ml columns):
   - Single number  X      → c_min = X,       c_max = NULL,      conc_gt = 0
   - Interval A-B / A->B  → c_min = A,        c_max = B,         conc_gt = 0
@@ -375,6 +386,136 @@ def migrate_v2():
     log.info("Migration v2 complete ✓")
 
 
+# ─── Migration v3 ──────────────────────────────────────────────────────────────
+
+MIN_LIST_COLS = [
+    ("curv_min", "TEXT"),
+    ("npol_min", "TEXT"),
+    ("ph_run",   "TEXT"),
+    ("npol_c0",  "TEXT"),
+    ("npol_c1",  "TEXT"),
+    ("npol_c2",  "TEXT"),
+]
+
+
+def _load_min_map(path: str) -> dict:
+    """
+    Parse a space/tab-delimited list_min file.
+    Returns {NEW_SEQ -> {curv_min, npol_min, ph_run, npol_c0, npol_c1, npol_c2}}
+    curv_min=0 is stored as the string '0' (not empty, not NULL).
+    """
+    import os
+    mapping = {}
+    if not os.path.exists(path):
+        log.warning(f"Min list file not found: {path}")
+        return mapping
+    with open(path, encoding="utf-8-sig") as f:
+        raw_header = f.readline().strip().split()
+        try:
+            idx = {
+                "sequence": raw_header.index("sequence"),
+                "curv_min": raw_header.index("curv_min"),
+                "npol_min": raw_header.index("npol_min"),
+                "pH":       raw_header.index("pH"),
+                "npol_c0":  raw_header.index("npol_c0"),
+                "npol_c1":  raw_header.index("npol_c1"),
+                "npol_c2":  raw_header.index("npol_c2"),
+            }
+        except ValueError as e:
+            log.warning(f"Missing column in {path}: {e}")
+            return mapping
+        for line in f:
+            if not line.strip():
+                continue
+            cols = line.strip().split()
+            def _g(key):
+                v = cols[idx[key]] if len(cols) > idx[key] else ""
+                return "" if v == "NA" else v
+            seq = _g("sequence")
+            if seq:
+                mapping[seq] = {
+                    "curv_min": _g("curv_min"),
+                    "npol_min": _g("npol_min"),
+                    "ph_run":   _g("pH"),
+                    "npol_c0":  _g("npol_c0"),
+                    "npol_c1":  _g("npol_c1"),
+                    "npol_c2":  _g("npol_c2"),
+                }
+    log.info(f"  Loaded {len(mapping)} entries from {path}")
+    return mapping
+
+
+def _build_new_seq(sequence: str, n_terminus: str, c_terminus: str) -> str:
+    """Reconstruct the NEW_SEQ key used in the CSV pipeline."""
+    n = (n_terminus or "").upper()
+    c = (c_terminus or "").upper()
+    match = re.search(r'C(\d+)', n)
+    z_count = (int(match.group(1)) // 4) if match else 4
+    z_prefix = "Z" * max(z_count, 1)
+    suffix = "01" if c == "AMD" else "00"
+    return f"{z_prefix}{(sequence or '').upper()}{suffix}"
+
+
+def migrate_v3(min_list_glob: str = "dbassp/data/input/list_min_*.txt"):
+    """
+    Adds curv_min, npol_min, ph_run, npol_c0/c1/c2 to normalized_activity
+    and back-fills from all list_min_<nterminus>.txt files found.
+    Idempotent — safe to re-run.
+    """
+    import glob as _glob
+    conn = sqlite3.connect(DB_PATH)
+    conn.execute("PRAGMA foreign_keys = OFF")
+    cur  = conn.cursor()
+
+    # ── Add new columns (idempotent) ───────────────────────────────────────────
+    existing_cols = {r[1] for r in cur.execute("PRAGMA table_info(normalized_activity)").fetchall()}
+    for col, typ in MIN_LIST_COLS:
+        if col not in existing_cols:
+            cur.execute(f"ALTER TABLE normalized_activity ADD COLUMN {col} {typ}")
+            log.info(f"  Added column: {col}")
+
+    # ── Load all list_min files ────────────────────────────────────────────────
+    combined_map = {}
+    for path in sorted(_glob.glob(min_list_glob)):
+        combined_map.update(_load_min_map(path))
+    log.info(f"  Combined min map: {len(combined_map)} unique sequences")
+
+    if not combined_map:
+        log.warning("No min list data found — skipping back-fill")
+        conn.close()
+        return
+
+    # ── Back-fill via NEW_SEQ key ──────────────────────────────────────────────
+    cur.execute("""
+        SELECT na.id, p.sequence, p.n_terminus, p.c_terminus
+        FROM normalized_activity na
+        JOIN peptides p ON p.id = na.peptide_id
+    """)
+    rows = cur.fetchall()
+    updated = 0
+    for row_id, seq, nterm, cterm in rows:
+        new_seq = _build_new_seq(seq, nterm, cterm)
+        if new_seq in combined_map:
+            d = combined_map[new_seq]
+            cur.execute("""
+                UPDATE normalized_activity
+                SET curv_min=?, npol_min=?, ph_run=?, npol_c0=?, npol_c1=?, npol_c2=?
+                WHERE id=?
+            """, (
+                d["curv_min"], d["npol_min"], d["ph_run"],
+                d["npol_c0"],  d["npol_c1"],  d["npol_c2"],
+                row_id
+            ))
+            updated += 1
+
+    conn.commit()
+    conn.execute("PRAGMA foreign_keys = ON")
+    conn.close()
+    log.info(f"  Back-filled {updated} rows with min list data (curv_min=0 preserved)")
+    log.info("Migration v3 complete ✓")
+
+
 if __name__ == "__main__":
     run_migration()
     migrate_v2()
+    migrate_v3()
