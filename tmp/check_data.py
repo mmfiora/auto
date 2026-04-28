@@ -1,0 +1,10 @@
+import sqlite3
+conn = sqlite3.connect('dbassp/data/output/dbaasp.sqlite')
+cur = conn.cursor()
+cur.execute("SELECT COUNT(*) FROM peptides WHERE smiles IS NOT NULL")
+print('Peptides with SMILES:', cur.fetchone()[0])
+cur.execute("SELECT COUNT(*) FROM peptides WHERE sequence LIKE '%X%'")
+print('Peptides with X in sequence:', cur.fetchone()[0])
+cur.execute("SELECT COUNT(*) FROM peptides WHERE sequence LIKE '%X%' AND smiles IS NOT NULL")
+print('Peptides with X and SMILES:', cur.fetchone()[0])
+conn.close()
