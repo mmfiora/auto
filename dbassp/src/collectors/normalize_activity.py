@@ -179,7 +179,7 @@ def classify_activity(lower_ugml: str, upper_ugml: str, conc_gt: int) -> str:
       conc_gt = 1 (>X):
         • X is the *lower* bound (true MIC is above X).
         • If X  > 32  → 'not active'  (definitively above threshold)
-        • If X <= 32  → 'drop'        (cannot classify — MIC could be anywhere > X)
+        • If X <= 32  → 'unknown'     (cannot classify — MIC could be anywhere > X)
     """
     if conc_gt:
         try:
@@ -188,7 +188,7 @@ def classify_activity(lower_ugml: str, upper_ugml: str, conc_gt: int) -> str:
             x = None
         if x is None:
             return "unknown"
-        return "not active" if x > MIC_THRESHOLD_UGML else "drop"
+        return "not active" if x > MIC_THRESHOLD_UGML else "unknown"
 
     # Normal case: use lower bound; fall back to upper
     ref = lower_ugml if lower_ugml else upper_ugml
@@ -277,9 +277,6 @@ def run(infile: str | None = None, outfile: str | None = None) -> None:
     """
     Read activity.csv, compute MW, split/normalize concentrations to µg/mL,
     classify activity, split species/strain, and write output CSV.
-
-    Rows classified as 'drop' (>X where X <= 32 µg/mL) are excluded from
-    the output because the true MIC is unknown relative to the threshold.
     """
     if infile is None:
         infile = Config.OUTPUT_ACTIVITY_CSV
@@ -306,7 +303,6 @@ def run(infile: str | None = None, outfile: str | None = None) -> None:
                 "activity",              # 'active' | 'not active' | 'unknown'
             ]
             rows = []
-            dropped = 0
             row_num = 1
 
             for row in r:
@@ -351,14 +347,10 @@ def run(infile: str | None = None, outfile: str | None = None) -> None:
 
                 # Activity classification
                 act = classify_activity(lo_ugml, up_ugml, gt)
-                if act == "drop":
-                    dropped += 1
-                    continue   # exclude ambiguous >X rows where X <= 32
                 row["activity"] = act
                 rows.append(row)
 
         logger.info(f"Processed {row_num - 1} rows for normalization")
-        logger.info(f"Dropped {dropped} rows (>X where X <= {MIC_THRESHOLD_UGML} µg/mL — ambiguous)")
         logger.info(f"Writing {len(rows)} rows to output")
 
         with open(outfile, "w", encoding=Config.CSV_ENCODING, newline="") as f:
