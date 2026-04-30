@@ -7,6 +7,9 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(message)s')
 
+# Find project root (2 levels up from scripts/database/create_sqlite_db.py)
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+
 def setup_db(conn):
     cur = conn.cursor()
     cur.execute('''
@@ -113,7 +116,7 @@ def to_float_or_null(val):
 
 def process_peptides(conn):
     cur = conn.cursor()
-    csv_files = glob.glob("data/input/peptides_*.csv")
+    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "data", "input", "peptides_*.csv"))
     for file_path in csv_files:
         logging.info(f"Populating peptides from {file_path}...")
         try:
@@ -144,7 +147,7 @@ def process_peptides(conn):
 
 def process_physchem(conn):
     cur = conn.cursor()
-    csv_files = glob.glob("data/output/intrinsic_properties_*.csv")
+    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "data", "output", "intrinsic_properties_*.csv"))
     for file_path in csv_files:
         logging.info(f"Populating intrinsic properties from {file_path}...")
         try:
@@ -196,7 +199,7 @@ import json
 
 def process_activity(conn):
     cur = conn.cursor()
-    csv_files = glob.glob("data/output/activity_normalized_*.csv")
+    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "data", "output", "activity_normalized_*.csv"))
     for file_path in csv_files:
         logging.info(f"Populating normalized activity from {file_path}...")
         try:
@@ -245,7 +248,7 @@ def process_activity(conn):
     conn.commit()
 
 def main():
-    db_path = "data/output/dbaasp.sqlite"
+    db_path = os.path.join(PROJECT_ROOT, "data", "output", "dbaasp.sqlite")
     
     # Optional: Delete existing database to ensure a clean build from CSVs
     if os.path.exists(db_path):

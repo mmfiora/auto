@@ -5,10 +5,13 @@ import sys
 import subprocess
 
 def main():
+    # Find project root (2 levels up from scripts/collection/fetch_all_to_csv.py)
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    
     # Find all peptide input files
-    peptide_files = glob.glob("data/input/peptides_*.csv")
+    peptide_files = glob.glob(os.path.join(project_root, "data", "input", "peptides_*.csv"))
     if not peptide_files:
-        print("Error: No peptides files found in data/input/")
+        print(f"Error: No peptides files found in {os.path.join(project_root, 'data', 'input')}")
         return 1
     
     pattern = re.compile(r'peptides_([A-Za-z]*\d+)\.csv$', re.IGNORECASE)
@@ -28,10 +31,11 @@ def main():
     print(f"Found N-termini to process: {', '.join(ntermini)}")
     
     failed = []
+    main_api_path = os.path.join(project_root, "main_api.py")
     for nt in ntermini:
         print(f"\n{'='*50}\nProcessing N-terminus: {nt}\n{'='*50}")
         # Run main_api.py via subprocess to ensure clean state and avoid module import conflicts
-        result = subprocess.run([sys.executable, "main_api.py", "--nterminus", nt])
+        result = subprocess.run([sys.executable, main_api_path, "--nterminus", nt], cwd=project_root)
         if result.returncode != 0:
             print(f"Error processing {nt}")
             failed.append(nt)
