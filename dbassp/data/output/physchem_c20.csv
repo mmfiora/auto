@@ -1,0 +1,7 @@
+﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,complexity,name,synthesis_type,Normalized Hydrophobic Moment,Normalized Hydrophobicity,Net Charge,Isoelectric Point,Penetration Depth,Tilt Angle,Disordered Conformation Propensity,Linear Moment,Propensity to in vitro Aggregation,Angle Subtended by the Hydrophobic Residues,Amphiphilicity Index,Propensity to PPII coil
+7946,C20,KGK,AMD,{'name': 'Monomer'},C20-KGK,Synthetic,0.32,2.73,3.00,14.00,30,90,-1.27,0.00,0.00,0.00,2.45,0.74
+7974,C20,KKK,AMD,{'name': 'Monomer'},C20-KKK,Synthetic,0.85,3.90,4.00,14.00,30,90,-1.97,0.00,0.00,0.00,3.67,0.91
+11180,C20,XGX,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11183,C20,XXX,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+12350,C20,KWKW,,{'name': 'Monomer'},,Synthetic,0.33,2.40,2.00,10.69,15,146,-1.00,0.00,0.00,0.00,5.30,0.99
+15827,C20,KKKKK,,{'name': 'Monomer'},C20K5,Synthetic,0.96,3.90,5.00,11.27,30,90,-1.97,0.00,0.00,0.00,3.67,0.91

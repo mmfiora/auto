@@ -1,0 +1,9 @@
+﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,complexity,name,synthesis_type,Normalized Hydrophobic Moment,Normalized Hydrophobicity,Net Charge,Isoelectric Point,Penetration Depth,Tilt Angle,Disordered Conformation Propensity,Linear Moment,Propensity to in vitro Aggregation,Angle Subtended by the Hydrophobic Residues,Amphiphilicity Index,Propensity to PPII coil
+8649,C4,RGRKVVRRKK,,{'name': 'Monomer'},,Synthetic,1.16,2.17,7.00,12.60,30,22,-1.13,0.52,0.00,40.00,2.08,0.93
+8660,C4,RGRKVVRR,,{'name': 'Monomer'},,Synthetic,1.99,1.74,5.00,12.58,30,104,-0.92,0.52,0.00,50.00,1.68,0.94
+8676,C4,RGRKGGRRKK,,{'name': 'Monomer'},,Synthetic,0.57,3.09,7.00,12.60,30,21,-1.41,0.00,0.00,0.00,2.08,0.81
+8687,C4,RGRKGGRR,,{'name': 'Monomer'},,Synthetic,1.29,2.89,5.00,12.58,30,101,-1.28,0.00,0.00,0.00,1.68,0.78
+13857,C4,GLLkRIkTLL,AMD,{'name': 'Monomer'},"Anoplin [K4,7k]",Synthetic,2.02,-0.63,4.00,14.00,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+19222,C4,VRLLRRRI,AMD,{'name': 'Monomer'},SAMP-A4,Synthetic,1.98,0.21,5.00,14.00,14,78,-0.32,0.39,0.00,110.00,1.23,0.97
+20408,C4,GLLKRIKTLL,AMD,{'name': 'Monomer'},Anoplin,Ribosomal,2.02,-0.63,4.00,14.00,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+20414,C4,GLLKRIKTLL,,{'name': 'Monomer'},Anoplin,Ribosomal,2.02,-0.63,3.00,11.57,14,94,0.14,0.42,0.00,160.00,0.98,0.85

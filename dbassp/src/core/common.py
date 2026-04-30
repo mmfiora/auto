@@ -132,8 +132,20 @@ def load_ids(csv_file: str | None = None):
     except csv.Error as e:
         raise FileProcessingError(f"CSV parsing error: {e}", filename=csv_file)
 
+import json
+import os
+
 def fetch(pid: int):
-    """Fetch a single peptide JSON from DBAASP API."""
+    """Fetch a single peptide JSON from DBAASP API with disk caching."""
+    cache_dir = "data/cache"
+    os.makedirs(cache_dir, exist_ok=True)
+    cache_file = os.path.join(cache_dir, f"{pid}.json")
+    
+    if os.path.exists(cache_file):
+        logger.debug(f"Loading peptide {pid} from cache")
+        with open(cache_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+
     logger.debug(f"Fetching peptide {pid} from API")
     
     try:
@@ -144,7 +156,12 @@ def fetch(pid: int):
         )
         resp.raise_for_status()
         data = resp.json()
-        logger.debug(f"Successfully fetched peptide {pid}")
+        
+        # Save to cache
+        with open(cache_file, "w", encoding="utf-8") as f:
+            json.dump(data, f)
+            
+        logger.debug(f"Successfully fetched and cached peptide {pid}")
         return data
         
     except requests.exceptions.Timeout:

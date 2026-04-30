@@ -1,0 +1,96 @@
+﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,Unusual Amino Acids,Unusual Amino Acids Map,peptideId,targetSpecies,activityMeasureGroup,activityMeasureValue,concentration,unit,ph,ionicStrength,saltType,medium,cfu,cfuGroup,note,reference
+7946,C20,KGK,AMD,,{},7946,Staphylococcus aureus ATCC 29213,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Staphylococcus aureus ATCC 29213,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Staphylococcus aureus ATCC 33592,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Staphylococcus aureus ATCC 33592,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Staphylococcus epidermidis 81388,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Staphylococcus epidermidis 81388,MIC90,MIC90,256,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Staphylococcus epidermidis 61589,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Staphylococcus epidermidis 61589,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Enterococcus faecalis ATCC 29212,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Enterococcus faecalis ATCC 29212,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Enterococcus faecium ATCC 27270,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Enterococcus faecium ATCC 27270,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Streptococcus pneumoniae ATCC 49619,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Streptococcus pneumoniae ATCC 49619,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Escherichia coli ATCC 25922,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Escherichia coli ATCC 25922,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Escherichia coli CAN-ICU 61714,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Escherichia coli CAN-ICU 61714,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Escherichia coli CAN-ICU 63074,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Escherichia coli CAN-ICU 63074,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Pseudomonas aeruginosa ATCC 27853,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Pseudomonas aeruginosa ATCC 27853,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Pseudomonas aeruginosa CAN-ICU 62308,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Pseudomonas aeruginosa CAN-ICU 62308,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Stenotrophomonas maltophilia CAN-ICU 62584,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Stenotrophomonas maltophilia CAN-ICU 62584,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Acinetobacter baumannii CAN-ICU 63169,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Acinetobacter baumannii CAN-ICU 63169,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Klebsiella pneumoniae ATCC 13883,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7946,C20,KGK,AMD,,{},7946,Klebsiella pneumoniae ATCC 13883,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7946,C20,KGK,AMD,,{},7946,Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,2
+7946,C20,KGK,AMD,,{},7946,Human prostate cancer DU145,50% Cell death,CC50,26.5,µM,,,, ,,,,2
+7946,C20,KGK,AMD,,{},7946,Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,30,µM,,,, ,,,,2
+7974,C20,KKK,AMD,,{},7974,Staphylococcus aureus ATCC 29213,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Staphylococcus aureus ATCC 29213,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Staphylococcus aureus ATCC 33592,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Staphylococcus aureus ATCC 33592,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Staphylococcus epidermidis 81388,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Staphylococcus epidermidis 81388,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Staphylococcus epidermidis 61589,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Staphylococcus epidermidis 61589,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Enterococcus faecalis ATCC 29212,MIC90,MIC90,16,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Enterococcus faecalis ATCC 29212,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Enterococcus faecium ATCC 27270,MIC90,MIC90,8,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Enterococcus faecium ATCC 27270,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Streptococcus pneumoniae ATCC 49619,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Streptococcus pneumoniae ATCC 49619,MIC90,MIC90,512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Escherichia coli ATCC 25922,MIC90,MIC90,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Escherichia coli ATCC 25922,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Escherichia coli CAN-ICU 61714,MIC90,MIC90,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Escherichia coli CAN-ICU 61714,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Escherichia coli CAN-ICU 63074,MIC90,MIC90,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Escherichia coli CAN-ICU 63074,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Pseudomonas aeruginosa ATCC 27853,MIC90,MIC90,256,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Pseudomonas aeruginosa ATCC 27853,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Pseudomonas aeruginosa CAN-ICU 62308,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Pseudomonas aeruginosa CAN-ICU 62308,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Stenotrophomonas maltophilia CAN-ICU 62584,MIC90,MIC90,128,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Stenotrophomonas maltophilia CAN-ICU 62584,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Acinetobacter baumannii CAN-ICU 63169,MIC90,MIC90,64,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Acinetobacter baumannii CAN-ICU 63169,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Klebsiella pneumoniae ATCC 13883,MIC90,MIC90,32,µg/ml,,,,MHB,5E5,1E5 - 1E6,,1
+7974,C20,KKK,AMD,,{},7974,Klebsiella pneumoniae ATCC 13883,MIC90,MIC90,>512,µg/ml,,.,,MHB,5E5,1E5 - 1E6,In the presence of 4% bovine serum albumin.,1
+7974,C20,KKK,AMD,,{},7974,Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,2
+7974,C20,KKK,AMD,,{},7974,Human prostate cancer DU145,50% Cell death,CC50,>30,µM,,,, ,,,,2
+7974,C20,KKK,AMD,,{},7974,Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,>30,µM,,,, ,,,,2
+11180,C20,XGX,AMD,"NLys, NLys","{""1"": ""NLys"", ""3"": ""NLys""}",11180,Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11180,C20,XGX,AMD,"NLys, NLys","{""1"": ""NLys"", ""3"": ""NLys""}",11180,Human breast carcinoma JIMT-1,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11180,C20,XGX,AMD,"NLys, NLys","{""1"": ""NLys"", ""3"": ""NLys""}",11180,Human prostate cancer DU145,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11180,C20,XGX,AMD,"NLys, NLys","{""1"": ""NLys"", ""3"": ""NLys""}",11180,Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11183,C20,XXX,AMD,"NLys, NLys, NLys","{""1"": ""NLys"", ""2"": ""NLys"", ""3"": ""NLys""}",11183,Human breast adenocarcinoma MDA-MB-231,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11183,C20,XXX,AMD,"NLys, NLys, NLys","{""1"": ""NLys"", ""2"": ""NLys"", ""3"": ""NLys""}",11183,Human breast carcinoma JIMT-1,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11183,C20,XXX,AMD,"NLys, NLys, NLys","{""1"": ""NLys"", ""2"": ""NLys"", ""3"": ""NLys""}",11183,Human prostate cancer DU145,50% Cell death,CC50,>30,µM,,,, ,,,,1
+11183,C20,XXX,AMD,"NLys, NLys, NLys","{""1"": ""NLys"", ""2"": ""NLys"", ""3"": ""NLys""}",11183,Human pancreatic carcinoma Mia PaCa-2,50% Cell death,CC50,>30,µM,,,, ,,,,1
+12350,C20,KWKW,,,{},12350,Cutibacterium acnes ATCC 6919,MIC,MIC,31.2,µg/ml,,,,BrB,1E6,1E5 - 1E6,,1
+12350,C20,KWKW,,,{},12350,Cutibacterium acnes ATCC 11827,MIC,MIC,15.6,µg/ml,,,,BrB,1E6,1E5 - 1E6,,1
+12350,C20,KWKW,,,{},12350,Staphylococcus epidermidis ATCC 12228,MIC,MIC,31.2,µg/ml,,,,LBB,1E5,1E4 - 1E5,,1
+12350,C20,KWKW,,,{},12350,Staphylococcus aureus ATCC 12600,MIC,MIC,>31.2,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+12350,C20,KWKW,,,{},12350,Staphylococcus aureus,MIC,MIC,>31.2,µg/ml,,,,MHB,1E5,1E4 - 1E5,Clinical isolate,1
+12350,C20,KWKW,,,{},12350,Streptococcus mutans ATCC 25175,MIC,MIC,>31.2,µg/ml,,,,BHIB,1E5,1E4 - 1E5,,1
+12350,C20,KWKW,,,{},12350,Streptococcus mutans UA 159,MIC,MIC,>31.2,µg/ml,,,,BHIB,1E5,1E4 - 1E5,,1
+12350,C20,KWKW,,,{},12350,Pseudomonas aeruginosa ATCC 25853,MIC,MIC,>31.2,µg/ml,,,,LBB,1E5,1E4 - 1E5,,1
+12350,C20,KWKW,,,{},12350,Escherichia coli ATCC 25922,MIC,MIC,>31.2,µg/ml,,,,LBB,1E5,1E4 - 1E5,,1
+12350,C20,KWKW,,,{},12350,Murine macrophage cells RAW 264.7,,-,NA,,,,, ,,,Not active up to 31.25 µg/ml,1
+15827,C20,KKKKK,,,{},15827,Staphylococcus aureus JE2,MIC,MIC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,MRSA,1
+15827,C20,KKKKK,,,{},15827,Staphylococcus aureus LAC,MIC,MIC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,MRSA,1
+15827,C20,KKKKK,,,{},15827,Staphylococcus aureus ATCC 43300,MIC,MIC,1,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,MRSA,1
+15827,C20,KKKKK,,,{},15827,Escherichia coli K-12,MIC,MIC,16,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+15827,C20,KKKKK,,,{},15827,Escherichia coli ATCC 25922,MIC,MIC,8,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+15827,C20,KKKKK,,,{},15827,Pseudomonas aeruginosa PAO1,MIC,MIC,32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+15827,C20,KKKKK,,,{},15827,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+15827,C20,KKKKK,,,{},15827,Klebsiella pneumoniae ATCC 700603,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+15827,C20,KKKKK,,,{},15827,Acinetobacter baumannii ATCC 19606,MIC,MIC,>32,µg/ml,,,,CAMHB,5E5,1E5 - 1E6,,1
+15827,C20,KKKKK,,,{},15827,Candida albicans ATCC 90028,MIC,MIC,4,µg/ml,,,,YEPD,2.5E3,1E3 - 1E4,,1
+15827,C20,KKKKK,,,{},15827,Cryptococcus neoformans var. grubii H99,MIC,MIC,<=0.25,µg/ml,,,,YEPD,2.5E3,1E3 - 1E4,,1

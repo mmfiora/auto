@@ -1,0 +1,40 @@
+﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,Unusual Amino Acids,Unusual Amino Acids Map,peptideId,targetSpecies,activityMeasureGroup,activityMeasureValue,concentration,unit,ph,ionicStrength,saltType,medium,cfu,cfuGroup,note,reference
+8649,C4,RGRKVVRRKK,,,{},8649,Klebsiella pneumoniae DM4299,MIC,MIC,>80,µM,,,,TSB,5E5,1E5 - 1E6,Clinical isolate,1
+8649,C4,RGRKVVRRKK,,,{},8649,Pseudomonas aeruginosa DM23155,MIC,MIC,>80,µM,,,,TSB,5E5,1E5 - 1E6,Clinical isolate,1
+8649,C4,RGRKVVRRKK,,,{},8649,Escherichia coli ATCC 25922,MIC,MIC,40,µM,,,,TSB,5E5,1E5 - 1E6,,1
+8660,C4,RGRKVVRR,,,{},,,,,,,,,,,,,,
+8676,C4,RGRKGGRRKK,,,{},8676,Klebsiella pneumoniae DM4299,MIC,MIC,80,µM,,,,TSB,5E5,1E5 - 1E6,Clinical isolate,1
+8676,C4,RGRKGGRRKK,,,{},8676,Pseudomonas aeruginosa DM23155,MIC,MIC,80,µM,,,,TSB,5E5,1E5 - 1E6,Clinical isolate,1
+8676,C4,RGRKGGRRKK,,,{},8676,Escherichia coli ATCC 25922,MIC,MIC,40,µM,,,,TSB,5E5,1E5 - 1E6,,1
+8687,C4,RGRKGGRR,,,{},,,,,,,,,,,,,,
+13857,C4,GLLkRIkTLL,AMD,,{},13857,Escherichia coli ATCC 25922,MIC,MIC,>128,µM,,,,MHB,1E6,1E5 - 1E6,,1
+13857,C4,GLLkRIkTLL,AMD,,{},13857,Escherichia coli ML-35,MIC,MIC,>128,µM,,,,MHB,1E6,1E5 - 1E6,,1
+13857,C4,GLLkRIkTLL,AMD,,{},13857,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,128,µM,,,,MHB,1E6,1E5 - 1E6,,1
+13857,C4,GLLkRIkTLL,AMD,,{},13857,Klebsiella pneumoniae ATCC 700603,MIC,MIC,>128,µM,,,,MHB,1E6,1E5 - 1E6,,1
+13857,C4,GLLkRIkTLL,AMD,,{},13857,Staphylococcus aureus ATCC 25923,MIC,MIC,>128,µM,,,,MHB,1E6,1E5 - 1E6,,1
+13857,C4,GLLkRIkTLL,AMD,,{},13857,Staphylococcus aureus 936,MIC,MIC,>128,µM,,,,MHB,1E6,1E5 - 1E6,MRSA,1
+13857,C4,GLLkRIkTLL,AMD,,{},13857,Bacillus subtilis ATCC 23857,MIC,MIC,128,µM,,,,MHB,1E6,1E5 - 1E6,,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Candida tropicalis ATCC 750,MIC,MIC,7.93,µg/ml,,,,MHB,1E5,1E4 - 1E5,Also at pH 9,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Candida tropicalis ATCC 750,MIC,MIC,8.26,µg/ml,1/4,,,MHB,1E5,1E4 - 1E5,,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Candida tropicalis ATCC 750,MIC,MIC,47.52,µg/ml,,,50% plasma,MHB,1E5,1E4 - 1E5,,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Candida tropicalis ATCC 750,MIC,MIC,27.34,µg/ml,,,10 μg/ml trypsin,MHB,1E5,1E4 - 1E5,,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Candida albicans ATCC 10231,MIC,MIC,57.26,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Candida krusei,MIC,MIC,29.31,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Cryptococcus neoformans,MIC,MIC,13.9,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Candida parapsilosis,MIC,MIC,90.29,µg/ml,,,,MHB,1E5,1E4 - 1E5,,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Staphylococcus aureus,MIC,MIC,14.71,µg/ml,,,,MHB,1E6,1E5 - 1E6,MDR S. aureus 9 (cfr+),1
+19222,C4,VRLLRRRI,AMD,,{},19222,Staphylococcus sciuri P254,MIC,MIC,14.67,µg/ml,,,,MHB,1E6,1E5 - 1E6,"MDR; (cfr+,MRSA&ermB+)",1
+19222,C4,VRLLRRRI,AMD,,{},19222,Streptococcus Sc181,MIC,MIC,7.41,µg/ml,,,,MHB,1E6,1E5 - 1E6,MDR; (optrA+& ermB+); also at pH 4 and 9,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Streptococcus Sc181,MIC,MIC,7.97,µg/ml,1,,,MHB,1E6,1E5 - 1E6,MDR; (optrA+& ermB+),1
+19222,C4,VRLLRRRI,AMD,,{},19222,Streptococcus Sc181,MIC,MIC,402.75,µg/ml,,,50% plasma,MHB,1E6,1E5 - 1E6,MDR; (optrA+& ermB+),1
+19222,C4,VRLLRRRI,AMD,,{},19222,Streptococcus Sc181,MIC,MIC,29.71,µg/ml,,,12 µg/ml Trypsin,MHB,1E5,1E5 - 1E6,MDR; (optrA+& ermB+),1
+19222,C4,VRLLRRRI,AMD,,{},19222,Listeria monocytogenes,MIC,MIC,7.12,µg/ml,,,,MHB,1E6,1E5 - 1E6,MDR; (Isa(E)& ermB+),1
+19222,C4,VRLLRRRI,AMD,,{},19222,Enterococcus faecalis E1478F,MIC,MIC,29.56,µg/ml,,,,MHB,1E6,1E5 - 1E6,MDR; (optrA+& poxtA+),1
+19222,C4,VRLLRRRI,AMD,,{},19222,Staphylococcus aureus RN4220,MIC,MIC,57.56,µg/ml,,,,MHB,1E6,1E5 - 1E6,MDR,1
+19222,C4,VRLLRRRI,AMD,,{},19222,Enterococcus faecalis Fbc35,MIC,MIC,500,µg/ml,,,,MHB,1E6,1E5 - 1E6,"MDR; (optrA+, poxtA+&ermB+)",1
+20408,C4,GLLKRIKTLL,AMD,,{},20408,Staphylococcus aureus ATCC 25923,MIC,MIC,256,µM,,,,MHB,5E5,1E5 - 1E6,,1
+20408,C4,GLLKRIKTLL,AMD,,{},20408,Bacillus subtilis ATCC 23857,MIC,MIC,256,µM,,,,MHB,5E5,1E5 - 1E6,,1
+20408,C4,GLLKRIKTLL,AMD,,{},20408,Escherichia coli ATCC 25922,MIC,MIC,256,µM,,,,MHB,5E5,1E5 - 1E6,,1
+20408,C4,GLLKRIKTLL,AMD,,{},20408,Pseudomonas aeruginosa ATCC 27853,MIC,MIC,64,µM,,,,MHB,5E5,1E5 - 1E6,,1
+20408,C4,GLLKRIKTLL,AMD,,{},20408,Klebsiella pneumoniae ATCC 700603,MIC,MIC,256,µM,,,,MHB,5E5,1E5 - 1E6,,1
+20414,C4,GLLKRIKTLL,,,{},,,,,,,,,,,,,,

@@ -1,0 +1,185 @@
+﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,complexity,name,synthesis_type,Normalized Hydrophobic Moment,Normalized Hydrophobicity,Net Charge,Isoelectric Point,Penetration Depth,Tilt Angle,Disordered Conformation Propensity,Linear Moment,Propensity to in vitro Aggregation,Angle Subtended by the Hydrophobic Residues,Amphiphilicity Index,Propensity to PPII coil
+1050,C8,FWRIRIRR,AMD,{'name': 'Monomer'},"Lactoferricin (20-30)[Q21,23;N25Del; K28I,V29R]",Synthetic,0.28,0.89,5.00,14.00,15,37,-0.53,0.29,0.00,50.00,2.09,1.02
+3864,C8,XTXXXwLXXT,,{'name': 'Monomer'},Polymyxin B3 [f6w],Synthetic,,,,,,,,,,,,
+3865,C8,XTXXXfWXXT,,{'name': 'Monomer'},Polymyxin B3 [L7W],Synthetic,,,,,,,,,,,,
+3866,C8,XTXXXGLXXT,,{'name': 'Monomer'},Polymyxin B3 [f6G],Synthetic,,,,,,,,,,,,
+4876,C8,XGLXGGLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV,Nonribosomal,,,,,,,,,,,,
+4878,C8,XGGLXGIL,OMe,{'name': 'Monomer'},Trichogin-8,Synthetic,,,,,,,,,,,,
+4879,C8,XGIL,OMe,{'name': 'Monomer'},Trichogin-4,Synthetic,,,,,,,,,,,,
+7307,C8,XX,AMD,{'name': 'Monomer'},LP7,Synthetic,,,,,,,,,,,,
+7325,C8,XXX,AMD,{'name': 'Monomer'},LP13,Synthetic,,,,,,,,,,,,
+7344,C8,XXXX,AMD,{'name': 'Monomer'},LP19,Synthetic,,,,,,,,,,,,
+7350,C8,XXXXX,AMD,{'name': 'Monomer'},LP25,Synthetic,,,,,,,,,,,,
+7529,C8,XXWW,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+7741,C8,XKLXGGLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [G2K],Synthetic,,,,,,,,,,,,
+7744,C8,XGLXGKLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [G6K],Synthetic,,,,,,,,,,,,
+7746,C8,XGLXGGLXKI,LEUol,{'name': 'Monomer'},Trichogin GA IV [G9K],Synthetic,,,,,,,,,,,,
+8115,C8,KRRRRR,,{'name': 'Monomer'},C8-[KR5],Synthetic,0.82,4.40,6.00,12.70,30,144,-2.12,0.00,0.00,0.00,2.65,1.02
+8353,C8,FWRRFWRR,AMD,{'name': 'Monomer'},"LF11 [Q2,4Del,N6R,I7F,R8W,K9R,V10Del]",Synthetic,1.58,1.78,5.00,14.00,15,72,-0.81,0.30,0.00,80.00,2.96,1.04
+8570,C8,ATXXXfLXXT,,{'name': 'Monomer'},Polymyxin B3 [DAB1A],Synthetic,,,,,,,,,,,,
+8571,C8,XAXXXfLXXT,,{'name': 'Monomer'},Polymyxin B3 [T2A],Synthetic,,,,,,,,,,,,
+8572,C8,XTAXXfLXXT,,{'name': 'Monomer'},Polymyxin B3 [DAB3A],Synthetic,,,,,,,,,,,,
+8573,C8,XTXXAfLXXT,,{'name': 'Monomer'},Polymyxin B3 [DAB5A],Synthetic,,,,,,,,,,,,
+8574,C8,XTXXXaLXXT,,{'name': 'Monomer'},Polymyxin B3 [f6a],Synthetic,,,,,,,,,,,,
+8575,C8,XTXXXfAXXT,,{'name': 'Monomer'},Polymyxin B3 [L7A],Synthetic,,,,,,,,,,,,
+8576,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin B3 [Dab8Dab(Ac)],Synthetic,,,,,,,,,,,,
+8577,C8,XTXXXfLXAT,,{'name': 'Monomer'},Polymyxin B3 [DAB9A],Synthetic,,,,,,,,,,,,
+8578,C8,XTXXXfLXXA,,{'name': 'Monomer'},Polymyxin B3 [T10A],Synthetic,,,,,,,,,,,,
+8580,C8,XTXXXfGXXT,,{'name': 'Monomer'},Polymyxin B3 [L7G],Synthetic,,,,,,,,,,,,
+8581,C8,XTXXXaAXXT,,{'name': 'Monomer'},"Polymyxin B3 [f6a,L7A]",Synthetic,,,,,,,,,,,,
+8582,C8,XTXXXGGXXT,,{'name': 'Monomer'},"Polymyxin B3 [f6G,L7G]",Synthetic,,,,,,,,,,,,
+8583,C8,XTXXXFLXXT,,{'name': 'Monomer'},Polymyxin B3 [f6F],Synthetic,,,,,,,,,,,,
+8651,C8,RGRKVVRRKK,,{'name': 'Monomer'},,Synthetic,1.16,2.17,7.00,12.60,30,22,-1.13,0.52,0.00,40.00,2.08,0.93
+8664,C8,RGRKVVRR,,{'name': 'Monomer'},,Synthetic,1.99,1.74,5.00,12.58,30,104,-0.92,0.52,0.00,50.00,1.68,0.94
+8678,C8,RGRKGGRRKK,,{'name': 'Monomer'},,Synthetic,0.57,3.09,7.00,12.60,30,21,-1.41,0.00,0.00,0.00,2.08,0.81
+8691,C8,RGRKGGRR,,{'name': 'Monomer'},,Synthetic,1.29,2.89,5.00,12.58,30,101,-1.28,0.00,0.00,0.00,1.68,0.78
+9265,C8,KPV,AMD,{'name': 'Monomer'},,Synthetic,2.72,0.43,2.00,14.00,30,117,-0.23,0.57,0.00,130.00,1.22,1.36
+9271,C8,KpT,AMD,{'name': 'Monomer'},,Synthetic,1.08,2.07,2.00,14.00,30,116,-0.73,0.00,0.00,0.00,1.22,1.38
+9387,C8,XGLXGGLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [AIB 1 TOAC],Synthetic,,,,,,,,,,,,
+9388,C8,XGLXGKLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [Aib1TOAC; G6K],Synthetic,,,,,,,,,,,,
+9389,C8,XRLXGGLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [G2R],Synthetic,,,,,,,,,,,,
+9390,C8,XRLXGGLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [Aib1TOAC; G2R],Synthetic,,,,,,,,,,,,
+9391,C8,XGLXGGLXRI,LEUol,{'name': 'Monomer'},Trichogin GA IV [Aib1TOAC; G9R],Synthetic,,,,,,,,,,,,
+9392,C8,XGLXKKLXGI,LEUol,{'name': 'Monomer'},"Trichogin GA IV [G5,6K]",Synthetic,,,,,,,,,,,,
+9393,C8,XGLXKKLXGI,LEUol,{'name': 'Monomer'},"Trichogin GA IV [Aib1TOAC; G5,6K]",Synthetic,,,,,,,,,,,,
+9394,C8,XGLLGGLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [AIB 4 L],Synthetic,,,,,,,,,,,,
+9395,C8,XGLLGGLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [Aib1TOAC; Aib4L],Synthetic,,,,,,,,,,,,
+9396,C8,XGLXGGLLGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [Aib1TOAC; Aib8L],Synthetic,,,,,,,,,,,,
+9470,C8,XXLLXXLXXL,AMD,{'name': 'Monomer'},MSI-843,Synthetic,,,,,,,,,,,,
+9806,C8,XGLXGGLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [AIB1TOAC][AIB4Api],Synthetic,,,,,,,,,,,,
+9807,C8,XGLXGGLXGI,LEUol,{'name': 'Monomer'},Trichogin GA IV [AIB 8 Api],Synthetic,,,,,,,,,,,,
+9840,C8,KK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+10001,C8,IKQVKKLFKK,AMD,{'name': 'Monomer'},"C8-Plantaricin 149a (10-19), C8-A2",Synthetic,2.42,0.77,6.00,14.00,30,92,-0.50,0.22,0.00,160.00,1.96,0.93
+10380,C8,KKK,AMD,{'name': 'Monomer'},,Synthetic,0.85,3.90,4.00,14.00,30,90,-1.97,0.00,0.00,0.00,3.67,0.91
+10381,C8,KKKK,AMD,{'name': 'Monomer'},,Synthetic,0.44,3.90,5.00,14.00,30,90,-1.97,0.00,0.00,0.00,3.67,0.91
+10382,C8,KG,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+10383,C8,KGK,AMD,{'name': 'Monomer'},,Synthetic,0.32,2.73,3.00,14.00,30,90,-1.27,0.00,0.00,0.00,2.45,0.74
+10384,C8,KGKG,AMD,{'name': 'Monomer'},,Synthetic,0.33,2.15,3.00,14.00,30,146,-0.92,0.00,0.00,0.00,1.84,0.66
+10564,C8,GLLKRIKTLL,AMD,{'name': 'Monomer'},Anoplin,Ribosomal,2.02,-0.63,4.00,14.00,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+10567,C8,GLLKFIKKLL,AMD,{'name': 'Monomer'},"Anoplin [R5F,T8K]",Synthetic,2.28,-1.04,4.00,14.00,14,87,0.26,0.37,0.00,200.00,1.10,0.83
+11100,C8,PRPRPRP,AMD,{'name': 'Monomer'},,Synthetic,0.42,2.84,4.00,14.00,30,90,-1.07,0.00,0.00,0.00,1.05,1.69
+11104,C8,PRPGPRP,AMD,{'name': 'Monomer'},,Synthetic,1.00,2.26,3.00,14.00,30,90,-0.74,0.00,0.00,0.00,0.70,1.59
+11108,C8,PRPLPRP,AMD,{'name': 'Monomer'},,Synthetic,1.60,1.66,3.00,14.00,30,90,-0.56,0.50,0.00,60.00,0.70,1.65
+11112,C8,PRPWPRP,AMD,{'name': 'Monomer'},,Synthetic,0.93,2.33,3.00,14.00,30,90,-0.76,0.00,0.00,0.00,1.69,1.69
+11625,C8,RXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11626,C8,RXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11631,C8,RXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11632,C8,RXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11668,C8,RXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11669,C8,RXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11671,C8,RRRR,,{'name': 'Monomer'},,Synthetic,0.50,4.50,4.00,12.57,30,127,-2.15,0.00,0.00,0.00,2.45,1.04
+11672,C8,RRRRKK,,{'name': 'Monomer'},,Synthetic,0.73,4.30,6.00,12.59,30,31,-2.09,0.00,0.00,0.00,2.86,1.00
+11678,C8,RXRXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11679,C8,RXRXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11681,C8,RXRXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11682,C8,RXRXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11706,C8,RXRXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11707,C8,RXRXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11715,C8,RXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11716,C8,RXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+12344,C8,KWKW,,{'name': 'Monomer'},,Synthetic,0.33,2.40,2.00,10.69,15,146,-1.00,0.00,0.00,0.00,5.30,0.99
+12354,C8,KKXK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+12648,C8,RFWR,AMD,{'name': 'Monomer'},,Synthetic,2.36,1.77,3.00,14.00,15,91,-0.81,0.59,0.00,100.00,2.96,1.04
+13859,C8,GLLkRIkTLL,AMD,{'name': 'Monomer'},"Anoplin [K4,7k]",Synthetic,2.02,-0.63,4.00,14.00,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+14154,C8,XKKK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+14179,C8,XXLLXXLXXL,AMD,{'name': 'Monomer'},MSI-1254,Synthetic,,,,,,,,,,,,
+14386,C8,RKWWK,AMD,{'name': 'Monomer'},,Synthetic,1.66,2.82,4.00,14.00,16,101,-1.23,0.00,0.00,0.00,4.73,1.00
+14412,C8,PFWRIRIRR,AMD,{'name': 'Monomer'},LF11-322,Synthetic,0.43,0.97,5.00,14.00,15,88,-0.50,0.32,0.00,50.00,1.86,1.15
+14947,C8,RR,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+15830,C8,XKKKKK,,{'name': 'Monomer'},(C8)2K-K5,Synthetic,,,,,,,,,,,,
+16076,C8,GLXKRXKTLL,AMD,{'name': 'Monomer'},"Anoplin [L3Meth-Leu, I6Meth-Ile]",Synthetic,,,,,,,,,,,,
+16077,C8,GLLXRIXTLL,AMD,{'name': 'Monomer'},"Anoplin [K4,7Meth-Lys]",Synthetic,,,,,,,,,,,,
+16078,C8,GLLKXIXTLL,AMD,{'name': 'Monomer'},"Anoplin [R5Meth-Arg, K7Meth-Lys]",Synthetic,,,,,,,,,,,,
+16545,C8,wrrrrrrrrG,AMD,{'name': 'Monomer'},Octa-(ARG)8,Synthetic,0.38,3.73,9.00,14.00,22,30,-1.71,0.00,0.00,0.00,2.65,0.98
+16828,C8,XTXXXfXXXT,,{'name': 'Monomer'},Polymyxin FADDI-002,Synthetic,,,,,,,,,,,,
+16831,C8,XTXXXfXXXT,,{'name': 'Monomer'},Polymyxin FADDI-017,Synthetic,,,,,,,,,,,,
+16832,C8,XTXXXfXXXT,,{'name': 'Monomer'},Polymyxin FADDI-018,Synthetic,,,,,,,,,,,,
+16833,C8,XTXXXxLXXT,,{'name': 'Monomer'},Polymyxin FADDI-019,Synthetic,,,,,,,,,,,,
+16835,C8,XTXXXxXXXT,,{'name': 'Monomer'},Polymyxin FADDI-021,Synthetic,,,,,,,,,,,,
+16836,C8,XTXXXxAXXT,,{'name': 'Monomer'},Polymyxin FADDI-031,Synthetic,,,,,,,,,,,,
+16838,C8,XTXXXxLXXT,,{'name': 'Monomer'},Polymyxin FADDI-039,Synthetic,,,,,,,,,,,,
+16840,C8,XTXXXxLXXT,,{'name': 'Monomer'},Polymyxin FADDI-047,Synthetic,,,,,,,,,,,,
+16841,C8,XTXXXfXXXT,,{'name': 'Monomer'},Polymyxin FADDI-063,Synthetic,,,,,,,,,,,,
+16842,C8,XTXXXfFXXT,,{'name': 'Monomer'},Polymyxin FADDI-064,Synthetic,,,,,,,,,,,,
+17732,C8,RWW,AMD,{'name': 'Monomer'},C8-R1,Synthetic,1.18,2.10,2.00,14.00,14,119,-0.74,0.00,0.00,0.00,5.44,1.06
+17738,C8,RRW,AMD,{'name': 'Monomer'},C8-R2,Synthetic,1.68,3.30,3.00,14.00,16,120,-1.45,0.00,0.00,0.00,3.94,1.05
+17779,C8,RRR,AMD,{'name': 'Monomer'},C8-R3,Synthetic,0.98,4.50,4.00,14.00,30,90,-2.15,0.00,0.00,0.00,2.45,1.04
+17782,C8,RWR,AMD,{'name': 'Monomer'},C8-W1R2,Synthetic,0.22,3.30,3.00,14.00,17,90,-1.45,0.00,0.00,0.00,3.94,1.05
+17785,C8,WRR,AMD,{'name': 'Monomer'},C8-W1,Synthetic,1.68,3.30,3.00,14.00,16,60,-1.45,0.00,0.00,0.00,3.94,1.05
+17830,C8,GLLKIIKKLL,AMD,{'name': 'Monomer'},"Anoplin [R5I,T8K]",Synthetic,2.31,-1.21,4.00,14.00,13,83,0.32,0.35,0.00,200.00,1.10,0.82
+17833,C8,GLKKIIKKLL,AMD,{'name': 'Monomer'},"Anoplin [L3K,R5I,T8K]",Synthetic,2.31,-0.44,5.00,14.00,14,98,-0.02,0.28,0.00,170.00,1.47,0.84
+17842,C8,KLFK,AMD,{'name': 'Monomer'},,Synthetic,2.76,0.30,3.00,14.00,16,88,-0.35,0.52,0.00,200.00,1.84,0.90
+17848,C8,KLFKKLFK,AMD,{'name': 'Monomer'},,Synthetic,2.59,0.30,5.00,14.00,16,88,-0.35,0.26,0.00,200.00,1.84,0.90
+18050,C8,TsXXfLXXT,,{'name': 'Monomer'},Polymyxin NAB739,Synthetic,,,,,,,,,,,,
+18278,C8,KRIWQRIKDF,AMD,{'name': 'Monomer'},KR-10 [V4W],Synthetic,2.31,1.29,4.00,12.15,15,85,-0.46,0.22,0.00,110.00,2.04,0.99
+18279,C8,kriwqrikdf,AMD,{'name': 'Monomer'},KR-10 [V4w],Synthetic,2.31,1.29,4.00,12.15,15,85,-0.46,0.22,0.00,110.00,2.04,0.99
+18280,C8,KRIWQRIK,AMD,{'name': 'Monomer'},KR-8 [V4W],Synthetic,2.28,1.52,5.00,14.00,15,91,-0.73,0.31,0.00,100.00,2.55,0.99
+18281,C8,KRIWQR,AMD,{'name': 'Monomer'},KR-6 [V4W],Synthetic,2.08,2.13,4.00,14.00,15,87,-0.92,0.57,0.00,80.00,2.79,1.00
+18282,C8,KRIW,AMD,{'name': 'Monomer'},KR-4 [V4W],Synthetic,2.34,1.20,3.00,14.00,14,129,-0.63,0.60,0.00,100.00,3.26,1.00
+18672,C8,XTsXXlIXXL,,{'name': 'Monomer'},Macolacin L2,Synthetic,,,,,,,,,,,,
+18699,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin B3,Nonribosomal,,,,,,,,,,,,
+18705,C8,XTXXXlLXXT,,{'name': 'Monomer'},Polymyxin E3,Nonribosomal,,,,,,,,,,,,
+18759,C8,TXXXfLXXT,,{'name': 'Monomer'},Polymyxin B-12,Synthetic,,,,,,,,,,,,
+18766,C8,XTxXXfLXXT,,{'name': 'Monomer'},Polymyxin B-36,Synthetic,,,,,,,,,,,,
+18767,C8,XTsXXfLXXT,,{'name': 'Monomer'},Polymyxin B-37,Synthetic,,,,,,,,,,,,
+18768,C8,XTGXXfLXXT,,{'name': 'Monomer'},Polymyxin B-38,Synthetic,,,,,,,,,,,,
+18769,C8,TGXXfLXXT,,{'name': 'Monomer'},Polymyxin B-39,Synthetic,,,,,,,,,,,,
+18770,C8,xTGXXfLXXT,,{'name': 'Monomer'},Polymyxin B-40,Synthetic,,,,,,,,,,,,
+18771,C8,GXTXXfLXXT,,{'name': 'Monomer'},Polymyxin B-41,Synthetic,,,,,,,,,,,,
+18772,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin B-20,Synthetic,,,,,,,,,,,,
+18773,C8,XTXXXfLXRT,,{'name': 'Monomer'},Polymyxin B-21,Synthetic,,,,,,,,,,,,
+18774,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin B-24,Synthetic,,,,,,,,,,,,
+18775,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin B-25,Synthetic,,,,,,,,,,,,
+18776,C8,XTXXXfLRXT,,{'name': 'Monomer'},Polymyxin B-26,Synthetic,,,,,,,,,,,,
+18777,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin B-33,Synthetic,,,,,,,,,,,,
+18778,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin B-34,Synthetic,,,,,,,,,,,,
+18779,C8,XTXXRfLXXT,,{'name': 'Monomer'},Polymyxin B-35,Synthetic,,,,,,,,,,,,
+18971,C8,XIXfLXvLS,AMD,{'name': 'Monomer'},Paenipeptin C’,Synthetic,,,,,,,,,,,,
+19036,C8,XTXXXlTXXT,,{'name': 'Monomer'},Polymyxin F100,Synthetic,,,,,,,,,,,,
+19037,C8,XTXXXlAXXT,,{'name': 'Monomer'},Polymyxin F124,Synthetic,,,,,,,,,,,,
+19038,C8,XTXXXfTXXT,,{'name': 'Monomer'},Polymyxin F224,Synthetic,,,,,,,,,,,,
+19039,C8,XTXXXlVXXT,,{'name': 'Monomer'},Polymyxin F225,Synthetic,,,,,,,,,,,,
+19040,C8,XTXXXxTXXT,,{'name': 'Monomer'},Polymyxin F226,Synthetic,,,,,,,,,,,,
+19041,C8,XTXXXlSXXT,,{'name': 'Monomer'},Polymyxin F227,Synthetic,,,,,,,,,,,,
+19042,C8,XTXXXtLXXT,,{'name': 'Monomer'},Polymyxin F228,Synthetic,,,,,,,,,,,,
+19043,C8,XTXXXvTXXT,,{'name': 'Monomer'},Polymyxin F229,Synthetic,,,,,,,,,,,,
+19044,C8,XTXXXtTXXT,,{'name': 'Monomer'},Polymyxin F230,Synthetic,,,,,,,,,,,,
+19045,C8,XTXXXlXXXT,,{'name': 'Monomer'},Polymyxin F319,Synthetic,,,,,,,,,,,,
+19046,C8,XTxXXlTXXT,,{'name': 'Monomer'},Polymyxin F085,Synthetic,,,,,,,,,,,,
+19047,C8,XTsXXlTXXT,,{'name': 'Monomer'},Polymyxin F183,Synthetic,,,,,,,,,,,,
+19048,C8,XTXXXlTXXT,,{'name': 'Monomer'},Polymyxin F251,Synthetic,,,,,,,,,,,,
+19049,C8,XTXXXlTXXT,,{'name': 'Monomer'},Polymyxin F252,Synthetic,,,,,,,,,,,,
+19050,C8,XTXXXlAXXT,,{'name': 'Monomer'},Polymyxin F271,Synthetic,,,,,,,,,,,,
+19051,C8,XTXXXlXXXT,,{'name': 'Monomer'},Polymyxin F287,Synthetic,,,,,,,,,,,,
+19052,C8,XTxXXlTXXT,,{'name': 'Monomer'},Polymyxin F300,Synthetic,,,,,,,,,,,,
+19173,C8,NQ,LEUal,{'name': 'Monomer'},N-Octanoyl Fellutamide,Synthetic,,,,,,,,,,,,
+20420,C8,GLLKRIKTLL,,{'name': 'Monomer'},Anoplin,Ribosomal,2.02,-0.63,3.00,11.57,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+20777,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin AM04,Synthetic,,,,,,,,,,,,
+20778,C8,XXXXXfLXXT,,{'name': 'Monomer'},Polymyxin AM05,Synthetic,,,,,,,,,,,,
+20779,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin AM06,Synthetic,,,,,,,,,,,,
+20780,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin AM07,Synthetic,,,,,,,,,,,,
+20781,C8,XTXXXxLXXT,,{'name': 'Monomer'},Polymyxin AM08,Synthetic,,,,,,,,,,,,
+20782,C8,XTXXXfXXXT,,{'name': 'Monomer'},Polymyxin AM09,Synthetic,,,,,,,,,,,,
+20783,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin AM10,Synthetic,,,,,,,,,,,,
+20784,C8,XTXXXfLXXT,,{'name': 'Monomer'},Polymyxin AM11,Synthetic,,,,,,,,,,,,
+20785,C8,XTXXXfLXXX,,{'name': 'Monomer'},Polymyxin AM12,Synthetic,,,,,,,,,,,,
+20904,C8,xXXfLXXL,,{'name': 'Monomer'},Octapeptin FADDI-117,Synthetic,,,,,,,,,,,,
+20905,C8,xXXfLXXT,,{'name': 'Monomer'},Octapeptin FADDI-118,Synthetic,,,,,,,,,,,,
+21593,C8,XGVXGGVXGI,LEUol,{'name': 'Monomer'},Trikoningin KB-I,Nonribosomal,,,,,,,,,,,,
+21642,C8,FLSRIF,AMD,{'name': 'Monomer'},Temporin-SHf (3-8),Synthetic,2.13,-1.43,2.00,14.00,13,91,0.52,0.57,0.00,200.00,0.41,1.02
+22834,C8,VFEIA,PUT,{'name': 'Monomer'},Holrhizin A (1-5),Synthetic,,,,,,,,,,,,
+22835,C8,VFEIA,,{'name': 'Monomer'},Holrhizin A (1-5),Synthetic,,,,,,,,,,,,
+22836,C8,LTYaAaV,PUT,{'name': 'Monomer'},Linear Rhizomide A,Synthetic,,,,,,,,,,,,
+22837,C8,LTYaAaV,,{'name': 'Monomer'},Linear Rhizomide A,Synthetic,,,,,,,,,,,,
+22838,C8,VFEIAI,,{'name': 'Monomer'},Holrhizin A,Nonribosomal,,,,,,,,,,,,
+23308,C8,GTXXXfLXXT,,{'name': 'Monomer'},Polymyxin 1G,Synthetic,,,,,,,,,,,,
+23309,C8,xTXXXfLXXT,,{'name': 'Monomer'},Polymyxin 1D-Dab,Synthetic,,,,,,,,,,,,
+23498,C8,XKXK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+23500,C8,XKXK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+23502,C8,XRXR,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+23504,C8,XKXK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+23506,C8,LKVK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+23507,C8,XKXK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+24391,C8,XIXfLXvLX,AMD,{'name': 'Monomer'},C8Dab9-Paenipeptin,Synthetic,,,,,,,,,,,,
+24392,C8,XXXfLXvLX,AMD,{'name': 'Monomer'},"C8-Dab2,9-Paenipeptin",Synthetic,,,,,,,,,,,,
+24393,C8,XIXfLXvLS,AMD,{'name': 'Monomer'},C8-Orn-Paenipeptin,Synthetic,,,,,,,,,,,,

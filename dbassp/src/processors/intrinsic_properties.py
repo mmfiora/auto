@@ -51,7 +51,7 @@ def create_intrinsic_csv(
                 if reader.fieldnames is not None:
                     # Exclude basic peptide info, keep only lipophilicity properties
                     lipophilicity_headers = [h for h in reader.fieldnames 
-                                            if h not in ["Peptide ID", "N TERMINUS", "SEQUENCE", "SMILES", "C TERMINUS"]]
+                                            if h not in ["Peptide ID", "N TERMINUS", "SEQUENCE", "C TERMINUS"]]
                     
                     for row in reader:
                         peptide_id = row["Peptide ID"]
@@ -92,7 +92,8 @@ def create_intrinsic_csv(
             
             # Create intrinsic header: physchem columns + lipophilicity columns + min list columns
             physchem_headers = list(reader.fieldnames)
-            intrinsic_headers = physchem_headers + lipophilicity_headers + min_list_headers
+            new_cols = ["long_tail", "molecular_weight", "total_charge"]
+            intrinsic_headers = physchem_headers + new_cols + lipophilicity_headers + min_list_headers
             
             row_count = 0
             lipo_matched = 0
@@ -109,8 +110,45 @@ def create_intrinsic_csv(
                 z_prefix = get_z_prefix(n_term)
                 new_seq  = f"{z_prefix}{sequence}{'01' if (c_term or '').upper() == 'AMD' else '00'}"
 
+                # ─── New Calculations: long_tail, molecular_weight, total_charge ───
+                
+                # 1. long_tail: Extracted from N TERMINUS (e.g., C12 -> 12)
+                long_tail = ""
+                if n_term:
+                    match = re.search(r'C(\d+)', n_term.upper())
+                    if match:
+                        long_tail = match.group(1)
+                
+                # 2. molecular_weight: sequence + N-term fatty acid + C-term modification
+                # We re-calculate here for consistency (matching normalize_activity.calc_mw)
+                mw = sum(Config.AA_MASS.get(a.upper(), 110.0) for a in (sequence or "")) + Config.H2O_MASS
+                if n_term and n_term.upper() in Config.NTERM_MASS:
+                    mw += Config.NTERM_MASS[n_term.upper()]
+                if c_term and c_term.upper() in Config.CTERM_MASS:
+                    mw += Config.CTERM_MASS[c_term.upper()]
+                
+                # 3. total_charge: Net Charge + terminus corrections
+                # DBAASP Net Charge assumes free N(+1)/C(-1)
+                # Acylated N-term (C4-C20) -> loses +1 (apply -1)
+                # Amidated C-term (AMD) -> loses -1 (apply +1)
+                raw_net_charge = row.get("Net Charge", "")
+                total_charge = ""
+                if raw_net_charge != "":
+                    try:
+                        tc = float(raw_net_charge)
+                        if long_tail: # If we have a fatty acid chain, it's acylated
+                            tc -= 1.0
+                        if (c_term or "").upper() == "AMD":
+                            tc += 1.0
+                        total_charge = f"{tc:.2f}"
+                    except ValueError:
+                        total_charge = ""
+
                 # Create intrinsic row starting with physchem data
                 intrinsic_row = dict(row)
+                intrinsic_row["long_tail"] = long_tail
+                intrinsic_row["molecular_weight"] = f"{mw:.2f}"
+                intrinsic_row["total_charge"] = total_charge
 
                 # Add lipophilicity properties if available
                 if peptide_id in lipophilicity_data:

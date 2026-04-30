@@ -13,6 +13,21 @@ def get_activities(peptide_json):
         a = peptide_json.get("activityAgainstTargetSpecies")
     return a if isinstance(a, list) else []
 
+import json
+
+def get_unusual_amino_acids_map(peptide_json):
+    unusual = peptide_json.get("unusualAminoAcids", [])
+    if not unusual:
+        return "{}"
+    # Create a dict of {position: modification_name}
+    mapping = {}
+    for aa in unusual:
+        pos = aa.get("position")
+        name = aa.get("modificationType", {}).get("name")
+        if pos is not None and name:
+            mapping[str(pos)] = name
+    return json.dumps(mapping)
+
 def get_unusual_amino_acids(peptide_json):
     unusual = peptide_json.get("unusualAminoAcids", [])
     if not unusual:
@@ -76,7 +91,7 @@ def run():
 
         logger.info(f"Successfully fetched data for {len(peptides)} peptides")
         activity_cols = collect_activity_keys(peptides)
-        header = ["Peptide ID", "N TERMINUS", "SEQUENCE", "C TERMINUS", "Unusual Amino Acids"] + activity_cols
+        header = ["Peptide ID", "N TERMINUS", "SEQUENCE", "C TERMINUS", "Unusual Amino Acids", "Unusual Amino Acids Map"] + activity_cols
 
         try:
             with open(Config.OUTPUT_ACTIVITY_CSV, "w", newline="", encoding=Config.CSV_ENCODING) as f:
@@ -90,6 +105,7 @@ def run():
                         "SEQUENCE": d.get("sequence", ""),
                         "C TERMINUS": (d.get("cTerminus") or {}).get("name", ""),
                         "Unusual Amino Acids": get_unusual_amino_acids(d),
+                        "Unusual Amino Acids Map": get_unusual_amino_acids_map(d),
                     }
                     acts = get_activities(d)
                     if not acts:

@@ -293,8 +293,6 @@ def run(infile: str | None = None, outfile: str | None = None) -> None:
             r = csv.DictReader(f)
             fieldnames = list(r.fieldnames) + [
                 "MW_Da", "NEW_SEQ",
-                "lower_concentration",   # numeric lower bound (raw scale)
-                "upper_concentration",   # numeric upper bound (raw scale)
                 "conc_gt",               # 1 if original was >X / >=X
                 "lower_ugml",            # lower bound in µg/mL
                 "upper_ugml",            # upper bound in µg/mL
@@ -320,8 +318,6 @@ def run(infile: str | None = None, outfile: str | None = None) -> None:
                 new_seq  = f"{z_prefix}{seq}{'01' if (c or '').upper() == 'AMD' else '00'}"
                 row["NEW_SEQ"] = new_seq
 
-                row["lower_concentration"] = lo
-                row["upper_concentration"] = up
                 row["conc_gt"]             = gt
 
                 lo_ugml = to_ugml(lo, unit, mw, row_num)

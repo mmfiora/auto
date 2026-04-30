@@ -1,0 +1,37 @@
+﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,complexity,name,synthesis_type,Normalized Hydrophobic Moment,Normalized Hydrophobicity,Net Charge,Isoelectric Point,Penetration Depth,Tilt Angle,Disordered Conformation Propensity,Linear Moment,Propensity to in vitro Aggregation,Angle Subtended by the Hydrophobic Residues,Amphiphilicity Index,Propensity to PPII coil
+1364,C6,RRWQWRMKK,AMD,{'name': 'Monomer'},"C6- Lactoferricin-B -AMD (4-12), C6- Lfcin-B -AMD (4-12)",Synthetic,1.25,2.74,6.00,14.00,18,64,-1.16,0.54,0.00,50.00,3.31,1.00
+7528,C6,XXWW,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+8650,C6,RGRKVVRRKK,,{'name': 'Monomer'},,Synthetic,1.16,2.17,7.00,12.60,30,22,-1.13,0.52,0.00,40.00,2.08,0.93
+8662,C6,RGRKVVRR,,{'name': 'Monomer'},,Synthetic,1.99,1.74,5.00,12.58,30,104,-0.92,0.52,0.00,50.00,1.68,0.94
+8677,C6,RGRKGGRRKK,,{'name': 'Monomer'},,Synthetic,0.57,3.09,7.00,12.60,30,21,-1.41,0.00,0.00,0.00,2.08,0.81
+8689,C6,RGRKGGRR,,{'name': 'Monomer'},,Synthetic,1.29,2.89,5.00,12.58,30,101,-1.28,0.00,0.00,0.00,1.68,0.78
+9841,C6,KK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11628,C6,RXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11629,C6,RXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11684,C6,RXRXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11685,C6,RXRXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11687,C6,RXRXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11688,C6,RXRXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11690,C6,RXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11691,C6,RXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11693,C6,RXRXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11694,C6,RXRXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11696,C6,RXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11697,C6,RXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11728,C6,RXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11729,C6,RXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+12343,C6,KWKW,,{'name': 'Monomer'},,Synthetic,0.33,2.40,2.00,10.69,15,146,-1.00,0.00,0.00,0.00,5.30,0.99
+12647,C6,RFWR,AMD,{'name': 'Monomer'},,Synthetic,2.36,1.77,3.00,14.00,15,91,-0.81,0.59,0.00,100.00,2.96,1.04
+13858,C6,GLLkRIkTLL,AMD,{'name': 'Monomer'},"Anoplin [K4,7k]",Synthetic,2.02,-0.63,4.00,14.00,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+14385,C6,RKWWK,AMD,{'name': 'Monomer'},,Synthetic,1.66,2.82,4.00,14.00,16,101,-1.23,0.00,0.00,0.00,4.73,1.00
+18284,C6,KRIWQRIKDF,AMD,{'name': 'Monomer'},KR-10 [V4W],Synthetic,2.31,1.29,4.00,12.15,15,85,-0.46,0.22,0.00,110.00,2.04,0.99
+18285,C6,KRIWQRIK,AMD,{'name': 'Monomer'},KR-8 [V4W],Synthetic,2.28,1.52,5.00,14.00,15,91,-0.73,0.31,0.00,100.00,2.55,0.99
+18286,C6,KRIWQR,AMD,{'name': 'Monomer'},KR-6 [V4W],Synthetic,2.08,2.13,4.00,14.00,15,87,-0.92,0.57,0.00,80.00,2.79,1.00
+18287,C6,KRIW,AMD,{'name': 'Monomer'},KR-4 [V4W],Synthetic,2.34,1.20,3.00,14.00,14,129,-0.63,0.60,0.00,100.00,3.26,1.00
+19054,C6,XTXXXlXXXT,,{'name': 'Monomer'},Polymyxin F342,Synthetic,,,,,,,,,,,,
+19223,C6,VRLLRRRI,AMD,{'name': 'Monomer'},SAMP-A4,Synthetic,1.98,0.21,5.00,14.00,14,78,-0.32,0.39,0.00,110.00,1.23,0.97
+20409,C6,GLLKRIKTLL,AMD,{'name': 'Monomer'},Anoplin,Ribosomal,2.02,-0.63,4.00,14.00,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+20417,C6,GLLKRIKTLL,,{'name': 'Monomer'},Anoplin,Ribosomal,2.02,-0.63,3.00,11.57,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+23757,C6,XKKKK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+23758,C6,KKKKK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+24385,C6,XIXfLXvLS,AMD,{'name': 'Monomer'},C6-Paenipeptin,Synthetic,,,,,,,,,,,,

@@ -9,9 +9,9 @@ from src.core.exceptions import APIError, FileProcessingError
 
 logger = logging.getLogger("dbaasp_pipeline")
 
+# Generate N-terminus modifications for fatty acid chains from C4 to C20
 N_TERMINUS_MODIFICATIONS = {
-    "C12": "CCCCCCCCCCCC(=O)",
-    "C16": "CCCCCCCCCCCCCCCC(=O)",
+    f"C{i}": "C" * i + "(=O)" for i in range(4, 21)
 }
 
 # Amino acid pKa values for ionizable side chains

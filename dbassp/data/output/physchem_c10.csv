@@ -1,0 +1,108 @@
+﻿Peptide ID,N TERMINUS,SEQUENCE,C TERMINUS,complexity,name,synthesis_type,Normalized Hydrophobic Moment,Normalized Hydrophobicity,Net Charge,Isoelectric Point,Penetration Depth,Tilt Angle,Disordered Conformation Propensity,Linear Moment,Propensity to in vitro Aggregation,Angle Subtended by the Hydrophobic Residues,Amphiphilicity Index,Propensity to PPII coil
+1365,C10,RRWQWRMKK,AMD,{'name': 'Monomer'},"C10- Lactoferricin-B -AMD (4-12), C10- Lfcin-B -AMD (4-12)",Synthetic,1.25,2.74,6.00,14.00,18,64,-1.16,0.54,0.00,50.00,3.31,1.00
+1371,C10,rrwqwrmkk,AMD,{'name': 'Monomer'},"D C10- Lactoferricin-B -AMD (4-12), D C10- Lfcin-B -AMD (4-12)",Synthetic,1.25,2.74,6.00,14.00,18,64,-1.16,0.54,0.00,50.00,3.31,1.00
+7308,C10,XX,AMD,{'name': 'Monomer'},LP8,Synthetic,,,,,,,,,,,,
+7326,C10,XXX,AMD,{'name': 'Monomer'},LP14,Synthetic,,,,,,,,,,,,
+7345,C10,XXXX,AMD,{'name': 'Monomer'},LP20,Synthetic,,,,,,,,,,,,
+7351,C10,XXXXX,AMD,{'name': 'Monomer'},LP26,Synthetic,,,,,,,,,,,,
+7447,C10,GLLKRIKTLL,AMD,{'name': 'Monomer'},Anoplin ,Ribosomal,2.02,-0.63,4.00,14.00,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+7531,C10,XXWW,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+8346,C10,KYR,AMD,{'name': 'Monomer'},,Synthetic,0.20,3.23,3.00,11.38,20,101,-1.43,0.00,0.00,0.00,3.73,1.04
+8652,C10,RGRKVVRRKK,,{'name': 'Monomer'},,Synthetic,1.16,2.17,7.00,12.60,30,22,-1.13,0.52,0.00,40.00,2.08,0.93
+8666,C10,RGRKVVRR,,{'name': 'Monomer'},,Synthetic,1.99,1.74,5.00,12.58,30,104,-0.92,0.52,0.00,50.00,1.68,0.94
+8679,C10,RGRKGGRRKK,,{'name': 'Monomer'},,Synthetic,0.57,3.09,7.00,12.60,30,21,-1.41,0.00,0.00,0.00,2.08,0.81
+8693,C10,RGRKGGRR,,{'name': 'Monomer'},,Synthetic,1.29,2.89,5.00,12.58,30,101,-1.28,0.00,0.00,0.00,1.68,0.78
+9258,C10,KpT,AMD,{'name': 'Monomer'},,Synthetic,1.08,2.07,2.00,14.00,30,116,-0.73,0.00,0.00,0.00,1.22,1.38
+9260,C10,KPV,AMD,{'name': 'Monomer'},,Synthetic,2.72,0.43,2.00,14.00,30,117,-0.23,0.57,0.00,130.00,1.22,1.36
+9262,C10,KpT,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+9264,C10,KPV,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+9839,C10,KK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+10002,C10,IKQVKKLFKK,AMD,{'name': 'Monomer'},"C10-Plantaricin 149a (10-19), C10-A2",Synthetic,2.42,0.77,6.00,14.00,30,92,-0.50,0.22,0.00,160.00,1.96,0.93
+10374,C10,KKK,AMD,{'name': 'Monomer'},,Synthetic,0.85,3.90,4.00,14.00,30,90,-1.97,0.00,0.00,0.00,3.67,0.91
+10375,C10,KKKK,AMD,{'name': 'Monomer'},,Synthetic,0.44,3.90,5.00,14.00,30,90,-1.97,0.00,0.00,0.00,3.67,0.91
+10376,C10,KG,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+10377,C10,KGK,AMD,{'name': 'Monomer'},,Synthetic,0.32,2.73,3.00,14.00,30,90,-1.27,0.00,0.00,0.00,2.45,0.74
+10378,C10,KGKG,AMD,{'name': 'Monomer'},,Synthetic,0.33,2.15,3.00,14.00,30,146,-0.92,0.00,0.00,0.00,1.84,0.66
+10568,C10,GLLKFIKKLL,AMD,{'name': 'Monomer'},"Anoplin [R5F,T8K]",Synthetic,2.28,-1.04,4.00,14.00,14,87,0.26,0.37,0.00,200.00,1.10,0.83
+10988,C10,RTXCXfLRXC,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+10989,C10,XTXCXfLXXc,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+10990,C10,XTXCXfXXXc,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11019,C10,XKKK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11703,C10,RXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11704,C10,RXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11709,C10,RXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11710,C10,RXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11712,C10,RXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11713,C10,RXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11718,C10,RXRXRXR,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+11719,C10,RXRXRXRKK,,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+12345,C10,KWKW,,{'name': 'Monomer'},,Synthetic,0.33,2.40,2.00,10.69,15,146,-1.00,0.00,0.00,0.00,5.30,0.99
+12355,C10,KKXK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+12649,C10,RFWR,AMD,{'name': 'Monomer'},,Synthetic,2.36,1.77,3.00,14.00,15,91,-0.81,0.59,0.00,100.00,2.96,1.04
+13437,C10,TsSvI,,{'name': 'Monomer'},Stephensiolide D,Nonribosomal,1.17,-1.28,0.00,3.50,8,125,0.64,0.51,0.00,80.00,0.00,1.13
+13860,C10,GLLkRIkTLL,AMD,{'name': 'Monomer'},"Anoplin [K4,7k]",Synthetic,2.02,-0.63,4.00,14.00,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+14281,C10,XKKK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+14285,C10,XKKK,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+14337,C10,KWWK,AMD,{'name': 'Monomer'},,Synthetic,1.40,2.40,3.00,14.00,16,90,-1.00,0.00,0.00,0.00,5.30,0.99
+14338,C10,KIWWK,AMD,{'name': 'Monomer'},,Synthetic,1.57,1.02,3.00,14.00,13,80,-0.47,0.62,0.00,80.00,4.24,0.99
+14339,C10,RKWWK,AMD,{'name': 'Monomer'},,Synthetic,1.66,2.82,4.00,14.00,16,101,-1.23,0.00,0.00,0.00,4.73,1.00
+14340,C10,RIKWWK,AMD,{'name': 'Monomer'},,Synthetic,0.58,1.60,4.00,14.00,15,86,-0.75,0.55,0.00,50.00,3.94,1.00
+14341,C10,RWWR,AMD,{'name': 'Monomer'},,Synthetic,1.66,2.70,3.00,14.00,15,90,-1.09,0.00,0.00,0.00,4.69,1.06
+14342,C10,KRIWWR,AMD,{'name': 'Monomer'},,Synthetic,1.67,1.70,4.00,14.00,14,107,-0.78,0.62,0.00,80.00,3.74,1.02
+14343,C10,KIKRWWR,AMD,{'name': 'Monomer'},,Synthetic,1.78,2.01,5.00,14.00,15,95,-0.95,0.50,0.00,50.00,3.73,1.00
+14344,C10,KIRWWR,AMD,{'name': 'Monomer'},,Synthetic,0.63,1.70,4.00,14.00,14,84,-0.78,0.53,0.00,50.00,3.74,1.02
+14345,C10,RWR,AMD,{'name': 'Monomer'},C10-W1R2,Synthetic,0.22,3.30,3.00,14.00,17,90,-1.45,0.00,0.00,0.00,3.94,1.05
+14346,C10,KIKRWR,AMD,{'name': 'Monomer'},,Synthetic,1.04,2.20,5.00,14.00,21,137,-1.11,0.50,0.00,50.00,3.19,0.99
+14347,C10,KKIRWR,AMD,{'name': 'Monomer'},,Synthetic,1.42,2.20,5.00,14.00,21,154,-1.11,0.52,0.00,80.00,3.19,0.99
+14348,C10,KWK,AMD,{'name': 'Monomer'},,Synthetic,0.15,2.90,3.00,14.00,19,90,-1.32,0.00,0.00,0.00,4.76,0.96
+14349,C10,KKWK,AMD,{'name': 'Monomer'},,Synthetic,1.08,3.15,4.00,14.00,21,104,-1.48,0.00,0.00,0.00,4.49,0.95
+14350,C10,RIKWK,AMD,{'name': 'Monomer'},,Synthetic,1.29,1.74,4.00,14.00,20,103,-0.90,0.54,0.00,80.00,3.34,0.98
+14351,C10,RWRW,AMD,{'name': 'Monomer'},,Synthetic,0.38,2.70,3.00,14.00,15,143,-1.09,0.00,0.00,0.00,4.69,1.06
+14352,C10,KWKW,AMD,{'name': 'Monomer'},,Synthetic,0.33,2.40,3.00,14.00,15,146,-1.00,0.00,0.00,0.00,5.30,0.99
+14353,C10,KKWW,AMD,{'name': 'Monomer'},,Synthetic,0.99,2.40,3.00,14.00,16,134,-1.00,0.00,0.00,0.00,5.30,0.99
+14413,C10,PFWRIRIRR,AMD,{'name': 'Monomer'},LF11-322,Synthetic,0.43,0.97,5.00,14.00,15,88,-0.50,0.32,0.00,50.00,1.86,1.15
+14416,C10,FWRRFWRR,AMD,{'name': 'Monomer'},"LF11 [Q2,4Del,N6R,I7F,R8W,K9R,V10Del]",Synthetic,1.58,1.78,5.00,14.00,15,72,-0.81,0.30,0.00,80.00,2.96,1.04
+14910,C10,FRR,AMD,{'name': 'Monomer'},,Synthetic,2.78,2.07,3.00,14.00,17,59,-1.06,0.50,0.00,130.00,1.63,1.03
+14926,C10,XRR,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+14940,C10,WRR,AMD,{'name': 'Monomer'},C10-W1,Synthetic,1.68,3.30,3.00,14.00,16,60,-1.45,0.00,0.00,0.00,3.94,1.05
+14946,C10,RR,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+15834,C10,FFFFKKKKK,,{'name': 'Monomer'},C10F4K5,Synthetic,0.55,0.92,5.00,11.27,18,11,-0.60,0.50,0.00,50.00,2.04,0.95
+16079,C10,GLXKRXKTLL,AMD,{'name': 'Monomer'},"Anoplin [L3Meth-Leu, I6Meth-Ile]",Synthetic,,,,,,,,,,,,
+16080,C10,GLLXRIXTLL,AMD,{'name': 'Monomer'},"Anoplin [K4,7Meth-Lys]",Synthetic,,,,,,,,,,,,
+16081,C10,GLLKXIXTLL,AMD,{'name': 'Monomer'},"Anoplin [R5Meth-Arg, K7Meth-Lys]",Synthetic,,,,,,,,,,,,
+16546,C10,wrrrrrrG,AMD,{'name': 'Monomer'},Deca-(ARG)6,Synthetic,0.48,3.54,7.00,14.00,21,32,-1.60,0.00,0.00,0.00,2.70,0.96
+16547,C10,wrrrrrrrG,AMD,{'name': 'Monomer'},Deca-(ARG)7,Synthetic,0.04,3.64,8.00,14.00,22,28,-1.66,0.00,0.00,0.00,2.68,0.97
+16548,C10,wrrrrrrrrG,AMD,{'name': 'Monomer'},Deca-(ARG)8,Synthetic,0.38,3.73,9.00,14.00,22,30,-1.71,0.00,0.00,0.00,2.65,0.98
+16555,C10,rrrrkkkkG,AMD,{'name': 'Monomer'},Deca-(Arg-Lys) 4–4,Synthetic,0.39,3.78,9.00,14.00,30,16,-1.82,0.00,0.00,0.00,2.72,0.91
+17117,C10,RVKR,CMK,{'name': 'Monomer'},CMK,Synthetic,2.53,2.18,3.00,12.12,30,73,-1.18,0.51,0.00,100.00,2.14,1.00
+17733,C10,RWW,AMD,{'name': 'Monomer'},C10-R1,Synthetic,1.18,2.10,2.00,14.00,14,119,-0.74,0.00,0.00,0.00,5.44,1.06
+17739,C10,RRW,AMD,{'name': 'Monomer'},C10-R2,Synthetic,1.68,3.30,3.00,14.00,16,120,-1.45,0.00,0.00,0.00,3.94,1.05
+17780,C10,RRR,AMD,{'name': 'Monomer'},C10-R3,Synthetic,0.98,4.50,4.00,14.00,30,90,-2.15,0.00,0.00,0.00,2.45,1.04
+17831,C10,GLLKIIKKLL,AMD,{'name': 'Monomer'},"Anoplin [R5I,T8K]",Synthetic,2.31,-1.21,4.00,14.00,13,83,0.32,0.35,0.00,200.00,1.10,0.82
+17834,C10,GLKKIIKKLL,AMD,{'name': 'Monomer'},"Anoplin [L3K,R5I,T8K]",Synthetic,2.31,-0.44,5.00,14.00,14,98,-0.02,0.28,0.00,170.00,1.47,0.84
+17836,C10,GLLKFIKRLL,AMD,{'name': 'Monomer'},"Anoplin [R5F,T8R]",Synthetic,2.33,-0.98,4.00,14.00,13,85,0.24,0.37,0.00,200.00,0.98,0.84
+17838,C10,GLLKKIKRLL,AMD,{'name': 'Monomer'},"Anoplin [R5K,T8R]",Synthetic,2.37,-0.31,5.00,14.00,14,90,-0.06,0.38,0.00,160.00,1.35,0.83
+17840,C10,GLLKIIKRLL,AMD,{'name': 'Monomer'},"Anoplin [R5I,T8R]",Synthetic,2.36,-1.15,4.00,14.00,13,84,0.30,0.36,0.00,200.00,0.98,0.84
+17843,C10,KLFK,AMD,{'name': 'Monomer'},,Synthetic,2.76,0.30,3.00,14.00,16,88,-0.35,0.52,0.00,200.00,1.84,0.90
+17849,C10,KLFKKLFK,AMD,{'name': 'Monomer'},,Synthetic,2.59,0.30,5.00,14.00,16,88,-0.35,0.26,0.00,200.00,1.84,0.90
+18094,C10,XXXX,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+18099,C10,XXXXX,AMD,{'name': 'Monomer'},,Synthetic,,,,,,,,,,,,
+18272,C10,KRIWQRIKDF,AMD,{'name': 'Monomer'},KR-10 [V4W],Synthetic,2.31,1.29,4.00,12.15,15,85,-0.46,0.22,0.00,110.00,2.04,0.99
+18273,C10,KRIWQRIK,AMD,{'name': 'Monomer'},"KR-8 [V4W], C10-KR8",Synthetic,2.28,1.52,5.00,14.00,15,91,-0.73,0.31,0.00,100.00,2.55,0.99
+18274,C10,kriwqrik,AMD,{'name': 'Monomer'},KR-8 [V4w],Synthetic,2.28,1.52,5.00,14.00,15,91,-0.73,0.31,0.00,100.00,2.55,0.99
+18275,C10,KRIWQR,AMD,{'name': 'Monomer'},KR-6 [V4W],Synthetic,2.08,2.13,4.00,14.00,15,87,-0.92,0.57,0.00,80.00,2.79,1.00
+18276,C10,KRIW,AMD,{'name': 'Monomer'},KR-4 [V4W],Synthetic,2.34,1.20,3.00,14.00,14,129,-0.63,0.60,0.00,100.00,3.26,1.00
+19772,C10,TsSvV,,{'name': 'Monomer'},Stephensiolide C,Nonribosomal,1.14,-1.22,0.00,3.50,6,140,0.62,0.51,0.00,80.00,0.00,1.14
+20423,C10,GLLKRIKTLL,,{'name': 'Monomer'},Anoplin,Ribosomal,2.02,-0.63,3.00,11.57,14,94,0.14,0.42,0.00,160.00,0.98,0.85
+20898,C10,xXXfLXXL,,{'name': 'Monomer'},Octapeptin FADDI-115,Synthetic,,,,,,,,,,,,
+20899,C10,xXXfLXXT,,{'name': 'Monomer'},Octapeptin FADDI-116,Synthetic,,,,,,,,,,,,
+20982,C10,IKQVXKLFKK,AMD,{'name': 'Monomer'},Plantaricin 149a (10-19)/C10-A2 [K5MeK],Synthetic,,,,,,,,,,,,
+20984,C10,IKQVKXLFKK,AMD,{'name': 'Monomer'},Plantaricin 149a (10-19)/C10-A2 [K6MeK],Synthetic,,,,,,,,,,,,
+20985,C10,IKQVKKLFXK,AMD,{'name': 'Monomer'},Plantaricin 149a (10-19)/C10-A2 [K9MeK],Synthetic,,,,,,,,,,,,
+20986,C10,IKQVKKLXKK,AMD,{'name': 'Monomer'},Plantaricin 149a (10-19)/C10-A2 [K8MeF],Synthetic,,,,,,,,,,,,
+20987,C10,IkQVkkLFkk,AMD,{'name': 'Monomer'},D-Plantaricin 149a (10-19)/C10-A2 ,Synthetic,2.42,0.77,6.00,14.00,30,92,-0.50,0.22,0.00,160.00,1.96,0.93
+21749,C10,qTXwSf,,{'name': 'Monomer'},Ophiotine,Nonribosomal,,,,,,,,,,,,
+22081,C10,PRPRPPR,,{'name': 'Monomer'},,Synthetic,0.28,2.84,3.00,12.40,30,111,-1.07,0.00,0.00,0.00,1.05,1.69
+22082,C10,PRPRPPR,Spr,{'name': 'Monomer'},,Synthetic,0.28,2.84,3.00,12.40,30,111,-1.07,0.00,0.00,0.00,1.05,1.69
+24394,C10,XIXfLXvLS,AMD,{'name': 'Monomer'},C10-Paenipeptin,Synthetic,,,,,,,,,,,,
+24395,C10,XITlLXvLS,AMD,{'name': 'Monomer'},C10Thr3Leu4-Paenipeptin,Synthetic,,,,,,,,,,,,

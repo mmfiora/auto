@@ -10,7 +10,7 @@ from src.core.exceptions import DBAASSPError
 from src.collectors import physchem
 from src.collectors import activity
 from src.collectors import normalize_activity
-from src.collectors import lipophilicity
+# from src.collectors import lipophilicity
 from src.processors import unified_results
 from src.processors import intrinsic_properties
 from src.processors import activity_summary
@@ -111,9 +111,9 @@ Examples:
         print("Running activity ...")
         activity.run()
 
-        logger.info("Running lipophilicity collection...")
-        print("Running lipophilicity ...")
-        lipophilicity.run()
+        # logger.info("Running lipophilicity collection...")
+        # print("Running lipophilicity ...")
+        # lipophilicity.run()
 
         logger.info("Normalizing activity data...")
         print("Normalizing activity ...")

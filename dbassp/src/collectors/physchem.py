@@ -56,7 +56,7 @@ def run():
                     props.append(name)
 
         # Final header: base peptide columns + dynamic physchem properties
-        header = ["Peptide ID", "N TERMINUS", "SEQUENCE", "C TERMINUS"] + props
+        header = ["Peptide ID", "N TERMINUS", "SEQUENCE", "C TERMINUS", "complexity", "name", "synthesis_type"] + props
 
         try:
             # Write CSV, always one row per peptide (fill missing properties with empty string)
@@ -69,6 +69,9 @@ def run():
                         "N TERMINUS": (d.get("nTerminus") or {}).get("name", ""),    # only .name
                         "SEQUENCE": d.get("sequence", ""),                            # original casing
                         "C TERMINUS": (d.get("cTerminus") or {}).get("name", ""),    # only .name
+                        "complexity": d.get("complexity", ""),
+                        "name": d.get("name", ""),
+                        "synthesis_type": (d.get("synthesisType") or {}).get("name", ""),
                     }
                     # Map this peptide's properties
                     values = {}
