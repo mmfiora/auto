@@ -18,7 +18,7 @@ def auto_detect_nterminus() -> str:
     logger.info("Auto-detecting Nterminus from available peptides files")
     
     # Find all peptides_{Nterminus}.csv files
-    peptide_files = glob.glob("data/input/peptides_*.csv")
+    peptide_files = glob.glob("input/peptides_*.csv")
     if not peptide_files:
         raise FileProcessingError(
             "No peptides_{Nterminus}.csv files found. Please ensure you have files like peptides_C16.csv",
@@ -28,7 +28,7 @@ def auto_detect_nterminus() -> str:
     # Sort files for consistent behavior
     peptide_files.sort()
     
-    # Extract Nterminus from first filename (data/input/peptides_C16.csv -> C16)
+    # Extract Nterminus from first filename (input/peptides_C16.csv -> C16)
     filename = peptide_files[0]
     try:
         basename = filename.split("/")[-1]
@@ -48,7 +48,7 @@ def auto_detect_nterminus() -> str:
         
     except (IndexError, ValueError) as e:
         raise FileProcessingError(
-            f"Invalid peptides filename format: {filename}. Expected format: data/input/peptides_{{Nterminus}}.csv",
+            f"Invalid peptides filename format: {filename}. Expected format: input/peptides_{{Nterminus}}.csv",
             filename=filename
         )
 

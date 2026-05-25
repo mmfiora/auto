@@ -1,16 +1,44 @@
 # AGENTS.md - Developer Guidelines
 
+## Project Overview
+DBAASP peptide data pipeline: fetches raw physicochemical and activity data from the
+DBAASP API, normalizes concentrations, and writes output CSVs.
+
+**Output files live in Google Drive** via a directory junction:
+- `data/output/` → `G:\My Drive\Doctorado\Automatizacion\auto_sqlite\data\`
+- `presentations/` → `G:\My Drive\Doctorado\Automatizacion\auto_sqlite\presentations\`
+
+Run `python scripts/setup_symlinks.py` (as Admin) once to create these junctions.
+
 ## Build/Test/Lint Commands
-- **Main execution**: `python main_api.py` (runs physchem, activity, normalize_activity pipeline)
-- **Individual modules**: `python physchem.py`, `python activity.py`, `python normalize_activity.py`
-- **No formal test framework configured** - verify by running scripts and checking output files
-- **No linting configuration found** - follow PEP 8 standards
+- **Full pipeline**: `python main_api.py` (interactive) or `python main_api.py --nterminus C16`
+- **All N-termini**: `python scripts/collection/fetch_all_to_csv.py`
+- **Database build**: `python scripts/database/create_sqlite_db.py`
+- **No formal test framework** — verify by running scripts and checking output CSVs
+- **No linting configuration** — follow PEP 8 standards
+
+## Pipeline Steps (in order)
+1. `physchem.run()` — fetch raw physicochemical properties from DBAASP API
+2. `activity.run()` — fetch raw activity data + resolve full citations (`reference_citation` column)
+3. `normalize_activity.run()` — parse concentrations → µg/mL, classify activity, split species/strain
+4. `intrinsic_properties.run()` — combine physchem + derived scalars (long_tail, MW, total_charge) + min-list
+5. `unified_results.run()` — join normalized activity with physchem properties
+6. `activity_summary.run()` — summary statistics per peptide
+7. `generate_peptide_list.run()` — generate peptide list outputs
+
+> **Note**: logP / logD are NOT calculated here. Use a separate project for lipophilicity.
+
+## Reference Citation Column
+`activity.py` adds a `reference_citation` column to the activity CSV. Each activity row in the
+DBAASP API has a `reference` field (a 1-based index string, e.g. `"1"`) that points into the
+peptide's top-level `articles` list. The citation is formatted as:
+`"Authors | Title | Journal Year;Vol:Pages | PMID:xxx"`
 
 ## Code Style Guidelines
 
 ### Imports
 - Standard library first, then third-party (requests, pandas, matplotlib, seaborn)
-- Use relative imports for local modules: `import physchem`, `import activity`
+- Use package imports for local modules: `from src.core import common`
 
 ### Formatting & Structure
 - Use double quotes for strings consistently
@@ -31,7 +59,6 @@
 - Gracefully handle missing data with empty string defaults
 
 ### Data Processing
-- Use pandas for CSV operations and data analysis
-- Encode CSV files with "utf-8-sig" for proper BOM handling
-- Use DictReader/DictWriter for structured CSV processing
+- Encode CSV files with `"utf-8-sig"` for proper BOM handling
+- Use `DictReader`/`DictWriter` for structured CSV processing
 - Default to empty strings for missing values rather than None

@@ -40,7 +40,7 @@ Examples:
     try:
         if args.nterminus:
             nterminus = args.nterminus
-            expected_file = f"data/input/peptides_{nterminus}.csv"
+            expected_file = f"input/peptides_{nterminus}.csv"
             
             if not os.path.exists(expected_file):
                 logger.error(f"Specified peptides file not found: {expected_file}")
@@ -52,10 +52,10 @@ Examples:
             print(f"Using Nterminus: {nterminus}")
             
         else:
-            peptide_files = glob.glob("data/input/peptides_*.csv")
+            peptide_files = glob.glob("input/peptides_*.csv")
             if not peptide_files:
-                logger.error("No peptides_*.csv files found in data/input/")
-                print("Error: No peptides files found in data/input/")
+                logger.error("No peptides_*.csv files found in input/")
+                print("Error: No peptides files found in input/")
                 return 1
             
             nterminus_list = []

@@ -24,8 +24,6 @@ def setup_db(conn):
             target_group    TEXT,
             target_object   TEXT,
             smiles          TEXT,
-            logp            REAL,
-            logd            REAL,
             molecular_weight REAL,
             total_charge     REAL,
             long_tail        TEXT,
@@ -58,7 +56,7 @@ def setup_db(conn):
             medium           TEXT,
             cfu              TEXT,
             note             TEXT,
-            reference        TEXT,
+            reference_citation TEXT,
             c_min_ugml       REAL,
             c_max_ugml       REAL,
             conc_gt          INTEGER
@@ -116,7 +114,7 @@ def to_float_or_null(val):
 
 def process_peptides(conn):
     cur = conn.cursor()
-    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "data", "input", "peptides_*.csv"))
+    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "input", "peptides_*.csv"))
     for file_path in csv_files:
         logging.info(f"Populating peptides from {file_path}...")
         try:
@@ -147,7 +145,7 @@ def process_peptides(conn):
 
 def process_physchem(conn):
     cur = conn.cursor()
-    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "data", "output", "intrinsic_properties_*.csv"))
+    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "output_db", "intrinsic_properties_*.csv"))
     for file_path in csv_files:
         logging.info(f"Populating intrinsic properties from {file_path}...")
         try:
@@ -162,11 +160,10 @@ def process_physchem(conn):
                     # Update peptides table with intrinsic metrics
                     cur.execute('''
                         UPDATE peptides SET 
-                            smiles=?, logp=?, logd=?, 
-                            molecular_weight=?, total_charge=?, long_tail=?
+                            smiles=?, molecular_weight=?, total_charge=?, long_tail=?
                         WHERE id=?
                     ''', (
-                        row.get("SMILES"), to_float_or_null(row.get("logP")), to_float_or_null(row.get("logD")),
+                        row.get("SMILES"),
                         to_float_or_null(row.get("molecular_weight")), 
                         to_float_or_null(row.get("total_charge")), 
                         row.get("long_tail"),
@@ -199,7 +196,7 @@ import json
 
 def process_activity(conn):
     cur = conn.cursor()
-    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "data", "output", "activity_normalized_*.csv"))
+    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "output_db", "activity_normalized_*.csv"))
     for file_path in csv_files:
         logging.info(f"Populating normalized activity from {file_path}...")
         try:
@@ -231,7 +228,7 @@ def process_activity(conn):
                            (peptide_id, target_species, species, strain,
                             target_group, target_object, concentration,
                             activity_measure, unit,
-                            ph, ionic_strength, salt_type, medium, cfu, note, reference,
+                            ph, ionic_strength, salt_type, medium, cfu, note, reference_citation,
                             c_min_ugml, c_max_ugml, conc_gt)
                         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                     """, (
@@ -239,7 +236,7 @@ def process_activity(conn):
                         row.get("targetGroup", ""), row.get("targetObject", ""), row.get("concentration", ""),
                         row.get("activityMeasureGroup", ""), row.get("unit", ""),
                         row.get("ph", ""), row.get("ionicStrength", ""), row.get("saltType", ""),
-                        row.get("medium", ""), row.get("cfu", ""), row.get("note", ""), row.get("reference", ""),
+                        row.get("medium", ""), row.get("cfu", ""), row.get("note", ""), row.get("reference_citation", ""),
                         to_float_or_null(row.get("lower_ugml")), to_float_or_null(row.get("upper_ugml")),
                         int(row.get("conc_gt", 0)) if row.get("conc_gt") else 0
                     ))
@@ -248,7 +245,7 @@ def process_activity(conn):
     conn.commit()
 
 def main():
-    db_path = os.path.join(PROJECT_ROOT, "data", "output", "dbaasp.sqlite")
+    db_path = os.path.join(PROJECT_ROOT, "output_db", "dbaasp.sqlite")
     
     # Optional: Delete existing database to ensure a clean build from CSVs
     if os.path.exists(db_path):

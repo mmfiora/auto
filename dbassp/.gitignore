@@ -1,0 +1,32 @@
+# ── Output data (symlinked to Google Drive) ──────────────────────────────────
+output_db/
+
+# ── API response cache ────────────────────────────────────────────────────────
+cache/
+
+# ── Presentations (symlinked to Google Drive) ────────────────────────────────
+presentations/
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo

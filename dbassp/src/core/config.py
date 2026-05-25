@@ -16,14 +16,14 @@ class Config:
     }
     
     # File Paths (will be updated dynamically with Nterminus)
-    INPUT_PEPTIDES_CSV = os.getenv("INPUT_PEPTIDES_CSV", "data/input/peptides.csv")
-    OUTPUT_PHYSCHEM_CSV = os.getenv("OUTPUT_PHYSCHEM_CSV", "data/output/physchem.csv")
-    OUTPUT_ACTIVITY_CSV = os.getenv("OUTPUT_ACTIVITY_CSV", "data/output/activity.csv")
-    OUTPUT_NORMALIZED_CSV = os.getenv("OUTPUT_NORMALIZED_CSV", "data/output/activity_normalized.csv")
-    OUTPUT_UNIFIED_CSV = os.getenv("OUTPUT_UNIFIED_CSV", "data/output/unified_results.csv")
-    OUTPUT_LIPOPHILICITY_CSV = os.getenv("OUTPUT_LIPOPHILICITY_CSV", "data/output/lipophilicity.csv")
-    OUTPUT_INTRINSIC_CSV = os.getenv("OUTPUT_INTRINSIC_CSV", "data/output/intrinsic_properties.csv")
-    MIN_LIST_FILE = os.getenv("MIN_LIST_FILE", "data/input/list_min.txt")
+    INPUT_PEPTIDES_CSV = os.getenv("INPUT_PEPTIDES_CSV", "input/peptides.csv")
+    OUTPUT_PHYSCHEM_CSV = os.getenv("OUTPUT_PHYSCHEM_CSV", "output_db/physchem.csv")
+    OUTPUT_ACTIVITY_CSV = os.getenv("OUTPUT_ACTIVITY_CSV", "output_db/activity.csv")
+    OUTPUT_NORMALIZED_CSV = os.getenv("OUTPUT_NORMALIZED_CSV", "output_db/activity_normalized.csv")
+    OUTPUT_UNIFIED_CSV = os.getenv("OUTPUT_UNIFIED_CSV", "output_db/unified_results.csv")
+    OUTPUT_LIPOPHILICITY_CSV = os.getenv("OUTPUT_LIPOPHILICITY_CSV", "output_db/lipophilicity.csv")
+    OUTPUT_INTRINSIC_CSV = os.getenv("OUTPUT_INTRINSIC_CSV", "output_db/intrinsic_properties.csv")
+    MIN_LIST_FILE = os.getenv("MIN_LIST_FILE", "input/list_min.txt")
     
     # Current Nterminus (set dynamically during pipeline execution)
     _current_nterminus = None
@@ -66,14 +66,14 @@ class Config:
     def set_nterminus(cls, nterminus: str):
         """Set the Nterminus and update file paths accordingly."""
         cls._current_nterminus = nterminus
-        cls.INPUT_PEPTIDES_CSV = f"data/input/peptides_{nterminus}.csv"
-        cls.OUTPUT_PHYSCHEM_CSV = f"data/output/physchem_{nterminus}.csv"
-        cls.OUTPUT_ACTIVITY_CSV = f"data/output/activity_{nterminus}.csv"
-        cls.OUTPUT_NORMALIZED_CSV = f"data/output/activity_normalized_{nterminus}.csv"
-        cls.OUTPUT_UNIFIED_CSV = f"data/output/unified_results_{nterminus}.csv"
-        cls.OUTPUT_LIPOPHILICITY_CSV = f"data/output/lipophilicity_{nterminus}.csv"
-        cls.OUTPUT_INTRINSIC_CSV = f"data/output/intrinsic_properties_{nterminus}.csv"
-        cls.MIN_LIST_FILE = f"data/input/list_min_{nterminus}.txt"
+        cls.INPUT_PEPTIDES_CSV = f"input/peptides_{nterminus}.csv"
+        cls.OUTPUT_PHYSCHEM_CSV = f"output_db/physchem_{nterminus}.csv"
+        cls.OUTPUT_ACTIVITY_CSV = f"output_db/activity_{nterminus}.csv"
+        cls.OUTPUT_NORMALIZED_CSV = f"output_db/activity_normalized_{nterminus}.csv"
+        cls.OUTPUT_UNIFIED_CSV = f"output_db/unified_results_{nterminus}.csv"
+        cls.OUTPUT_LIPOPHILICITY_CSV = f"output_db/lipophilicity_{nterminus}.csv"
+        cls.OUTPUT_INTRINSIC_CSV = f"output_db/intrinsic_properties_{nterminus}.csv"
+        cls.MIN_LIST_FILE = f"input/list_min_{nterminus}.txt"
     
     @classmethod
     def get_nterminus(cls) -> str | None:
