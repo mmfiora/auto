@@ -3,6 +3,10 @@
 
 import os
 import logging
+from dotenv import load_dotenv, find_dotenv
+
+# Load .env from project root (safe no-op if file doesn't exist)
+load_dotenv(find_dotenv(usecwd=True), override=False)
 
 class Config:
     """Configuration settings with defaults and environment variable overrides."""
@@ -15,15 +19,19 @@ class Config:
         "Accept": "application/json"
     }
     
+    # Symlinked folder paths (junctions → Google Drive)
+    OUTPUT_DB_DIR     = os.getenv("OUTPUT_DB_DIR",     "output_db")
+    PRESENTATIONS_DIR = os.getenv("PRESENTATIONS_DIR", "presentations")
+
     # File Paths (will be updated dynamically with Nterminus)
-    INPUT_PEPTIDES_CSV = os.getenv("INPUT_PEPTIDES_CSV", "input/peptides.csv")
-    OUTPUT_PHYSCHEM_CSV = os.getenv("OUTPUT_PHYSCHEM_CSV", "output_db/physchem.csv")
-    OUTPUT_ACTIVITY_CSV = os.getenv("OUTPUT_ACTIVITY_CSV", "output_db/activity.csv")
-    OUTPUT_NORMALIZED_CSV = os.getenv("OUTPUT_NORMALIZED_CSV", "output_db/activity_normalized.csv")
-    OUTPUT_UNIFIED_CSV = os.getenv("OUTPUT_UNIFIED_CSV", "output_db/unified_results.csv")
-    OUTPUT_LIPOPHILICITY_CSV = os.getenv("OUTPUT_LIPOPHILICITY_CSV", "output_db/lipophilicity.csv")
-    OUTPUT_INTRINSIC_CSV = os.getenv("OUTPUT_INTRINSIC_CSV", "output_db/intrinsic_properties.csv")
-    MIN_LIST_FILE = os.getenv("MIN_LIST_FILE", "input/list_min.txt")
+    INPUT_PEPTIDES_CSV    = os.getenv("INPUT_PEPTIDES_CSV",    "input/peptides.csv")
+    OUTPUT_PHYSCHEM_CSV   = os.getenv("OUTPUT_PHYSCHEM_CSV",   f"{os.getenv('OUTPUT_DB_DIR', 'output_db')}/physchem.csv")
+    OUTPUT_ACTIVITY_CSV   = os.getenv("OUTPUT_ACTIVITY_CSV",   f"{os.getenv('OUTPUT_DB_DIR', 'output_db')}/activity.csv")
+    OUTPUT_NORMALIZED_CSV = os.getenv("OUTPUT_NORMALIZED_CSV", f"{os.getenv('OUTPUT_DB_DIR', 'output_db')}/activity_normalized.csv")
+    OUTPUT_UNIFIED_CSV    = os.getenv("OUTPUT_UNIFIED_CSV",    f"{os.getenv('OUTPUT_DB_DIR', 'output_db')}/unified_results.csv")
+    OUTPUT_LIPOPHILICITY_CSV = os.getenv("OUTPUT_LIPOPHILICITY_CSV", f"{os.getenv('OUTPUT_DB_DIR', 'output_db')}/lipophilicity.csv")
+    OUTPUT_INTRINSIC_CSV  = os.getenv("OUTPUT_INTRINSIC_CSV",  f"{os.getenv('OUTPUT_DB_DIR', 'output_db')}/intrinsic_properties.csv")
+    MIN_LIST_FILE         = os.getenv("MIN_LIST_FILE",         "input/list_min.txt")
     
     # Current Nterminus (set dynamically during pipeline execution)
     _current_nterminus = None
@@ -66,14 +74,15 @@ class Config:
     def set_nterminus(cls, nterminus: str):
         """Set the Nterminus and update file paths accordingly."""
         cls._current_nterminus = nterminus
-        cls.INPUT_PEPTIDES_CSV = f"input/peptides_{nterminus}.csv"
-        cls.OUTPUT_PHYSCHEM_CSV = f"output_db/physchem_{nterminus}.csv"
-        cls.OUTPUT_ACTIVITY_CSV = f"output_db/activity_{nterminus}.csv"
-        cls.OUTPUT_NORMALIZED_CSV = f"output_db/activity_normalized_{nterminus}.csv"
-        cls.OUTPUT_UNIFIED_CSV = f"output_db/unified_results_{nterminus}.csv"
-        cls.OUTPUT_LIPOPHILICITY_CSV = f"output_db/lipophilicity_{nterminus}.csv"
-        cls.OUTPUT_INTRINSIC_CSV = f"output_db/intrinsic_properties_{nterminus}.csv"
-        cls.MIN_LIST_FILE = f"input/list_min_{nterminus}.txt"
+        d = cls.OUTPUT_DB_DIR
+        cls.INPUT_PEPTIDES_CSV       = f"input/peptides_{nterminus}.csv"
+        cls.OUTPUT_PHYSCHEM_CSV      = f"{d}/physchem_{nterminus}.csv"
+        cls.OUTPUT_ACTIVITY_CSV      = f"{d}/activity_{nterminus}.csv"
+        cls.OUTPUT_NORMALIZED_CSV    = f"{d}/activity_normalized_{nterminus}.csv"
+        cls.OUTPUT_UNIFIED_CSV       = f"{d}/unified_results_{nterminus}.csv"
+        cls.OUTPUT_LIPOPHILICITY_CSV = f"{d}/lipophilicity_{nterminus}.csv"
+        cls.OUTPUT_INTRINSIC_CSV     = f"{d}/intrinsic_properties_{nterminus}.csv"
+        cls.MIN_LIST_FILE            = f"input/list_min_{nterminus}.txt"
     
     @classmethod
     def get_nterminus(cls) -> str | None:
