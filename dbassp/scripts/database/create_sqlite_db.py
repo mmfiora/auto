@@ -143,6 +143,31 @@ def process_peptides(conn):
             logging.error(f"Failed to process {file_path}: {e}")
     conn.commit()
 
+def process_lipophilicity(conn):
+    cur = conn.cursor()
+    csv_files = glob.glob(os.path.join(PROJECT_ROOT, "output_db", "lipophilicity_*.csv"))
+    for file_path in csv_files:
+        logging.info(f"Loading SMILES from {file_path}...")
+        try:
+            with open(file_path, 'r', encoding='utf-8-sig') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    pid_raw = row.get("Peptide ID", "")
+                    if not pid_raw: continue
+                    try: pid = int(pid_raw)
+                    except ValueError: continue
+
+                    cur.execute('''
+                        UPDATE peptides SET smiles=?
+                        WHERE id=?
+                    ''', (
+                        row.get("SMILES"),
+                        pid
+                    ))
+        except Exception as e:
+            logging.error(f"Failed to process {file_path}: {e}")
+    conn.commit()
+
 def process_physchem(conn):
     cur = conn.cursor()
     csv_files = glob.glob(os.path.join(PROJECT_ROOT, "output_db", "intrinsic_properties_*.csv"))
@@ -156,31 +181,28 @@ def process_physchem(conn):
                     if not pid_raw: continue
                     try: pid = int(pid_raw)
                     except ValueError: continue
-                    
+
                     # Update peptides table with intrinsic metrics
                     cur.execute('''
-                        UPDATE peptides SET 
-                            smiles=?, molecular_weight=?, total_charge=?, long_tail=?
+                        UPDATE peptides SET
+                            molecular_weight=?, total_charge=?, long_tail=?
                         WHERE id=?
                     ''', (
-                        row.get("SMILES"),
-                        to_float_or_null(row.get("molecular_weight")), 
-                        to_float_or_null(row.get("total_charge")), 
+                        to_float_or_null(row.get("molecular_weight")),
+                        to_float_or_null(row.get("total_charge")),
                         row.get("long_tail"),
                         pid
                     ))
-                    # Note: I put SMILES as logP accidentally in the above line's target, fixing it.
-                    # Correcting: cur.execute(..., (row.get("SMILES"), ...))
-                    
+
                     # Insert into physchem_properties_aa
                     cur.execute("SELECT 1 FROM physchem_properties_aa WHERE peptide_id = ?", (pid,))
                     if cur.fetchone(): continue
-                    
+
                     phys_data = {"peptide_id": pid}
                     for csv_col, db_col in _PHYSCHEM_MAP.items():
                         if csv_col in row and row[csv_col]:
                             phys_data[db_col] = row[csv_col]
-                    
+
                     if len(phys_data) > 1:
                         cols = list(phys_data.keys())
                         values = list(phys_data.values())
@@ -246,17 +268,21 @@ def process_activity(conn):
 
 def main():
     db_path = os.path.join(PROJECT_ROOT, "output_db", "dbaasp.sqlite")
-    
+
     # Optional: Delete existing database to ensure a clean build from CSVs
     if os.path.exists(db_path):
-        logging.info(f"Removing existing database {db_path}...")
-        os.remove(db_path)
-        
+        try:
+            logging.info(f"Removing existing database {db_path}...")
+            os.remove(db_path)
+        except PermissionError:
+            logging.warning(f"Could not remove database (in use), will append data instead")
+
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
     conn = sqlite3.connect(db_path)
     setup_db(conn)
 
     process_peptides(conn)
+    process_lipophilicity(conn)
     process_physchem(conn)
     process_activity(conn)
 
